@@ -1,0 +1,61 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Detection of cells \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc  {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x  \relax }{13}{chapter.3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:cell_detection}{{3}{13}{Detection of cells \status {new}}{chapter.3}{}}
+\newlabel{chap:cell_detection@cref}{{[chapter][3][]3}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Overview \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc  {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x  \relax }{13}{section.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Learning to detect non-overlapping cells \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc  {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x  \relax }{13}{section.3.2}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{blue!40}{\leavevmode {\color  {blue!40}o}}\ Rewrite: Several of these subsections are directly taken from Arteta's paper. They are mean as guidance, but should be adapted appropriately.}{13}{section*.11}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Check both Arteta's papers on the subject}{13}{section*.12}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Subsection with the changes that were made to Arteta's work}{13}{section*.13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Extremal regions \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc  {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x  \relax }{13}{subsection.3.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}The non-overlap constraint \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc  {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x  \relax }{13}{subsection.3.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Formulation of the model \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc  {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x  \relax }{13}{subsection.3.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Learning the model \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc  {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x  \relax }{13}{subsection.3.2.4}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Info about the binary/structural classifier}{13}{section*.14}}
+\citation{arteta12}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.5}Implementation details \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc  {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x  \relax }{14}{subsection.3.2.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Dynamic programming for inference \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc  {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x  \relax }{14}{section*.15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.6}Summary \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc  {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x  \relax }{14}{subsection.3.2.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Speeding up the algorithm \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc  {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x  \relax }{14}{section.3.3}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ review this section}{14}{section*.16}}
+\@writefile{brf}{\backcite{arteta12}{{14}{3.3}{section*.16}}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Measure the number of seconds it takes to process one of these 400x400 images}{14}{section*.17}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Feature selection \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc  {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x  \relax }{14}{section.3.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces The plots helps the user to select the most appropriate feature, given a combination of computation time per image, mean precision and recall. This example, which was obtained by selecting only within feature sets that compute in less than 1 CPU-second, have at least 0.5 precision and 0.9 recall have resultsed in a feature set containing features 1, 3 and 4. Most importance was given to precision followed by computation time and recall. The selected feature set computes in 0.414 cpu-seconds (Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz) per image, with mean precision of 0.836 and mean recall of 0.9363.\relax }}{16}{figure.caption.18}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:bestFeatureSelector}{{3.1}{16}{The plots helps the user to select the most appropriate feature, given a combination of computation time per image, mean precision and recall. This example, which was obtained by selecting only within feature sets that compute in less than 1 CPU-second, have at least 0.5 precision and 0.9 recall have resultsed in a feature set containing features 1, 3 and 4. Most importance was given to precision followed by computation time and recall. The selected feature set computes in 0.414 cpu-seconds (Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz) per image, with mean precision of 0.836 and mean recall of 0.9363.\relax }{figure.caption.18}{}}
+\newlabel{fig:bestFeatureSelector@cref}{{[figure][1][3]3.1}{16}}
+\@setckpt{chapter_cell_detection}{
+\setcounter{page}{17}
+\setcounter{equation}{0}
+\setcounter{enumi}{7}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{nag@c}{48}
+\setcounter{part}{0}
+\setcounter{chapter}{3}
+\setcounter{section}{4}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{1}
+\setcounter{table}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{Item}{7}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{23}
+\setcounter{@todonotes@numberoftodonotes}{12}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{lips@count}{0}
+\setcounter{section@level}{1}
+}

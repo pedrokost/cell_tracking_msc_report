@@ -1,0 +1,98 @@
+% TO regenerate preample run:
+% pdftex -ini -jobname="thesis" "&pdflatex preamble.tex\dump"
+
+\RequirePackage[l2tabu, orthodox]{nag}
+
+\documentclass[12pt,imperial,MSc,declaration=off,titlepagenumber=off]{icldt}
+
+%Uporabljeni paketi
+\usepackage[utf8]{inputenc}
+\usepackage{cmap}
+\usepackage{type1ec}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{graphicx,epsfig}
+\usepackage[english]{babel}
+\usepackage{cite}
+\usepackage{caption} % improve caption spacing (among other things)
+\usepackage{subcaption}
+\usepackage{geometry}
+\usepackage[pdftex,colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black,pagebackref]{hyperref}
+\usepackage{tikz}
+\usepackage[colorinlistoftodos,textsize=small]{todonotes}
+\bibliographystyle{ieeetr}
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage{lipsum}
+\usepackage{cleveref}
+\usepackage{layout} 
+\usepackage{mathtools}
+\usepackage{epstopdf}  % for compiling pdf to png/jpg during development.
+%\usepackage{showframe}
+
+%\presetkeys{todonotes}{noline}{}  %fancyline
+
+%\setlength{\marginparwidth}{2.5cm}
+
+%Velikost strani - dvostransko
+%\textwidth 14cm
+%\topmargin 0.26cm
+%\headheight 0.6cm
+%\headsep 1.5cm
+%\textheight 20cm
+
+\marginparsep 0.3cm
+\marginparwidth 3.5cm
+
+%Nastavitev glave in repa strani
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\chaptermark}[1]{\markboth{\textsf{Chapter \thechapter:\ #1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\textsf{\thesection\  #1}}{}}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\rightmark}
+\fancyhead[LE,RO]{\thepage}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+
+\newcommand{\gnuplot}{\textbf{gnuplot}}
+\newcommand{\pgfname}{\textsc{pgf}}
+\newcommand{\tikzname}{Ti\emph{k}Z}
+
+\newcommand{\addref}[1]{\todo[color=red!40]{Cite: #1.}}
+\newcommand{\rewrite}[1]{\todo[color=blue!40]{Rewrite: #1}}
+\newcommand{\notyetimplemented}[1]{\todo[color=red!40]{This feature has not yet been implemented}}
+
+\newcommand\status[1]{\fbox{\textsc{#1}}}
+\newcommand{\statusnew}{\status{new}}
+\newcommand{\statusoutline}{\status{outline}}
+\newcommand{\statusfirstdraft}{\status{draft I}}
+\newcommand{\statusseconddraft}{\status{draft II}}
+\newcommand{\statusthirddraft}{\status{draft III}}
+\newcommand{\statusproofread}{\status{proofread}}
+\newcommand{\statusfinal}{\status{final}}
+
+\definecolor{termcolor}{gray}{0.3}
+\newcommand{\term}[1]{#1 \marginpar{\emph{\raggedright{\textcolor{termcolor}{#1}}}}}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+% Tip from: https://www.sharelatex.com/learn/Inserting_Images
+% Before producing final report, verert the pdf and jpg, and commend out the epstopdf... line
+\epstopdfsetup{outdir=./imageslowres/,update=true}
+\epstopdfDeclareGraphicsRule{.eps}{jpg}{.jpg}{%
+	convert #1 \OutputFile
+}
+\DeclareGraphicsExtensions{.jpg,.eps}
+
+\usepackage{microtype}
+
+\author{Pedro Damian Kostelec}
+\supervisor{Ben Glocker}
+\department{Computing}
+\field{Computing (Artificial Intelligence)}
+\title{Automatic Cell Tracking in Noisy Images for Microscopic Image Analysis}
+\date{September 2014}
+
+\def\preambleloaded{Precompiled preamble loaded.}

@@ -1,0 +1,52 @@
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ To develop methods for cell tracking}{12}{section*.7}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Describe the different modules of the system - detector, tracker, stat computation}{12}{section*.8}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Machine learning based cell tracker system}{12}{section*.9}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Dot Annotation GUI}{12}{section*.10}
+\contentsline {todo}{Figure: Make a sketch}{12}{section*.10}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Rewrite the literature survey to be more concise and to the point}{12}{section*.11}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Summarize the difference approaches - frame to frame, global}{12}{section*.12}
+\contentsline {todo}{\color@box {}{blue!40}{\leavevmode {\color {blue!40}o}}\ Rewrite: Several of these subsections are directly taken from Arteta's paper. They are mean as guidance, but should be adapted appropriately.}{13}{section*.11}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Check both Arteta's papers on the subject}{13}{section*.12}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Subsection with the changes that were made to Arteta's work}{13}{section*.13}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Info about the binary/structural classifier}{13}{section*.14}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ review this section}{14}{section*.16}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Measure the number of seconds it takes to process one of these 400x400 images}{14}{section*.17}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Make sure to update this if no longer iterative}{17}{section*.7}
+\contentsline {todo}{Figure: Tracking process flow diagram}{18}{figure.caption.8}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ (level sets [the IMM paper from bise/kanade]) Add references about global data optim betten that level sets/frame by frame assoc}{18}{section*.9}
+\contentsline {todo}{Figure: Robust tracklets}{19}{figure.caption.10}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Define cell detection in the detection chapter}{19}{section*.11}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ add some words about the feature vector -- which features}{19}{section*.12}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ I have an idea to add additional contraint to prevent linking cells if more than 2 cells are very similar between each other}{20}{section*.13}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ To finish this section I need to train a model with more data and decide whether to use NB or ANN. Then I need to describe the selected method.}{20}{section*.14}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Make sure to update this if I decide not to make it iterative, but build a classifier for each possible displacement - which I could weight by the actual distance}{21}{section*.15}
+\contentsline {todo}{\color@box {}{blue!40}{\leavevmode {\color {blue!40}o}}\ Rewrite: This only needs to be in the implementation section}{21}{section*.16}
+\contentsline {todo}{\color@box {}{blue!40}{\leavevmode {\color {blue!40}o}}\ Rewrite: This only needs to be in the implementation section}{22}{section*.17}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Add an example H, L and I for illustration}{24}{section*.18}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Make sure this is right}{25}{section*.19}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Finalize the description of the ANN when I settle on a final shape once I train it using all the data}{27}{section*.22}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Make sure to update this if i decide to build a classifier for each gap length}{28}{section*.23}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Remember to update if I decide to build a classifier for each gap size closure}{28}{section*.24}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Make sure this is right}{28}{section*.26}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Try looking back only the number of frames you are trying to close... no further, since those could be linked later.}{28}{section*.27}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ reference the list of features in the cell detection module}{30}{section*.30}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Augment this list as more features are added}{30}{section*.31}
+\contentsline {todo}{\color@box {}{red!40}{\leavevmode {\color {red!40}o}}\ This feature has not yet been implemented}{31}{section*.32}
+\contentsline {todo}{\color@box {}{red!40}{\leavevmode {\color {red!40}o}}\ This feature has not yet been implemented}{32}{section*.34}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Define how the best features have been selected}{32}{section*.35}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Describe which features performed best}{32}{section*.36}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ List and explain what features we are interested in, why, and how they are computed.}{19}{section*.33}
+\contentsline {todo}{\color@box {}{red!40}{\leavevmode {\color {red!40}o}}\ This feature has not yet been implemented}{19}{section*.34}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ The paper ``Tracking of cell population to understand their spatio-temporal behaviourr in response to physical stimuli'' presents a comprehensive set of measures.}{19}{section*.35}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ some notes on the importance of accurate annotation,s advantages and disadvantages of dot annotations.}{20}{section*.36}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Describe the requirements of an efficient cell annotation tool, such as multipreview, linking, zooming, correct interpretation and saving of the dataformat}{20}{section*.37}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ An overview of the annotation GUI}{20}{section*.38}
+\contentsline {todo}{\color@box {}{blue!40}{\leavevmode {\color {blue!40}o}}\ This describes annotation using Fiji, which was only used at the beginnig}{20}{section*.39}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ I need to learn more about the types of cells I am tracking}{20}{section*.40}
+\contentsline {todo}{\color@box {}{red!40}{\leavevmode {\color {red!40}o}}\ This feature has not yet been implemented}{22}{section*.42}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Think about which experiments to do, analyses, comparison with other methods if possible}{22}{section*.43}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Measure the speed of detection in images of different sizes, and different number of cells}{22}{section*.45}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Define the different measures of accuracy}{22}{section*.46}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Meause the speed of generating tracks, as a measure of per 1, 100, 1000 frames, depending on the number of tracks}{24}{section*.47}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Write the conclusion}{25}{section*.48}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Define what other things could be worked on: mitosis, statbilization, image clearing process, skipping bad frames}{25}{section*.49}

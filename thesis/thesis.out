@@ -1,0 +1,12 @@
+\BOOKMARK [0][-]{chapter.4}{Tracking of cells draft Ihaaheight-0.5 -widthheightdepthc- widthheightdepthheightpter}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Cell tracking overview draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.2}{Joining cell detections into robust tracklets draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.3}{Global data association draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.4}{Implementation using linear programming draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.5}{Hypotheses likelihood definitions draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.6}{Computing the likelihoods draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.7}{Features for the linking classifier outlineeccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.7.1}{Estimating the velocity with Kalman filters newubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.4.7}% 32
+\BOOKMARK [2][-]{subsection.4.7.2}{Gaussian broadening feature draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.4.7}% 33
+\BOOKMARK [2][-]{subsection.4.7.3}{Best feature selection newubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.4.7}% 34
+\BOOKMARK [0][-]{section*.33}{Bibliography}{}% 47

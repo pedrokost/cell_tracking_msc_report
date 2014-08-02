@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{arteta12}
+C.~Arteta, V.~Lempitsky, J.~A. Noble, and A.~Zisserman, ``Learning to detect
+  cells using non-extremal regions,'' in {\em Proceedings of the 15th
+  International Conference on Medical Image Computing and Computer-Assisted
+  Intervention - Volume Part I}, MICCAI'12, (Berlin, Heidelberg), pp.~348--356,
+  Springer-Verlag, 2012.
+
+\bibitem{bise11}
+R.~Bise, T.~Kanade, Z.~Yin, and S.~il~Huh, ``Automatic cell tracking applied to
+  analysis of cell migration in wound healing assay,'' in {\em Engineering in
+  Medicine and Biology Society,EMBC, 2011 Annual International Conference of
+  the IEEE}, pp.~6174--6179, Aug 2011.
+
+\bibitem{bise11global}
+R.~Bise, Z.~Yin, and T.~Kanade, ``Reliable cell tracking by global data
+  association.,'' in {\em ISBI}, pp.~1004--1010, IEEE, 2011.
+
+\bibitem{zhang08}
+L.~Zhang, Y.~Li, and R.~Nevatia, ``Global data association for multi-object
+  tracking using network flows,'' in {\em Computer Vision and Pattern
+  Recognition, 2008. CVPR 2008. IEEE Conference on}, pp.~1--8, June 2008.
+
+\bibitem{huang08}
+C.~Huang, B.~Wu, and R.~Nevatia, ``Robust object tracking by hierarchical
+  association of detection responses,'' in {\em Computer Vision - ECCV 2008}
+  (D.~Forsyth, P.~Torr, and A.~Zisserman, eds.), vol.~5303 of {\em Lecture
+  Notes in Computer Science}, pp.~788--801, Springer Berlin Heidelberg, 2008.
+
+\bibitem{fiji12}
+J.~Schindelin, I.~Arganda-Carreras, E.~Frise, V.~Kaynig, M.~Longair,
+  T.~Pietzsch, S.~Preibisch, C.~Rueden, S.~Saalfeld, B.~Schmid, J.-Y. Tinevez,
+  D.~J. White, V.~Hartenstein, K.~Eliceiri, P.~Tomancak, and A.~Cardona,
+  ``Fiji: an open-source platform for biological-image analysis,'' {\em Nature
+  Methods}, vol.~9(7), pp.~676--682, 2012.
+
+\bibitem{thevanez14}
+S.~F. I. o. T.~L. Philippe~Thévenaz, Biomedical Imaging~Group, ``Point picker:
+  An interactive imagej plugin that allows storage and retrieval of a
+  collection of landmarks,'' May 2014.
+
+\end{thebibliography}

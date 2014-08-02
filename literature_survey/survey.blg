@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: survey.aux
+The style file: ieeetr.bst
+Database file #1: survey.bib
+A bad cross reference---entry "arteta13"
+refers to entry "conf/cvpr/2013", which doesn't exist
+Warning--I didn't find a database entry for "Tang??"
+Warning--I didn't find a database entry for "conf/cvpr/2013"
+You've used 20 entries,
+            1876 wiz_defined-function locations,
+            607 strings with 7631 characters,
+and the built_in function-call counts, 5982 in all, are:
+= -- 578
+> -- 216
+< -- 0
++ -- 80
+- -- 60
+* -- 415
+:= -- 799
+add.period$ -- 22
+call.type$ -- 20
+change.case$ -- 18
+chr.to.int$ -- 0
+cite$ -- 20
+duplicate$ -- 323
+empty$ -- 586
+format.name$ -- 60
+if$ -- 1493
+int.to.chr$ -- 0
+int.to.str$ -- 20
+missing$ -- 17
+newline$ -- 66
+num.names$ -- 20
+pop$ -- 88
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 251
+stack$ -- 0
+substring$ -- 424
+swap$ -- 141
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 50
+width$ -- 22
+write$ -- 192
+(There was 1 error message)

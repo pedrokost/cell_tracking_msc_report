@@ -1,0 +1,73 @@
+\def\ifundefined#1{\expandafter\ifx\csname#1\endcsname\relax}
+\ifundefined{preambleloaded}\input{preamble}\else\typeout{\preambleloaded}\fi
+%********************************************
+\input{cc}
+\includeonly{chapter_cell_tracking}
+\begin{document}
+
+% stran 1 med uvodnimi listi
+\thispagestyle{empty} 
+
+\maketitle
+
+%********************************************
+
+% stran 2 med uvodnimi listi
+\thispagestyle{empty}
+
+\newpage
+
+%********************************************
+\begin{abstract}
+
+\end{abstract}
+
+
+\chapter*{Acknowledgement}
+I offer my sincerest gratitude to life, .....
+\clearpage
+
+\vspace*{\fill}
+The copyright of this thesis rests with the author and is made available under a Creative Commons Attribution Non-Commercial No Derivatives licence. Researchers are free to copy, distribute or transmit the thesis on the condition that they attribute it, that they do not use it for commercial purposes and that they do not alter, transform or build upon it. For any reuse or redistribution, researchers must make clear to others the licence terms of this work.
+
+\begin{center}
+	\CcGroupByNcNd{1.4}{0.95ex}
+	%\vspace*{-2.5ex}
+\end{center}
+
+
+\newpage
+
+\tableofcontents
+
+\thispagestyle{empty}
+
+%\todototoc
+%\listoftodos
+\newpage
+
+\include{chapter_introduction}
+\include{chapter_related_work}
+\include{chapter_cell_detection}
+\include{chapter_cell_tracking}
+\include{chapter_bio_stats}
+\include{chapter_data}
+\include{chapter_results}    
+\include{chapter_conclusion}
+
+
+%********************************************
+
+\newpage
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\label{page_bibliography}
+\bibliography{thesis} 
+
+
+
+\end{document}
+
+
+
+
