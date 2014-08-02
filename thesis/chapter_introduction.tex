@@ -2,11 +2,57 @@
 
 	\section{Motivation \status{new}}
 		\todo[inline]{To develop methods for cell tracking}
+		
+		explain what is a the neukocyte
+		
+		what is its function
+		
+		why is it still important to track them (what we don't know)
+		
+		section todo describes the imaging modality
+		
+		
+		
+		NEurophils area  type fo polymorphonuclear lukocytes are one of the major playes during acute implammation. Following infection, the presence of neutrophils to the site of inflammation is crucial for clearance fo the infection.  In humans, a total abscento of neutrpohils or significan tdecaese in their number learts to death or sever immonudeficienty, respectively. Similarly, in mice, depletion of neutrophils ferequently leads to a fatal outcome. 
+		
+		
+		However, recent data has shown that neutrophil function extend beyond their roles in acute infectino. A longer lifespan (which was discoever ddue to new data) may allow neutrophils to carry out more complex activiets ina a tissue, such as contributing to the resolution of inflamationo roshapig adaptive immune responses.
+		
+		Neutrophiles are continuously enerated in the bone marrrow from myeloid procursors. In humans, 50-70\% of circulating leuocytes are neutrophils, whereas oly 10-25\% in mice. 
+		
+		Neutrophiles can be found in the bone marrow, spleen, liver and lung. 
+		
+		Direct observation of eal-time neutrophil trafficking tin the lung vasculature should help explain why neutrophils are concentrated within these organs, especially the lung.
+		
+		Accumulating evidence supports the xestince of distinct neutrophile subsets thathav diverse roles in infection, inflammation and cancer immunology. Howevere, it is still an open issue whethe these subsets represent truly distrinct lineages or instead develop from a single plastic neutrophile procursor. However, further evidence is needed to support the claim that multiple separate linearges of neutrophiles exist.
+		
 	\section{Objectives \status{new}}
 		\todo[inline]{Describe the different modules of the system - detector, tracker, stat computation}
+		
+		- create a robust pipeline for tracking neukocytes in image sequences of noisy images obtained throught that ventilator method
+		
+		- the system should be able to accept an image sequence, detect the cell in each frame, and uset hem to compute the trajectories of the cells.
+		
+		- A basic system to return metrics about the trajectories
+		
 	\section{Contributions \status{new}}
-		\todo[inline]{Machine learning based cell tracker system}
+		\todo[inline]{Machine learning based cell tracker system} that is able to work on highly noisy datasets, where several frames can come out of focus, cells dissapear and reapear, etc.
 		\todo[inline]{Dot Annotation GUI}
+		to ease the annotation of datasets of point objects, as well as link them to create trajectories in a frame by frame basis
 		\missingfigure{Make a sketch}
 	\section{Thesis structure \status{new}}
-	
+		The remained of the thesis is structured as follows. 
+		
+		chapter 2 is a brief literature survey outlining the exesting methods for cell detection and tracking
+		
+		chapter 3 describes the cell detection module and its implementation
+		
+		chapter 4 describes the tracking module
+		
+		chaapter 5 represents the biological statistics module, and we focus on listing the different types of metrics that it computes
+		
+		chapter 6 represents the image annotation tool that was created to facilitate image annoations
+		
+		chapter 7 evaluates the cell detector and cell tracker
+		
+		chapter 8 is reserved for some concluding remarks and ideas that could be used to enhance this work.

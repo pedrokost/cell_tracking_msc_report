@@ -1,8 +1,33 @@
 \chapter{Data acquisition and annotation \status{new}}
-	\todo[inline]{some notes on the importance of accurate annotation,s advantages and disadvantages of dot annotations.}
-	\todo[inline]{Describe the requirements of an efficient cell annotation tool, such as multipreview, linking, zooming, correct interpretation and saving of the dataformat}
-	\todo[inline]{An overview of the annotation GUI}
+
+
     \subsection{Cell culture conditions and imaging modality \status{new}}
+    
+    rewrite about he type of cells i am tracking briefly, and focus a lot on the imaging technique. Provide examples of different images from different datasets,
+    illustrate the problem of out of focus, the out-of-sync shutter, etc.
+    
+    
+    A technique that had crucial impoact on the dientification of the multistep cascade enabling neutrophile recruitmen into inflamed tissues was intrvital microscopy. This method allows the visualization of cells in vivo.
+    
+    More recently, the introduction of microscopes allowering for thicher tissue penetraction and higher resolution (spinning-disc and two-photon microscopes), more complex tissuea dn organs, sucha as the skin, lives, brain and lung, can also be imaged. The observation of the lung was a challenge for a long time owing to motion artefacts. 
+    
+    The introbutio of fluorescence (confocal) microscopy  in combination with spinning-disc and two-photon microscopes  has allowed the use of fluorescent antibodies for labelling different cell populations on anatomical structures, as well as the use of transeenic mice with fluorescent leukocyte subsets. 
+    
+    TODO: I need more data on the different labeled cells (red, green)
+    TODO: I need more data on the exact technique and aparatus used to take the images (camera, etc)
+    
+    \subsection{The annotation tool \statusnew}
+    
+    	\todo[inline]{some notes on the importance of accurate annotation,s advantages and disadvantages of dot annotations.}
+    
+    	\todo[inline]{Describe the requirements of an efficient cell annotation tool, such as multipreview, linking, zooming, correct interpretation and saving of the dataformat}
+    	
+    	\todo[inline]{An overview of the annotation GUI}
+    	the multiple displays
+    	filter
+    	tools for additing/deleting dots and links
+    	simultaneous display of detections and links    
+    
     \subsection{Annotating cell images \status{new}}
     \rewrite{This describes annotation using Fiji, which was only used at the beginnig}
     What follows is a description of the process of image annotation for use in the machine learning algorithm to detect cells. The image annotation, as required by Arteta's \cite{arteta12} algorithm, are dots on each cell of the image. The algorithm uses these dots as positive examples, and all the remaining pixels as negative examples of a cell.
