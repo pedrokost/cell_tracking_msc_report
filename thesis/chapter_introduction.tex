@@ -1,47 +1,55 @@
-	\chapter{Introduction \status{new}}
+	\chapter{Introduction \statusfirstdraft}
 
-	\section{Motivation \status{new}}
+	\section{Motivation \statusfirstdraft}
 		\todo[inline]{To develop methods for cell tracking}
 		
-		Recent advances in intravital microscopy enable us to study the behaviour of different cells without excessively modifying the natural environment in which these cells are found within the body of mice.
+		Recent advances in intravital microscopy enable us to study the behaviour of different cells without excessively modifying the natural environment in which these cells are found within the body of mice. 
+			
+		Neutrophiles are a type of leukocytes that have a crucial role in the clearance of infections. A significant reduction in the number of neutrophiles in the human body (or in mice) leads to severe immunodeficiency or death.
 		
+		They can be found in the bone marrow, liver, spleen and lung. Direct observation of neutrophiles should help explain their presence in these organs, especially their large quantity in the lung.
 		
-		\rewrite{It is too similar to the paper}
-		Neutrophiles, a type of leukocytes, are a major player during acute inflammation. The presence of neutrophiles in the site of inflammation is crucial for the resolution of an infection \cite{kolku13}. A significant reduction of neutrophiles within the human body can lead to severe immunodeficiency or death. A fatal outcome is also the result of the absence of these leukocytes in mice.
+		A recent study has shown that the lifespan of neutrophils is much longer than previously known (up to 12.5 hours for mice and 5.4days for humans). Although this specific study is a source of doubtful criticism (cite), the longevity of neutrophiles increases during inflammation. This longer lifespan may permit them to perform a wider range of complex activities, beyong the clearance of infections. An analysis of their behaviour as observed through intravital microscopy could help reveal more of their roles.
 		
-		Neutrophiles can be found in the liver, bone marrow, spleen and, in larger quantities, the lung. The observation of neutrophil behaviour within these organs should help explain their large presence within these organs. 
+		Finally, there is accumulating evidence to support the existence of different lineages of neutrophiles with discrete roles. It is unknown whether these are actually distinct lineages or if they instead all develop from the same neutrophil predecessor.
 		
-		Recent data shows that their functions extends beyond the clearance of infections. A recent study \cite{pillay10} has revealed that their half-life span is much longer than previously believed (up to 12.5 hours for mouse cells and 5.4 days in humans). Although the results of this study are doubtful \cite{toft11} their longevity is increased during their activation during inflammation. This longer lifespan may allow neutrophiles to perform a wider range of complex functions in a tissue, beyond the clearance of infections. Direct, real-time observation of their behaviour may help reveal these functions and extend our understanding of the life of a neutrophil.
+		The observation of neutrophiles required the analysis of thousands of frames of microscopy image sequences. The manual annotation of these image sequences in order to extract trajectories of movement of neutrophiles is a time consuming and error prone process. Manual annotation severely limits the number of data that can be analysed and slows down the advancement of cell research. I would be a major advance to be able to reliably automatically identify and track cells over time in sometimes noisy complex images.
 		
-		Finally, there is accumulating evidence to support the existence of distinct subset of neutrophiles with discrete roles in infection, inflammation and cancer immunology. However, it is unclear if these are truly distinct lineages or instead develop from the same neutrophil precursor. The observation of the large quantities of neutrophil data should help support or abandon \rewrite{abandon} the hypothesis of multiple separate lineages.
+	\section{Objectives \statusfirstdraft}
 		
-	\section{Objectives \status{new}}
-		\todo[inline]{Describe the different modules of the system - detector, tracker, stat computation}
+		Neutrophil image sequences obtained \textit{in vivo} are sometimes of low contrast. \textit{In vivo} observation of these cells in the lung is especially difficult due to the motion artefacts. The motion of the lung can also cause the images to fall out of focus, which causes the cells to appear blurred and become difficult to identify and segment.
 		
-		- create a robust pipeline for tracking neukocytes in image sequences of noisy images obtained throught that ventilator method
+		The aim of this research is to develop methods for cell detection and tracking. This system should be able to accept an image sequences of cells in tissue, identify the cells and track them over the entire sequence.
 		
-		- the system should be able to accept an image sequence, detect the cell in each frame, and uset hem to compute the trajectories of the cells.
+		The identification of cells should take into account the nature of the imaging technique and the quality of obtained images. Simple methods such as thresholding would be too unreliable; more advanced methods need to be investigated.
 		
-		- A basic system to return metrics about the trajectories
+		Also the tracking of cells should take into account the nature of input data. Basic frame-by-frame tracking of cells is likely to have poor results because the cells frequently disappear into the depths of tissue or loose focus. Methods that take into account the temporal behaviour of cells are likely to result in more robust tracking. 
 		
-	\section{Contributions \status{new}}
-		\todo[inline]{Machine learning based cell tracker system} that is able to work on highly noisy datasets, where several frames can come out of focus, cells dissapear and reapear, etc.
-		\todo[inline]{Dot Annotation GUI}
-		to ease the annotation of datasets of point objects, as well as link them to create trajectories in a frame by frame basis
-		\missingfigure{Make a sketch}
-	\section{Thesis structure \status{new}}
-		The remained of the thesis is structured as follows. 
+		Finally, a basic system to compute statistics of the trajectories should be implemented. The system should provide measure of the length of trajectories and different quantifications of their behaviour.
 		
-		chapter 2 is a brief literature survey outlining the exesting methods for cell detection and tracking
+	\section{Contributions \statusfirstdraft}
+	
+		To the best knowledge of the author, this research presents a novel approach to the problem of cell tracking detections that is directly based on the observed data.
 		
-		chapter 3 describes the cell detection module and its implementation
+		The cell tracker module uses a global data association approach to reliably generate cell detection trajectories based on a global decision. This research has upgraded previous methods to rely on a large set of features obtained from observed data. A machine learning approach is used to compute likelihood for linking cell detections into ever longer trajectories. Because the likelihoods are directly obtained from training examples, the method is able to reliable work on noisy datasets, where several frames in a sequence can come out of focus, cells disappear and reappear over time, etc.
 		
-		chapter 4 describes the tracking module
+		A robust pipeline for detection and tracking consisting of a machine learning approach to cells detections from \cite{arteta12}, and the data based tracker  allows the efficient tracking of cells in difficult imaging conditions.
 		
-		chaapter 5 represents the biological statistics module, and we focus on listing the different types of metrics that it computes
+		Finally, an image annotation tool is developed that allows simple dot annotation of cells and linking of cells among frames to represent distinct trajectories.
 		
-		chapter 6 represents the image annotation tool that was created to facilitate image annoations
+	\section{Thesis structure \statusfirstdraft}
+		The rest of the thesis is structured as follows.
 		
-		chapter 7 evaluates the cell detector and cell tracker
+		\Cref{chap:relatedwork} is a brief literature survey outlining existing methods for cell detections and tracking.
 		
-		chapter 8 is reserved for some concluding remarks and ideas that could be used to enhance this work.
+		\Cref{chap:cell_detection} describes in more depth how the cell detection module works.
+		
+		\Cref{chap:tracking} describes in details the cell tracking module.
+		
+		\Cref{chap:statistics} briefly describes the biological statistics module, which quantifies the obtained cell trajectories. 
+	
+		\Cref{chap:data} is an overview of the cell annotation tool developed to ease the annotation of image sequences.
+		
+		\Cref{chap:results} evaluates the performance of the cell tracking module.
+		
+		\Cref{chap:conclusion} shows some concluding remarks and ideas that could be implemented to continue the advance the field of automatic cell detection and tracking.
