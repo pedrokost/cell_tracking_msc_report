@@ -1,4 +1,19 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{kolku13}
+P.~K. Elzbieta~Kolaczkowska, ``Neutrophil recruitment and function in health
+  and inflammation,'' 2013.
+
+\bibitem{pillay10}
+J.~Pillay, I.~den Braber, N.~Vrisekoop, L.~M. Kwast, R.~J. de~Boer, J.~A.~M.
+  Borghans, K.~Tesselaar, and L.~Koenderman, ``In vivo labeling with 2h2o
+  reveals a human neutrophil lifespan of 5.4 days,'' {\em Blood}, vol.~116,
+  no.~4, pp.~625--627, 2010.
+
+\bibitem{toft11}
+P.~S. Tofts, T.~Chevassut, M.~Cutajar, N.~G. Dowell, and A.~M. Peters, ``Doubts
+  concerning the recently reported human neutrophil lifespan of 5.4 days,''
+  {\em Blood}, vol.~117, no.~22, pp.~6050--6052, 2011.
 
 \bibitem{arteta12}
 C.~Arteta, V.~Lempitsky, J.~A. Noble, and A.~Zisserman, ``Learning to detect

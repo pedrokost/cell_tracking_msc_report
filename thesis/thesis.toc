@@ -1,9 +1,9 @@
 \select@language {english}
 \contentsline {chapter}{\numberline {1}Introduction \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{7}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{7}{section.1.1}
-\contentsline {section}{\numberline {1.2}Objectives \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{7}{section.1.2}
-\contentsline {section}{\numberline {1.3}Contributions \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{7}{section.1.3}
-\contentsline {section}{\numberline {1.4}Thesis structure \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{8}{section.1.4}
+\contentsline {section}{\numberline {1.2}Objectives \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{8}{section.1.2}
+\contentsline {section}{\numberline {1.3}Contributions \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{8}{section.1.3}
+\contentsline {section}{\numberline {1.4}Thesis structure \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{9}{section.1.4}
 \contentsline {chapter}{\numberline {2}Related work \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{12}{chapter.2}
 \contentsline {section}{\numberline {2.1}Cell detection \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{12}{section.2.1}
 \contentsline {section}{\numberline {2.2}Cell tracking \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{12}{section.2.2}
@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {4.7.1}Estimating the velocity with Kalman filters \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{31}{subsection.4.7.1}
 \contentsline {subsection}{\numberline {4.7.2}Gaussian broadening feature \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{31}{subsection.4.7.2}
 \contentsline {subsection}{\numberline {4.7.3}Best feature selection \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{32}{subsection.4.7.3}
-\contentsline {chapter}{\numberline {5}Quantitative measurements of cell behaviour \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{19}{chapter.5}
+\contentsline {chapter}{\numberline {5}Quantitative measurements of cell behaviour \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{33}{chapter.5}
 \contentsline {chapter}{\numberline {6}Data acquisition and annotation \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{20}{chapter.6}
 \contentsline {subsection}{\numberline {6.0.6}Cell culture conditions and imaging modality \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{20}{subsection.6.0.6}
 \contentsline {subsection}{\numberline {6.0.7}Annotating cell images \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{20}{subsection.6.0.7}
@@ -52,4 +52,4 @@
 \contentsline {subsection}{\numberline {7.2.3}Tracking accuracy}{24}{subsection.7.2.3}
 \contentsline {chapter}{\numberline {8}Discussion and conclusion \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{25}{chapter.8}
 \contentsline {section}{\numberline {8.1}Future work \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{25}{section.8.1}
-\contentsline {chapter}{Bibliography}{26}{figure.caption.15}
+\contentsline {chapter}{Bibliography}{26}{section.1.4}
