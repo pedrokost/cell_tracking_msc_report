@@ -12,11 +12,11 @@
 \contentsline {subsection}{\numberline {2.2.3}Tracking by global data association \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{11}{subsection.2.2.3}
 \contentsline {chapter}{\numberline {3}Detection of cells \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {in progress}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{12}{chapter.3}
 \contentsline {section}{\numberline {3.1}Cell detection overview \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{12}{section.3.1}
-\contentsline {section}{\numberline {3.2}Detection of candidate regions \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{14}{section.3.2}
-\contentsline {section}{\numberline {3.3}Inference under the non-overlap constraint \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{14}{section.3.3}
-\contentsline {section}{\numberline {3.4}Learning the classifier}{15}{section.3.4}
-\contentsline {section}{\numberline {3.5}Feature selection \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{15}{section.3.5}
-\contentsline {section}{\numberline {3.6}Speeding up the algorithm \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{16}{section.3.6}
+\contentsline {section}{\numberline {3.2}Detection of candidate regions \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}Inference under the non-overlap constraint \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{15}{section.3.3}
+\contentsline {section}{\numberline {3.4}Learning the classifier \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{16}{section.3.4}
+\contentsline {section}{\numberline {3.5}Feature selection \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{17}{section.3.5}
+\contentsline {section}{\numberline {3.6}Speeding up the algorithm \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{18}{section.3.6}
 \contentsline {chapter}{\numberline {4}Tracking of cells \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}Cell tracking overview \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{17}{section.4.1}
 \contentsline {section}{\numberline {4.2}Joining cell detections into robust tracklets \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{19}{section.4.2}
@@ -48,4 +48,4 @@
 \contentsline {subsection}{\numberline {7.2.3}Tracking accuracy}{39}{subsection.7.2.3}
 \contentsline {chapter}{\numberline {8}Discussion and conclusion \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{40}{chapter.8}
 \contentsline {section}{\numberline {8.1}Future work \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{40}{section.8.1}
-\contentsline {chapter}{Bibliography}{41}{section*.8}
+\contentsline {chapter}{Bibliography}{41}{section*.9}

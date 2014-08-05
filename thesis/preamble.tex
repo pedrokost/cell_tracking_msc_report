@@ -26,6 +26,8 @@
 \usepackage{lipsum}
 \usepackage{cleveref}
 \usepackage{layout} 
+\usepackage{mathrsfs}
+\usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage{epstopdf}  % for compiling pdf to png/jpg during development.
 %\usepackage{showframe}
@@ -75,6 +77,8 @@
 
 \definecolor{termcolor}{gray}{0.3}
 \newcommand{\term}[1]{#1 \marginpar{\emph{\raggedright{\textcolor{termcolor}{#1}}}}}
+
+\newcommand{\termmargin}[1]{\marginpar{\emph{\raggedright{\textcolor{termcolor}{#1}}}}}
 
 \DeclareMathOperator*{\argmax}{arg\,max}
 

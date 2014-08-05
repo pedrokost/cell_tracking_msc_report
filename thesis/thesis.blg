@@ -11,48 +11,51 @@ A level-1 auxiliary file: chapter_data.aux
 A level-1 auxiliary file: chapter_results.aux
 A level-1 auxiliary file: chapter_conclusion.aux
 Database file #1: thesis.bib
+A bad cross reference---entry "arteta13"
+refers to entry "conf/cvpr/2013", which doesn't exist
 A bad cross reference---entry "bise11global"
 refers to entry "conf/isbi/2011", which doesn't exist
 Warning--I didn't find a database entry for "conf/isbi/2011"
+Warning--I didn't find a database entry for "conf/cvpr/2013"
 You've used 10 entries,
             1876 wiz_defined-function locations,
-            551 strings with 6068 characters,
-and the built_in function-call counts, 3474 in all, are:
-= -- 313
-> -- 173
+            556 strings with 6103 characters,
+and the built_in function-call counts, 3694 in all, are:
+= -- 340
+> -- 168
 < -- 0
-+ -- 61
-- -- 51
-* -- 272
-:= -- 489
-add.period$ -- 10
++ -- 59
+- -- 49
+* -- 283
+:= -- 506
+add.period$ -- 11
 call.type$ -- 10
 change.case$ -- 10
 chr.to.int$ -- 0
 cite$ -- 10
-duplicate$ -- 165
-empty$ -- 319
-format.name$ -- 51
-if$ -- 839
+duplicate$ -- 188
+empty$ -- 345
+format.name$ -- 49
+if$ -- 906
 int.to.chr$ -- 0
 int.to.str$ -- 10
-missing$ -- 8
-newline$ -- 33
+missing$ -- 9
+newline$ -- 34
 num.names$ -- 12
 pop$ -- 45
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 127
+skip$ -- 143
 stack$ -- 0
-substring$ -- 248
-swap$ -- 75
+substring$ -- 271
+swap$ -- 86
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 31
+while$ -- 32
 width$ -- 12
-write$ -- 99
-(There was 1 error message)
+write$ -- 105
+(There were 2 error messages)
