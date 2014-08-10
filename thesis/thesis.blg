@@ -6,7 +6,6 @@ A level-1 auxiliary file: chapter_introduction.aux
 A level-1 auxiliary file: chapter_related_work.aux
 A level-1 auxiliary file: chapter_cell_detection.aux
 A level-1 auxiliary file: chapter_cell_tracking.aux
-A level-1 auxiliary file: chapter_bio_stats.aux
 A level-1 auxiliary file: chapter_data.aux
 A level-1 auxiliary file: chapter_results.aux
 A level-1 auxiliary file: chapter_conclusion.aux
@@ -17,45 +16,45 @@ A bad cross reference---entry "bise11global"
 refers to entry "conf/isbi/2011", which doesn't exist
 Warning--I didn't find a database entry for "conf/isbi/2011"
 Warning--I didn't find a database entry for "conf/cvpr/2013"
-You've used 10 entries,
+You've used 27 entries,
             1876 wiz_defined-function locations,
-            556 strings with 6103 characters,
-and the built_in function-call counts, 3694 in all, are:
-= -- 340
-> -- 168
+            659 strings with 9479 characters,
+and the built_in function-call counts, 8460 in all, are:
+= -- 802
+> -- 342
 < -- 0
-+ -- 59
-- -- 49
-* -- 283
-:= -- 506
-add.period$ -- 11
-call.type$ -- 10
-change.case$ -- 10
++ -- 124
+- -- 97
+* -- 611
+:= -- 1143
+add.period$ -- 30
+call.type$ -- 27
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 188
-empty$ -- 345
-format.name$ -- 49
-if$ -- 906
+cite$ -- 27
+duplicate$ -- 444
+empty$ -- 813
+format.name$ -- 97
+if$ -- 2098
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 9
-newline$ -- 34
-num.names$ -- 12
-pop$ -- 45
+int.to.str$ -- 27
+missing$ -- 23
+newline$ -- 88
+num.names$ -- 29
+pop$ -- 117
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 143
+skip$ -- 343
 stack$ -- 0
-substring$ -- 271
-swap$ -- 86
+substring$ -- 591
+swap$ -- 196
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 32
-width$ -- 12
-write$ -- 105
+while$ -- 72
+width$ -- 29
+write$ -- 264
 (There were 2 error messages)

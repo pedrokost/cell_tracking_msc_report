@@ -1,4 +1,4 @@
-\chapter{Detection of cells \status{in progress}}
+\chapter{Detection of cells \statusfirstdraft}
 	\label{chap:cell_detection}
 	
 	\section{Cell detection overview \statusfirstdraft}
@@ -19,7 +19,7 @@
 	
 	For the purpose of our application we have chosen the cell detector presented in \cite{arteta12}, because it conforms to all three requirements. The machine learning method is able to handle noisy datasets, and the model can easily be retrained when a new, previously unseen, type of images needs to be analysed. The method does not focus on accurate segmentation of cells, but on the robust localization. The major drawback of this method was performance. The authors reported run-times of 30 seconds to detect cells on 400-by-400 pixel images on an i7 CPU. This slow performance would make it unusable for tracking large image sequences. However, we were able to optimize the MATLAB code for feature computation so that the detection process takes only a fraction of the original run-time.
 	
-	The detection process runs in three steps. First, robust candidate regions are extracted from an image. The method uses an efficient MSER region detector \addref{} to find a large number of candidate regions. Second, each of these regions is assigned a value which is produced by a classifier, which indicates the appropriateness score that this this region is a cell. Finally, the non-overlapping subset of these candidate regions with high similarity to the annotated cells in the training data is selected via dynamic programming.
+	The detection process runs in three steps. First, robust candidate regions are extracted from an image. The method uses an efficient MSER region detector \cite{matas04} to find a large number of candidate regions. Second, each of these regions is assigned a value which is produced by a classifier, which indicates the appropriateness score that this this region is a cell. Finally, the non-overlapping subset of these candidate regions with high similarity to the annotated cells in the training data is selected via dynamic programming.
 	
 	The detector can be trained on a small number of training images, where each cell is  annotated with a single dot. 
 
@@ -97,17 +97,17 @@
 	    \label{fig:bestFeatureSelector}
 	\end{figure}
 	
-	\section{Speeding up the algorithm \status{new}}
+	\section{Performance improvements \statusfirstdraft}
 	\label{sec:detector_changes}
-		\todo[inline]{review this section}
-		The main drawback of the algorithm presented by Arteta \cite{arteta12} is the poor performance. The original algorithm took about 30 seconds to detect cells in a 400x400 image. Because we will be processing hours of microscopy video it was important to reduce the detection time as much as possible.  The major performance improvements where achieved by addressing three things.
+		The main drawback of the algorithm presented by Arteta \cite{arteta12} is the slow feature computation. The original algorithm took about 30 seconds to detect cells in a 400-by-400 pixel image. Because the aim of this project is tracking cells, we expect to be processing hundreds or thousands of frames of microscopy image sequences. It was important to reduce the detection time as much as possible. The major performance improvements where achieved by addressing three things.
 		
-		The algorithms needs to extract a set of feature on every single detecetd MSER. First, we have first fine-tuned the MSER detector to detect less cells, more robustly.
+		The algorithms computes the features for the classifier on every candidate maximally extremal region. The original method was configured such that thousands of MSERs were computed for each frame. While this provides more robust learning and detection, it was slowing the algorithm down excessively. First, we have first fine-tuned the MSER detector to detect less regions, but still return a large number of features such that the detection rate wasn't penalized.
 		
-		Second, we have identified features that are slow to compute and improved their algorithmic behaviour. One such feature is the Contour Points Distribution Histogram implemented in \textit{cpdh.m}. The function was performing excessive calls to slow functions to extract region characteristics, and was rewritten to call these function less often, without affecting its value.
+		Second, we have identified the slowest computed features and improved the algorithmic behaviour of the original MATLAB implementation. One such feature is the Contour Points Distribution Histogram. The function was performing many calls to slow built in functions to extract region characteristics. This, and other functions, were rewritten to call these expensive sub-procedures less frequently, without affecting their behaviour.
 		
-		Second, several MATLAB builtin function were modified to remove excessive parameter checking, which in several cases represented an overhead of over $30\%$. These parameter checks are welcome when developing the algorithm, but once the algorithm is complete, several of these checks can be safely removed. \rewrite{Not sure I can write this, since the matlab code is copyrighted}
+		Third, we noticed that the MATLAB built-in function were performing a lot of parameter checking, to make sure that the input parameters were valid. Many of these parameters were strings, and string manipulations are very slow in MATLAB. Several MATLAB built-in function were rewritten or modified to remove excessive parameter checking, which in several cases represented an overhead of over $30\%$. These parameter checks are welcome when developing the algorithm, but once the algorithm is complete, several of these checks can be safely removed.
 		
-		These opimizations resulted in a significant performance boost. Instead of 30 seconds, the algorithm can now detect cells on the same images in about \todo{Measure the number of seconds it takes to process one of these 400x400 images}.
+		It is also worth mentioning that the updated original code for the detector is now stabler and better tested. A few rare bugs have been fixed, after being found when running the detector over large number of datasets.
 		
+		These optimizations resulted in a significant performance boost. The updated algorithm can perform the same computations in a fraction of the time taken by the original implementation provided by the authors of \cite{arteta12}.
 	
