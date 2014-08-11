@@ -14,19 +14,6 @@ Y.~Chen, K.~Biddell, A.~Sun, P.~Relue, and J.~Johnson, ``An automatic cell
   the Biomedical Engineering Society] BMES/EMBS Conference, 1999. Proceedings
   of the First Joint}, vol.~2, pp.~819 vol.2--, Oct 1999.
 
-\bibitem{otsu79}
-N.~Otsu, ``A threshold selection method from gray-level histograms,'' {\em
-  Systems, Man and Cybernetics, IEEE Transactions on}, vol.~9, pp.~62--66, Jan
-  1979.
-
-\bibitem{serra83}
-J.~Serra, {\em Image Analysis and Mathematical Morphology}.
-\newblock Orlando, FL, USA: Academic Press, Inc., 1983.
-
-\bibitem{beucher79}
-S.~Beucher and C.~Lantuéjoul, ``Use of watersheds in contour detection.''
-  workshop published, Sept. 1979.
-
 \bibitem{chen06}
 X.~Chen, X.~Zhou, and S.-C. Wong, ``Automated segmentation, classification, and
   tracking of cancer cell nuclei in time-lapse microscopy,'' {\em Biomedical
@@ -36,6 +23,10 @@ X.~Chen, X.~Zhou, and S.-C. Wong, ``Automated segmentation, classification, and
 L.~Vincent, ``Morphological grayscale reconstruction in image analysis:
   applications and efficient algorithms,'' {\em Image Processing, IEEE
   Transactions on}, vol.~2, pp.~176--201, Apr 1993.
+
+\bibitem{serra83}
+J.~Serra, {\em Image Analysis and Mathematical Morphology}.
+\newblock Orlando, FL, USA: Academic Press, Inc., 1983.
 
 \bibitem{mukherjee04}
 D.~Mukherjee, N.~Ray, and S.~Acton, ``Level set analysis for leukocyte
@@ -79,11 +70,6 @@ S.~Huh, {\em Toward an Automated System for the Analysis of Cell Behavior:
 \newblock PhD thesis, Robotics Institute, Carnegie Mellon University,
   Pittsburgh, PA, March 2013.
 
-\bibitem{baker13}
-R.~Baker, M.~Brasch, J.~Henderson, and M.~Manning, ``Contour-based algorithm
-  for tracking cells and cell-material analyses,'' in {\em Bioengineering
-  Conference (NEBEC), 2013 39th Annual Northeast}, pp.~96--97, April 2013.
-
 \bibitem{house09}
 D.~House, M.~Walker, Z.~Wu, J.~Wong, and M.~Betke, ``Tracking of cell
   populations to understand their spatio-temporal behavior in response to
@@ -108,6 +94,25 @@ A.~Massoudi, D.~Semenovich, and A.~Sowmya, ``Cell tracking and mitosis
   Engineering in Medicine and Biology Society (EMBC), 2012 Annual International
   Conference of the IEEE}, pp.~5310--5313, Aug 2012.
 
+\bibitem{zhang08}
+L.~Zhang, Y.~Li, and R.~Nevatia, ``Global data association for multi-object
+  tracking using network flows,'' in {\em Computer Vision and Pattern
+  Recognition, 2008. CVPR 2008. IEEE Conference on}, pp.~1--8, June 2008.
+
+\bibitem{huang08}
+C.~Huang, B.~Wu, and R.~Nevatia, ``Robust object tracking by hierarchical
+  association of detection responses,'' in {\em Computer Vision - ECCV 2008}
+  (D.~Forsyth, P.~Torr, and A.~Zisserman, eds.), vol.~5303 of {\em Lecture
+  Notes in Computer Science}, pp.~788--801, Springer Berlin Heidelberg, 2008.
+
+\bibitem{bise11global}
+R.~Bise, Z.~Yin, and T.~Kanade, ``Reliable cell tracking by global data
+  association.,'' in {\em ISBI}, pp.~1004--1010, IEEE, 2011.
+
+\bibitem{kuhn55}
+H.~Kuhn, ``The hungarian method for the assignment problem,'' {\em Naval
+  Research Logistics Quarterly}, vol.~2, pp.~83--97, 1955.
+
 \bibitem{matas04}
 J.~Matas, O.~Chum, M.~Urban, and T.~Pajdla, ``Robust wide-baseline stereo from
   maximally stable extremal regions,'' {\em Image and Vision Computing},
@@ -119,21 +124,6 @@ I.~Tsochantaridis, T.~Hofmann, T.~Joachims, and Y.~Altun, ``Support vector
   machine learning for interdependent and structured output spaces,'' in {\em
   Proceedings of the Twenty-first International Conference on Machine
   Learning}, ICML '04, (New York, NY, USA), pp.~104--, ACM, 2004.
-
-\bibitem{bise11global}
-R.~Bise, Z.~Yin, and T.~Kanade, ``Reliable cell tracking by global data
-  association.,'' in {\em ISBI}, pp.~1004--1010, IEEE, 2011.
-
-\bibitem{zhang08}
-L.~Zhang, Y.~Li, and R.~Nevatia, ``Global data association for multi-object
-  tracking using network flows,'' in {\em Computer Vision and Pattern
-  Recognition, 2008. CVPR 2008. IEEE Conference on}, pp.~1--8, June 2008.
-
-\bibitem{huang08}
-C.~Huang, B.~Wu, and R.~Nevatia, ``Robust object tracking by hierarchical
-  association of detection responses,'' in {\em Computer Vision - ECCV 2008}
-  (D.~Forsyth, P.~Torr, and A.~Zisserman, eds.), vol.~5303 of {\em Lecture
-  Notes in Computer Science}, pp.~788--801, Springer Berlin Heidelberg, 2008.
 
 \bibitem{fiji12}
 J.~Schindelin, I.~Arganda-Carreras, E.~Frise, V.~Kaynig, M.~Longair,
