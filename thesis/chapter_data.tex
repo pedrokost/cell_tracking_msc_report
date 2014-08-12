@@ -1,9 +1,9 @@
-\chapter{Data acquisition and annotation \status{in progress}}
+\chapter{Data acquisition and annotation \statusfirstdraft}
 	\label{chap:data}
 	
-	This chapter describes the data that influenced the decisions of selecting the cell detection and tracking methods. In \cref{sec:data_examples} we briefly describe the imaging method used to acquire the image sequences and present some example datasets. \Cref{sec:data_tool} presents the data annotation tool that was developed to ease the data annotation process and in \cref{sec:data_annotation} we discuss how the tools was used for annotating the datasets, and the difficulties that were encountered.
+	This chapter describes the data that influenced the decisions of selecting the cell detection and tracking methods. In \cref{sec:data_examples} we briefly describe the imaging method used to acquire the image sequences and present some example datasets. \Cref{sec:data_challenges} describes some of the challenges of tracking cells in these datasets. \Cref{sec:data_tool} presents the data annotation tool that was developed to ease the annotation process.
 
-    \section{Data acquisition and example datasets \status{in progress}}
+    \section{Data acquisition and example datasets \status{needs Leo's help}}
     \label{sec:data_examples}
     
     As discussed in the concluding section of \cref{chap:relatedwork} the datasets heavily influence the choice of algorithms for cell detection and tracking. Many computer vision algorithms rely on heuristics to improve their accuracy. In cell detection methods, this is obvious from the fact that a method developed for a certain type of imaging method will likely perform poorly on an image sequence of different types of cells (e.g. different shape of cells). In cell tracking heuristics help adjust the algorithms to the specific behaviour of cells that are being analysed. For example, a different tracking method could be used for images with cells that move slowly (and there is a large overlap between cells in consecutive frames) than for cells that move quickly (and there is little overlap between cells in consecutive frames).
@@ -24,6 +24,8 @@
        
 	From the datasets provided by Dr. Leo Carlin, five have been selected to use in the evaluation of this work because of their distinct characteristics. The original dimensions of the datasets were 512-by-512 pixels, but some have been cropped to reduce the number of cells to annotate.
 	
+	
+	\todo{Make sure to reference the images from the text}
 	\todo{Use the detector to compute the average number of cells in each dataset}
 
 	\subsubsection{Dataset A}
@@ -129,8 +131,8 @@
     
     \todo{Where is the dataset from?}The cells in this dataset are smaller. Some appear bright, while others darker, which makes them sometimes difficult to recognize from the dark background. The density of the bright cells is about 8 per frame of dimensions 277-by-277 pixels. For the purpose of analysing their behaviour we are only interested in these bright cells. The sequence contains 194 frames, of which 65 have been manually annotated. The images become darker in the later parts of the image sequence. The background is stable, but there is an alternating dark/bright area probably caused by the camera shutter.
     	
-	\subsection{Imaging analysis challenges \statusnew}
-	
+	\subsection{Imaging analysis challenges \statusfirstdraft}
+	\label{sec:data_challenges}
 	In this section we are going to present two phenomena caused by moving tissue and the camera shutter that make this datasets especially hard to track for frame-by-frame tracking methods.
 	
 	The first challenge is the artefacts caused by the camera shutter. These appear as alternating dark/bright horizontal patches which seem to move from the top to the bottom of the images. The effect can be seen in \cref{fig:data_challenge_shutter}. This makes the tracking problem difficult, because the cells behind the dark areas appear fainter or disappear completely for the few frames that they are covered.
@@ -148,7 +150,7 @@
 		\begin{subfigure}{.32\textwidth}
 		\includegraphics[width=\textwidth]{images/shutterseriesm170_13cropped003}
 		\end{subfigure}%
-		\vspace{0.2cm}
+		\vspace{0.3cm}
 		\begin{subfigure}{.32\textwidth}
 		\includegraphics[width=\textwidth]{images/shutterseriesm170_13cropped004}
 		\end{subfigure}%
@@ -160,7 +162,7 @@
 		\begin{subfigure}{.32\textwidth}
 		\includegraphics[width=\textwidth]{images/shutterseriesm170_13cropped006}
 		\end{subfigure}
-		\caption{Six consecutive frames from a sequence displaying the alternating dark/bright regions caused by the camera shutter. The contrast and sharpness of the images has been edited to dramatize the effect.}
+		\caption{Six consecutive frames from a sequence displaying the alternating dark/bright regions caused by the camera shutter. The contrast and sharpness of the images has been adjusted to dramatize the effect.}
 		\label{fig:data_challenge_shutter}
 	\end{figure}
 	
@@ -170,55 +172,47 @@
 
 		\includegraphics[width=\textwidth]{images/data_challenge_movement}
 
-		\caption{Four consecutive frames taken from the lung displaying varying cell clarity due to the displacement caused by the lung movement.}
+		\caption{Four consecutive frames taken from the lung displaying varying cell clarity due to the displacement caused by the lung movement. The contrast of the images has been adjusted to dramatize the effect.}
 		\label{fig:data_challenges_movement}
 	\end{figure}
 	
 	Several of the datasets present these phenomena to a lesser or larger extend. These artefacts where the primary reason for choosing a global optimization method for associating detection responses into trajectories.
 
     \todo{Write what parameters were used for the tracker}
-    \section{The annotation tool \statusnew}
+    \section{The annotation tool \statusfirstdraft}
     \label{sec:data_tool}
-    
-    	\todo[inline]{some notes on the importance of accurate annotation,s advantages and disadvantages of dot annotations.}
-    
-    	\todo[inline]{Describe the requirements of an efficient cell annotation tool, such as multipreview, linking, zooming, correct interpretation and saving of the dataformat}
+    	In order to train the cell detector and tracker it is necessary to annotate a few frames from the datasets. The cell detector needs dot annotations - a single dot within each cell - that indicate whether an extremal region corresponds to a cell. The detector is then trained to recognize extremal regions similar to the ones that were annotated. Similarly, the cell tracker needs annotations that indicate whether two cells from different frames belong to the same tracklet. The cell tracker is then trained based on the similarity of the appearance and spatio-temporal features extracted from these cells.
     	
-    	\todo[inline]{An overview of the annotation GUI}
-    	the multiple displays
-    	filter
-    	tools for additing/deleting dots and links
-    	simultaneous display of detections and links    
-    	
-    	\todo{The feature of the tool}
-    
-    	\todo{A user guide is provided in the appending}
-    \section{Annotating cell images \status{new}}
-    \label{sec:data_annotation}
-    
-    \todo{Briefly explain who made the annotation}
-    \todo{Explain who reviewed them}
-    \todo{Explain how good the annoations are}
-    \todo{Explain if more detailed annotation would result in better results}
-    \rewrite{This describes annotation using Fiji, which was only used at the beginnig}
-    What follows is a description of the process of image annotation for use in the machine learning algorithm to detect cells. The image annotation, as required by Arteta's \cite{arteta12} algorithm, are dots on each cell of the image. The algorithm uses these dots as positive examples, and all the remaining pixels as negative examples of a cell.
-    
-    We have annotated a subset of frames on the Lung dataset provided by Dr. Leo Carlin. The entire dataset is composed of 150 frames, and is divided into two channels, one for each type of cell (\todo{I need to learn more about the types of cells I am tracking}). We have marked 10 cropped frames on each channel (frame 1, 14, 25, 46, 81, 115, 131, 143 and 150) of dimensions about $128\times118$ pixels.
-    
-    The annotation was performed using a Fiji \cite{fiji12} tool called PointPicker \cite{thevanez14} which is accessible from \(Analyse/Tools/PointPicker\). The annotation is done by manually clicking on each identified cell.The tool outputs a $txt$ file containing $x$ and $y$ coordinates of each annotation, the image number, as well as some other metadata that is not important for us.
-    
-    \begin{figure}
-    	\begin{subfigure}{.49\textwidth}
-    	  \includegraphics[width=\textwidth]{images/seq_red_crop}
-    	\end{subfigure}%
-    	\hfill
-    	\begin{subfigure}{.49\textwidth}
-    	  \includegraphics[width=\textwidth]{images/seq_green_crop}
-    	\end{subfigure}
-    	\caption{Examples of a cropped frame that was annotated for the cell detection machine learning algorithm. Each frame belongs to a different channel of the dataset.}
-        \label{fig:annotation_image}
-    \end{figure}
-    
-    It must be noted that the images are very noisy, and it is often hard to distinguish cells from non cells. Figure \ref{fig:annotation_image} displays an example of an image that was annotated. It is therefore questionable how accurately the learning method will be able to learn the idea of a cell, given that the annotations are far from perfect. It would have been much easier to perform the learning using a synthetic dataset.
-    
-    The data is then loaded into MATLAB and converted into the format required by the algorithm. The data tidying is performed by the script \textit{prepareTrainData.m}.
+    	To train a good detector and tracker it is important that the annotations are consistent. For example, several datasets contain cells that appear bright and some that are darker. If we are only interested in tracking the cells that consistently appear bright, the annotations should only include the bright cells, and preferably all the bright cells. The models may not be trained correctly if only part of the bright cells were annotated. Note that this paragraph makes observations about brightness because the concept is easy to understand by a reader. However, the detector and tracker rely on many more features for detection and tracking.
+	
+		To facilitate the annotations of datasets a new annotation tool has been developed. The graphic user interface of the tool is visible in \cref{fig:data_annotator_screenshot}. The tool is able to load a sequence of images, display them and permits the user to annotate them. The user is able to preform the following actions: adding a dot detection, deleting a dot detection, adding a link between cells, deleting a link between cells. The tool also features zooming and panning.
+		
+
+		\begin{figure}
+			\includegraphics[width=\textwidth]{images/data_annotator_screenshot}
+			\caption{Screenshot of the annotation tool. User annotations are shown as crosses and dashed links between them, while detection responses are are shown as yellow circles.}
+			\label{fig:data_annotator_screenshot}
+		\end{figure}
+		
+		\begin{figure}
+			\centering
+			\includegraphics[width=.48\textwidth]{images/data_tracklet_viewer}
+			\caption{Screenshot of the interactive 3D tracklet viewer showing annotations for Dataset A.}
+			\label{fig:data_tracklet_viewer}
+			
+		\end{figure}
+				
+						
+		Furthermore, the tool includes a broad set of filters that can be applied on the images to increase the clarity of the cells and ease the annotation process. These filter include contrast adjustments, smoothing, sharpening, edge detection, etc. To reduce the clutter on densely populated datasets, the user is able to only display annotations from a specific part of the image, hide trajectories that include more than three dot annotations, hide the part of the GUI containing the buttons and filters in order to focus on just the images, and more.
+		
+		The annotation tool includes detection of potentially bad annotations. These include a warning system that displays a triangle next to a cell if two annotations are very close together and a different display style for links that deviate too much from the average (in terms of between-frame displacement). These help the eliminate accidental human errors, that would be very hard to discover otherwise.
+
+
+		Finally, the tool can also be used to compare the detection responses obtained from the cell detector by overlaying them over the images. In \cref{fig:data_annotator_screenshot} these detections are shown as yellow circles. This can be very useful to visually evaluate the quality of the detections, and possibly reveal cells that the user might have missed when annotating.
+		
+
+		In addition to the annotation tool, another small GUI has been developed that shows the annotations in an interactive 3D view, where each tracklet colour is different. This tool is shown in image \cref{fig:data_tracklet_viewer}. It is helpful to recognize possibly bad annotations (for example an outlier cell within a trajectory) or discover missed links.
+		
+		All the annotations have been carefully reviewed by Dr. Leo Carlin, who provided the datasets.
+		
+		Both tools are developed and packaged into a standalone executable with MATLAB 8.3.0.532 (R2014a). The tools do not depend on MATLAB to run, but require the free MATLAB Compiler Runtime 8.3\footnote{\url{http://www.mathworks.co.uk/products/compiler/mcr/}} which is automatically downloaded and installed when the applications are installed on the system. User guides for both applications are provided in appendices \ref{app:annotationtool} and \ref{app:interactiveviewer}.

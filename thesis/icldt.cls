@@ -61,7 +61,7 @@
  \renewcommand{\@degree}{Doctor of Philosophy}
  \renewcommand{\@diploma}{Diploma of Imperial College London}}
 \DeclareOption{MSc}{%
- \renewcommand{\@degree}{Master of Science}\let\@diploma\empty}
+ \renewcommand{\@degree}{MSc degree}\let\@diploma\empty}
 \DeclareOption{BSc}{%
  \renewcommand{\@degree}{Bachelor of Science}\let\@diploma\empty}
 \DeclareOption{DIC=off}{%
@@ -89,8 +89,7 @@ declaration=off,paper=a4,pagesize=auto,11pt,oneside}
 \ProcessOptions\relax
 \LoadClass[pagesize=auto]{scrreprt}
 \RequirePackage{setspace}
-\RequirePackage[left=4.2cm,right=4.2cm,top=2.97cm,bottom=5.94cm]%
- {geometry}
+\RequirePackage[left=2.5cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \newcommand*{\supervisor}[1]{\gdef\@supervisor{#1}}
 \newcommand*{\college}[1]{\gdef\@college{#1}}
 \newcommand*{\department}[1]{\gdef\@department{#1}}
@@ -111,6 +110,8 @@ declaration=off,paper=a4,pagesize=auto,11pt,oneside}
  \null\vfill
  \begin{center}
   {\titlefont\huge \@title\par}
+  \vskip 3em
+  by
   \vskip 3em
   {\Large \lineskip 0.75em
   \begin{tabular}[t]{c}

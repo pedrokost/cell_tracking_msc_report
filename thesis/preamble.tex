@@ -3,7 +3,7 @@
 
 \RequirePackage[l2tabu, orthodox]{nag}
 
-\documentclass[12pt,imperial,MSc,declaration=off,titlepagenumber=off]{icldt}
+\documentclass[a4paper,11pt,twoside,imperial,MSc,declaration=off,titlepagenumber=off]{icldt}
 
 %Uporabljeni paketi
 \usepackage[utf8]{inputenc}
@@ -31,20 +31,10 @@
 \usepackage{mathtools}
 \usepackage{epstopdf}  % for compiling pdf to png/jpg during development.
 %\usepackage{showframe}
+\usepackage{wrapfig}
+\usepackage[toc,page]{appendix}
 
-%\presetkeys{todonotes}{noline}{}  %fancyline
-
-%\setlength{\marginparwidth}{2.5cm}
-
-%Velikost strani - dvostransko
-%\textwidth 14cm
-%\topmargin 0.26cm
-%\headheight 0.6cm
-%\headsep 1.5cm
-%\textheight 20cm
-
-\marginparsep 0.3cm
-\marginparwidth 3.5cm
+\presetkeys{todonotes}{inline}{}  %fancyline
 
 %Nastavitev glave in repa strani
 \pagestyle{fancy}
@@ -95,7 +85,7 @@
 \author{Pedro Damian Kostelec}
 \supervisor{Ben Glocker}
 \department{Computing}
-\field{Computing (Artificial Intelligence)}
+\field{Computer Science/Artificial Intelligence}
 \title{Automatic Cell Tracking in Noisy Images for Microscopic Image Analysis}
 \date{September 2014}
 
