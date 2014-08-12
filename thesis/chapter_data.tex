@@ -14,17 +14,15 @@
     
     \todo[inline]{Ask Leo: Info about the ventilator method. Is it two-photon mocroscopy? What camera was used to capture the images?}
     
-    \todo[inline]{More recently, the introduction of microscopes allowering for thicher tissue penetraction and higher resolution (spinning-disc and two-photon microscopes), more complex tissuea dn organs, sucha as the skin, lives, brain and lung, can also be imaged. The observation of the lung was a challenge for a long time owing to motion artefacts. 
+    \todo[inline]{Extract from the paper Leo gave me: More recently, the introduction of microscopes allowering for thicher tissue penetraction and higher resolution (spinning-disc and two-photon microscopes), more complex tissuea dn organs, sucha as the skin, lives, brain and lung, can also be imaged. The observation of the lung was a challenge for a long time owing to motion artefacts. 
         
     The introbutio of fluorescence (confocal) microscopy  in combination with spinning-disc and two-photon microscopes  has allowed the use of fluorescent antibodies for labelling different cell populations on anatomical structures, as well as the use of transeenic mice with fluorescent leukocyte subsets. }
     
     All the data was provided by Dr. Leo Carlin from the Leukocyte Biology Section at the National Heart and Lung Institute (NHLI)\footnote{\url{http://www1.imperial.ac.uk/nhli/}}.
     
-    \subsection{Datasets \statusnew}
+    \subsection{Datasets \statusfirstdraft}
        
 	From the datasets provided by Dr. Leo Carlin, five have been selected to use in the evaluation of this work because of their distinct characteristics. The original dimensions of the datasets were 512-by-512 pixels, but some have been cropped to reduce the number of cells to annotate.
-	
-	\todo{For each dataset, describe what it is (cell, background), characteristics (density, length, quality, artefacts), how easy/hard would they be to track, dimensions }
 	
 	\todo{Use the detector to compute the average number of cells in each dataset}
 
@@ -68,10 +66,8 @@
 		\label{fig:data_datasetB}
 	\end{figure}
 	
-	This dataset is also obtained from the lung\todo{Lung for sure?}. In fact, it was obtained simultaneously with dataset A, but represents a different types of cells \todo{Ask Leo to help me specify}.The cells appear brighter than in dataset A, but their shapes vary. Some are round and others elongated because of the tight blood vessels \todo{Are thes blood vessels?} in which they move. In the background we can clearly discern the blood vessels in a darker grey colour. Cells in this dataset are more active in movement. The images are of constant quality, and there are few significant camera artefacts. The dataset contains 66 frames, of which all have been annotated. The dimensions of the images is 512-by-512 pixels.
-	
-	\todo{legth, which annotated}
-	
+	This dataset is also obtained from the lung\todo{Lung for sure?}. In fact, it was obtained simultaneously with dataset A, but represents a different types of cells \todo{Ask Leo to help me specify}.The cells appear brighter than in dataset A, but their shapes vary. Some are round and others elongated and deformed to fit into the tight blood vessels \todo{Are thes blood vessels?} in which they move. In the background we can clearly discern the blood vessels in a darker grey colour. Cells in this dataset are more active in movement. The images are of constant quality, and there are few significant camera artefacts. The dataset contains 66 frames, of which all have been annotated. The dimensions of the images is 512-by-512 pixels.
+		
 	\subsubsection{Dataset C}
 	\todo[inline]{This is series13green}
     \begin{figure}[h]
@@ -130,30 +126,56 @@
 		\caption{Three consecutive frames from dataset E.}
 		\label{fig:data_datasetE}
 	\end{figure}
+    
+    \todo{Where is the dataset from?}The cells in this dataset are smaller. Some appear bright, while others darker, which makes them sometimes difficult to recognize from the dark background. The density of the bright cells is about 8 per frame of dimensions 277-by-277 pixels. For the purpose of analysing their behaviour we are only interested in these bright cells. The sequence contains 194 frames, of which 65 have been manually annotated. The images become darker in the later parts of the image sequence. The background is stable, but there is an alternating dark/bright area probably caused by the camera shutter.
     	
-    	
-    background
-    	cells
-    	density
-    	length of sequence
-    	length of annotation
-    	quality of dataset/motion artefacts
-    	dimensions
+	\subsection{Imaging analysis challenges \statusnew}
+	
+	In this section we are going to present two phenomena caused by moving tissue and the camera shutter that make this datasets especially hard to track for frame-by-frame tracking methods.
+	
+	The first challenge is the artefacts caused by the camera shutter. These appear as alternating dark/bright horizontal patches which seem to move from the top to the bottom of the images. The effect can be seen in \cref{fig:data_challenge_shutter}. This makes the tracking problem difficult, because the cells behind the dark areas appear fainter or disappear completely for the few frames that they are covered.
+		
+	\begin{figure}[h]
+	
+		\begin{subfigure}{.32\textwidth}
+		\includegraphics[width=\textwidth]{images/shutterseriesm170_13cropped001}
+		\end{subfigure}%
+		\hfill
+		\begin{subfigure}{.32\textwidth}
+		\includegraphics[width=\textwidth]{images/shutterseriesm170_13cropped002}
+		\end{subfigure}%
+		\hfill
+		\begin{subfigure}{.32\textwidth}
+		\includegraphics[width=\textwidth]{images/shutterseriesm170_13cropped003}
+		\end{subfigure}%
+		\vspace{0.2cm}
+		\begin{subfigure}{.32\textwidth}
+		\includegraphics[width=\textwidth]{images/shutterseriesm170_13cropped004}
+		\end{subfigure}%
+		\hfill
+		\begin{subfigure}{.32\textwidth}
+		\includegraphics[width=\textwidth]{images/shutterseriesm170_13cropped005}
+		\end{subfigure}%
+		\hfill
+		\begin{subfigure}{.32\textwidth}
+		\includegraphics[width=\textwidth]{images/shutterseriesm170_13cropped006}
+		\end{subfigure}
+		\caption{Six consecutive frames from a sequence displaying the alternating dark/bright regions caused by the camera shutter. The contrast and sharpness of the images has been edited to dramatize the effect.}
+		\label{fig:data_challenge_shutter}
+	\end{figure}
+	
+	The second challenge is the movement of the tissue, especially in the case of lung imaging. The fast breathing pace of mice causes a sensation that the image is shaking. The shaking can be in the x-y plane, but sometimes, as in the case shown in figure \cref{fig:data_challenges_movement} it can be primarily in the z-direction. Displacement in the x-y direction causes the cells to jiggle. Displacement of the tissue in the z-direction causes part of all of the image to become out-of-focus for a few frames.
+	
+	\begin{figure}[h]
 
- 
-    rewrite about he type of cells i am tracking briefly, and focus a lot on the imaging technique. Provide examples of different images from different datasets,
-    illustrate the problem of out of focus, the out-of-sync shutter, etc.
-    
+		\includegraphics[width=\textwidth]{images/data_challenge_movement}
 
-    
-    Original images are 512-by-512.
-    
-    
-    TODO: I need more data on the different labeled cells (red, green)
-    TODO: I need more data on the exact technique and aparatus used to take the images (camera, etc)
-    
-    \todo{Describe the future possible improvements of the imaging technique}
-    
+		\caption{Four consecutive frames taken from the lung displaying varying cell clarity due to the displacement caused by the lung movement.}
+		\label{fig:data_challenges_movement}
+	\end{figure}
+	
+	Several of the datasets present these phenomena to a lesser or larger extend. These artefacts where the primary reason for choosing a global optimization method for associating detection responses into trajectories.
+
     \todo{Write what parameters were used for the tracker}
     \section{The annotation tool \statusnew}
     \label{sec:data_tool}
