@@ -127,7 +127,7 @@ declaration=off,paper=a4,pagesize=auto,11pt,oneside}
  \end{center}\par
  \noindent\begin{minipage}[b]{\textwidth}
   \centering
-  Submitted in part fulfilment of the requirements for the degree of\\
+  Submitted in part fulfilment of the requirements for the \\
   \@degree\ in \ifx\empty\@field{\@department}\else{\@field}\fi\ of
   \ifx\empty\@university{\@college}\else{the \@university}\fi
   \ifx\@diploma\@empty\else{\\and the \@diploma}\fi

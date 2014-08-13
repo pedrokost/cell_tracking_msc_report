@@ -1,46 +1,45 @@
 		
-\chapter{Conclusions and future work\status{new}}
+\chapter{Conclusions and future work\statusfirstdraft}
 \label{chap:conclusion}
 
-\section{Conclusion \statusnew}
+\todo{add something}
+
+\section{Conclusion \statusfirstdraft}
 \label{sec:conclusion_conclusion}
 
-- rewrite about importance of cell tracking
+Improved microscopy imaging techniques allow us to gather large amounts of cell microscopy images. The manual analysis of these images would be an error prone and slow process, requiring days of manual work to review some hundreds of frames. The advances of computer vision algorithms for cell detection and tracking over the past decades magnified by the increased computational power of modern computers allow for efficient analysis of these datasets in the fraction of the time.
 
-- write that it's 3 months 
+The increased throughput of these new methods improve the quality of cell research. They allow for new insights in drug development and understanding of the living body. Specifically, this research was focused on enabling the efficient analysis of neutrophiles which have a crucial role in the clearance of infections. Their careful analysis could help explain their prominent presence in certain organs, such as the lung. It could also help discover any additional activities that these leukocytes perform, and clarify whether they develop from a single or several neutrophil predecessors.
 
+In this three months project we have developed a pipeline of algorithms that enables the effective analysis of neutrophil behaviour in sometimes noisy images of varying contrast. This required identifying a robust algorithm to detect cells in these images, and develop a tracking method that would perform well with imperfect cell segmentation and a certain amount of missed detections.
 
-- what problem we tried to solve
+We have upgraded a cell detector developed by Arteta et al \cite{arteta12}. The detector was able to learn to discriminate candidate cell regions as cell or no-cell. We have upgraded the method to recognize a better subset of features and significantly improved its speed to make it usable for detecting cells in hundreds of frames. The method was able to robustly detect cell detections (albeit with some false positive and false negatives) after being trained with a small number of dot-annotated images.
 
-- how we approached the problem
+We have developed a tracking method inspired by Bise et al \cite{bise11global} that performs a global decision to join short robust tracklets into longer ones. We have modified the original method to heavily rely on the input data, thus eliminating the need for a large number of heuristics that would make the algorithm likely to perform worse when presented with a new dataset. The new approach only requires the algorithm to be retrained using a small number annotated trajectories. Although the method is automatic, the user is presented with four parameters that can be adjusted to improve the generated trajectories. The tracking module is able to generate tracklets of quality comparable to that of a human.
 
-- what this is
+As a side effect, we have developed efficient image annotation tools to annotate images with dots and links connecting them. These tools can be used for the annotation of any point-like objects and include features specifically designed to increase the clarity of noisy and low contrast images to facilitate the annotation.
 
-- what were the main contributions
+\todo{I need one concluding paragraph}
 
-- how were the results
+\rewrite{Maybe I am too optimistic? I need to present some of the drawbacks... I am sure I will get them when I do the experiments...}
 
-- what were the weak and which the strong points: it can work for any point objects. may not work well to close large gaps. The problem of closing large gaps.
-
-
-
-\section{Future work \statusnew1}
+\section{Future work \statusfirstdraft}
 \label{sec:conclusion_futurework}
 
-image stabilization. problem and what would ipmrove
+\todo{Organize: first detector, then tracker}
 
-denoising process
+The work developed in this thesis is promising in delivering autonomous cell detection and tracking, however the method can be further improved, and alternative methods researched. Below we present a list of possible improvements that would likely make the algorithm more robust.
 
-skipping bad frames as a preprocessing step
+The process of obtaining cell images \textit{in vivo} is challenging especially in moving organs like the lung, where the motion of the tissue causes the images to jiggle or loose focus. The jiggling can be eliminated using a pre-processing step that would stabilize the images using the information hidden in the background of the images, such blood vessels. This would reduce the jiggling of cells, and would result in smoother trajectories. Furthermore, this would simplify the computations of spatio-temporal features to train the cell tracker module, as it would be easier to predict the velocity of the cells.
 
-outputs that analyse the data... but can be done with external software
+Second, it would be worth experimenting with some preprocessing steps to improve the clarity of the images. This includes de-noising, improving the contrast, etc. This could improve the accuracy of the cell detection module.
 
-tracker: experiment with multiclass classifier, taht is dependent on the distance of the closing gaps
+From the datasets we analysed, the original images for dataset D (described in \cref{sec:datasetD}) include a large portion that are completely unusable for the tracker, because the cells were fully out of focus or invisible. These frames have been manually removed. It could be beneficial to automate this process by automatically detecting images that are of too low quality to be usable and automatically discarding them, while leaving a mark with the number of frames skipped. If this step could be performed quickly the total computation time would be reduced as they wouldn't need to be analysed by the cell detector.
 
-windowed approach to be able to handle tens thousands of frames
+The accuracy of the tracking module is heavily dependent on the quality of features that are computed for the tracklets. I would already be a major improvement if a Kalman filter were used to predict the future positions of the trajectories, instead of assuming that the tracklet's direction and speed would be linear with respect to the last few frames of a trajectory. To further improve the prediction an interactive multiple models filter has been shown to better prediction future cells positions \addref{}.
 
-- faster implementation
+The developed tracking method has been tested on hundreds of frames of microscopy images. However, the method is likely to reach a limit that would require more \textit{Random Access Memory}. In order to improve the space requirements of the of the tracker and permit the tracking of thousands of image frames it would be beneficial to make the processing of tracklets in windows of a few hundred frames at a time. Thus the tracker would first generate tracklets in each window, and then link these tracklets between windows. 
 
-- better define the initialization, termination and FP probabilities, to elimintate the need of parameters that can be adjusted.
+One of the main drawbacks of this method is the difficulty to use for an untrained user, because it requires changing a configuration file to load new datasets. A simple graphic user interface to load the image sequences and start the tracking process would greatly improve the approachability of the methods to a larger non-technical audience.
 
-- a gui for the tracker
+Finally, while the above were improvements to the software, it is expected that the imaging technique will improve as well. This could alleviate the problem of jiggling cells and out of focus images, thus reducing the need to overcome these hardware limitations in the software.

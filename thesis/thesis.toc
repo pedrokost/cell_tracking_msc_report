@@ -42,13 +42,13 @@
 \contentsline {chapter}{\numberline {5}Data acquisition and annotation \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{31}{chapter.5}
 \contentsline {section}{\numberline {5.1}Data acquisition and example datasets \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {needs Leo's help}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{31}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Datasets \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{32}{subsection.5.1.1}
-\contentsline {subsubsection}{\nonumberline Dataset A}{32}{section*.46}
-\contentsline {subsubsection}{\nonumberline Dataset B}{32}{section*.51}
-\contentsline {subsubsection}{\nonumberline Dataset C}{33}{section*.57}
-\contentsline {subsubsection}{\nonumberline Dataset D}{33}{section*.61}
-\contentsline {subsubsection}{\nonumberline Dataset E}{34}{section*.65}
+\contentsline {subsubsection}{\nonumberline Dataset A}{32}{section*.6}
+\contentsline {subsubsection}{\nonumberline Dataset B}{33}{section*.11}
+\contentsline {subsubsection}{\nonumberline Dataset C}{33}{section*.17}
+\contentsline {subsubsection}{\nonumberline Dataset D}{34}{section*.21}
+\contentsline {subsubsection}{\nonumberline Dataset E}{35}{section*.26}
 \contentsline {subsection}{\numberline {5.1.2}Imaging analysis challenges \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{35}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}The annotation tool \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{36}{section.5.2}
+\contentsline {section}{\numberline {5.2}The annotation tool \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{37}{section.5.2}
 \contentsline {chapter}{\numberline {6}Experimental results \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{39}{chapter.6}
 \contentsline {section}{\numberline {6.1}Cell detector \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{39}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Performance \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{39}{subsection.6.1.1}
@@ -57,11 +57,11 @@
 \contentsline {subsection}{\numberline {6.2.1}Performance metrics \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{39}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Performance \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{39}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Tracking accuracy}{39}{subsection.6.2.3}
-\contentsline {chapter}{\numberline {7}Conclusions and future work\unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{41}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusion \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{41}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future work \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{41}{section.7.2}
-\contentsline {chapter}{Appendices}{42}{section*.2}
+\contentsline {chapter}{\numberline {7}Conclusions and future work\unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{41}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusion \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{41}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future work \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{42}{section.7.2}
+\contentsline {chapter}{Appendices}{44}{section*.7}
 \contentsline {chapter}{\numberline {A}User Guide for the Annotation Tool}{43}{Appendix.1.A}
 \contentsline {chapter}{\numberline {B}User Guide for the Interactive Annotation Viewer}{44}{Appendix.1.B}
 \contentsline {chapter}{\numberline {C}User Guide for the Cell Detector and Tracker}{45}{Appendix.1.C}
-\contentsline {chapter}{Bibliography}{46}{section*.2}
+\contentsline {chapter}{Bibliography}{46}{section*.7}

@@ -91,6 +91,7 @@
     This dataset is also obtained from the lung\todo{Lung for sure?}. The range of brightness of the cells is large. Some are clearly visible, some barely stand out of the background. Their shape is relatively consistent. The background is dark, with some very faint cells. The cells are stagnant in their position on the tissue, but the lung tissue is moving due to the breathing of the mice. For this reason, the dataset contains many motion artefacts. Some frames are blurred, and many appear to contain the same copies of the cells slightly shifted, as seen in the second image in \cref{fig:data_datasetC}. The cell density is very high in this dataset (about 40 cells per frame). The dataset consists of 126 frames, of which 55 were manually annotated. The dimensions of the cropped images is 251-by-251 pixels.
 
 	\subsubsection{Dataset D}
+	\label{sec:datasetD}
 	\todo[inline]{This is series14croppedclean}
 	\begin{figure}[h]
 		\begin{subfigure}{.32\textwidth}
@@ -110,6 +111,7 @@
 
 	Dataset D is obtained from the liver \todo{Liver for sure?}. The cells are well discernible from the background, which can contain some very faint cells. The cell boundaries are clearly visible. The cell density is about 12 cells per frame. The original dataset contained 682 frames. Unfortunately, the dataset contained large sequences of frames that were of exceedingly low quality, such that even a human could not track the cells in the dataset. Thus, the dataset has been pruned to 377 frames of dimensions 199-by-199 pixels. The dataset contains many motion artefacts, the contrast is constantly changing, and often about half of the cells in each frame become invisible for a few frames, even after manually eliminating the worse frames.
 	
+	\todo{Include that the dataset had to be manually cleaned}
 	\subsubsection{Dataset E}
 	\todo[inline]{This is seriesm170\_13cropped}
 	\begin{figure}[h]
