@@ -2,6 +2,9 @@ This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: ieeetr.bst
+A level-1 auxiliary file: chapter_abstract.aux
+A level-1 auxiliary file: chapter_acknowledgements.aux
+A level-1 auxiliary file: chapter_copyright.aux
 A level-1 auxiliary file: chapter_introduction.aux
 A level-1 auxiliary file: chapter_related_work.aux
 A level-1 auxiliary file: chapter_cell_detection.aux
@@ -9,6 +12,9 @@ A level-1 auxiliary file: chapter_cell_tracking.aux
 A level-1 auxiliary file: chapter_data.aux
 A level-1 auxiliary file: chapter_results.aux
 A level-1 auxiliary file: chapter_conclusion.aux
+A level-1 auxiliary file: appendix_annotationtool.aux
+A level-1 auxiliary file: appendix_interactiveviewer.aux
+A level-1 auxiliary file: appending_detectortracker.aux
 Database file #1: thesis.bib
 A bad cross reference---entry "arteta13"
 refers to entry "conf/cvpr/2013", which doesn't exist
@@ -16,45 +22,45 @@ A bad cross reference---entry "bise11global"
 refers to entry "conf/isbi/2011", which doesn't exist
 Warning--I didn't find a database entry for "conf/isbi/2011"
 Warning--I didn't find a database entry for "conf/cvpr/2013"
-You've used 25 entries,
+You've used 26 entries,
             1876 wiz_defined-function locations,
-            648 strings with 9135 characters,
-and the built_in function-call counts, 8002 in all, are:
-= -- 765
-> -- 320
+            660 strings with 9264 characters,
+and the built_in function-call counts, 8310 in all, are:
+= -- 809
+> -- 313
 < -- 0
-+ -- 116
-- -- 91
-* -- 577
-:= -- 1080
-add.period$ -- 28
-call.type$ -- 25
-change.case$ -- 23
++ -- 114
+- -- 88
+* -- 593
+:= -- 1112
+add.period$ -- 29
+call.type$ -- 26
+change.case$ -- 24
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 422
-empty$ -- 763
-format.name$ -- 91
-if$ -- 1982
+cite$ -- 26
+duplicate$ -- 441
+empty$ -- 796
+format.name$ -- 88
+if$ -- 2066
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 22
-newline$ -- 82
-num.names$ -- 27
+int.to.str$ -- 26
+missing$ -- 23
+newline$ -- 85
+num.names$ -- 28
 pop$ -- 105
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 325
+skip$ -- 342
 stack$ -- 0
-substring$ -- 575
-swap$ -- 189
+substring$ -- 615
+swap$ -- 200
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 69
-width$ -- 27
-write$ -- 247
+while$ -- 73
+width$ -- 28
+write$ -- 259
 (There were 2 error messages)

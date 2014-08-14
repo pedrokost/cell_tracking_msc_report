@@ -1,5 +1,20 @@
 \begin{thebibliography}{10}
 
+\bibitem{kolku13}
+P.~K. Elzbieta~Kolaczkowska, ``Neutrophil recruitment and function in health
+  and inflammation,'' 2013.
+
+\bibitem{pillay10}
+J.~Pillay, I.~den Braber, N.~Vrisekoop, L.~M. Kwast, R.~J. de~Boer, J.~A.~M.
+  Borghans, K.~Tesselaar, and L.~Koenderman, ``In vivo labeling with 2h2o
+  reveals a human neutrophil lifespan of 5.4 days,'' {\em Blood}, vol.~116,
+  no.~4, pp.~625--627, 2010.
+
+\bibitem{toft11}
+P.~S. Tofts, T.~Chevassut, M.~Cutajar, N.~G. Dowell, and A.~M. Peters, ``Doubts
+  concerning the recently reported human neutrophil lifespan of 5.4 days,''
+  {\em Blood}, vol.~117, no.~22, pp.~6050--6052, 2011.
+
 \bibitem{arteta12}
 C.~Arteta, V.~Lempitsky, J.~A. Noble, and A.~Zisserman, ``Learning to detect
   cells using non-extremal regions,'' in {\em Proceedings of the 15th
@@ -124,17 +139,5 @@ I.~Tsochantaridis, T.~Hofmann, T.~Joachims, and Y.~Altun, ``Support vector
   machine learning for interdependent and structured output spaces,'' in {\em
   Proceedings of the Twenty-first International Conference on Machine
   Learning}, ICML '04, (New York, NY, USA), pp.~104--, ACM, 2004.
-
-\bibitem{fiji12}
-J.~Schindelin, I.~Arganda-Carreras, E.~Frise, V.~Kaynig, M.~Longair,
-  T.~Pietzsch, S.~Preibisch, C.~Rueden, S.~Saalfeld, B.~Schmid, J.-Y. Tinevez,
-  D.~J. White, V.~Hartenstein, K.~Eliceiri, P.~Tomancak, and A.~Cardona,
-  ``Fiji: an open-source platform for biological-image analysis,'' {\em Nature
-  Methods}, vol.~9(7), pp.~676--682, 2012.
-
-\bibitem{thevanez14}
-S.~F. I. o. T.~L. Philippe~Thévenaz, Biomedical Imaging~Group, ``Point picker:
-  An interactive imagej plugin that allows storage and retrieval of a
-  collection of landmarks,'' May 2014.
 
 \end{thebibliography}

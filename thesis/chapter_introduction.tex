@@ -1,55 +1,49 @@
 	\chapter{Introduction \statusfirstdraft}
 
+
+	In this introductory chapter we describe the problem of tracking cells in hundreds of microscopy images manually and motivate the development of an automatic cell tracker. We also outline the objectives and contributions of the project and provide a report outline for the following chapters.
+	
 	\section{Motivation \statusfirstdraft}
-		\todo[inline]{To develop methods for cell tracking}
 		
-		Recent advances in intravital microscopy enable us to study the behaviour of different cells without excessively modifying the natural environment in which these cells are found within the body of mice. 
+		Recent advances in intravital microscopy enable us to study the behaviour of different cells without excessively modifying the natural environment in which these cells are found within the observed organism. 
 			
-		Neutrophiles are a type of leukocytes that have a crucial role in the clearance of infections. A significant reduction in the number of neutrophiles in the human body (or in mice) leads to severe immunodeficiency or death.
+		Neutrophils are a type of leukocytes that have a crucial role in the clearance of infections \cite{kolku13}. A significant reduction in the number of neutrophils in the human body (or in mice) leads to severe immunodeficiency or death. They can be found in the bone marrow, liver, spleen and lung. Direct observation of neutrophils should help explain their presence in these organs, especially their large quantity in the lung.
 		
-		They can be found in the bone marrow, liver, spleen and lung. Direct observation of neutrophiles should help explain their presence in these organs, especially their large quantity in the lung.
+		A recent study \cite{pillay10} has shown that the lifespan of neutrophils is much longer than previously known (up to 12.5 hours for mice and 5.4 days for humans). Although this specific study is a source of doubtful criticism \cite{toft11}, the longevity of neutrophils increases during inflammation. This longer lifespan may permit them to perform a wider range of complex activities, beyond the clearance of infections. An analysis of their behaviour as observed through intravital microscopy could help reveal more of their roles.
 		
-		A recent study has shown that the lifespan of neutrophils is much longer than previously known (up to 12.5 hours for mice and 5.4days for humans). Although this specific study is a source of doubtful criticism (cite), the longevity of neutrophiles increases during inflammation. This longer lifespan may permit them to perform a wider range of complex activities, beyong the clearance of infections. An analysis of their behaviour as observed through intravital microscopy could help reveal more of their roles.
+		Finally, there is accumulating evidence to support the existence of different lineages of neutrophils with discrete roles. It is unknown whether these are actually distinct lineages or if they instead all develop from the same neutrophil predecessor.
 		
-		Finally, there is accumulating evidence to support the existence of different lineages of neutrophiles with discrete roles. It is unknown whether these are actually distinct lineages or if they instead all develop from the same neutrophil predecessor.
-		
-		The observation of neutrophiles required the analysis of thousands of frames of microscopy image sequences. The manual annotation of these image sequences in order to extract trajectories of movement of neutrophiles is a time consuming and error prone process. Manual annotation severely limits the number of data that can be analysed and slows down the advancement of cell research. I would be a major advance to be able to reliably automatically identify and track cells over time in sometimes noisy complex images.
+		The observation of neutrophils requires the analysis of hundreds of frames of microscopy image sequences. The manual annotation of these image sequences to extract trajectories of movement of neutrophils is a time consuming and error prone process. Manual annotation severely limits the number of data that can be analysed and slows down the advancement of cell research. I would be a major advance to be able to reliably automatically identify and track cells over time in sometimes noisy complex images.
 		
 	\section{Objectives \statusfirstdraft}
 		
-		Neutrophil image sequences obtained \textit{in vivo} are sometimes of low contrast. \textit{In vivo} observation of these cells in the lung is especially difficult due to the motion artefacts. The motion of the lung can also cause the images to fall out of focus, which causes the cells to appear blurred and become difficult to identify and segment.
+		Neutrophil image sequences obtained \textit{in vivo} are sometimes of low contrast. \textit{In vivo} observation of these cells in the lung is especially difficult due to the motion artefacts. The motion of the lung can also cause the images to be out-of-focus, which causes the cells to appear blurred and become difficult to identify and segment.
 		
 		The aim of this research is to develop methods for cell detection and tracking. This system should be able to accept an image sequences of cells in tissue, identify the cells and track them over the entire sequence.
 		
 		The identification of cells should take into account the nature of the imaging technique and the quality of obtained images. Simple methods such as thresholding would be too unreliable; more advanced methods need to be investigated.
 		
-		Also the tracking of cells should take into account the nature of input data. Basic frame-by-frame tracking of cells is likely to have poor results because the cells frequently disappear into the depths of tissue or loose focus. Methods that take into account the temporal behaviour of cells are likely to result in more robust tracking. 
-		
-		Finally, a basic system to compute statistics of the trajectories should be implemented. The system should provide measure of the length of trajectories and different quantifications of their behaviour.
+		Also the tracking of cells should take into account the nature of input data. Basic frame-by-frame tracking of cells is likely to have poor results because the cells frequently disappear into the depths of tissue or loose focus. Methods that take into account the temporal behaviour of cells are likely to result in more robust tracking.
 		
 	\section{Contributions \statusfirstdraft}
+		
+		The work in this project led to a development of a robust pipeline for automatic cell tracking. The pipeline combines a cell detection algorithm from \cite{arteta12} and, to the best knowledge of the author, a novel tracking method that is directly based on the observed data. 
+		
+		The cell tracking module uses a global data association approach to reliably generate cell detection trajectories based on a global decision. This research has upgraded previous methods to rely on a large set of features obtained from observed data. A machine learning approach is used to compute likelihoods for linking cell detections into increasingly longer trajectories. Because the likelihoods are obtained directly from training examples, the method is able to produce good results also on noisy datasets, where several frames in a sequence can come out-of-focus, cells disappear and reappear over time, etc.
+		
+		Finally, an image annotation tool is developed that allows simple dot annotation of cells and linking of cells among frames to represent trajectories.
+		
+	\section{Report structure \statusfirstdraft}
+		The rest of the thesis is structured as follows:
+		
+		\Cref{chap:relatedwork} is a brief literature survey outlining existing methods for cell detections and tracking. The chapter gives a reasonable background of how the methods for cell detection and tracking have evolved over time.
+		
+		\Cref{chap:cell_detection} describes in more depth the cell detector from Arteta et al \cite{arteta12} and outlines the modification that improved the detection speed.
+		
+		\Cref{chap:tracking} describes in detail the cell tracking module. It outlines the two step process of generating robust tracklets and then joining them into long trajectories using trained classifiers.
 	
-		To the best knowledge of the author, this research presents a novel approach to the problem of cell tracking detections that is directly based on the observed data.
+		\Cref{chap:data} is an overview of example datasets on which the tracking tool is tested and presents a cell annotation tool developed to ease the annotation of image sequences.
 		
-		The cell tracker module uses a global data association approach to reliably generate cell detection trajectories based on a global decision. This research has upgraded previous methods to rely on a large set of features obtained from observed data. A machine learning approach is used to compute likelihood for linking cell detections into ever longer trajectories. Because the likelihoods are directly obtained from training examples, the method is able to reliable work on noisy datasets, where several frames in a sequence can come out of focus, cells disappear and reappear over time, etc.
+		\Cref{chap:results} evaluates the performance of the cell tracking module. \todo{Add something more specific}
 		
-		A robust pipeline for detection and tracking consisting of a machine learning approach to cells detections from \cite{arteta12}, and the data based tracker  allows the efficient tracking of cells in difficult imaging conditions.
-		
-		Finally, an image annotation tool is developed that allows simple dot annotation of cells and linking of cells among frames to represent distinct trajectories.
-		
-	\section{Thesis structure \statusfirstdraft}
-		The rest of the thesis is structured as follows.
-		
-		\Cref{chap:relatedwork} is a brief literature survey outlining existing methods for cell detections and tracking.
-		
-		\Cref{chap:cell_detection} describes in more depth how the cell detection module works.
-		
-		\Cref{chap:tracking} describes in details the cell tracking module.
-		
-		\Cref{chap:statistics} briefly describes the biological statistics module, which quantifies the obtained cell trajectories. 
-	
-		\Cref{chap:data} is an overview of the cell annotation tool developed to ease the annotation of image sequences.
-		
-		\Cref{chap:results} evaluates the performance of the cell tracking module.
-		
-		\Cref{chap:conclusion} shows some concluding remarks and ideas that could be implemented to continue the advance the field of automatic cell detection and tracking.
+		\Cref{chap:conclusion} includes some concluding remarks and ideas that could be implemented to continue to advance the field of automatic cell detection and tracking.
