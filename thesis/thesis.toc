@@ -20,9 +20,9 @@
 \contentsline {section}{\numberline {3.1}Method overview \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{17}{section.3.1}
 \contentsline {section}{\numberline {3.2}Detection of candidate regions \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{18}{section.3.2}
 \contentsline {section}{\numberline {3.3}Inference under the non-overlap constraint \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{19}{section.3.3}
-\contentsline {section}{\numberline {3.4}Learning the classifier \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{19}{section.3.4}
+\contentsline {section}{\numberline {3.4}Learning the classifier \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{20}{section.3.4}
 \contentsline {section}{\numberline {3.5}Feature selection \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{20}{section.3.5}
-\contentsline {section}{\numberline {3.6}Performance improvements \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{22}{section.3.6}
+\contentsline {section}{\numberline {3.6}Performance improvements \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{21}{section.3.6}
 \contentsline {chapter}{\numberline {4}Tracking of cells \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Method overview \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{23}{section.4.1}
 \contentsline {section}{\numberline {4.2}Joining cell detections into robust tracklets \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{24}{section.4.2}
@@ -60,8 +60,8 @@
 \contentsline {chapter}{\numberline {7}Conclusions and future work\unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{47}{chapter.7}
 \contentsline {section}{\numberline {7.1}Conclusion \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{47}{section.7.1}
 \contentsline {section}{\numberline {7.2}Future work \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{48}{section.7.2}
-\contentsline {chapter}{Appendices}{50}{section*.7}
+\contentsline {chapter}{Appendices}{50}{section*.6}
 \contentsline {chapter}{\numberline {A}User Guide for the Annotation Tool}{51}{Appendix.1.A}
 \contentsline {chapter}{\numberline {B}User Guide for the Interactive Annotation Viewer}{52}{Appendix.1.B}
 \contentsline {chapter}{\numberline {C}User Guide for the Cell Detector and Tracker}{53}{Appendix.1.C}
-\contentsline {chapter}{Bibliography}{54}{section*.7}
+\contentsline {chapter}{Bibliography}{54}{section*.6}

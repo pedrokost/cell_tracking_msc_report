@@ -26,7 +26,6 @@ To reduce the solution space for the energy function only the boundaries of conn
 The level set method is contour evolution approach which has good results in segmentation. Tang et al \cite{tang} have successfully combined level-sets and local grey thresholding \cite{xu10} for segmenting neuron stem cells in images which have been obtained by confocal microscopy.
 
 \subsection{Cell detection by model learning \statusfirstdraft}
-\todo{This method can be shortened just a bit, since I describe the details later}
 The previous methods perform efficiently in cells with sufficiently good contrast. In images where the cell borders are unclear, images are of varying intensity, cell density is high, or cells can be of different shapes, these methods may not perform as well. In such cases machine learning methods can perform better by learning a model of a cell based on a training set of annotated examples.
 
 Arteta et al \cite{arteta12}\cite{arteta13}, propose an algorithm that uses a highly-efficient MSER region detector \cite{matas02} to find a broad number of candidate regions. These regions are then scored depending on the similarity to the cell type of interest by a machine learning algorithm. 
@@ -72,7 +71,6 @@ To reduce the vulnerability of frame-by-frame data association it is possible to
 The similarity function used to perform data association between consecutive frames is of crucial importance. House et al \cite{house09} propose a novel cost function that encodes the response of cells to conditions of their environment. The tracking problem is formulated as a standard Bayesian filtering problem. The model allows the state of the cells in the images to evolve in time. To solve the complete assignment they have used a probabilistic data association algorithm which produces an optimal solution.
 
 \subsection{Tracking with a dynamics filter \statusfirstdraft}
-\todo{Shorten further}
 Dynamics filters are a powerful addition to tracking systems because they predict the motion of a cell, and reduce the search space in which we look for matches. These algorithms not only perform frame-by-frame tracking, but also take temporal information into account, resulting in models that are robust to long-term occlusion and cell detection error.
 
 Xu et al \cite{xu12} developed an ant stochastic searching behaviour based tracking system to track multiple cells in fluorescent image sequences. The system is similar to particle filters, but the motion behaviour is modelled to be similar to how ants behave when searching for food. When ants move around, they deposit small quantities of chemical pheromone. Once they find food, they retrace the steps deposing larger amounts of pheromone. Other ants can then use this guide to find food faster, but are allowed to deviate from the path and pursue their own paths. The author propose a system where the food is not static, so that it can be used for cell tracking. Compared to particle filters, this algorithm is more computationally expensive, but achieves better accuracy. The algorithm is able to deal with cells entering or leaving the scene, and occlusion.
