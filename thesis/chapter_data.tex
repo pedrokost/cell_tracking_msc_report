@@ -6,26 +6,26 @@
     \section{Data acquisition and example datasets \status{needs Leo's help}}
     \label{sec:data_examples}
     
-    As discussed in the concluding section of \cref{chap:relatedwork} the datasets heavily influence the choice of algorithms for cell detection and tracking. Many computer vision algorithms rely on heuristics to improve their accuracy. In cell detection methods, this is obvious from the fact that a method developed for a certain type of imaging method will likely perform poorly on an image sequence of different types of cells (e.g. different shape of cells). In cell tracking heuristics help adjust the algorithms to the specific behaviour of cells that are being analysed. For example, a different tracking method could be used for images with cells that move slowly (and there is a large overlap between cells in consecutive frames) than for cells that move quickly (and there is little overlap between cells in consecutive frames).
+    As discussed in the concluding section of \cref{chap:relatedwork}, the datasets heavily influenced the choice of algorithms for cell detection and tracking. Many computer vision algorithms rely on heuristics to improve their accuracy. In cell detection methods, this is obvious from the fact that a algorithm developed for a certain type of imaging method will likely perform poorly on an different types of images (e.g. different shape of cells). In cell tracking heuristics help adjust the algorithms to the specific behaviour of cells that are being analysed. For example, a different tracking method could be used for images with cells that move slowly (and there is a large overlap between cells in consecutive frames) than for cells that move quickly (and there is little overlap between cells in consecutive frames).
     
-    The data acquisition process is not part of this research. However, for the reasons stated above, it is important to understand how the images were obtained and know the characteristics of the datasets. Below, we outline the image acquisition process, and then present some of the datasets we wish to analyse.
+    The data acquisition process is not part of this research. However, for the reasons stated above, it is important to understand how the images were obtained and know the characteristics of the datasets. Below, we outline the image acquisition process, and then present the datasets used in the evaluation of our methods.
     
     The image sequences that inspired the development of the methods describe in this thesis were acquired \textit{in vivo}. This means that the images are obtained on living mice, in contrast to \textit{in vitro} where cells are analysed on a tissue sample in a standard laboratory environment using petri dishes and other instruments. \textit{In vivo} analysis is preferred over \textit{in vitro} because it is better suited for observing the behaviour of cells in their natural environment.
     
     \todo[inline]{Ask Leo: Info about the ventilator method. Is it two-photon mocroscopy? What camera was used to capture the images?}
     
-    \todo[inline]{Extract from the paper Leo gave me: More recently, the introduction of microscopes allowering for thicher tissue penetraction and higher resolution (spinning-disc and two-photon microscopes), more complex tissuea dn organs, sucha as the skin, lives, brain and lung, can also be imaged. The observation of the lung was a challenge for a long time owing to motion artefacts. 
+    \todo[inline]{Extract from the paper Leo gave me (not sure how applicable): More recently, the introduction of microscopes allowering for thicher tissue penetraction and higher resolution (spinning-disc and two-photon microscopes), more complex tissuea dn organs, sucha as the skin, lives, brain and lung, can also be imaged. The observation of the lung was a challenge for a long time owing to motion artefacts. 
         
     The introbutio of fluorescence (confocal) microscopy  in combination with spinning-disc and two-photon microscopes  has allowed the use of fluorescent antibodies for labelling different cell populations on anatomical structures, as well as the use of transeenic mice with fluorescent leukocyte subsets. }
     
-    All the data was provided by Dr. Leo Carlin from the Leukocyte Biology Section at the National Heart and Lung Institute (NHLI)\footnote{\url{http://www1.imperial.ac.uk/nhli/}}.
+    All the data was provided by Dr. Leo Carlin from the Leukocyte Biology Section at the National Heart and Lung Institute (NHLI)\footnote{\url{http://www1.imperial.re  s a goode ac.uk/nhli/}}.
     
     \subsection{Datasets \statusfirstdraft}
        
-	From the datasets provided by Dr. Leo Carlin, five have been selected to use in the evaluation of this work because of their distinct characteristics. The original dimensions of the datasets were 512-by-512 pixels, but some have been cropped to reduce the number of cells to annotate.
+	From the datasets provided by Dr. Leo Carlin, five have been selected to use in the evaluation of this work because of their distinct characteristics. The original dimensions of the datasets were 512-by-512 pixels, but some have been cropped to reduce the number of cells that had to be annotated to train the cell detector and tracker.
 	
+	Below we describe the main characteristics of the datasets, together with the number of frames that were annotated to train the cell detector. Because of the large number of trajectories in certain datasets, not all the trajectories have been annotated. Instead, in each dataset a few trajectories were chosen and annotated. We aimed to select the longest trajectories, as these could give the most insight in the analysis of cell behaviour.
 	
-	\todo{Make sure to reference the images from the text}
 	\todo{Use the detector to compute the average number of cells in each dataset}
 
 	\subsubsection{Dataset A}
@@ -45,10 +45,10 @@
    		\caption{Three consecutive frames from dataset A.}
    		\label{fig:data_datasetA}
    	\end{figure}
+   	  	
+   	Dataset A, seen in \cref{fig:data_datasetA}, contains 66 frames of dimensions 512-by-512 pixels. All the frames have been manually annotated for the purpose of training the cell detector. The dataset only has a density of (TODO), and all four main trajectories have been annotated, although three of them can only be tracked in a dozen frames. The dataset is obtained from the lung\todo{Lung for sure?}. There is a good contrast between the cells and the background. The background is almost uniform but still contains some information about blood vessels \todo{blood vessels, capilaries, what exactly?} which are difficult to discern without adjusting the image contrast. The cells appear as medium dark shades of grey of circular shape and their boundaries smoothly blend with the background. The cells move slowly. The images are of constant quality, and there are few significant camera artefacts.
    	
-   	This is a dataset obtained from the lung\todo{Lung for sure?}. This dataset contains a very low cell density (about 3 cells per frame). The image sequence contains 66 frames, all of which were annotated. The cells appear grey on a dark, relatively homogeneous, background. The cell boundaries smoothly blend into the background. The images are of constant quality, and there are few significant camera artefacts. The cells move slowly. The dimensions of the images is 512-by-512 pixels.
-   	
-   	\todo[inline]{What is the difference between these cells and the ones in dataset B? They are taken simultaneously... on is series30red the other series30green}
+   	\todo[inline]{Question for Leo: What is the difference between these cells and the ones in dataset B? They are taken simultaneously... one is series30red the other series30green (they were just different channels in the provided dataset)}
    	
 	\subsubsection{Dataset B}
 	\todo[inline]{This is series30red}
@@ -67,11 +67,11 @@
 		\caption{Three consecutive frames from dataset B.}
 		\label{fig:data_datasetB}
 	\end{figure}
-	
-	This dataset is also obtained from the lung\todo{Lung for sure?}. In fact, it was obtained simultaneously with dataset A, but represents a different types of cells \todo{Ask Leo to help me specify}.The cells appear brighter than in dataset A, but their shapes vary. Some are round and others elongated and deformed to fit into the tight blood vessels \todo{Are thes blood vessels?} in which they move. In the background we can clearly discern the blood vessels in a darker grey colour. Cells in this dataset are more active in movement. The images are of constant quality, and there are few significant camera artefacts. The dataset contains 66 frames, of which all have been annotated. The dimensions of the images is 512-by-512 pixels.
+		
+	\Cref{fig:data_datasetB} shows three consecutive frames from dataset B. The dataset contains 66 frames of dimensions 512-by-512 pixels. The entire dataset has been annotated for the purpose of training the cell detector and (TODO ~5) of the longest trajectories for the purpose of training the cell tracker. This dataset is also obtained from the lung\todo{Lung for sure?}. The cells appear brighter than in dataset A, but their shapes vary. Some are round and others elongated and deformed to fit into the tight blood vessels \todo{Are these blood vessels?} in which they move. Their brightness varies from medium to very bright. The brighter ones have clearer boundaries than the medium bright ones, whose boundaries are softer. In the background we can clearly discern the blood vessels in a darker grey colour. Cells in this dataset are active. Some move relatively fast and change direction frequently. The images are of constant quality, and there are few significant camera artefacts.
 		
 	\subsubsection{Dataset C}
-	\todo[inline]{This is series13green}
+	\todo[inline]{This is series13greencropped}
     \begin{figure}[h]
     	\begin{subfigure}{.32\textwidth}
     		\includegraphics[width=\textwidth]{images/series13greencropped008}
@@ -87,8 +87,8 @@
     	\caption{Three consecutive frames from dataset C.}
     	\label{fig:data_datasetC}
     \end{figure}
-    
-    This dataset is also obtained from the lung\todo{Lung for sure?}. The range of brightness of the cells is large. Some are clearly visible, some barely stand out of the background. Their shape is relatively consistent. The background is dark, with some very faint cells. The cells are stagnant in their position on the tissue, but the lung tissue is moving due to the breathing of the mice. For this reason, the dataset contains many motion artefacts. Some frames are blurred, and many appear to contain the same copies of the cells slightly shifted, as seen in the second image in \cref{fig:data_datasetC}. The cell density is very high in this dataset (about 40 cells per frame). The dataset consists of 126 frames, of which 55 were manually annotated. The dimensions of the cropped images is 251-by-251 pixels.
+        
+    Dataset C, seen in \cref{fig:data_datasetC}, is composed of 126 frames which have been cropped to 251-by-251 pixels. The first 55 frames have been annotated with dot-annotation for the purpose of training the cell detector, and 5 of the longest trajectories were annotated for the purpose of training the cell tracker. This dataset is also obtained from the lung\todo{Lung for sure?}. The density of this dataset is about (TODO) as estimated from the first 55 annotated frames. The background is dark, but contains several very faint cells which we are not interested in tracking. We are interested in tracking the brighter cells. The colours of the cells are dark to medium grey. The cell boundaries blend smoothly with the background. Most cells appear as round patches. Although the cells are mostly stagnant, but the lung tissue is moving due to the breathing of the mice. For this reason, the dataset contains many motion artefacts. Some frames are blurred, and many appear to contain the duplicates of the cells shifted in position by a small amount, as seen in the middle image in \cref{fig:data_datasetC}.
 
 	\subsubsection{Dataset D}
 	\label{sec:datasetD}
@@ -109,9 +109,8 @@
 		\label{fig:data_datasetD}
 	\end{figure}
 
-	Dataset D is obtained from the liver \todo{Liver for sure?}. The cells are well discernible from the background, which can contain some very faint cells. The cell boundaries are clearly visible. The cell density is about 12 cells per frame. The original dataset contained 682 frames. Unfortunately, the dataset contained large sequences of frames that were of exceedingly low quality, such that even a human could not track the cells in the dataset. Thus, the dataset has been pruned to 377 frames of dimensions 199-by-199 pixels. The dataset contains many motion artefacts, the contrast is constantly changing, and often about half of the cells in each frame become invisible for a few frames, even after manually eliminating the worse frames.
+ 	Dataset D, seem in \cref{fig:data_datasetD}, is likely to be the most challenging for the tracking module. It was originally composed o f 682 frames. Unfortunately, the dataset contained large sequences of frames that were of exceptionally low quality, such that even a human could not track the cells accurately. Thus, the dataset has been manually pruned to 377 frames and cropped to dimensions 199-by-199 pixels. 50 frames have been annotated with dot-annotations and 7 of the longest trajectories. Dataset D is obtained from the liver \todo{Liver for sure?}. The cell density is about 12 (TODO) cells per frame. The background contains some noise, but it is still relatively different to the texture of the cells. The cells are mostly elliptical and have a strong boundaries. This dataset contains several fast moving cells. As mentioned before, the dataset contains many motion artefacts, the contrast of the images is constantly changing, and often about half of the cells in each frame become invisible for a few frames, even after manually eliminating the most affected.
 	
-	\todo{Include that the dataset had to be manually cleaned}
 	\subsubsection{Dataset E}
 	\todo[inline]{This is seriesm170\_13cropped}
 	\begin{figure}[h]
@@ -130,14 +129,16 @@
 		\caption{Three consecutive frames from dataset E.}
 		\label{fig:data_datasetE}
 	\end{figure}
-    
-    \todo{Where is the dataset from?}The cells in this dataset are smaller. Some appear bright, while others darker, which makes them sometimes difficult to recognize from the dark background. The density of the bright cells is about 8 per frame of dimensions 277-by-277 pixels. For the purpose of analysing their behaviour we are only interested in these bright cells. The sequence contains 194 frames, of which 65 have been manually annotated. The images become darker in the later parts of the image sequence. The background is stable, but there is an alternating dark/bright area probably caused by the camera shutter.
+        
+    The last dataset, seen in figure \cref{fig:data_datasetE}, contains 194 frames which have been cropped to dimensions 277-by-277 pixels. 65 frames were annotated for the purpose of training and evaluating the quality of the cell detection module. (TODO) of the longest trajectories were annotated for training the tracker.    
+    \todo{Where is the dataset from?}
+    The density of the cells is about (TODO) cells per frame. The background contains some texture, that could sometime be confused with the cell texture. The cells in this dataset appear smaller than in the other datasets and are less elliptical. They contain more sharp edges. The intensity of the cells varies from dark to bright. The cells appear to move very slowly. The images contain many artefacts that make tracking more difficult. First, the images become darker in the later parts of the image sequence. Second, there is an alternating dark/bright area in all the frames probably caused by the camera shutter.
     	
 	\subsection{Imaging analysis challenges \statusfirstdraft}
 	\label{sec:data_challenges}
 	In this section we are going to present two phenomena caused by moving tissue and the camera shutter that make this datasets especially hard to track for frame-by-frame tracking methods.
 	
-	The first challenge is the artefacts caused by the camera shutter. These appear as alternating dark/bright horizontal patches which seem to move from the top to the bottom of the images. The effect can be seen in \cref{fig:data_challenge_shutter}. This makes the tracking problem difficult, because the cells behind the dark areas appear fainter or disappear completely for the few frames that they are covered.
+	The first challenge is the artefacts caused by the camera shutter. These appear as alternating dark/bright horizontal lines which seem to move from the top to the bottom of the images. The effect can be seen in \cref{fig:data_challenge_shutter}. This makes the tracking problem difficult, because the cells behind the dark areas appear fainter or disappear completely for the few frames that they are covered.
 		
 	\begin{figure}[h]
 	
@@ -168,7 +169,7 @@
 		\label{fig:data_challenge_shutter}
 	\end{figure}
 	
-	The second challenge is the movement of the tissue, especially in the case of lung imaging. The fast breathing pace of mice causes a sensation that the image is shaking. The shaking can be in the x-y plane, but sometimes, as in the case shown in figure \cref{fig:data_challenges_movement} it can be primarily in the z-direction. Displacement in the x-y direction causes the cells to jiggle. Displacement of the tissue in the z-direction causes part of all of the image to become out-of-focus for a few frames.
+	The second challenge is the movement of the tissue, especially in the case of lung imaging. The shaking can be in the x-y plane, but sometimes, as in the case shown in figure \cref{fig:data_challenges_movement} it can be primarily in the z-direction. Displacement in the x-y direction causes the cells to jiggle. Displacement of the tissue in the z-direction causes part of all of the image to become out-of-focus for a few frames.
 	
 	\begin{figure}[h]
 
@@ -178,14 +179,13 @@
 		\label{fig:data_challenges_movement}
 	\end{figure}
 	
-	Several of the datasets present these phenomena to a lesser or larger extend. These artefacts where the primary reason for choosing a global optimization method for associating detection responses into trajectories.
+	Several of the datasets present these phenomena to a lesser or larger extend. These artefacts where the primary reason for choosing a global optimization method for associating detection responses into trajectories instead of a frame-by-frame approach.
 
-    \todo{Write what parameters were used for the tracker}
     \section{The annotation tool \statusfirstdraft}
     \label{sec:data_tool}
-    	In order to train the cell detector and tracker it is necessary to annotate a few frames from the datasets. The cell detector needs dot annotations - a single dot within each cell - that indicate whether an extremal region corresponds to a cell. The detector is then trained to recognize extremal regions similar to the ones that were annotated. Similarly, the cell tracker needs annotations that indicate whether two cells from different frames belong to the same tracklet. The cell tracker is then trained based on the similarity of the appearance and spatio-temporal features extracted from these cells.
+    	In order to train the cell detector and tracker it is necessary to annotate a few frames from the datasets. The cell detector requires dot annotations - a single dot within each cell - that indicate whether an extremal region corresponds to a cell. The detector is then trained to recognize extremal regions similar to the ones that were annotated. Similarly, the cell tracker needs annotations that indicate whether two cells from different frames belong to the same tracklet. The cell tracker is then trained based on the similarity of the appearance and spatio-temporal features extracted from these cells.
     	
-    	To train a good detector and tracker it is important that the annotations are consistent. For example, several datasets contain cells that appear bright and some that are darker. If we are only interested in tracking the cells that consistently appear bright, the annotations should only include the bright cells, and preferably all the bright cells. The models may not be trained correctly if only part of the bright cells were annotated. Note that this paragraph makes observations about brightness because the concept is easy to understand by a reader. However, the detector and tracker rely on many more features for detection and tracking.
+    	To train a good detector and tracker it is important that the annotations are consistent. For example, several datasets contain cells that appear bright and some that are darker. If we are only interested in tracking the cells that consistently appear bright, the annotations should only include the bright cells. The models may not be trained correctly if only part of the bright cells were annotated. Note that this paragraph makes observations about brightness because the concept is easy to understand for a reader. However, the detector and tracker rely on many more features for detection and tracking.
 	
 		To facilitate the annotations of datasets a new annotation tool has been developed. The graphic user interface of the tool is visible in \cref{fig:data_annotator_screenshot}. The tool is able to load a sequence of images, display them and permits the user to annotate them. The user is able to preform the following actions: adding a dot detection, deleting a dot detection, adding a link between cells, deleting a link between cells. The tool also features zooming and panning.
 		
@@ -205,7 +205,7 @@
 		\end{figure}
 				
 						
-		Furthermore, the tool includes a broad set of filters that can be applied on the images to increase the clarity of the cells and ease the annotation process. These filter include contrast adjustments, smoothing, sharpening, edge detection, etc. To reduce the clutter on densely populated datasets, the user is able to only display annotations from a specific part of the image, hide trajectories that include more than three dot annotations, hide the part of the GUI containing the buttons and filters in order to focus on just the images, and more.
+		Furthermore, the tool includes a broad set of filters that can be applied on the images to increase the clarity of the cells and ease the annotation process. These filter include contrast adjustments, smoothing, sharpening, edge detection, etc. To reduce the clutter on densely populated datasets, the user is able to only display annotations from a specific part of the image, hide trajectories that include more than three dot annotations, hide the part of the GUI containing the buttons and filters in order to focus on just the images (\textit{full-screen mode}), and more.
 		
 		The annotation tool includes detection of potentially bad annotations. These include a warning system that displays a triangle next to a cell if two annotations are very close together and a different display style for links that deviate too much from the average (in terms of between-frame displacement). These help the eliminate accidental human errors, that would be very hard to discover otherwise.
 
@@ -215,6 +215,7 @@
 
 		In addition to the annotation tool, another small GUI has been developed that shows the annotations in an interactive 3D view, where each tracklet colour is different. This tool is shown in image \cref{fig:data_tracklet_viewer}. It is helpful to recognize possibly bad annotations (for example an outlier cell within a trajectory) or discover missed links.
 		
-		All the annotations have been carefully reviewed by Dr. Leo Carlin, who provided the datasets.
+		All the annotations have been reviewed by Dr. Leo Carlin, who provided the datasets. However, due to the noisy nature of the images, some of the dataset are difficult to correctly annotate even for a human. It is expected that a small number of annotations are erroneous.
 		
-		Both tools are developed and packaged into a standalone executable with MATLAB 8.3.0.532 (R2014a). The tools do not depend on MATLAB to run, but require the free MATLAB Compiler Runtime 8.3\footnote{\url{http://www.mathworks.co.uk/products/compiler/mcr/}} which is automatically downloaded and installed when the applications are installed on the system. User guides for both applications are provided in appendices \ref{app:annotationtool} and \ref{app:interactiveviewer}.
+		Both tools were developed and packaged as standalone executables with MATLAB 8.3.0.532 (R2014a). The tools do not depend on MATLAB to run, but require the free MATLAB Compiler Runtime 8.3\footnote{\url{http://www.mathworks.co.uk/products/compiler/mcr/}} which is automatically downloaded and installed when the applications are installed on the system. User guides for both applications are provided in appendices \ref{app:annotationtool} and \ref{app:interactiveviewer}.
+		\todo{Will I include user guides in the appendix?}
