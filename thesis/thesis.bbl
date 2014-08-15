@@ -140,4 +140,12 @@ I.~Tsochantaridis, T.~Hofmann, T.~Joachims, and Y.~Altun, ``Support vector
   Proceedings of the Twenty-first International Conference on Machine
   Learning}, ICML '04, (New York, NY, USA), pp.~104--, ACM, 2004.
 
+\bibitem{li08}
+K.~Li, E.~D. Miller, M.~Chen, T.~Kanade, L.~E. Weiss, and P.~G. Campbell,
+  ``Cell population tracking and lineage construction with spatiotemporal
+  context,'' {\em Medical Image Analysis}, vol.~12, no.~5, pp.~546 -- 566,
+  2008.
+\newblock Special issue on the 10th international conference on medical imaging
+  and computer assisted intervention - \{MICCAI\} 2007.
+
 \end{thebibliography}

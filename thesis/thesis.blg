@@ -22,45 +22,45 @@ A bad cross reference---entry "bise11global"
 refers to entry "conf/isbi/2011", which doesn't exist
 Warning--I didn't find a database entry for "conf/isbi/2011"
 Warning--I didn't find a database entry for "conf/cvpr/2013"
-You've used 26 entries,
+You've used 27 entries,
             1876 wiz_defined-function locations,
-            660 strings with 9264 characters,
-and the built_in function-call counts, 8310 in all, are:
-= -- 809
-> -- 313
+            667 strings with 9594 characters,
+and the built_in function-call counts, 8733 in all, are:
+= -- 852
+> -- 333
 < -- 0
-+ -- 114
-- -- 88
-* -- 593
-:= -- 1112
-add.period$ -- 29
-call.type$ -- 26
-change.case$ -- 24
++ -- 121
+- -- 94
+* -- 626
+:= -- 1171
+add.period$ -- 31
+call.type$ -- 27
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 441
-empty$ -- 796
-format.name$ -- 88
-if$ -- 2066
+cite$ -- 27
+duplicate$ -- 460
+empty$ -- 829
+format.name$ -- 94
+if$ -- 2170
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 23
-newline$ -- 85
-num.names$ -- 28
+int.to.str$ -- 27
+missing$ -- 24
+newline$ -- 89
+num.names$ -- 29
 pop$ -- 105
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 342
+skip$ -- 359
 stack$ -- 0
-substring$ -- 615
-swap$ -- 200
+substring$ -- 651
+swap$ -- 211
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 73
-width$ -- 28
-write$ -- 259
+while$ -- 76
+width$ -- 29
+write$ -- 272
 (There were 2 error messages)
