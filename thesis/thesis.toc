@@ -57,11 +57,13 @@
 \contentsline {subsection}{\numberline {6.2.1}Performance metrics \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{47}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Speed \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{47}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Tracking accuracy}{47}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Limitations and areas of improvement \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{47}{section.6.3}
+\contentsline {section}{\numberline {6.4}Summary \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{47}{section.6.4}
 \contentsline {chapter}{\numberline {7}Conclusions and future work\unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{48}{chapter.7}
 \contentsline {section}{\numberline {7.1}Conclusion \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{48}{section.7.1}
 \contentsline {section}{\numberline {7.2}Future work \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{49}{section.7.2}
-\contentsline {chapter}{Appendices}{51}{section*.53}
+\contentsline {chapter}{Appendices}{51}{section*.9}
 \contentsline {chapter}{\numberline {A}User Guide for the Annotation Tool}{52}{Appendix.1.A}
 \contentsline {chapter}{\numberline {B}User Guide for the Interactive Annotation Viewer}{53}{Appendix.1.B}
 \contentsline {chapter}{\numberline {C}User Guide for the Cell Detector and Tracker}{54}{Appendix.1.C}
-\contentsline {chapter}{Bibliography}{55}{Appendix.1.C}
+\contentsline {chapter}{Bibliography}{55}{section*.9}
