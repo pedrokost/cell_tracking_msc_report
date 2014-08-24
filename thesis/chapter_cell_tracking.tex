@@ -164,7 +164,7 @@
 			L_i = \log P_{link}(T_l | T_k) + \frac{\log P_{TP}(T_k) + \log P_{TP}(T_l)}{2} \text{.}
 		\]
 		
-		Bise et al \cite{bise11global} dealt with cell tracking on image sequences where cell detections could be reliably detected. The authors considered tracklets close to the boundaries of the field of view as candidate for initial tracklets. This work is based on image sequences that were obtained from observing cells in thick tissue, where cells can sink into the background and reappear at any time. The \term{initialization hypothesis} indicates the likelihood that a tracklet is the first tracklet in a trajectory. Taking this into consideration new trajectories can be initialized anywhere within the field of view. The corresponding likelihood is computed as:
+		Bise \emph{et al.}~\cite{bise11global} dealt with cell tracking on image sequences where cell detections could be reliably detected. The authors considered tracklets close to the boundaries of the field of view as candidate for initial tracklets. This work is based on image sequences that were obtained from observing cells in thick tissue, where cells can sink into the background and reappear at any time. The \term{initialization hypothesis} indicates the likelihood that a tracklet is the first tracklet in a trajectory. Taking this into consideration new trajectories can be initialized anywhere within the field of view. The corresponding likelihood is computed as:
 		
 		\[
 			L_i = \log P_{init}(T_k) + \frac{\log P_{TP}(T_k)}{2}\text{.}

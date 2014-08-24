@@ -3,22 +3,18 @@
 	
 	This chapter describes the data that influenced the decisions of selecting the cell detection and tracking methods. In \cref{sec:data_examples} we briefly describe the imaging method used to acquire the image sequences and present some example datasets. \Cref{sec:data_challenges} describes some of the challenges of tracking cells in these datasets. \Cref{sec:data_tool} presents the data annotation tool that was developed to ease the annotation process.
 
-    \section{Data acquisition and example datasets \status{needs Leo's help}}
+    \section{Data acquisition and example datasets}
     \label{sec:data_examples}
     
-    As discussed in the concluding section of \cref{chap:relatedwork}, the datasets heavily influenced the choice of algorithms for cell detection and tracking. Many computer vision algorithms rely on heuristics to improve their accuracy. In cell detection methods, this is obvious from the fact that a algorithm developed for a certain type of imaging method will likely perform poorly on an different types of images (e.g. different shape of cells). In cell tracking heuristics help adjust the algorithms to the specific behaviour of cells that are being analysed. For example, a different tracking method could be used for images with cells that move slowly (and there is a large overlap between cells in consecutive frames) than for cells that move quickly (and there is little overlap between cells in consecutive frames).
+    As discussed in the concluding section of \cref{chap:relatedwork}, the datasets heavily influenced the choice of algorithms for cell detection and tracking. Many computer vision algorithms rely on heuristics to improve their accuracy. In cell detection methods, this is obvious from the fact that a algorithm developed for a certain type of imaging method will likely perform poorly on an different types of images (e.g.\ different shape of cells). In cell tracking heuristics help adjust the algorithms to the specific behaviour of cells that are being analysed. For example, a different tracking method could be used for images with cells that move slowly (and there is a large overlap between cells in consecutive frames) than for cells that move quickly (and there is little overlap between cells in consecutive frames).
     
-    The data acquisition process is not part of this research. However, for the reasons stated above, it is important to understand how the images were obtained and know the characteristics of the datasets. Below, we outline the image acquisition process, and then present the datasets used in the evaluation of our methods.
+    The data acquisition process is not part of this research. However, for the reasons stated above, it is important to know the characteristics of the datasets. Because these are directly influenced by the imaging method, we follow by outlining the image acquisition process, and then present the datasets used in the evaluation of our methods.
     
     The image sequences that inspired the development of the methods describe in this thesis were acquired \textit{in vivo}. This means that the images are obtained on living mice, in contrast to \textit{in vitro} where cells are analysed on a tissue sample in a standard laboratory environment using petri dishes and other instruments. \textit{In vivo} analysis is preferred over \textit{in vitro} because it is better suited for observing the behaviour of cells in their natural environment.
     
-    \todo[inline]{Ask Leo: Info about the ventilator method. Is it two-photon mocroscopy? What camera was used to capture the images?}
-    
-    \todo[inline]{Extract from the paper Leo gave me (not sure how applicable): More recently, the introduction of microscopes allowering for thicher tissue penetraction and higher resolution (spinning-disc and two-photon microscopes), more complex tissuea dn organs, sucha as the skin, lives, brain and lung, can also be imaged. The observation of the lung was a challenge for a long time owing to motion artefacts. 
+    Recent advances in intravital microscopy of the lung \cite{looney11} and other organs allow us to image neutrophils and other cells of interest simultaneously by combining fluorescent reporter mice and intravenously-injected fluorescently-labelled antibodies. Briefly, the mouse is anaesthetized, mechanically ventilated and the surface of the lung is exposed surgically. Then a specialized ``vacuum chamber'' (as in \cite{looney11}) is used to stably hold a glass coverslip against the surface of the lung. The alveoli, alveolar capillaries and associated cells can then be visualized by laser scanning confocal microscopy. The same apparatus can be used to interrogate other organs without mechanical ventilation, e.g.\ the liver.
         
-    The introbutio of fluorescence (confocal) microscopy  in combination with spinning-disc and two-photon microscopes  has allowed the use of fluorescent antibodies for labelling different cell populations on anatomical structures, as well as the use of transeenic mice with fluorescent leukocyte subsets. }
-    
-    All the data was provided by Dr. Leo Carlin from the Leukocyte Biology Section at the National Heart and Lung Institute (NHLI)\footnote{\url{http://www1.imperial.re  s a goode ac.uk/nhli/}}.
+    All the data was provided by Dr. Leo Carlin from the Leukocyte Biology Section at the National Heart and Lung Institute (NHLI)\footnote{\url{http://www1.imperial.ac.uk/nhli/}}.
     
     \subsection{Datasets \statusfirstdraft}
        
@@ -26,8 +22,6 @@
 	
 	Below we describe the main characteristics of the datasets, together with the number of frames that were annotated to train the cell detector. Because of the large number of trajectories in certain datasets, not all the trajectories have been annotated. Instead, in each dataset a few trajectories were chosen and annotated. We aimed to select the longest trajectories, as these could give the most insight in the analysis of cell behaviour.
 	
-	\todo{Use the detector to compute the average number of cells in each dataset}
-
 	\subsubsection{Dataset A}
 	\todo[inline]{This is series30green}
 	\begin{figure}[h]
@@ -46,9 +40,7 @@
    		\label{fig:data_datasetA}
    	\end{figure}
    	  	
-   	Dataset A, seen in \cref{fig:data_datasetA}, contains 66 frames of dimensions 512-by-512 pixels. All the frames have been manually annotated for the purpose of training the cell detector. The dataset only has a density of (TODO), and all four main trajectories have been annotated, although three of them can only be tracked in a dozen frames. The dataset is obtained from the lung\todo{Lung for sure?}. There is a good contrast between the cells and the background. The background is almost uniform but still contains some information about blood vessels \todo{blood vessels, capilaries, what exactly?} which are difficult to discern without adjusting the image contrast. The cells appear as medium dark shades of grey of circular shape and their boundaries smoothly blend with the background. The cells move slowly. The images are of constant quality, and there are few significant camera artefacts.
-   	
-   	\todo[inline]{Question for Leo: What is the difference between these cells and the ones in dataset B? They are taken simultaneously... one is series30red the other series30green (they were just different channels in the provided dataset)}
+   	Dataset A, seen in \cref{fig:data_datasetA}, contains 66 frames of dimensions 512-by-512 pixels. All the frames have been manually annotated for the purpose of training the cell detector. The dataset only has an average population of 1.7 cells per frame (with a standard deviation $\sigma=0.7$), and all four main trajectories have been annotated, although three of them can only be tracked in a dozen frames. The dataset is obtained from the liver. There is a good contrast between the cells and the background. The background is almost uniform but still contains some information about the architecture of the liver sinusoids, which is difficult to discern without adjusting the image contrast. The cells appear as medium dark shades of grey of circular shape and their boundaries smoothly blend with the background. The cells move slowly. The images are of constant quality, and there are few significant camera artefacts.
    	
 	\subsubsection{Dataset B}
 	\todo[inline]{This is series30red}
@@ -68,8 +60,10 @@
 		\label{fig:data_datasetB}
 	\end{figure}
 		
-	\Cref{fig:data_datasetB} shows three consecutive frames from dataset B. The dataset contains 66 frames of dimensions 512-by-512 pixels. The entire dataset has been annotated for the purpose of training the cell detector and (TODO ~5) of the longest trajectories for the purpose of training the cell tracker. This dataset is also obtained from the lung\todo{Lung for sure?}. The cells appear brighter than in dataset A, but their shapes vary. Some are round and others elongated and deformed to fit into the tight blood vessels \todo{Are these blood vessels?} in which they move. Their brightness varies from medium to very bright. The brighter ones have clearer boundaries than the medium bright ones, whose boundaries are softer. In the background we can clearly discern the blood vessels in a darker grey colour. Cells in this dataset are active. Some move relatively fast and change direction frequently. The images are of constant quality, and there are few significant camera artefacts.
-		
+	\Cref{fig:data_datasetB} shows three consecutive frames from dataset B. The dataset contains 66 frames of dimensions 512-by-512 pixels and an average population of 7.5 cells per frame ($\sigma=1.6$). The entire dataset has been annotated for the purpose of training the cell detector and (TODO ~5) of the longest trajectories for the purpose of training the cell tracker. This dataset is also obtained from the lung\todo{Lung for sure?}. The cells appear brighter than in dataset A, but their shapes vary. Some are round and others elongated and deformed to fit into the tight blood vessels \todo{Are these blood vessels?} in which they move. Their brightness varies from medium to very bright. The brighter ones have clearer boundaries than the medium bright ones, whose boundaries are softer. In the background we can clearly discern the blood vessels in a darker grey colour. Cells in this dataset are active. Some move relatively fast and change direction frequently. The images are of constant quality, and there are few significant camera artefacts.
+
+	Although datasets A and B were obtained simultaneously, cells in dataset A were marked with a fluorescent reporter (green fluorescent protein (GFP)) that the mouse has been genetically modified to produce just in a type of immune cells termed 'NK' cells, while those in dataset B were marked by diffuse staining (unbound Ab in circulation), which is weaker and colours the cells more diffusely.
+	
 	\subsubsection{Dataset C}
 	\todo[inline]{This is series13greencropped}
     \begin{figure}[h]
@@ -88,7 +82,7 @@
     	\label{fig:data_datasetC}
     \end{figure}
         
-    Dataset C, seen in \cref{fig:data_datasetC}, is composed of 126 frames which have been cropped to 251-by-251 pixels. The first 55 frames have been annotated with dot-annotation for the purpose of training the cell detector, and 5 of the longest trajectories were annotated for the purpose of training the cell tracker. This dataset is also obtained from the lung\todo{Lung for sure?}. The density of this dataset is about (TODO) as estimated from the first 55 annotated frames. The background is dark, but contains several very faint cells which we are not interested in tracking. We are interested in tracking the brighter cells. The colours of the cells are dark to medium grey. The cell boundaries blend smoothly with the background. Most cells appear as round patches. Although the cells are mostly stagnant, but the lung tissue is moving due to the breathing of the mice. For this reason, the dataset contains many motion artefacts. Some frames are blurred, and many appear to contain the duplicates of the cells shifted in position by a small amount, as seen in the middle image in \cref{fig:data_datasetC}.
+    Dataset C, seen in \cref{fig:data_datasetC}, is composed of 126 frames which have been cropped to 251-by-251 pixels. The first 55 frames have been annotated with dot-annotation for the purpose of training the cell detector, and 5 of the longest trajectories were annotated for the purpose of training the cell tracker. This dataset is also obtained from the lung\todo{Lung for sure?}. The dataset contains an average population of 19.7 cells per frame ($\sigma=4.1$) as estimated from the first 55 annotated frames that were manually annotated. The background is dark, but contains several very faint cells which we are not interested in tracking. We are interested in tracking the brighter cells. The colours of the cells are dark to medium grey. The cell boundaries blend smoothly with the background. Most cells appear as round patches. Although the cells are mostly stagnant, but the lung tissue is moving due to the breathing of the mice. For this reason, the dataset contains many motion artefacts. Some frames are blurred, and many appear to contain the duplicates of the cells shifted in position by a small amount, as seen in the middle image in \cref{fig:data_datasetC}.
 
 	\subsubsection{Dataset D}
 	\label{sec:datasetD}
@@ -109,7 +103,7 @@
 		\label{fig:data_datasetD}
 	\end{figure}
 
- 	Dataset D, seem in \cref{fig:data_datasetD}, is likely to be the most challenging for the tracking module. It was originally composed o f 682 frames. Unfortunately, the dataset contained large sequences of frames that were of exceptionally low quality, such that even a human could not track the cells accurately. Thus, the dataset has been manually pruned to 377 frames and cropped to dimensions 199-by-199 pixels. 50 frames have been annotated with dot-annotations and 7 of the longest trajectories. Dataset D is obtained from the liver \todo{Liver for sure?}. The cell density is about 12 (TODO) cells per frame. The background contains some noise, but it is still relatively different to the texture of the cells. The cells are mostly elliptical and have a strong boundaries. This dataset contains several fast moving cells. As mentioned before, the dataset contains many motion artefacts, the contrast of the images is constantly changing, and often about half of the cells in each frame become invisible for a few frames, even after manually eliminating the most affected.
+ 	Dataset D, seem in \cref{fig:data_datasetD}, is likely to be the most challenging for the tracking module. It was originally composed o f 682 frames. Unfortunately, the dataset contained large sequences of frames that were of exceptionally low quality, such that even a human could not track the cells accurately. Thus, the dataset has been manually pruned to 377 frames and cropped to dimensions 199-by-199 pixels. 50 frames have been annotated with dot-annotations and 7 of the longest trajectories. Dataset D is obtained from the liver \todo{Liver for sure?}. The cell density is 10.6 cells per frame ($\sigma=2.3$). The background contains some noise, but it is still relatively different to the texture of the cells. The cells are mostly elliptical and have a strong boundaries. This dataset contains several fast moving cells. As mentioned before, the dataset contains many motion artefacts, the contrast of the images is constantly changing, and often about half of the cells in each frame become invisible for a few frames, even after manually eliminating the most affected.
 	
 	\subsubsection{Dataset E}
 	\todo[inline]{This is seriesm170\_13cropped}
@@ -132,7 +126,7 @@
         
     The last dataset, seen in figure \cref{fig:data_datasetE}, contains 194 frames which have been cropped to dimensions 277-by-277 pixels. 65 frames were annotated for the purpose of training and evaluating the quality of the cell detection module. (TODO) of the longest trajectories were annotated for training the tracker.    
     \todo{Where is the dataset from?}
-    The density of the cells is about (TODO) cells per frame. The background contains some texture, that could sometime be confused with the cell texture. The cells in this dataset appear smaller than in the other datasets and are less elliptical. They contain more sharp edges. The intensity of the cells varies from dark to bright. The cells appear to move very slowly. The images contain many artefacts that make tracking more difficult. First, the images become darker in the later parts of the image sequence. Second, there is an alternating dark/bright area in all the frames probably caused by the camera shutter.
+    The density of the cells is of $6.6$ cells per frame ($\sigma=2.4$). The background contains some texture, that could sometime be confused with the cell texture. The cells in this dataset appear smaller than in the other datasets and are less elliptical. They contain more sharp edges. The intensity of the cells varies from dark to bright. The cells appear to move very slowly. The images contain many artefacts that make tracking more difficult. First, the images become darker in the later parts of the image sequence. Second, there is an alternating dark/bright area in all the frames probably caused by the camera shutter.
     	
 	\subsection{Imaging analysis challenges \statusfirstdraft}
 	\label{sec:data_challenges}

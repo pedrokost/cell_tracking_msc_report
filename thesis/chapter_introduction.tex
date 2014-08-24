@@ -7,7 +7,9 @@
 		
 		Recent advances in intravital microscopy enable us to study the behaviour of different cells without excessively modifying the natural environment in which these cells are found within the observed organism. 
 			
-		Neutrophils are a type of leukocytes that have a crucial role in the clearance of infections \cite{kolku13}. A significant reduction in the number of neutrophils in the human body (or in mice) leads to severe immunodeficiency or death. They can be found in the bone marrow, liver, spleen and lung. Direct observation of neutrophils should help explain their presence in these organs, especially their large quantity in the lung.
+		Neutrophils are a type of leukocyte that have a crucial role in the clearance of infections \cite{kolku13}. A significant reduction in the number of neutrophils in the human body (or in mice) leads to severe immunodeficiency or death. They can be found in the bone marrow, liver, spleen, lung and throughout the circulation. Direct observation of neutrophils should help explain their function in these organs. 
+		
+		Of special interest is the transit of neutrophils in the fine and specialized capillary network in the lung. To transit the neutrophils must come in contact with the endothelium of these small vessels. In order to protect against pathogens, neutrophils are potently cytotoxic. Therefore, their regulation in the lung is important as the consequences of their unwarranted activation would be severe.
 		
 		A recent study \cite{pillay10} has shown that the lifespan of neutrophils is much longer than previously known (up to 12.5 hours for mice and 5.4 days for humans). Although this specific study is a source of doubtful criticism \cite{toft11}, the longevity of neutrophils increases during inflammation. This longer lifespan may permit them to perform a wider range of complex activities, beyond the clearance of infections. An analysis of their behaviour as observed through intravital microscopy could help reveal more of their roles.
 		
@@ -19,11 +21,11 @@
 		
 		Neutrophil image sequences obtained \textit{in vivo} are sometimes of low contrast. \textit{In vivo} observation of these cells in the lung is especially difficult due to the motion artefacts. The motion of the lung can also cause the images to be out-of-focus, which causes the cells to appear blurred and become difficult to identify and segment.
 		
-		The aim of this research is to develop methods for cell detection and tracking. This system should be able to accept an image sequences of cells in tissue, identify the cells and track them over the entire sequence.
+		The aim of this research is to develop methods for cell detection and tracking. This system should be able to accept image sequences of cells in tissue, identify the cells and track them over the entire sequence.
 		
 		The identification of cells should take into account the nature of the imaging technique and the quality of obtained images. Simple methods such as thresholding would be too unreliable; more advanced methods need to be investigated.
 		
-		Also the tracking of cells should take into account the nature of input data. Basic frame-by-frame tracking of cells is likely to have poor results because the cells frequently disappear into the depths of tissue or loose focus. Methods that take into account the temporal behaviour of cells are likely to result in more robust tracking.
+		Also the tracking of cells should take into account the nature of input data. Basic frame-by-frame tracking of cells is likely to have poor results because the cells frequently disappear into the depths of tissue or lose focus. Methods that take into account the temporal behaviour of cells are likely to result in more robust tracking.
 		
 	\section{Contributions \statusfirstdraft}
 		
@@ -38,7 +40,7 @@
 		
 		\Cref{chap:relatedwork} is a brief literature survey outlining existing methods for cell detections and tracking. The chapter gives a reasonable background of how the methods for cell detection and tracking have evolved over time.
 		
-		\Cref{chap:cell_detection} describes in more depth the cell detector from Arteta et al \cite{arteta12} and outlines the modification that improved the detection speed.
+		\Cref{chap:cell_detection} describes in more depth the cell detector from Arteta \emph{et al.}~\cite{arteta12} and outlines the modification that improved the detection speed.
 		
 		\Cref{chap:tracking} describes in detail the cell tracking module. It outlines the two step process of generating robust tracklets and then joining them into long trajectories using trained classifiers.
 	
