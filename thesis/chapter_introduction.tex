@@ -15,13 +15,13 @@
 		
 		Finally, there is accumulating evidence to support the existence of different lineages of neutrophils with discrete roles. It is unknown whether these are actually distinct lineages or if they instead all develop from the same neutrophil predecessor.
 		
-		The observation of neutrophils requires the analysis of hundreds of frames of microscopy image sequences. The manual annotation of these image sequences to extract trajectories of movement of neutrophils is a time consuming and error prone process. Manual annotation severely limits the number of data that can be analysed and slows down the advancement of cell research. I would be a major advance to be able to reliably automatically identify and track cells over time in sometimes noisy complex images.
+		The observation of neutrophils requires the analysis of hundreds of frames of microscopy image sequences. The manual annotation of these image sequences to extract trajectories of movement of neutrophils is a time consuming and error prone process. Manual annotation severely limits the number of data that can be analysed and slows down the advancement of cell research. It would be a major advance to be able to reliably automatically identify and track cells over time in sometimes noisy complex images.
 		
 	\section{Objectives \statusfirstdraft}
 		
-		Neutrophil image sequences obtained \textit{in vivo} are sometimes of low contrast. \textit{In vivo} observation of these cells in the lung is especially difficult due to the motion artefacts. The motion of the lung can also cause the images to be out-of-focus, which causes the cells to appear blurred and become difficult to identify and segment.
+		The clarity of neutrophil image sequences obtained \textit{in vivo} can vary considerably due combination of the raster scanning imaging technique and, in the case of the lung, the motion of the tissue induced by a mechanical ventilator. In the images we can observe artefacts such as out-of-focus frames, blurred images due to the jiggling tissue, etc. This can sometimes make it difficult to identify and segment individual cells.
 		
-		The aim of this research is to develop methods for cell detection and tracking. This system should be able to accept image sequences of cells in tissue, identify the cells and track them over the entire sequence.
+		The aim of this research is to develop methods for cell detection and tracking. This system should be able to accept image sequences of cells in tissue, identify the cells and track their position over the entire sequence.
 		
 		The identification of cells should take into account the nature of the imaging technique and the quality of obtained images. Simple methods such as thresholding would be too unreliable; more advanced methods need to be investigated.
 		
@@ -33,12 +33,12 @@
 		
 		The cell tracking module uses a global data association approach to reliably generate cell detection trajectories based on a global decision. This research has upgraded previous methods to rely on a large set of features obtained from observed data. A machine learning approach is used to compute likelihoods for linking cell detections into increasingly longer trajectories. Because the likelihoods are obtained directly from training examples, the method is able to produce good results also on noisy datasets, where several frames in a sequence can come out-of-focus, cells disappear and reappear over time, etc.
 		
-		Finally, an image annotation tool is developed that allows simple dot annotation of cells and linking of cells among frames to represent trajectories.
+		Finally, an image annotation tool is developed that allows simple dot annotation of cells and linking of cells among frames to represent trajectories. This tool can be used for generating the necessary training data and further allows to visualise and inspect the results produced by the automatic cell tracking method.
 		
 	\section{Report structure \statusfirstdraft}
 		The rest of the thesis is structured as follows:
 		
-		\Cref{chap:relatedwork} is a brief literature survey outlining existing methods for cell detections and tracking. The chapter gives a reasonable background of how the methods for cell detection and tracking have evolved over time.
+		\Cref{chap:relatedwork} is a brief literature survey outlining existing methods for cell detections and tracking. The chapter gives a background of how the methods for cell detection and tracking have evolved over time.
 		
 		\Cref{chap:cell_detection} describes in more depth the cell detector from Arteta \emph{et al.}~\cite{arteta12} and outlines the modification that improved the detection speed.
 		
