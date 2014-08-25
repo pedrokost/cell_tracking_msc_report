@@ -22,7 +22,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 	
 	\subsection{Performance metrics \statusnew}
 	
-	The performance of the cell detector is measured in terms of precision and recall. The metrics are defined in terms of:
+	We measure the performance of the cell detector in terms of precision and recall. The metrics are defined in terms of:
 	
 	\begin{description}
 		\item[True Positive instances] (TP) are candidate cell regions that are manually annotated as cells and the detector successfully classified as cells.
@@ -42,27 +42,95 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		\text{REC} = \frac{\text{TP}}{\text{TP} + \text{FN}}\ \text{.}
 	\]
 	
-	
-	precision, recall, time per image (not multicore)
-	
-	Figure \ref{fig:cell_tracks_detection} displays a temporal view of the detected cells. The vertical axis represents the frame of the sequence. The figure clearly shows that ``cell tracks'' are clearly discernible, even if the number of outliers is significant. For the tracking module it is better to have a higher recall than precision, as outliers can be much more easily discarded than segmented tracks linked.
-	\begin{figure}
-  \includegraphics[width=\textwidth]{images/cell_tracks}
-		\caption{Cells detected over 60 consecutive frames are visualized as a time series. The vertical axis corresponds to the frames. Even in this raw detection data, it is possible to see the tracks of some of these cells.}
-  \label{fig:cell_tracks_detection}
-	\end{figure}
-	
-
-	
 	\subsection{Detection accuracy \statusnew}
+			
+		As mentioned previously, we performed two different experiments to measure the performance of the cell detection module. The first experiment consisted of training and testing of the algorithm on the same dataset (the training set was 70\%, the testing set 30\% of the total dataset). In this way we measured for each dataset the maximum precision and recall value we could expect from the algorithm. In the second experiment the training was performed on combined datasets. The goal of this experiment was to observe how well the algorithm is able to generalize, and still return acceptable results.
 		
-		- trained on single dataset
+		\subsubsection{Training and testing on single dataset}
 		
-		- trained on combined dataset
+		The training was performed on 70\% of the manually dot-annotated images from each dataset, and tested on the remaining 30\%. \Cref{tab:results_detector_individual} displays the computed precision and recall values, together with the total number of cells that were annotated in each dataset.
+		
+		\todo{Repeat the measurements with the best feature selection}
+		
+		\begin{table}[h]
+			\centering
+			\begin{tabular}{rrrr}
+				Dataset & Number of annotated cells & Precision $\left[ \% \right]$  & Recall $\left[ \% \right]$ \\
+			\hline	      A &                       103 &                        60 &                     60 \\
+				      B &                       450 &                        60 &                     60 \\
+				      C &                      1083 &                        60 &                     60 \\
+				      D &                       530 &                        60 &                     60 \\
+				      E &                       446 &                        60 &                     60
+			\end{tabular} 
+			\caption{Precision and recall values for the cell detector trained on each dataset individually.}
+			\label{tab:results_detector_individual}
+		\end{table}
+
+		\todo{Discuss: which better, why(better images? less noise?), what could be improved...}
+		
+		\subsubsection{Training on composite dataset}
+		
+		In this second experiment we were instered in measuring how well the algorithm is able to generalize when it is trained on a larger, combined dataset. For this purpose, several of the datasets were grouped, and the detector was trained to recognize cells of all types. Then, the results were tested individually on the 30\% of the annotated images from each dataset, that were not used for training. \Cref{tab:results_detector_combined} shows the results.
+		
+		
+		\todo{Repeat the measurements with the best feature selection}
+		
+		\todo{Try different dataset combinations based on the observations... similar datasets}
+		
+		\begin{table}[h]
+			\centering
+			\begin{tabular}{rrrr}
+				Combined dataset &                  Precision $\left[ \% \right]$ &                     Recall $\left[ \% \right]$ &  \\
+			\hline
+				       A+B+C+D+E & A: 60, B: 60, C: 60, D: 60, E: 60 & A: 60, B: 60, C: 60, D: 60, E: 60 &
+			\end{tabular} 
+			\caption{Precision and recall values for the cell detector trained on combined datasets.}
+			\label{tab:results_detector_combined}
+		\end{table}
+		
+			
+		
+		\todo{Add discussion: generally how much precision/recall we loose, which dataset seems to suffer less/more, why do they suffer less/more (have fewer cells to be trained on, like like noise in another dataset)}
+		
+		
+		\todo{Here show an example of detection in a dataset so the use has a better idea of the difficulty of connecting the dots, like this image below...maybe create one for each dataset}
+		Figure \ref{fig:cell_tracks_detection} displays a temporal view of the detected cells. The vertical axis represents the frame of the sequence. The figure clearly shows that ``cell tracks'' are clearly discernible, even if the number of outliers is significant. For the tracking module it is better to have a higher recall than precision, as outliers can be much more easily discarded than segmented tracks linked.
+		\begin{figure}
+			\includegraphics[width=\textwidth]{images/cell_tracks}
+				\caption{Cells detected over 60 consecutive frames are visualized as a time series. The vertical axis corresponds to the frames. Even in this raw detection data, it is possible to see the tracks of some of these cells.}
+			\label{fig:cell_tracks_detection}
+		\end{figure}
+			
+				
 		
 	\subsection{Computations time \statusnew}
-		explain hardware, software 
+	
+		In order to positionally track cells in image sequence the computation time of extracting the cell position from each frame is just as important as the accurate identification of cells. \Cref{tab:results_detector_speed} displays the average detection times per frame for each dataset. The detection time is dependent on the number of candidate cell regions extracted and their dimensions.
+		
+		\todo{Explain hardware and software, say 1 core... can use more}
+		
+		\todo{It might be useful to show the comparison with the old detector if I have the time}
+		
 		\todo[inline]{Measure the speed of detection in images of different sizes, and different number of cells}
+				
+		
+		\begin{table}[h]
+			\centering
+			\begin{tabular}{rrrr}
+				Dataset & Avg. num. of cells per frame & Time per frame  $\left[ s \right]$ & Time per annotated cell  $\left[ s \right]$ \\
+			\hline
+				      A &                     1.7 &                                   60 &                                            60 \\
+				      B &                     7.5 &                                   60 &                                            60 \\
+				      C &                    19.7 &                                   60 &                                            60 \\
+				      D &                    10.6 &                                   60 &                                            60 \\
+				      E &                     6.7 &                                   60 &                                            60
+			\end{tabular} 
+			\caption{Average computation times per frame and annotated cell on a single CPU-core.}
+			\label{tab:results_detector_speed}
+		\end{table}
+		
+		\todo{Discuss which is faster, try to explain why-- less noise -- less candidate cells... }
+	
 \section{Cell tracker \statusnew}
 	\label{sec:results_tracker}
 	\todo[inline]{Define the different measures of accuracy}

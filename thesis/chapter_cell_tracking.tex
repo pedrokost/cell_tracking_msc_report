@@ -5,6 +5,7 @@
 	
 	\section{Method overview \statusfirstdraft}
 		\label{sec:tracking_overview}
+		
 		The cell detections obtained using the method described in \cref{chap:cell_detection} need to be linked into trajectories. The detections contain a number of false positives and false negatives (missed detections) which make the task of associating them into trajectories difficult.
 		
 		\begin{figure}[h]
@@ -29,7 +30,12 @@
 		
 		The approach used in this project is similar to \cite{bise11} in the formulation of the maximum a posteriori probability (MAP) problem and solving it using linear programming, but the likelihoods of the hypothesis (the likelihood of linking two tracklets, the likelihood of a tracklet being the first tracklet in a trajectory, the likelihood of it being the last tracklet in a trajectory or the likelihood of it being a false positive) were computed using a machine learning approach. This approach makes it possible to associate cells in very noisy and low quality images, where accurate cell detections are not always possible.
 		
-		Although the developed system is fully automatic, it gives some control to the user by letting him tweak the hypothesis' likelihoods and thus change the way the tracklets are linked. This control eliminates the need to retrain a specific model for each new dataset, as it makes it possible to use a trained linking model to link robust tracklets in a slightly different and previously unseen dataset.
+		Although the developed system is fully automatic, it gives some control to the user by letting him tweak the hypothesis' likelihoods and thus change the way the tracklets are linked. This control eliminates the need to retrain a specific model for each new dataset, as it makes it possible to use a trained linking model to link robust tracklets in a slightly different and	Figure \ref{fig:cell_tracks_detection} displays a temporal view of the detected cells. The vertical axis represents the frame of the sequence. The figure clearly shows that ``cell tracks'' are clearly discernible, even if the number of outliers is significant. For the tracking module it is better to have a higher recall than precision, as outliers can be much more easily discarded than segmented tracks linked.
+			\begin{figure}
+				\includegraphics[width=\textwidth]{images/cell_tracks}
+					\caption{Cells detected over 60 consecutive frames are visualized as a time series. The vertical axis corresponds to the frames. Even in this raw detection data, it is possible to see the tracks of some of these cells.}
+				\label{fig:cell_tracks_detection}
+			\end{figure} previously unseen dataset.
 	
 	\section{Joining cell detections into robust tracklets \statusfirstdraft}
 		\label{sec:tracking_robusttracklets}
