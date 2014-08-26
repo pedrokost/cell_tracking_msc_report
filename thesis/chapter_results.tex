@@ -44,7 +44,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 	
 	\subsection{Detection accuracy \statusnew}
 			
-		As mentioned previously, we performed two different experiments to measure the performance of the cell detection module. The first experiment consisted of training and testing of the algorithm on the same dataset (the training set was 70\%, the testing set 30\% of the total dataset). In this way we measured for each dataset the maximum precision and recall value we could expect from the algorithm. In the second experiment the training was performed on combined datasets. The goal of this experiment was to observe how well the algorithm is able to generalize, and still return acceptable results.
+		As mentioned previously, we performed two different experiments to measure the performance of the cell detection module. The first experiment consisted of training and testing of the algorithm on the same dataset (the training set was 70\%, the testing set 30\% of the entire dataset). In this way we measured for each dataset the maximum precision and recall values we could expect from the algorithm. In the second experiment the training was performed on combined datasets. The goal of this experiment was to observe how well the algorithm is able to generalize, and still return acceptable results.
 		
 		\subsubsection{Training and testing on single dataset}
 		
@@ -54,17 +54,25 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		
 		\begin{table}[h]
 			\centering
-			\begin{tabular}{rrrr}
-				Dataset & Number of annotated cells & Precision $\left[ \% \right]$  & Recall $\left[ \% \right]$ \\
-			\hline	      A &                       103 &                        60 &                     60 \\
-				      B &                       450 &                        60 &                     60 \\
-				      C &                      1083 &                        60 &                     60 \\
-				      D &                       530 &                        60 &                     60 \\
-				      E &                       446 &                        60 &                     60
+			\begin{tabular}{rrr}
+				Dataset & Precision $\left[ \% \right]$ & Recall $\left[ \% \right]$ \\
+			\hline
+				      A &                          58.3 &                       45.4 \\
+				      B &                          89.8 &                       93.6 \\
+				      C &                          82.5 &                       81.6 \\
+				      D &                          81.9 &                       90.5 \\
+				      E &                          82.3 &                       94.9
 			\end{tabular} 
 			\caption{Precision and recall values for the cell detector trained on each dataset individually.}
 			\label{tab:results_detector_individual}
 		\end{table}
+		
+		\todo{Explain why detection can be bad on dataset A}
+		   	% THE problem with this dataset is the sudden change of contrast when it
+		   	        % switches from frame 17 to 18. At that point all the background starts
+		   	        % looking like all the positive examples in the previous frames, which means
+		   	        % that a lot of negative examples are generated which cancel out all
+		   	        % learned in the first 17 frames
 
 		\todo{Discuss: which better, why(better images? less noise?), what could be improved...}
 		
@@ -87,18 +95,16 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 			\caption{Precision and recall values for the cell detector trained on combined datasets.}
 			\label{tab:results_detector_combined}
 		\end{table}
-		
-			
-		
+				
 		\todo{Add discussion: generally how much precision/recall we loose, which dataset seems to suffer less/more, why do they suffer less/more (have fewer cells to be trained on, like like noise in another dataset)}
 		
 		
 		\todo{Here show an example of detection in a dataset so the use has a better idea of the difficulty of connecting the dots, like this image below...maybe create one for each dataset}
-		Figure \ref{fig:cell_tracks_detection} displays a temporal view of the detected cells. The vertical axis represents the frame of the sequence. The figure clearly shows that ``cell tracks'' are clearly discernible, even if the number of outliers is significant. For the tracking module it is better to have a higher recall than precision, as outliers can be much more easily discarded than segmented tracks linked.
+		Figure \ref{fig:results_cell_tracks_detection} displays a temporal view of the detected cells. The vertical axis represents the frame of the sequence. The figure clearly shows that ``cell tracks'' are clearly discernible, even if the number of outliers is significant. For the tracking module it is better to have a higher recall than precision, as outliers can be much more easily discarded than segmented tracks linked.
 		\begin{figure}
 			\includegraphics[width=\textwidth]{images/cell_tracks}
 				\caption{Cells detected over 60 consecutive frames are visualized as a time series. The vertical axis corresponds to the frames. Even in this raw detection data, it is possible to see the tracks of some of these cells.}
-			\label{fig:cell_tracks_detection}
+			\label{fig:results_cell_tracks_detection}
 		\end{figure}
 			
 				
@@ -112,20 +118,21 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		\todo{It might be useful to show the comparison with the old detector if I have the time}
 		
 		\todo[inline]{Measure the speed of detection in images of different sizes, and different number of cells}
-				
+		
+		\todo[inline]{Explain what the candidate-annoation ration is, and what it tells. Also the ocmputations timer per candidate vary from 0.0086-0.0226}
 		
 		\begin{table}[h]
 			\centering
 			\begin{tabular}{rrrr}
-				Dataset & Avg. num. of cells per frame & Time per frame  $\left[ s \right]$ & Time per annotated cell  $\left[ s \right]$ \\
+				Dataset & Time per frame  $\left[ s \right]$ & Time per annotated cell  $\left[ s \right]$ & Candidate-Annotation ratio \\
 			\hline
-				      A &                     1.7 &                                   60 &                                            60 \\
-				      B &                     7.5 &                                   60 &                                            60 \\
-				      C &                    19.7 &                                   60 &                                            60 \\
-				      D &                    10.6 &                                   60 &                                            60 \\
-				      E &                     6.7 &                                   60 &                                            60
+				      A &                             0.9224 &                                      0.5854 &                       26:1 \\
+				      B &                             1.5899 &                                      0.2015 &                       16:1 \\
+				      C &                             1.1214 &                                      0.0586 &                        7:1 \\
+				      D &                             1.5215 &                                      0.1454 &                       18:1 \\
+				      E &                             0.6016 &                                      0.0853 &                        9:1
 			\end{tabular} 
-			\caption{Average computation times per frame and annotated cell on a single CPU-core.}
+			\caption{Average computation times per frame and annotated cell using a single worker.}
 			\label{tab:results_detector_speed}
 		\end{table}
 		
@@ -136,13 +143,14 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 	\todo[inline]{Define the different measures of accuracy}
 	\subsection{Performance metrics \statusnew}
 	
+	TODO: test detector on full dataset, but train it on ALL (notjust70\%) of the annotation
+	TODO: train tracker on 70\% of the trajectories, test on rest
+	
 	great Metrics: Research Article, Evaluating Multiple Object Tracking Performance: The CLEAR MOT Metrics
 	
 	- Explain how the testing data was generation. from annotation to mapped deteciton to genreated tracklets
 
 	\subsection{Tracking accuracy \statusnew}
-		
-	
 		- trained on single dataset
 		
 		- for each dataset explain how the parameters were setup
