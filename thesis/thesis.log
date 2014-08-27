@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.21)  27 AUG 2014 23:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.21)  28 AUG 2014 00:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2788,6 +2788,24 @@ Package xcolor Warning: Incompatible color definition on input line 101.
 Package xcolor Warning: Incompatible color definition on input line 101.
 
 
+Package xcolor Warning: Incompatible color definition on input line 102.
+
+
+Package xcolor Warning: Incompatible color definition on input line 102.
+
+
+Package xcolor Warning: Incompatible color definition on input line 102.
+
+
+Package xcolor Warning: Incompatible color definition on input line 102.
+
+
+Package xcolor Warning: Incompatible color definition on input line 102.
+
+
+Package xcolor Warning: Incompatible color definition on input line 102.
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
@@ -4996,14 +5014,138 @@ l.42 \begin{appendices}
 
 
 
-] (./thesis.bbl (./thesis.brf)
+]
+\openout2 = `appendix_detection_results.aux'.
+
+ (./appendix_detection_results.tex
+Appendix C.
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_1.ep
+s>
+(epstopdf)                    date: 2014-08-27 14:44:35
+(epstopdf)                    size: 36753 bytes
+(epstopdf)             Output file: <./imageslowres/fig_results_detector_sequen
+ces_1-eps-converted-to.jpg>
+(epstopdf)                    date: 2014-08-27 14:47:37
+(epstopdf)                    size: 34911 bytes
+(epstopdf)             Command: <convert images/fig_results_detector_sequences_
+1.eps ./imageslowres/fig_results_detector_sequences_1-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 5.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_results_detector_sequences_1-eps-converted-to.jpg, id=279, 
+511.9125pt x 307.1475pt>
+File: ./imageslowres/fig_results_detector_sequences_1-eps-converted-to.jpg Grap
+hic file (type jpg)
+
+<use ./imageslowres/fig_results_detector_sequences_1-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_results_detector_sequences_1-eps-co
+nverted-to.jpg used on input line 5.
+(pdftex.def)             Requested size: 469.47049pt x 281.68396pt.
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_2.ep
+s>
+(epstopdf)                    date: 2014-08-27 14:44:43
+(epstopdf)                    size: 257264 bytes
+(epstopdf)             Output file: <./imageslowres/fig_results_detector_sequen
+ces_2-eps-converted-to.jpg>
+(epstopdf)                    date: 2014-08-27 14:47:37
+(epstopdf)                    size: 53515 bytes
+(epstopdf)             Command: <convert images/fig_results_detector_sequences_
+2.eps ./imageslowres/fig_results_detector_sequences_2-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 11.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_results_detector_sequences_2-eps-converted-to.jpg, id=280, 
+510.90875pt x 310.15875pt>
+File: ./imageslowres/fig_results_detector_sequences_2-eps-converted-to.jpg Grap
+hic file (type jpg)
+
+<use ./imageslowres/fig_results_detector_sequences_2-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_results_detector_sequences_2-eps-co
+nverted-to.jpg used on input line 11.
+(pdftex.def)             Requested size: 469.47049pt x 284.9993pt.
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_3.ep
+s>
+(epstopdf)                    date: 2014-08-27 14:44:57
+(epstopdf)                    size: 1035421 bytes
+(epstopdf)             Output file: <./imageslowres/fig_results_detector_sequen
+ces_3-eps-converted-to.jpg>
+(epstopdf)                    date: 2014-08-27 14:47:38
+(epstopdf)                    size: 68538 bytes
+(epstopdf)             Command: <convert images/fig_results_detector_sequences_
+3.eps ./imageslowres/fig_results_detector_sequences_3-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 17.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_results_detector_sequences_3-eps-converted-to.jpg, id=281, 
+516.93124pt x 310.15875pt>
+File: ./imageslowres/fig_results_detector_sequences_3-eps-converted-to.jpg Grap
+hic file (type jpg)
+
+<use ./imageslowres/fig_results_detector_sequences_3-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_results_detector_sequences_3-eps-co
+nverted-to.jpg used on input line 17.
+(pdftex.def)             Requested size: 469.47049pt x 281.69118pt.
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_4.ep
+s>
+(epstopdf)                    date: 2014-08-27 14:45:20
+(epstopdf)                    size: 1588244 bytes
+(epstopdf)             Output file: <./imageslowres/fig_results_detector_sequen
+ces_4-eps-converted-to.jpg>
+(epstopdf)                    date: 2014-08-27 14:47:38
+(epstopdf)                    size: 74909 bytes
+(epstopdf)             Command: <convert images/fig_results_detector_sequences_
+4.eps ./imageslowres/fig_results_detector_sequences_4-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 23.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_results_detector_sequences_4-eps-converted-to.jpg, id=282, 
+518.93875pt x 308.15125pt>
+File: ./imageslowres/fig_results_detector_sequences_4-eps-converted-to.jpg Grap
+hic file (type jpg)
+
+<use ./imageslowres/fig_results_detector_sequences_4-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_results_detector_sequences_4-eps-co
+nverted-to.jpg used on input line 23.
+(pdftex.def)             Requested size: 469.47049pt x 278.79117pt.
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_5.ep
+s>
+(epstopdf)                    date: 2014-08-27 14:45:36
+(epstopdf)                    size: 589671 bytes
+(epstopdf)             Output file: <./imageslowres/fig_results_detector_sequen
+ces_5-eps-converted-to.jpg>
+(epstopdf)                    date: 2014-08-27 14:47:39
+(epstopdf)                    size: 62955 bytes
+(epstopdf)             Command: <convert images/fig_results_detector_sequences_
+5.eps ./imageslowres/fig_results_detector_sequences_5-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 28.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_results_detector_sequences_5-eps-converted-to.jpg, id=283, 
+515.9275pt x 308.15125pt>
+File: ./imageslowres/fig_results_detector_sequences_5-eps-converted-to.jpg Grap
+hic file (type jpg)
+
+<use ./imageslowres/fig_results_detector_sequences_5-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_results_detector_sequences_5-eps-co
+nverted-to.jpg used on input line 28.
+(pdftex.def)             Requested size: 469.47049pt x 280.41336pt.
+)
+[55
+
+
+
+
+
+] [56 <./imageslowres/fig_results_detector_sequences_1-eps-converted-to.jpg> <.
+/imageslowres/fig_results_detector_sequences_2-eps-converted-to.jpg>]
+[57 <./imageslowres/fig_results_detector_sequences_3-eps-converted-to.jpg> <./i
+mageslowres/fig_results_detector_sequences_4-eps-converted-to.jpg>] [58 <./imag
+eslowres/fig_results_detector_sequences_5-eps-converted-to.jpg>] (./thesis.bbl
+(./thesis.brf)
 \tf@brf=\write6
 \openout6 = `thesis.brf'.
 
  [59
-
-
-
 
 
 ]
@@ -5031,19 +5173,19 @@ No file appendix_detectortracker.aux.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 25908AF5441E6D50CFB917D817415A5E;1590.
+(rerunfilecheck)             Checksum: 4F1FCDCEB1E799D1DC87B64104096A87;1653.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: A18B4A8756EDD1A033DE8905D0893A48;2775.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
  ) 
 Here is how much of TeX's memory you used:
- 25106 strings out of 495028
- 441522 string characters out of 6181497
- 715504 words of memory out of 5000000
- 27438 multiletter control sequences out of 15000+600000
+ 25151 strings out of 495028
+ 443504 string characters out of 6181497
+ 715528 words of memory out of 5000000
+ 27465 multiletter control sequences out of 15000+600000
  31915 words of font info for 131 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 67i,18n,82p,1015b,598s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,18n,82p,1014b,598s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{page.36} has been referenced but does not exist, 
 replaced by a fixed one
 
@@ -5100,15 +5242,6 @@ laced by a fixed one
 
 pdfTeX warning (dest): name{page.7} has been referenced but does not exist, rep
 laced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.47} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.43} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Appendix.1.C} has been referenced but does not exis
-t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Appendix.1.B} has been referenced but does not exis
 t, replaced by a fixed one
@@ -5267,10 +5400,10 @@ f/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public
 fb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb></usr/share/texmf
 /fonts/type1/public/cm-super/sfxc1440.pfb></usr/share/texmf/fonts/type1/public/
 cm-super/sfxc2074.pfb>
-Output written on thesis.pdf (15 pages, 333600 bytes).
+Output written on thesis.pdf (19 pages, 630886 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 438 compressed objects within 5 object streams
- 140 named destinations out of 1000 (max. 500000)
- 25737 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 514 PDF objects out of 1000 (max. 8388607)
+ 459 compressed objects within 5 object streams
+ 147 named destinations out of 1000 (max. 500000)
+ 25770 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -52,12 +52,12 @@
 \contentsline {subsection}{\numberline {5.1.3}Manual data annotation \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{42}{subsection.5.1.3}
 \contentsline {section}{\numberline {5.2}The annotation tool \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{42}{section.5.2}
 \contentsline {chapter}{\numberline {6}Experimental results \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {in progress}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{45}{chapter.6}
-\contentsline {section}{\numberline {6.1}Cell detector \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {in progress}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{45}{section.6.1}
+\contentsline {section}{\numberline {6.1}Cell detector \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{45}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Performance metrics \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{46}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Detection accuracy \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {in progress}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{46}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.2}Detection accuracy \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{46}{subsection.6.1.2}
 \contentsline {subsubsection}{\nonumberline Training and testing on individual datasets}{47}{section*.3}
 \contentsline {subsubsection}{\nonumberline Training on combined datasets}{48}{section*.7}
-\contentsline {subsection}{\numberline {6.1.3}Computations time \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{50}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.3}Computations time \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{50}{subsection.6.1.3}
 \contentsline {section}{\numberline {6.2}Cell tracker \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{51}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Performance metrics \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{51}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Tracking accuracy \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{51}{subsection.6.2.2}
@@ -71,4 +71,4 @@
 \contentsline {chapter}{\numberline {A}User Guide for the Annotation Tool}{53}{Appendix.1.A}
 \contentsline {chapter}{\numberline {B}User Guide for the Interactive Annotation Viewer}{54}{Appendix.1.B}
 \contentsline {chapter}{\numberline {C}Cell detection results}{55}{Appendix.1.C}
-\contentsline {chapter}{Bibliography}{59}{section*.14}
+\contentsline {chapter}{Bibliography}{59}{figure.caption.19}

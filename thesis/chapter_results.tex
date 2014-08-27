@@ -8,7 +8,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 \section{Cell detector \statusfirstdraft}
 	\label{sec:results_detector}
 	
-	In this section we evaluated the performance of the automatic cell detection module. First, we introduce the performance metrics used to evaluate the accuracy of the cell detector. Then we present detection accuracy results. To evaluate the accuracy and generalizability of the detection module we perform two sets of experiments. First, we train the cell detector on a number of frames from each individual dataset, and measure the accuracy on the same dataset. Second, we train the detector on combinations of datasets in order to judge the performance degradation due to the learning on the more types of cells. Because of the varying size of the cells in the datasets, and the varying brightness of the cells, we expect that such a trained detector will perform poorer than when trained and tested on individual datasets, sometimes mistakenly detecting small artefacts in the background as cells. Finally, we compute the average detection time per frame for each dataset.
+	In this section we evaluate the performance of the automatic cell detection module. First, we introduce the performance metrics used to evaluate the accuracy of the cell detector. Then we present detection accuracy results. To evaluate the accuracy and generalizability of the detection module we perform two sets of experiments. First, we train the cell detector on a number of frames from each individual dataset, and measure the accuracy on the same dataset. Second, we train the detector on combinations of datasets in order to judge the performance degradation due to the learning on the more types of cells. Because of the varying size of the cells in the datasets, and the varying brightness of the cells, we expect that such a trained detector will perform poorer than when trained and tested on individual datasets, sometimes mistakenly detecting small artefacts in the background as cells. Finally, we compute the average detection time per frame for each dataset.
 	
 	The aim of this research was to develop an automatic cell detection and tracking pipeline that would require as little manual work as possible. This implies that a balance between accuracy and amount of manual work had to be established. There is also an direct relationship between accuracy and computation time. In order to reduce the amount of manual work we aimed to configure the cell detection module such that it would perform well on all the tested datasets without any manual adjustments of parameters. The consequences of this decision are twofold:
 	
@@ -99,7 +99,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 				          \_BCDE            &   86.3   & \upd{49.2} & \dn{76.4}  & \up{85.9}  & \dn{71.8}  &   \up{94.4}   &   76.4   & \upd{58.3} &     89.5      & \dn{56.0}  & \up{97.4}  & \dn{75.7}  \\
 			\hline
 				          \_BCD\_           &   82.8   & \upd{52.5} & \dn{78.0}  & \up{87.5}  & \dn{72.7}  &  \upd{95.2}   &   74.5   & \upd{55.8} &     89.5      & \dn{54.7}  & \up{97.4}  & \dnd{74.0} \\
-				          \_B\_DE           &   85.9   &            &            &            &            &               &   82.6   &            &               &            &            &
+				          \_B\_DE           &   85.9   & \upd{42.5} & \dn{80.3}  & \upd{84.8} & \dn{72.1}  &   \up{97.7}   &   82.6   & \upd{45.8} &   \up{91.2}   & \dnd{44.8} & \up{97.4}  &  \dn{66.3}
 			\end{tabular} 
 			\caption{Precision and recall values for the cell detector trained on combined datasets. Values typed in bold indicate the testing datasets that were not included in the combined training dataset. Red/blue colour indicates a decrease/increase in performance compared to training and testing on each individual dataset by at least 1 precision/recall point.}
 			\label{tab:results_detector_combined}
@@ -119,7 +119,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		
 		It is worth keeping in mind that all five datasets analysed in this thesis show distinct characteristics (both in cell type and image clarity). In practice, datasets will often be similar and it might be sufficient to annotated a single dataset to train a detector that can be used on other similar samples.
 	
-	\subsection{Computations time \statusnew}
+	\subsection{Computations time \statusfirstdraft}
 	
 		In order to positionally track cells in image sequence the computation time of extracting the cell position from each frame is just as important as the accurate identification of cells. \Cref{tab:results_detector_speed} displays the average detection times per frame for each dataset. We also measured the average detection time per annotated cell in each dataset and the average ratio between the number of all candidate regions that were detected with the MSER detector and the number of annotated cells in each frame.
 		
