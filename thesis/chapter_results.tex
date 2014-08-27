@@ -95,18 +95,20 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 					% > 1 point better : blue, > 1 point worse: red, else black
 		\begin{table}[h]
 			\centering
-			\begin{tabular}{r|*{6}{c}|*{6}{c}}
-				\multicolumn{1}{c}{Combined dataset} & \multicolumn{6}{|c|}{Precision}                                                            &                                   \multicolumn{6}{c}{Recall}                                    \\
-				                                     & $\gamma$ &     A     &     B     &         C          &         D          &       E       & $\gamma$ &     A     &     B     &         C          &         D          &         E          \\
+			\begin{tabular}{p{3cm}|*{6}{c}|*{6}{c}}
+				\multicolumn{1}{c}{Combined dataset} & \multicolumn{6}{|c|}{Precision}                                             &                         \multicolumn{6}{c}{Recall}                          \\
+				                                     & $\gamma$ &     A     &     B      &     C      &     D      &       E       & $\gamma$ &     A     &       B       &     C      &     D      &     E      \\
 			\hline
-				                           A+B+C+D+E &   74.5   & \up{49.2} & \dn{76.0} &     \up{85.2}      &     \dn{69.2}      &   \up{94.5}   &   79.9   & \up{58.3} & \up{90.8} &     \dn{57.1}      &     \up{98.9}      &     \up{79.7}      \\
-				                             A+B+C+D &   69.7   & \up{49.2} & \dn{77.0} &     \up{85.8}      &     \dn{69.9}      & \textbf{93.4} &   80.0   & \up{58.3} &   90.3    &     \dn{58.7}      &     \up{98.4}      & \up{\textbf{80.7}} \\
-				                             A+B+C+E &   72.8   & \up{45.9} & \dn{75.0} &     \up{82.6}      & \dn{\textbf{41.1}} &   \dn{87.2}   &   83.2   & \up{65.0} & \up{96.4} &     \dn{73.6}      & \up{\textbf{99.4}} &     \up{89.8}      \\
-				                             A+B+D+E &   75.5   & \up{47.5} & \dn{75.8} & \up{\textbf{85.7}} &     \dn{73.1}      &   \up{96.5}   &   73.1   & \up{50.8} &   88.9    & \dn{\textbf{46.1}} &     \up{97.1}      &     \dn{68.3}      \\
-				                             A+C+D+E &   75.9   &   41.3    &   63.1    &        85.5        &        71.2        &     94.6      &   70.4   &   58.3    &   89.2    &        57.0        &        99.0        &        80.2        \\
-				                             B+C+D+E &          &           &           &                    &                    &               &          &           &           &                    &                    &
+				ABCDE                                &   74.5   & \up{49.2} & \dn{76.0}  & \up{85.2}  & \dn{69.2}  &   \up{94.5}   &   79.9   & \up{58.3} &   \up{90.8}   & \dn{57.1}  & \up{98.9}  & \up{79.7}  \\
+			\hline
+				ABCD\_                               &   69.7   & \up{49.2} & \dn{77.0}  & \up{85.8}  & \dn{69.9}  & \textbf{93.4} &   80.0   & \up{58.3} &     90.3      & \dn{58.7}  & \up{98.4}  & \upd{80.7} \\
+				ABC\_E                               &   72.8   & \up{45.9} & \dn{75.0}  & \up{82.6}  & \dnd{41.1} &   \dn{87.2}   &   83.2   & \up{65.0} &   \up{96.4}   & \dn{73.6}  & \upd{99.4} & \up{89.8}  \\
+				AB\_DE                               &   75.5   & \up{47.5} & \dn{75.8}  & \upd{85.7} & \dn{73.1}  &   \up{96.5}   &   73.1   & \up{50.8} &     88.9      & \dnd{46.1} & \up{97.1}  & \dn{68.3}  \\
+				A\_CDE                               &   75.9   & \up{41.3} & \dnd{63.1} & \up{85.5}  & \dn{71.2}  &   \up{94.6}   &   70.4   & \up{58.3} & \textbf{89.2} & \dn{57.0}  & \up{99.0}  & \up{80.2}  \\
+				\_BCDE                               &   86.3   &   49.2    &    76.4    &    85.9    &    71.8    &     94.4      &   76.4   &   58.3    &     89.5      &    56.0    &    97.4    &    75.7    \\
+			\hline
 			\end{tabular} 
-			\caption{Precision and recall values for the cell detector trained on combined datasets. Values typed in bold indicate the testing datasets that were not included in the combine training dataset. Red/blue colour indicates a decrease/increase in performance compared to training and testing on each individual dataset by at least 1 precision/recall point.}
+			\caption{Precision and recall values for the cell detector trained on combined datasets. Values typed in bold indicate the testing datasets that were not included in the combined training dataset. Red/blue colour indicates a decrease/increase in performance compared to training and testing on each individual dataset by at least 1 precision/recall point.}
 			\label{tab:results_detector_combined}
 		\end{table}
 				
@@ -114,6 +116,23 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		
 		Answer: which improve, which worsen. By how much? Could we still use the results for tracking?
 		Does training on similar datasets than testing help? In general higher recall: good for tracker, since lower precision can be fixed easier since it is easier to identify false positive tracklets than correctly link tracklets that have many missing detections.
+		
+		Which dataset worsens prec and recall when combined?  none
+		Which dataset improves prec and recall when combined?  A, E mostly
+		Which dataset improve precision when combined? A, C, E mostly
+		Which datasets improve recall when combined?  A, B mostly, D, E mostly
+		Eliminating which datasets improves everything?  no clear winner
+		Elimintating which dataset worsens everything?  no clear winner
+		
+		Looking just at the non training dataset:
+		Which dataset worsens prec and recall when combined?  
+		Which dataset improves prec and recall when combined?
+		Which dataset worsens all others when combined?  B mostly
+		Which dataset improves all others when combined?    E mostly
+		Which dataset improve precision when combined? C
+		Which datasets improve recall when combined?   D, E
+		
+		
 		
 		Wins
 			
