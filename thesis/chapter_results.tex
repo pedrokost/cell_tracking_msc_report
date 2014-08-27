@@ -5,7 +5,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 
 \todo[inline]{See the cell population tracking and linear construction with spationtemporal ocntet by Kang et al for a good results section}
 
-\section{Cell detector \status{in progress}}
+\section{Cell detector \statusfirstdraft}
 	\label{sec:results_detector}
 	
 	In this section we evaluated the performance of the automatic cell detection module. First, we introduce the performance metrics used to evaluate the accuracy of the cell detector. Then we present detection accuracy results. To evaluate the accuracy and generalizability of the detection module we perform two sets of experiments. First, we train the cell detector on a number of frames from each individual dataset, and measure the accuracy on the same dataset. Second, we train the detector on combinations of datasets in order to judge the performance degradation due to the learning on the more types of cells. Because of the varying size of the cells in the datasets, and the varying brightness of the cells, we expect that such a trained detector will perform poorer than when trained and tested on individual datasets, sometimes mistakenly detecting small artefacts in the background as cells. Finally, we compute the average detection time per frame for each dataset.
@@ -20,7 +20,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 	
 	We were able to identify features that compute in an acceptable time for all these datasets (see \cref{sec:detector_feature}). However, it should be noted that in the case of testing the detector on very large datasets with thousands of frames, some adjustments of the parameters could result in a significant reduction in computation time and increased accuracy.
 	
-	\subsection{Performance metrics \statusnew}
+	\subsection{Performance metrics \statusfirstdraft}
 	
 	We measure the performance of the cell detector in terms of precision and recall. The metrics are defined in terms of:
 	
@@ -42,11 +42,11 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		\text{REC} = \frac{\text{TP}}{\text{TP} + \text{FN}}\ \text{.}
 	\]
 	
-	\subsection{Detection accuracy \statusnew}
+	\subsection{Detection accuracy \statusfirstdraft}
 			
 		As mentioned previously, we performed two different experiments to measure the performance of the cell detection module. The first experiment consisted of training and testing of the algorithm on the same dataset. The training set was 70\% and the testing set 30\% of the entire dataset. The training and testing datasets were created from images in randomized order from the entire dataset. This allowed us to measure, for each dataset, the maximum precision and recall values we could expect from the algorithm. In the second experiment the training was performed on combined datasets. The goal of this experiment was to observe how well the algorithm is able to generalize, and still return acceptable results.
 		
-		\subsubsection{Training and testing on single dataset}
+		\subsubsection{Training and testing on individual datasets}
 		
 		The training was performed on 70\% of the manually dot-annotated images from each dataset, and tested on the remaining 30\%. \Cref{tab:results_detector_individual} displays the computed precision and recall values, together with the total number of cells that were annotated in each dataset.
 		
@@ -75,79 +75,55 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 
 		\Cref{fig:results_detector_sequences_1,fig:results_detector_sequences_2,fig:results_detector_sequences_3,fig:results_detector_sequences_4,fig:results_detector_sequences_5} in appendix \ref{app:appendix_detectionresults} display a temporal view of the detected results in each datasets. The vertical axis represents the consecutive frame number of the image sequence. The figures show that ``cell tracks'' are discernible, even if the number of outliers is significant. The detectors used to detect the cells on the entire dataset were trained on all the annotated frames. \todo{Repeat the training+testing using all frames for training}
 
-		\subsubsection{Training on composite dataset}
+		\subsubsection{Training on combined datasets}
 		
 		In this second experiment we were interested in measuring how well the algorithm is able to generalize when it is trained on a larger, combined dataset. For this purpose, several of the datasets were grouped, and the detector was trained to recognize cells of all types. The detector was trained on a random 70\% of all annotated images in the combined dataset. It was then tested on a random 30\% of annotated frames from each individual dataset separately. This means that sometimes the same frames could be used for training and testing. However, we also run combinations of datasets where one dataset is left out of training at each time. Testing on that dataset should then reveal if the algorithm generalizes well.
 		
-		\Cref{tab:results_detector_combined} summarizes the precision and recall values for all tested combined datasets. The column denoted $\gamma$ contains testing performance as tested on 30\% of the combined dataset. The values shown in bold correspond to the performance of testing on the dataset that was left out from the combined training dataset.
+		\Cref{tab:results_detector_combined} summarizes the precision and recall values for all tested combined datasets. The column denoted $\gamma$ contains testing performance as tested on 30\% of the combined dataset. The values shown in bold correspond to the performance of testing on the dataset that was left out from the combined training dataset. The row denoted ``Individual'' indicates the results when the datasets where trained and tested individually (these are the same results as in \cref{tab:results_detector_individual}). The values shown in red indicate a decrease in precision/recall by at least 1 point compared to the results when trained and tested on individual datasets. Similarly, blue colour indicates an increase in precision/recall compared to the results on the row denoted ``Individual''.
 		
 		\todo{Repeat the measurements with the best feature selection}
 		
-		\todo{Try different dataset combinations based on the observations... similar datasets}
-
-		
-					%	      A &      25.0 &   22.5 \\
-					%	      B &      90.1 &   89.1 \\
-					%	      C &      76.5 &   84.2 \\
-					%	      D &      86.1 &   85.3\\
-					%	      E &      93.4 &   78.6\\
-		
-					% > 1 point better : blue, > 1 point worse: red, else black
 		\begin{table}[h]
 			\centering
-			\begin{tabular}{p{3cm}|*{6}{c}|*{6}{c}}
-				\multicolumn{1}{c}{Combined dataset} & \multicolumn{6}{|c|}{Precision}                                             &                         \multicolumn{6}{c}{Recall}                          \\
-				                                     & $\gamma$ &     A     &     B      &     C      &     D      &       E       & $\gamma$ &     A     &       B       &     C      &     D      &     E      \\
+			\begin{tabular}{c|*{6}{c}|*{6}{c}}
+				\multicolumn{1}{c}{Dataset} & \multicolumn{6}{|c|}{Precision}                                              &                          \multicolumn{6}{c}{Recall}                          \\
+				                            & $\gamma$ &     A      &     B      &     C      &     D      &       E       & $\gamma$ &     A      &       B       &     C      &     D      &     E      \\
+				        Individual          &          &    25.0    &    90.1    &    76.5    &    86.1    &     93.4      &          &    22.5    &     89.1      &    84.2    &    85.3    &    78.6    \\
 			\hline
-				ABCDE                                &   74.5   & \up{49.2} & \dn{76.0}  & \up{85.2}  & \dn{69.2}  &   \up{94.5}   &   79.9   & \up{58.3} &   \up{90.8}   & \dn{57.1}  & \up{98.9}  & \up{79.7}  \\
+				           ABCDE            &   74.5   & \up{49.2}  & \dn{76.0}  & \up{85.2}  & \dn{69.2}  &   \up{94.5}   &   79.9   & \up{58.3}  &   \up{90.8}   & \dn{57.1}  & \up{98.9}  & \up{79.7}  \\
 			\hline
-				ABCD\_                               &   69.7   & \up{49.2} & \dn{77.0}  & \up{85.8}  & \dn{69.9}  & \textbf{93.4} &   80.0   & \up{58.3} &     90.3      & \dn{58.7}  & \up{98.4}  & \upd{80.7} \\
-				ABC\_E                               &   72.8   & \up{45.9} & \dn{75.0}  & \up{82.6}  & \dnd{41.1} &   \dn{87.2}   &   83.2   & \up{65.0} &   \up{96.4}   & \dn{73.6}  & \upd{99.4} & \up{89.8}  \\
-				AB\_DE                               &   75.5   & \up{47.5} & \dn{75.8}  & \upd{85.7} & \dn{73.1}  &   \up{96.5}   &   73.1   & \up{50.8} &     88.9      & \dnd{46.1} & \up{97.1}  & \dn{68.3}  \\
-				A\_CDE                               &   75.9   & \up{41.3} & \dnd{63.1} & \up{85.5}  & \dn{71.2}  &   \up{94.6}   &   70.4   & \up{58.3} & \textbf{89.2} & \dn{57.0}  & \up{99.0}  & \up{80.2}  \\
-				\_BCDE                               &   86.3   &   49.2    &    76.4    &    85.9    &    71.8    &     94.4      &   76.4   &   58.3    &     89.5      &    56.0    &    97.4    &    75.7    \\
+				          ABCD\_            &   69.7   & \up{49.2}  & \dn{77.0}  & \up{85.8}  & \dn{69.9}  & \textbf{93.4} &   80.0   & \up{58.3}  &     90.3      & \dn{58.7}  & \up{98.4}  & \upd{80.7} \\
+				          ABC\_E            &   72.8   & \up{45.9}  & \dn{75.0}  & \up{82.6}  & \dnd{41.1} &   \dn{87.2}   &   83.2   & \up{65.0}  &   \up{96.4}   & \dn{73.6}  & \upd{99.4} & \up{89.8}  \\
+				          AB\_DE            &   75.5   & \up{47.5}  & \dn{75.8}  & \upd{85.7} & \dn{73.1}  &   \up{96.5}   &   73.1   & \up{50.8}  &     88.9      & \dnd{46.1} & \up{97.1}  & \dn{68.3}  \\
+				          A\_CDE            &   75.9   & \up{41.3}  & \dnd{63.1} & \up{85.5}  & \dn{71.2}  &   \up{94.6}   &   70.4   & \up{58.3}  & \textbf{89.2} & \dn{57.0}  & \up{99.0}  & \up{80.2}  \\
+				          \_BCDE            &   86.3   & \upd{49.2} & \dn{76.4}  & \up{85.9}  & \dn{71.8}  &   \up{94.4}   &   76.4   & \upd{58.3} &     89.5      & \dn{56.0}  & \up{97.4}  & \dn{75.7}  \\
 			\hline
+				          \_BCD\_           &   82.8   & \upd{52.5} & \dn{78.0}  & \up{87.5}  & \dn{72.7}  &  \upd{95.2}   &   74.5   & \upd{55.8} &     89.5      & \dn{54.7}  & \up{97.4}  & \dnd{74.0} \\
+				          \_B\_DE           &   85.9   &            &            &            &            &               &   82.6   &            &               &            &            &
 			\end{tabular} 
 			\caption{Precision and recall values for the cell detector trained on combined datasets. Values typed in bold indicate the testing datasets that were not included in the combined training dataset. Red/blue colour indicates a decrease/increase in performance compared to training and testing on each individual dataset by at least 1 precision/recall point.}
 			\label{tab:results_detector_combined}
 		\end{table}
-				
-		\todo{Add discussion: generally how much precision/recall we loose, which dataset seems to suffer less/more, why do they suffer less/more (have fewer cells to be trained on, like like noise in another dataset)}
 		
-		Answer: which improve, which worsen. By how much? Could we still use the results for tracking?
-		Does training on similar datasets than testing help? In general higher recall: good for tracker, since lower precision can be fixed easier since it is easier to identify false positive tracklets than correctly link tracklets that have many missing detections.
+		The values in the table show us some significant insights. First of all, the recall values increased for most datasets when detecting cells using a detector trained with almost any combination of data. Using more data thus improves the recall. This means that in general the algorithm will detect a larger number of true positive instances, but also some false negatives. However, given the high recall value we can expect the number of false negatives to remain relatively small. For the tracking module it is easy to discard short, isolated detections. The high recall values indicate that we will likely detect most of the real cell trajectories.
 		
-		Which dataset worsens prec and recall when combined?  none
-		Which dataset improves prec and recall when combined?  A, E mostly
-		Which dataset improve precision when combined? A, C, E mostly
-		Which datasets improve recall when combined?  A, B mostly, D, E mostly
-		Eliminating which datasets improves everything?  no clear winner
-		Elimintating which dataset worsens everything?  no clear winner
+		Second, we notice that while most recall increase, precision tends to decrease in some datasets. This means that the number of false positives increased. As said beforehand, the cell tracking module can deal effectively with short, isolated false positives. However, if the number of false positives increases too much, the tracking module might detect cell trajectories where there are none (or correspond to background noise). However, given that in most examples the precision values did not fall below 70 we should still expect to achieve good tracking results.
 		
-		Looking just at the non training dataset:
-		Which dataset worsens prec and recall when combined?  
-		Which dataset improves prec and recall when combined?
-		Which dataset worsens all others when combined?  B mostly
-		Which dataset improves all others when combined?    E mostly
-		Which dataset improve precision when combined? C
-		Which datasets improve recall when combined?   D, E
+		The results on Dataset C went against these observations. Its recall values decreased significantly whenever a combined dataset was used to train the detector. This dataset contains many motion artefacts, and high variance of intensities of the cells, some of which smoothly blend into the background. This makes it very difficult to consistently annotate. It is possible that the inconsistencies in annotation make it perform in such a way when combined with other datasets.
 		
+		Another interesting observation is that the precision and recall values for dataset A improved significantly compared to training the detector only on dataset A. We have previously presented some possible reasons for its poor performance when trained individually. The increased performance when using a cell detector trained on other datasets (even excluding dataset A itself) can be attributed to two things. First, the detector learns to detect a wider range of types of cells. Second, dataset A contains much fewer annotated cells than the other datasets (about five times less). It is possible that a detector trained on only dataset A overfits the annotations, and cannot generalize to detect cells in other frames. 
 		
+		The performance on dataset E remained almost constant, with very few exceptions (e.g. smaller recall value when the detector was trained on combined dataset containing datasets A, B, D and E).
+
+		In this section we aimed to understand whether a detector trained on a single, combined dataset could be used to detect cells in new, previously unseen images. The results have shown that a general detector will not perform well on \textit{all} new unseen datasets. For example, we have measured a significant drop in precision values when testing on unseen datasets B and D, and a significant drop in recall values when testing on dataset C. However, in some cases training on a combined detector either improved the performance or reduced it insignificantly (such as in datasets A and E). What this tells us is that when presented with a new dataset it is worth trying to use a pre-trained detector and review its results. In some cases this could give as acceptable results, and manual annotation of the new dataset might be unnecessary.
 		
-		Wins
-			
-		Looses
+		It is worth keeping in mind that all five datasets analysed in this thesis show distinct characteristics (both in cell type and image clarity). In practice, datasets will often be similar and it might be sufficient to annotated a single dataset to train a detector that can be used on other similar samples.
+	
 	\subsection{Computations time \statusnew}
 	
-		In order to positionally track cells in image sequence the computation time of extracting the cell position from each frame is just as important as the accurate identification of cells. \Cref{tab:results_detector_speed} displays the average detection times per frame for each dataset. The detection time is dependent on the number of candidate cell regions extracted and their dimensions.
+		In order to positionally track cells in image sequence the computation time of extracting the cell position from each frame is just as important as the accurate identification of cells. \Cref{tab:results_detector_speed} displays the average detection times per frame for each dataset. We also measured the average detection time per annotated cell in each dataset and the average ratio between the number of all candidate regions that were detected with the MSER detector and the number of annotated cells in each frame.
 		
-		\todo{Explain hardware and software, say 1 core... can use more}
-		
-		\todo{It might be useful to show the comparison with the old detector if I have the time}
-		
-		\todo[inline]{Measure the speed of detection in images of different sizes, and different number of cells}
-		
-		\todo[inline]{Explain what the candidate-annoation ration is, and what it tells. Also the ocmputations timer per candidate vary from 0.0086-0.0226}
+		The detection was performed on a PC with an Intel(R) Core(TM) i7-2600 CPU with a clock frequency of 3.40GHz and 8GB RAM. The MATLAB version used to measure the detection speed was 8.1.0.604 (R2013a) running in Ubuntu Linux 13.04 x64. Althought the detector can be easily configured to use several workers to process the image sequences in parallel, the measurements were performed using a single worker, i.e. all images was processed sequentially.
 		
 		\begin{table}[h]
 			\centering
@@ -160,13 +136,18 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 				      D &                             1.5215 &                                      0.1454 &                       18:1 \\
 				      E &                             0.6016 &                                      0.0853 &                        9:1
 			\end{tabular} 
-			\caption{Average computation times per frame and annotated cell using a single worker.}
+			\caption{Average computation times per frame and annotated cell.}
 			\label{tab:results_detector_speed}
 		\end{table}
 		
-		\todo{It seems computation time very dependend on size of candidates cells: so maybe can achieve faster results by first scaling down the images}
-		\todo{Discuss which is faster, try to explain why-- less noise -- less candidate cells... }
-	
+		The measurements show that the detection speed is dependent on the number of candidate cell regions extracted and their dimensions. Datasets A and B contain larger cells than the remaining three. Consequently, the time per candidate region considered is larger (0.0225 and 0.0126 seconds for regions in datasets A and B, correspondingly) than that of regions in  datasets C, D and E (0.0084, 0.0081 and 0.0095 seconds, correspondingly).
+		
+		This means that if speed becomes a bottleneck in the analysis of large datasets, the images could be scaled down before they are analysed by the cell detector.
+		
+		The results show that we were able to optimize the cell detector to a point where it's speed is no longer an issue for many use cases. As a reminder, the original paper Arteta \emph{et. al.} \cite{arteta12} reports detection speeds of 30 seconds per 400-by-400 pixels image on an i7 CPU.
+		
+		\todo{It might be useful to show the comparison with the old detector if I have the time}
+		
 \section{Cell tracker \statusnew}
 	\label{sec:results_tracker}
 	\todo[inline]{Define the different measures of accuracy}
