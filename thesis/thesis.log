@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.21)  27 AUG 2014 19:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.21)  27 AUG 2014 19:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2631,11 +2631,13 @@ LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10.95> not available
 (Font)              Font shape `T1/cmr/m/sc' tried instead on input line 48.
 
 [46] [47]
-Overfull \hbox (17.01044pt too wide) in paragraph at lines 103--114
+Overfull \hbox (22.77509pt too wide) in paragraph at lines 103--114
  [][] 
  []
 
-[48]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\setbox' on input line 121.
@@ -2948,6 +2950,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\fboxrule' on input line 121.
 
+[48]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\setbox' on input line 151.
@@ -3261,6 +3264,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\fboxrule' on input line 151.
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49]
+
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\setbox' on input line 154.
 
@@ -3572,10 +3579,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\fboxrule' on input line 154.
 
-
-Underfull \vbox (badness 6461) has occurred while \output is active []
-
- [49]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\setbox' on input line 163.
@@ -4824,7 +4827,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\fboxrule' on input line 180.
 
-) [50] [52
+)
+Underfull \vbox (badness 2142) has occurred while \output is active []
+
+ [50]
+[51] [52
 
 
 
@@ -4879,9 +4886,6 @@ Here is how much of TeX's memory you used:
  67i,18n,82p,1015b,598s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{page.36} has been referenced but does not exist, 
 replaced by a fixed one
-
-pdfTeX warning (dest): name{page.51} has been referenced but does not exist, re
-placed by a fixed one
 
 pdfTeX warning (dest): name{page.30} has been referenced but does not exist, re
 placed by a fixed one
@@ -5103,10 +5107,10 @@ f/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public
 fb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb></usr/share/texmf
 /fonts/type1/public/cm-super/sfxc1440.pfb></usr/share/texmf/fonts/type1/public/
 cm-super/sfxc2074.pfb>
-Output written on thesis.pdf (13 pages, 327922 bytes).
+Output written on thesis.pdf (14 pages, 329143 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 443 compressed objects within 5 object streams
+ 490 PDF objects out of 1000 (max. 8388607)
+ 445 compressed objects within 5 object streams
  150 named destinations out of 1000 (max. 500000)
  25737 words of extra memory for PDF output out of 29859 (max. 10000000)
 
