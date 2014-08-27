@@ -77,10 +77,9 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 
 		\subsubsection{Training on composite dataset}
 		
-		In this second experiment we were interested in measuring how well the algorithm is able to generalize when it is trained on a larger, combined dataset. For this purpose, several of the datasets were grouped, and the detector was trained to recognize cells of all types. The detector was trained on a random 70\% of all annotated images in the combined dataset. It was then tested on a random 30\% of annotated frames from each individual dataset separately. This means that sometimes the same frames could be used for training and testing. However, we also run combinations of datasets where one dataset is left out of training at each time. Testing on that dataset should then reveal if algorithm generalizes well.
+		In this second experiment we were interested in measuring how well the algorithm is able to generalize when it is trained on a larger, combined dataset. For this purpose, several of the datasets were grouped, and the detector was trained to recognize cells of all types. The detector was trained on a random 70\% of all annotated images in the combined dataset. It was then tested on a random 30\% of annotated frames from each individual dataset separately. This means that sometimes the same frames could be used for training and testing. However, we also run combinations of datasets where one dataset is left out of training at each time. Testing on that dataset should then reveal if the algorithm generalizes well.
 		
-		
-		Then, the results were tested individually on the 30\% of the annotated images from each dataset, that were not used for training. \Cref{tab:results_detector_combined} shows the results.
+		\Cref{tab:results_detector_combined} summarizes the precision and recall values for all tested combined datasets. The column denoted $\gamma$ contains testing performance as tested on 30\% of the combined dataset. The values shown in bold correspond to the performance of testing on the dataset that was left out from the combined training dataset.
 		
 		\todo{Repeat the measurements with the best feature selection}
 		
@@ -92,15 +91,16 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		
 		\begin{table}[h]
 			\centering
-			\begin{tabular}{rcc}
-				Combined dataset &                  Precision $\left[ \% \right]$ &                     Recall $\left[ \% \right]$  \\
+			\begin{tabular}{r|*{6}{c}|*{6}{c}}
+				\multicolumn{1}{c}{Combined dataset} & \multicolumn{6}{|c|}{Precision}             &         \multicolumn{6}{c}{Recall}          \\
+				                                     & $\gamma$ &  A   &  B   &  C   &  D   &  E   & $\gamma$ &  A   &  B   &  C   &  D   &  E   \\
 			\hline
-				       A+B+C+D+E & A: 60, B: 60, C: 60, D: 60, E: 60 & A: 60, B: 60, C: 60, D: 60, E: 60 \\
-				       A+B+C+D & A: 60, B: 60, C: 60, D: 60, E: 60 & A: 60, B: 60, C: 60, D: 60, E: 60 \\
-				       A+B+C+E & A: 60, B: 60, C: 60, D: 60, E: 60 & A: 60, B: 60, C: 60, D: 60, E: 60 \\
-				       A+B+D+E & A: 60, B: 60, C: 60, D: 60, E: 60 & A: 60, B: 60, C: 60, D: 60, E: 60 \\
-				       A+C+D+E & A: 60, B: 60, C: 60, D: 60, E: 60 & A: 60, B: 60, C: 60, D: 60, E: 60 \\
-				       B+C+D+E & A: 60, B: 60, C: 60, D: 60, E: 60 & A: 60, B: 60, C: 60, D: 60, E: 60 \\
+				                           A+B+C+D+E &   74.5   & 49.2 & 76.0 & 85.2 & 69.2 & 94.5 &   79.9   & 58.3 & 90.8 & 57.1 & 98.9 & 79.7 \\
+				                             A+B+C+D &   69.7    &      &      &      &      &      &  80.0    &      &      &      &      &  \\
+				                             A+B+C+E &          &      &      &      &      &      &          &      &      &      &      &  \\
+				                             A+B+D+E &          &      &      &      &      &      &          &      &      &      &      &  \\
+				                             A+C+D+E &          &      &      &      &      &      &          &      &      &      &      &  \\
+				                             B+C+D+E &          &      &      &      &      &      &          &      &      &      &      &
 			\end{tabular} 
 			\caption{Precision and recall values for the cell detector trained on combined datasets.}
 			\label{tab:results_detector_combined}
