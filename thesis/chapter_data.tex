@@ -23,6 +23,7 @@
 	Below we describe the main characteristics of the datasets, together with the number of frames that were annotated to train the cell detector. Because of the large number of trajectories in certain datasets, not all the trajectories have been annotated. Instead, in each dataset a few trajectories were chosen and annotated. We aimed to select the longest trajectories, as these could give the most insight in the analysis of cell behaviour.
 	
 	\subsubsection{Dataset A}
+	\label{subsec:datasetA}
 	\todo[inline]{This is series30green}
 	\begin{figure}[h]
    		\begin{subfigure}{.32\textwidth}
@@ -40,16 +41,8 @@
    		\label{fig:data_datasetA}
    	\end{figure}
    	  	
-   	Dataset A, seen in \cref{fig:data_datasetA}, contains 66 frames of dimensions 512-by-512 pixels. All the frames have been manually annotated for the purpose of training the cell detector. The dataset only has an average population of 1.58 cells per frame, and all four main trajectories have been annotated, although three of them can only be tracked in a dozen frames. The dataset is obtained from the liver. There is a good contrast between the cells and the background. The background is almost uniform but still contains some information about the architecture of the liver sinusoids, which is difficult to discern without adjusting the image contrast. The cells appear as medium dark shades of grey of circular shape and their boundaries smoothly blend with the background. The cells move slowly. The images are of constant quality, and there are few significant camera artefacts.
-   	
-   	
-   	\todo{Explain why detection can be bad on this dataset}
-   	% THE problem with this dataset is the sudden change of contrast when it
-   	        % switches from frame 17 to 18. At that point all the background starts
-   	        % looking like all the positive examples in the previous frames, which means
-   	        % that a lot of negative examples are generated which cancel out all
-   	        % learned in the first 17 frames
-   	
+   	Dataset A, seen in \cref{fig:data_datasetA}, contains 66 frames of dimensions 512-by-512 pixels. All the frames have been manually annotated for the purpose of training the cell detector. The dataset only has an average population of 1.58 cells per frame, and all four main trajectories have been annotated, although three of them can only be tracked in a dozen frames. The dataset is obtained from the liver. There is a good contrast between the cells and the background. The background is almost uniform but still contains some information about the architecture of the liver sinusoids, which is difficult to discern without adjusting the image contrast. The cells appear as medium dark shades of grey of circular shape and their boundaries smoothly blend with the background. The cells move slowly. Despite the small number of frames, this is an especially challenging dataset for the cell detection module. Frames 1--17 are radically different from frame 18 and onwards. The first 17 frames show little contrast between the cells and the background. On frame 18, the images change such that the texture from the background becomes very similar to the texture of the cells in the first 17 frames, and the intensity of the cells intensifies. Finally, the last few frames contain no cells.
+   	   	
 	\subsubsection{Dataset B}
 	\todo[inline]{This is series30red}
 	\begin{figure}[h]
@@ -132,11 +125,9 @@
 		\label{fig:data_datasetE}
 	\end{figure}
         
-    The last dataset, seen in figure \cref{fig:data_datasetE}, contains 194 frames which have been cropped to dimensions 277-by-277 pixels. 67 frames were annotated for the purpose of training and evaluating the quality of the cell detection module. (TODO) of the longest trajectories were annotated for training the tracker. This dataset is from the lung. The density of the cells is of $7.01$ cells per frame. The background contains some texture, that could sometime be confused with the cell texture. The cells in this dataset appear smaller than in the other datasets and are less elliptical. They contain more sharp edges. The intensity of the cells varies from dark to bright. The cells appear to move very slowly. The images contain many artefacts that make tracking more difficult. First, the images become darker in the later parts of the image sequence. Second, there is an alternating dark/bright area in all the frames caused by the raster scanning imaging method combined with the moving tissue.
-    
-    \todo{Exaplain how the quality decreases and fewer and fewer cells are visible up to a certain frame, after which the quality is reset and cells appear again}
+    The last dataset, seen in figure \cref{fig:data_datasetE}, contains 194 frames which have been cropped to dimensions 277-by-277 pixels. 67 frames were annotated for the purpose of training and evaluating the quality of the cell detection module. (TODO) of the longest trajectories were annotated for training the tracker. This dataset is from the lung. The density of the cells is of $7.01$ cells per frame. The background contains some texture, that could sometime be confused with the cell texture. The cells in this dataset appear smaller than in the other datasets and are less elliptical. They contain more sharp edges. The intensity of the cells varies from dark to bright. The cells appear to move very slowly. The images contain many artefacts that make tracking more difficult. First, the images become darker in towards the middle of the image sequence, and then close to the last quarter of the sequence become clear again. Second, there is an alternating dark/bright area in all the frames caused by the raster scanning imaging method combined with the moving tissue.
     	
-	\subsection{Imaging analysis challenges \statusseconddraft}
+	\subsection{Image analysis challenges \statusseconddraft}
 	\label{sec:data_challenges}
 	In this section we are going to present two phenomena caused by the combination of moving tissue due to ventilation and a raster scanned image that make these datasets especially hard to track with frame-by-frame tracking methods.
 	
@@ -183,13 +174,13 @@
 	
 	Several of the datasets present these phenomena to a lesser or larger extend. These artefacts where the primary reason for choosing a global optimization method for associating detection responses into trajectories instead of a frame-by-frame approach.
 	
-	\section{Manual data annotation \statusnew}
+	\subsection{Manual data annotation \statusnew}
 	
-	\todo{Write about the manual annotation process}
-	\todo{Write about the challenges of consistent annotations}
-	\todo{Write about that we can't completely trust the annotations}
-	\todo{Check in the original place where I wrote about he problems of manual annotations}
-
+	Training the detector requires a set of annotated image sequences. Precise and consistent dot-annotations allow the model to learn well. Precise annotations are those where the annotation dots are place within the actual cell. If the dot-annotation is placed on the near, yet outside of cell, the detector will incorrectly learn to discriminate cells from the background. Consistent annotations are those where the annotator takes special care to annotate cells that look alike. For example, if only bright cells are annotated in one frame, but bright and dark cells in the next frame, the detector will not be able to reliable detect both bright and dark cells.
+	
+	The major challenge of annotating the datasets is consistency, due to the human ability to easily identify cells from the background, even if their relative intensities vary significantly. The detection module is able to learn well even with the presence of a few outliers.
+	
+	It was important to correctly annotated a certain number of frames on each dataset. Annotating the entire datasets would represent a lot of unnecessary manual work, because the detector can be trained on just a few dozen annotated frames. We have manually annotated and reviewed about 50 frames from each dataset. The counts of annotated frames and cell density metrics are presented in \cref{tab:results_data_count}.
 
 	\begin{table}[h]
 		\centering
@@ -206,6 +197,8 @@
 			Summary of the number of frames and cells manually annotated in each dataset.}
 		\label{tab:results_data_count}
 	\end{table}
+	
+	In the next section we present the tool developed to facilitate the annotation process.
 
     \section{The annotation tool \statusfirstdraft}
     \label{sec:data_tool}
