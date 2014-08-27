@@ -89,6 +89,8 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		
 		\todo{each time train on all others, but 1, test it on that one.}
 		
+		\todo{Color red/green if worse/better compared to training on individual dataset}
+		
 		\begin{table}[h]
 			\centering
 			\begin{tabular}{r|*{6}{c}|*{6}{c}}
@@ -96,8 +98,8 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 				                                     & $\gamma$ &  A   &  B   &  C   &  D   &  E   & $\gamma$ &  A   &  B   &  C   &  D   &  E   \\
 			\hline
 				                           A+B+C+D+E &   74.5   & 49.2 & 76.0 & 85.2 & 69.2 & 94.5 &   79.9   & 58.3 & 90.8 & 57.1 & 98.9 & 79.7 \\
-				                             A+B+C+D &   69.7    &      &      &      &      &      &  80.0    &      &      &      &      &  \\
-				                             A+B+C+E &          &      &      &      &      &      &          &      &      &      &      &  \\
+				                             A+B+C+D &   69.7   & 49.2 & 77.0 & 85.8 & 69.9 & 93.4 &   80.0   & 58.3 & 90.3 & 58.7 & 98.4 & 80.7 \\
+				                             A+B+C+E &   72.8   & 45.9 & 75.0 & 82.6 & 41.1 & 87.2 &   83.2   & 65.0 & 96.4 & 73.6 & 99.4 & 89.8 \\
 				                             A+B+D+E &          &      &      &      &      &      &          &      &      &      &      &  \\
 				                             A+C+D+E &          &      &      &      &      &      &          &      &      &      &      &  \\
 				                             B+C+D+E &          &      &      &      &      &      &          &      &      &      &      &
@@ -135,6 +137,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 			\label{tab:results_detector_speed}
 		\end{table}
 		
+		\todo{It seems computation time very dependend on size of candidates cells: so maybe can achieve faster results by first scaling down the images}
 		\todo{Discuss which is faster, try to explain why-- less noise -- less candidate cells... }
 	
 \section{Cell tracker \statusnew}
