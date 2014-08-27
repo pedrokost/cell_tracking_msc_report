@@ -18,6 +18,7 @@
 \usepackage{subcaption}
 \usepackage{geometry}
 \usepackage[pdftex,colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black,pagebackref]{hyperref}
+\usepackage[usenames,dvipsnames]{color} % For colors. must before tikz
 \usepackage{tikz}
 \usepackage[colorinlistoftodos,textsize=small]{todonotes}
 \bibliographystyle{ieeetr}
@@ -68,6 +69,10 @@
 \newcommand{\statusthirddraft}{\status{draft III}}
 \newcommand{\statusproofread}{\status{proofread}}
 \newcommand{\statusfinal}{\status{final}}
+
+% Easy coloring
+\newcommand\up[1]{{\color{blue}#1}}
+\newcommand\dn[1]{{\color{red}#1}}
 
 % Spacing between paragraphs.
 \setlength{\parskip}{\baselineskip}

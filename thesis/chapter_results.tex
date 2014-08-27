@@ -91,25 +91,33 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		
 		\todo{Color red/green if worse/better compared to training on individual dataset}
 		
+					%	      A &      25.0 &   22.5 \\
+					%	      B &      90.1 &   89.1 \\
+					%	      C &      76.5 &   84.2 \\
+					%	      D &      86.1 &   85.3\\
+					%	      E &      93.4 &   78.6\\
+		
+		
 		\begin{table}[h]
 			\centering
 			\begin{tabular}{r|*{6}{c}|*{6}{c}}
-				\multicolumn{1}{c}{Combined dataset} & \multicolumn{6}{|c|}{Precision}             &         \multicolumn{6}{c}{Recall}          \\
-				                                     & $\gamma$ &  A   &  B   &  C   &  D   &  E   & $\gamma$ &  A   &  B   &  C   &  D   &  E   \\
+				\multicolumn{1}{c}{Combined dataset} & \multicolumn{6}{|c|}{Precision}                                         &                  \multicolumn{6}{c}{Recall}                   \\
+				                                     & $\gamma$ &     A     &     B     &  C   &       D       &       E       & $\gamma$ &  A   &  B   &  C   &       D       &       E       \\
 			\hline
-				                           A+B+C+D+E &   74.5   & 49.2 & 76.0 & 85.2 & 69.2 & 94.5 &   79.9   & 58.3 & 90.8 & 57.1 & 98.9 & 79.7 \\
-				                             A+B+C+D &   69.7   & 49.2 & 77.0 & 85.8 & 69.9 & 93.4 &   80.0   & 58.3 & 90.3 & 58.7 & 98.4 & 80.7 \\
-				                             A+B+C+E &   72.8   & 45.9 & 75.0 & 82.6 & 41.1 & 87.2 &   83.2   & 65.0 & 96.4 & 73.6 & 99.4 & 89.8 \\
-				                             A+B+D+E &          &      &      &      &      &      &          &      &      &      &      &  \\
-				                             A+C+D+E &          &      &      &      &      &      &          &      &      &      &      &  \\
-				                             B+C+D+E &          &      &      &      &      &      &          &      &      &      &      &
+				                           A+B+C+D+E &   74.5   & \up{49.2} & \dn{76.0} & 85.2 &     69.2      &     94.5      &   79.9   & 58.3 & 90.8 & 57.1 &     98.9      &     79.7      \\
+				                             A+B+C+D &   69.7   & \up{49.2} & \dn{77.0} & 85.8 &     69.9      & \textbf{93.4} &   80.0   & 58.3 & 90.3 & 58.7 &     98.4      & \textbf{80.7} \\
+				                             A+B+C+E &   72.8   & \up{45.9} & \dn{75.0} & 82.6 & \textbf{41.1} &     87.2      &   83.2   & 65.0 & 96.4 & 73.6 & \textbf{99.4} &     89.8      \\
+				                             A+B+D+E &   75.5   &   47.5    &   75.8    & 85.7 &     73.1      &     96.5      &   73.1   & 50.8 & 88.9 & 46.1 &     97.1      &     68.3      \\
+				                             A+C+D+E &          &           &           &      &               &               &          &      &      &      &               &  \\
+				                             B+C+D+E &          &           &           &      &               &               &          &      &      &      &               &
 			\end{tabular} 
 			\caption{Precision and recall values for the cell detector trained on combined datasets.}
 			\label{tab:results_detector_combined}
 		\end{table}
 				
 		\todo{Add discussion: generally how much precision/recall we loose, which dataset seems to suffer less/more, why do they suffer less/more (have fewer cells to be trained on, like like noise in another dataset)}
-
+		\dn{I wend down}
+		\up{I went up}
 	\subsection{Computations time \statusnew}
 	
 		In order to positionally track cells in image sequence the computation time of extracting the cell position from each frame is just as important as the accurate identification of cells. \Cref{tab:results_detector_speed} displays the average detection times per frame for each dataset. The detection time is dependent on the number of candidate cell regions extracted and their dimensions.
