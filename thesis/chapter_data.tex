@@ -174,8 +174,8 @@
 	
 	Several of the datasets present these phenomena to a lesser or larger extend. These artefacts where the primary reason for choosing a global optimization method for associating detection responses into trajectories instead of a frame-by-frame approach.
 	
-	\subsection{Manual data annotation \statusnew}
-	
+	\subsection{Manual data annotation \statusfirstdraft}
+	\label{sec:data_manual_annotation}
 	Training the detector requires a set of annotated image sequences. Precise and consistent dot-annotations allow the model to learn well. Precise annotations are those where the annotation dots are place within the actual cell. If the dot-annotation is placed on the near, yet outside of cell, the detector will incorrectly learn to discriminate cells from the background. Consistent annotations are those where the annotator takes special care to annotate cells that look alike. For example, if only bright cells are annotated in one frame, but bright and dark cells in the next frame, the detector will not be able to reliable detect both bright and dark cells.
 	
 	The major challenge of annotating the datasets is consistency, due to the human ability to easily identify cells from the background, even if their relative intensities vary significantly. The detection module is able to learn well even with the presence of a few outliers.
