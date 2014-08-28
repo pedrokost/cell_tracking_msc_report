@@ -73,7 +73,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		
 		These results show us the detector can correctly detect most of the (annotated) cells. Further manual reviews of the annotations would likely improve the performance, but this is not done here as it should have been tested on a separate validation dataset. Additionally, it is unlikely that future users of this detection method will always have perfect annotations available. In the next experiment, we will measured the performance of the detector when trained on a composite dataset. This will tell us whether it would be possible to learn a single, general detector and use it to test on a new, possibly unforeseen datasets.
 
-		\Cref{fig:results_detector_sequences_1,fig:results_detector_sequences_2,fig:results_detector_sequences_3,fig:results_detector_sequences_4,fig:results_detector_sequences_5} in appendix \ref{app:appendix_detectionresults} display a temporal view of the detected results in each datasets. The vertical axis represents the consecutive frame number of the image sequence. The figures show that ``cell tracks'' are discernible, even if the number of outliers is significant. The detectors used to detect the cells on the entire dataset were trained on all the annotated frames. \todo{Repeat the training+testing using all frames for training}
+		\Cref{fig:results_detector_sequences_1,fig:results_detector_sequences_2,fig:results_detector_sequences_3,fig:results_detector_sequences_4,fig:results_detector_sequences_5} in appendix \ref{app:appendix_detectionresults} display a temporal view of the detected results in each datasets. The vertical axis represents the consecutive frame number of the image sequence. The figures show that ``cell tracks'' are discernible, even if the number of outliers is significant. The detectors used to detect the cells on the entire dataset were trained on all the annotated frames.
 
 		\subsubsection{Training on combined datasets}
 		
@@ -130,21 +130,19 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 			\begin{tabular}{rrrr}
 				Dataset & Time per frame  $\left[ s \right]$ & Time per annotated cell  $\left[ s \right]$ & Candidate-Annotation ratio \\
 			\hline
-				      A &                             0.9224 &                                      0.5854 &                       26:1 \\
-				      B &                             1.5899 &                                      0.2015 &                       16:1 \\
-				      C &                             1.1214 &                                      0.0586 &                        7:1 \\
-				      D &                             1.5215 &                                      0.1454 &                       18:1 \\
-				      E &                             0.6016 &                                      0.0853 &                        9:1
+				      A &                             0.7458 &                                      0.4733 &                       36:1 \\
+				      B &                             1.4466 &                                      0.1801 &                       18:1 \\
+				      C &                             1.2730 &                                      0.1422 &                       11:1 \\
+				      D &                             1.3607 &                                      0.9378 &                       21:1 \\
+				      E &                             0.6273 &                                      0.2589 &                       13:1
 			\end{tabular} 
 			\caption{Average computation times per frame and annotated cell.}
 			\label{tab:results_detector_speed}
 		\end{table}
+
+		The results show that we were able to optimize the cell detector to a point where it's speed is no longer an issue for many use cases. As a reminder, the original paper by Arteta \emph{et. al.} \cite{arteta12} reports detection speeds of 30 seconds per 400-by-400 pixels image on an i7 CPU. Most of the computation time is spend by the MSER detector and the feature computation.
 		
-		The measurements show that the detection speed is dependent on the number of candidate cell regions extracted and their dimensions. Datasets A and B contain larger cells than the remaining three. Consequently, the time per candidate region considered is larger (0.0225 and 0.0126 seconds for regions in datasets A and B, correspondingly) than that of regions in  datasets C, D and E (0.0084, 0.0081 and 0.0095 seconds, correspondingly).
-		
-		This means that if speed becomes a bottleneck in the analysis of large datasets, the images could be scaled down before they are analysed by the cell detector.
-		
-		The results show that we were able to optimize the cell detector to a point where it's speed is no longer an issue for many use cases. As a reminder, the original paper Arteta \emph{et. al.} \cite{arteta12} reports detection speeds of 30 seconds per 400-by-400 pixels image on an i7 CPU.
+		The measurements show that the detection speed is dependent primarily on the number of cells in each frame. Datasets B, C, and D contain 5 to 10 times more cells per frame than dataset A. Dataset E also contains 5 times more cells than dataset A, but it's computation time per frame was lower. This could be attributed to the smaller fraction of candidate regions that had to evaluated. In contrast, in dataset A which contains larger cells than the other datasets many more candidate cells were evaluated relative to the number of annotated cells. It is likely that, since the MSER detector was configured equally for all datasets, the MSER detector identified a larger number of small noise artefacts as cell candidates.
 		
 		\todo{It might be useful to show the comparison with the old detector if I have the time}
 		
