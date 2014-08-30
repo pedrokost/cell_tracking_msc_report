@@ -64,11 +64,11 @@
 \contentsline {subsection}{\numberline {6.2.3}Computation time \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{52}{subsection.6.2.3}
 \contentsline {section}{\numberline {6.3}Limitations and areas of improvement \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{52}{section.6.3}
 \contentsline {section}{\numberline {6.4}Summary \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{53}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclusions and future work\unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{53}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusion \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{53}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future work \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{54}{section.7.2}
-\contentsline {chapter}{Appendices}{56}{section*.13}
-\contentsline {chapter}{\numberline {A}User Guide for the Annotation Tool}{57}{Appendix.1.A}
-\contentsline {chapter}{\numberline {B}User Guide for the Interactive Annotation Viewer}{58}{Appendix.1.B}
-\contentsline {chapter}{\numberline {C}Cell detection results}{59}{Appendix.1.C}
-\contentsline {chapter}{Bibliography}{63}{section*.13}
+\contentsline {chapter}{\numberline {7}Conclusions and future work\unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{54}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusion \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{54}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future work \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{55}{section.7.2}
+\contentsline {chapter}{Appendices}{57}{section*.56}
+\contentsline {chapter}{\numberline {A}User Guide for the Annotation Tool}{58}{Appendix.1.A}
+\contentsline {chapter}{\numberline {B}User Guide for the Interactive Annotation Viewer}{59}{Appendix.1.B}
+\contentsline {chapter}{\numberline {C}Cell detection results}{60}{Appendix.1.C}
+\contentsline {chapter}{Bibliography}{64}{figure.caption.61}

@@ -68,45 +68,118 @@ Then the tracking:
 <...>
 
 
-Some of these methods tend to work with very specific types of images. The free software
-that Dr. Leo found was designed with a specific type of images in mind.
+Some of these methods tend to work well with very specific types of images.
+But might fail in new images. The free software that Dr. Leo found was designed
+with a specific type of images in mind -- thats why it didnt work
 What I wanted was a combination of algorithms that would work good on many
 different types of images, so that everyone in the world would be able to use it.
 
 So, I chose:
+<Conditions -> choice>
 detector: learning approach by Arteta <why>
 tracker: global data association + learning approach <why>
 
 ## Detection of cells (robust: learning approach)
 
-
 Let's look at the detection phase in more detail.
 
+The idea is to train a classifier to detect whether a patch in the image is a cell or not.
 
-2 slides:
+So which patches do we evaluate?
 
-- 1 slide to explain the extraction of candidate cells and the voting
-- 1 slide to explain the benefits and pitfalls
+- MSER detector to get dozens of candidate patches, configured such that it gets
+all of the cells, and a number of background elements
+- we are only interested in location, not precise segmentation
+
+- the we train a classifier that votes
+- the classifier takes as input a feature vector of the region <add few examples>
+- We don't detect overlapping cells. <why>
+	- less data required to train the detector <explain>
+	- short overlaps can be treated by the tracker
+- prefer high recall, over high precision
+- benefits: only dot annotation
+- testing speed
+- show some examples of detected cells (good and bad)
+- Show precision and recall values of detector for each dataset
+- aside: I build a tool to annotated image sequences
 
 ## Tracking of cells (cool: global + learning)
 
-4 slides:
+After running the detector on the images we get:
+- the locations of the cells
+- a feature vector for each cell
 
-- Brief overview of the process
-- How are the robust tracklets generated
-- The linking of robust tracklets
-	- The hypothesis + assumptions + optimal decision
+- Show 3d example of detections
 
-## Experimental results
+Now we need a way to combine this detection in sensible cell trajectories
 
-4 slides:
+(Skip all the details about the MAP formulation of the problem)
 
-- Show precision and recall values of detector for each dataset
+The process we chose consists of two steps:
+
+- Generate short, robust tracklets
+- Connect these short, robust tracklets into trajectories
+
+What are short robust tracklets?
+
+- Short tracklets that are very likely to be correct
+- we look compare cells that are very close, that have a very similar feature vector.
+	- basically we use a classifier to say 'these 2 cell (in consecutive images)'
+	  are very similar.
+		- symmetric matches
+		- very high threshold
+		- we use a simple Naive Bayes classifier
+
+- show example of robust tracklet
+
+- then we have to link these robust tracklets into longer trajectories:
+- we take into account that some of these robust tracklets could be false positive detection
+- we take into account missed detections
+
+- For each tracklet we compute:
+	Pinit
+	Pterm
+	Pfp
+- For each candidate tracklet pair we compute the linking likelihood
+
+A trajectory can be:
+
+- fp
+- pinit + pterm (short)
+- prinit + plink
+- plink + pterm
+- plink + plink
+
+each of the probabilities has a specific value, which is given by a classifier
+
+Using these constraints, we solve the problems of selecting the optimal subset
+of hypothesis using linear programming. 
+
+How do we define the hypothesis likelihoods?
+
+- fpt: in terms of the length
+- plink: the value from the classifier
+- pinit: 1 - max value from classifier to link to any of the previous 
+- pterm: 1 - max value from classifier to link to any future tracklets
+
+How is the classifier for plink trained?
+
+- we use spatio-temporal feautures <expand with few examples>
+
+Limitations:
+
+- Pinit/pterm independend on the status of any of the previous tracklets
+- elimintaing this limitation could make the search space very large
+
+Show a brief overiew of tracklets:
+- annotations, mapped detections, robust tracklets, trajectories
+
 - Show examples of generated trajectories
 - Show examples where it performed great (bad examples as well)
 
 ## Conclusion and future work
 
+<return to Dr. Leos story>
 1 slides:
 
 - have we achieved our objectives?

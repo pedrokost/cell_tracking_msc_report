@@ -373,83 +373,197 @@ td:not(.linenos) .linenodiv { padding: 0 !important; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
-</style><title>PresentationOutline</title></head><body><h1 id="learning-to-detect-and-track-cell-in-micropic-imaging"><a name="user-content-learning-to-detect-and-track-cell-in-micropic-imaging" href="#learning-to-detect-and-track-cell-in-micropic-imaging" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Learning to detect and track cell in micropic imaging</h1>
-<h2 id="introduction-get-em-motivated"><a name="user-content-introduction-get-em-motivated" href="#introduction-get-em-motivated" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Introduction (get &lsquo;em motivated)</h2>
+</style><title>PresentationOutline</title></head><body><h1 id="learning-to-detect-and-track-cell-in-microscopic-imaging"><a name="user-content-learning-to-detect-and-track-cell-in-microscopic-imaging" href="#learning-to-detect-and-track-cell-in-microscopic-imaging" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Learning to detect and track cell in microscopic imaging</h1>
+<h2 id="introduction-get-em-motivated-and-data-understand-the-difficulty-of-the-problem"><a name="user-content-introduction-get-em-motivated-and-data-understand-the-difficulty-of-the-problem" href="#introduction-get-em-motivated-and-data-understand-the-difficulty-of-the-problem" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Introduction (get &lsquo;em motivated) and Data (understand the difficulty of the problem)</h2>
 <p>(Tell fake story of Leo asking to annotated datasets)</p>
 <ul>
-<li>4 monthds ago I randomly met a man called Dr. Leo, who told me his story:</li>
+<li>4 months ago I randomly met a man called Dr. Leo. He&rsquo;s a scientist in &gt;..&lt; who told me his story:</li>
 <li>His obscure hobby was to look at the inner working of mice</li>
 <li>He had a microscope and he learned everything about how mice work</li>
-<li>When he got tired, he decided to look deeper into the mice&hellip; he started looking<br />
+<li>When he got bored of mice, he decided to look deeper into the mice&hellip; he started looking<br />
   at some of the cells and became interested in how they move</li>
-<li>So at night he stole the laser scanner from the lab, and started taking pictures of these cells</li>
+<li>So at night he stole the laser scanner from the lab, and started taking pictures of these cells.</li>
+</ul>
+<p>Since he loves his mice, he didn&rsquo;t want to kill them just to satisfy his curiosity.<br />
+So he came up with a complicated setup:<br />
+- breed the mice with florescent cells<br />
+- Anesthetize the mouse<br />
+- open it up, and put a mechanical ventilor to compensate for the dorming lungs<br />
+- &lt;&hellip;&gt;</p>
+<ul>
 <li>And he took pictures likes this:<ul>
 <li>(some some random picture sequences)</li>
 </ul>
 </li>
-<li>So he started analysing how the cells move. <ul>
+<li>So he started analyzing how the cells move. <ul>
 <li>(image with him measuring cell position and filling in a notebook)</li>
 </ul>
 </li>
 <li>But there were many images&hellip; (show pile of images)</li>
 <li>And he gave up&hellip; he turned to ask Google for help</li>
-<li>See google search with &lsquo;cell tracker FREE download&rsquo;</li>
+<li>See Google search with &lsquo;cell tracker FREE download&rsquo;</li>
 <li>When he tried it on the images he got messed up trajectories</li>
 <li>What happened? Let&rsquo;s look at the images again<ul>
-<li>Show the problems of dissapearing cells, obscuring of them, etc</li>
+<li>Show the problems of disappearing cells, obscuring of them, etc</li>
 </ul>
 </li>
 <li>So he gave up again&hellip; and started looking for someone to delegate his work on&hellip;</li>
 <li>and he found me. We are back at the meeting. And he told me his story</li>
+<li>&hellip;since I was a masters&rsquo; student and since students have nothing to do he<br />
+asked me to do the measurements for him. So he gave me some images and his notebooks<br />
+(&lsquo;fill it in&rsquo;)</li>
+<li>
+<p>But I knew this was a trap: if I agree to measure some of his images, he would<br />
+come back again in a few weeks, asking for some more.<br />
+(Like &ldquo;friends&rdquo; want you to fix their computer because it&rsquo;s slow because it full of malware&hellip;)</p>
+</li>
+<li>
+<p>Since I don&rsquo;t like saying No, I said, I will think about it.</p>
+</li>
 </ul>
-<p>Why is cell tracking important:<br />
-    - drug developement (scratch wound healing assays)<br />
-    - understanding of human body<br />
-        - leukocyte/neutrophil analysis</p>
+<p>So, I thought about it and decided that it wasn&rsquo;t worth it. But it might be worth<br />
+creating some software to solve the tracking problem for everyone in the world<br />
+at the same time!!!</p>
 <ul>
-<li>why is cell tracking important</li>
-<li>what were the objectives of the project</li>
+<li><what were the objectives of the project></li>
 </ul>
-<h2 id="data-understand-the-difficulty-of-the-problem"><a name="user-content-data-understand-the-difficulty-of-the-problem" href="#data-understand-the-difficulty-of-the-problem" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Data (understand the difficulty of the problem)</h2>
-<p>5 slides:</p>
+<p>That&rsquo;s how I started reading papers about cell tracking, and I found that Dr Leo<br />
+wasn&rsquo;t the only one with the problem. In fact, many people had the same problem,<br />
+even if their interests varied:</p>
 <ul>
-<li>how is it obtained</li>
-<li>some basic examples</li>
-<li>some complex examples: and explain the difficulties</li>
+<li>some (like Dr. Leo) were obsessed by mice. It seems to be a popular hobby between biologists.<ul>
+<li>some looked at dead mice, some at live ones (like Dr. Leo)</li>
+</ul>
+</li>
+<li>some were obsessed with knowing how the cells behave in a scratch wound healing assay</li>
+<li>some wanted to know how the cell migrate, how they reproduce (mitosis)</li>
+<li>etc</li>
+<li>Basically, they wanted to further the understanding of mice, and test how different drugs work.</li>
 </ul>
 <h2 id="related-work-why-these-methods"><a name="user-content-related-work-why-these-methods" href="#related-work-why-these-methods" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Related work (why these methods?)</h2>
-<p>2 slides:</p>
-<ul>
-<li>1 slide to review all the detection methods</li>
-<li>Why have we chosen the machine learning approach</li>
-<li>1 slide to review all the tracking methods</li>
-<li>Why have we chosen the global data association approach</li>
-</ul>
+<p>Now, people were solving it in many different ways. Let&rsquo;s split the problem to 2 parts.</p>
+<p>First comes the detection of cells:<br />
+&lt;&hellip;&gt;</p>
+<p>Then the tracking:<br />
+&lt;&hellip;&gt;</p>
+<p>Some of these methods tend to work well with very specific types of images.<br />
+But might fail in new images. The free software that Dr. Leo found was designed<br />
+with a specific type of images in mind &ndash; thats why it didnt work<br />
+What I wanted was a combination of algorithms that would work good on many<br />
+different types of images, so that everyone in the world would be able to use it.</p>
+<p>So, I chose:<br />
+<Conditions -> choice&gt;<br />
+detector: learning approach by Arteta <why><br />
+tracker: global data association + learning approach <why></p>
 <h2 id="detection-of-cells-robust-learning-approach"><a name="user-content-detection-of-cells-robust-learning-approach" href="#detection-of-cells-robust-learning-approach" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Detection of cells (robust: learning approach)</h2>
-<p>2 slides:</p>
+<p>Let&rsquo;s look at the detection phase in more detail.</p>
+<p>The idea is to train a classifier to detect whether a patch in the image is a cell or not.</p>
+<p>So which patches do we evaluate?</p>
 <ul>
-<li>1 slide to explain the extraction of candidate cells and the voting</li>
-<li>1 slide to explain the benefits and pitfalls</li>
+<li>MSER detector to get dozens of candidate patches, configured such that it gets<br />
+all of the cells, and a number of background elements</li>
+<li>
+<p>we are only interested in location, not precise segmentation</p>
+</li>
+<li>
+<p>the we train a classifier that votes</p>
+</li>
+<li>the classifier takes as input a feature vector of the region <add few examples></li>
+<li>We don&rsquo;t detect overlapping cells. <why><ul>
+<li>less data required to train the detector <explain></li>
+<li>short overlaps can be treated by the tracker</li>
+</ul>
+</li>
+<li>prefer high recall, over high precision</li>
+<li>benefits: only dot annotation</li>
+<li>testing speed</li>
+<li>show some examples of detected cells (good and bad)</li>
+<li>Show precision and recall values of detector for each dataset</li>
+<li>aside: I build a tool to annotated image sequences</li>
 </ul>
 <h2 id="tracking-of-cells-cool-global-learning"><a name="user-content-tracking-of-cells-cool-global-learning" href="#tracking-of-cells-cool-global-learning" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Tracking of cells (cool: global + learning)</h2>
-<p>4 slides:</p>
+<p>After running the detector on the images we get:<br />
+- the locations of the cells<br />
+- a feature vector for each cell</p>
 <ul>
-<li>Brief overview of the process</li>
-<li>How are the robust tracklets generated</li>
-<li>The linking of robust tracklets<ul>
-<li>The hypothesis + assumptions + optimal decision</li>
+<li>Show 3d example of detections</li>
+</ul>
+<p>Now we need a way to combine this detection in sensible cell trajectories</p>
+<p>(Skip all the details about the MAP formulation of the problem)</p>
+<p>The process we chose consists of two steps:</p>
+<ul>
+<li>Generate short, robust tracklets</li>
+<li>Connect these short, robust tracklets into trajectories</li>
+</ul>
+<p>What are short robust tracklets?</p>
+<ul>
+<li>Short tracklets that are very likely to be correct</li>
+<li>
+<p>we look compare cells that are very close, that have a very similar feature vector.</p>
+<ul>
+<li>basically we use a classifier to say &lsquo;these 2 cell (in consecutive images)&rsquo;<br />
+  are very similar.<ul>
+<li>symmetric matches</li>
+<li>very high threshold</li>
+<li>we use a simple Naive Bayes classifier</li>
 </ul>
 </li>
 </ul>
-<h2 id="experimental-results"><a name="user-content-experimental-results" href="#experimental-results" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Experimental results</h2>
-<p>4 slides:</p>
+</li>
+<li>
+<p>show example of robust tracklet</p>
+</li>
+<li>
+<p>then we have to link these robust tracklets into longer trajectories:</p>
+</li>
+<li>we take into account that some of these robust tracklets could be false positive detection</li>
+<li>
+<p>we take into account missed detections</p>
+</li>
+<li>
+<p>For each tracklet we compute:<br />
+    Pinit<br />
+    Pterm<br />
+    Pfp</p>
+</li>
+<li>For each candidate tracklet pair we compute the linking likelihood</li>
+</ul>
+<p>A trajectory can be:</p>
 <ul>
-<li>Show precision and recall values of detector for each dataset</li>
+<li>fp</li>
+<li>pinit + pterm (short)</li>
+<li>prinit + plink</li>
+<li>plink + pterm</li>
+<li>plink + plink</li>
+</ul>
+<p>each of the probabilities has a specific value, which is given by a classifier</p>
+<p>Using these constraints, we solve the problems of selecting the optimal subset<br />
+of hypothesis using linear programming. </p>
+<p>How do we define the hypothesis likelihoods?</p>
+<ul>
+<li>fpt: in terms of the length</li>
+<li>plink: the value from the classifier</li>
+<li>pinit: 1 - max value from classifier to link to any of the previous </li>
+<li>pterm: 1 - max value from classifier to link to any future tracklets</li>
+</ul>
+<p>How is the classifier for plink trained?</p>
+<ul>
+<li>we use spatio-temporal feautures <expand with few examples></li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li>Pinit/pterm independend on the status of any of the previous tracklets</li>
+<li>elimintaing this limitation could make the search space very large</li>
+</ul>
+<p>Show a brief overiew of tracklets:<br />
+- annotations, mapped detections, robust tracklets, trajectories</p>
+<ul>
 <li>Show examples of generated trajectories</li>
 <li>Show examples where it performed great (bad examples as well)</li>
 </ul>
 <h2 id="conclusion-and-future-work"><a name="user-content-conclusion-and-future-work" href="#conclusion-and-future-work" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Conclusion and future work</h2>
-<p>1 slides:</p>
+<p><return to Dr. Leos story><br />
+1 slides:</p>
 <ul>
 <li>have we achieved our objectives?</li>
 <li>can the results be improved?</li>
