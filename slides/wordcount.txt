@@ -1,0 +1,8 @@
+detector: 2216  7791
+tracker: 4180  16613
+evaluations: 897  2901 
+annotator:  2693  8848
+
+total: 9986 36153
+
+thesis: 16000??
