@@ -14,7 +14,12 @@ A level-1 auxiliary file: chapter_results.aux
 A level-1 auxiliary file: chapter_conclusion.aux
 A level-1 auxiliary file: appendix_annotationtool.aux
 A level-1 auxiliary file: appendix_interactiveviewer.aux
-A level-1 auxiliary file: appending_detectortracker.aux
+I couldn't open auxiliary file appendix_detectortracker.aux
+---line 43 of file thesis.aux
+ : \@input{appendix_detectortracker.aux
+ :                                     }
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: appendix_detection_results.aux
 Database file #1: thesis.bib
 A bad cross reference---entry "arteta13"
 refers to entry "conf/cvpr/2013", which doesn't exist
@@ -22,45 +27,45 @@ A bad cross reference---entry "bise11global"
 refers to entry "conf/isbi/2011", which doesn't exist
 Warning--I didn't find a database entry for "conf/isbi/2011"
 Warning--I didn't find a database entry for "conf/cvpr/2013"
-You've used 28 entries,
+You've used 30 entries,
             1876 wiz_defined-function locations,
-            674 strings with 9784 characters,
-and the built_in function-call counts, 9060 in all, are:
-= -- 881
-> -- 353
+            687 strings with 10124 characters,
+and the built_in function-call counts, 9447 in all, are:
+= -- 915
+> -- 375
 < -- 0
-+ -- 128
-- -- 100
-* -- 654
-:= -- 1221
-add.period$ -- 32
-call.type$ -- 28
-change.case$ -- 26
++ -- 136
+- -- 106
+* -- 682
+:= -- 1283
+add.period$ -- 35
+call.type$ -- 30
+change.case$ -- 27
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 475
-empty$ -- 855
-format.name$ -- 100
-if$ -- 2249
+cite$ -- 30
+duplicate$ -- 495
+empty$ -- 894
+format.name$ -- 106
+if$ -- 2344
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 25
-newline$ -- 92
-num.names$ -- 30
-pop$ -- 106
+int.to.str$ -- 30
+missing$ -- 28
+newline$ -- 99
+num.names$ -- 32
+pop$ -- 112
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 370
+skip$ -- 377
 stack$ -- 0
-substring$ -- 668
-swap$ -- 218
+substring$ -- 670
+swap$ -- 222
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 79
-width$ -- 30
-write$ -- 283
-(There were 2 error messages)
+while$ -- 82
+width$ -- 32
+write$ -- 304
+(There were 3 error messages)

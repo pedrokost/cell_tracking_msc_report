@@ -146,11 +146,108 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		
 		\todo{It might be useful to show the comparison with the old detector if I have the time}
 		
-\section{Cell tracker \statusnew}
+\section{Cell tracker \status{in progress}}
 	\label{sec:results_tracker}
-	\todo[inline]{Define the different measures of accuracy}
+	
+	After obtaining the cell detection results we must determine the number of trajectories and which detection results belong to which trajectory. In the analysis of the performance of the tracking system we assume that the detection results are already available. The cell detector had been trained on the annotated images from each dataset, and the detection of cells had been evaluated on the full image sequences. Similarly to the experiments run on the cell detection module, we also run two sets of experiments for the cell tracker. First, we measure the performance of the cell tracker after being trained on each dataset individually. Second, in order to measure the re-usability of a trained cell tracker to link cell detection results in any dataset, we train the cell tracking module on a combined dataset and evaluate its performance on previously unseen trajectories.
+	
+	The aim of this research was to develop an automatic cell detection and tracking pipeline that would require as little manual work as possible. However, there are a few cases when an automated algorithm might not perform great, for example when testing on a new dataset when reusing a tracker trained on a different dataset. For this reason we present the user a set of four intuitive parameters that can be adjusted to modify the tracking results. We discussed the benefits of this configuration in \cref{sec:tracking_scalingparameters}. When the parameters have been modified from their default values these will be written down next to the results.
+	
+	Further, in order to evaluate the cell tracking module, we are interested in two things. First, how well do the generated trajectories fit the ground truth annotations. This measure is dependent on the quality of the cell tracker module as well as the cell detection module. If the cell detection module misses too many cells, it might be impossible for the tracking module to compensate for the errors. This is a measure of how well the automatic tracking pipeline works. However, we are also interested in how well the developed tracking module works independently of the cell detection module. This can give us an idea of how much of the performance is lost in the tracking module, given perfect detection results. For this reason, we will provide three values for each of the computed metrics:
+	
+	\begin{enumerate}
+	\item Performance relative to the Ground Truth annotations (GT-P). This is a measure of how well the combination of the cell detector and tracker perform together.
+	\item Performance relative to \textit{Detected Ground Truth annotations} (DGP-P). \textit{Detected ground truth annotations} are obtained by automatically mapping the ground truth annotations to the cell detection results. For example, a ground truth annotated trajectory is mapped to detection results by finding for each annotated cell observation of the trajectory a detection result that is less than a certain number of pixels away (e.g. 10 pixels). This measure compares the \textit{detected ground truth annotation} to the generated trajectories and gives a measure that is less dependent on the performance of the cell detection module.
+	\item Comparison of Ground Truth annotation and \textit{Detected Ground Truth annotations} (GT-DGT-P). This measure does not measure the quality of the generated trajectories, but measures the performance lost due to errors in the cell detection module. 
+	\end{enumerate}
+	
+	These performance evaluations measure the performance of the longest ground truth trajectories. Annotating all the trajectories in the full datasets would require weeks of manual work and review to assert the correctness of the annotations. For this reason testing is limited to a certain number of long fully annotated trajectories. In each dataset we have identified and annotated a few long trajectories. The counts of the annotated trajectories together with their length is available in \cref{tab:results_counttrajectories}. For the analysis of cell behaviour, we are mostly interested in these long trajectories, instead of the short trajectories caused by cells that appear just for a brief number of frames.
+	
+	\todo{When finished annotating update the table}
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{rrr}
+			Dataset & Number of annotated trajectories & Length (number of frames) of annotated trajectories \\
+		\hline
+		TODO
+		\end{tabular} 
+		\caption{TODO}
+		\label{tab:results_counttrajectories}
+	\end{table}
+
+	All the provided measurements of the cell tracker performance have been obtained by cross validation. This allows us to measure how a trained tracker will generalize to an independent image sequence. Specifically, because the number of annotated trajectories is relatively small, we have used leave-one-out cross validation. This involves repeatedly partitioning the set of annotated trajectories into two subsets, training the tracker on the training subset, and measuring its performance on the testing subset. As the name suggests, in each round we train the tracker on all but one annotated trajectory, using the left-out trajectory for measuring the performance. This is repeated for each annotated trajectory and the results are averaged over all the rounds.
+
 	\subsection{Performance metrics \statusnew}
 	
+	To quantify the performance of the cell tracking module we use two metrics originating from radar tracking literature \cite{blackman99}, recently used in other works \cite{bise11global, huh13, eom07}: \textit{target effectiveness} and \textit{track purity}.
+	
+	
+	
+	Target effective-
+	ness measures how effectively targets (cells) are followed by tracks; in other words, it penalizes
+	undetected targets like recall. More formally, we first assign each cell i to its best track j that
+	follows the cell for the longest time. Target effectiveness is then defined as
+	
+	
+	---
+	
+		Track purity is the measure of how pure the trajectories of
+
+		tracking results are. In other words, a track that consistently
+
+		follows the same cell over time has high purity, while a track
+
+		that is associated with multiple cells together incorrectly has
+
+		low purity. The metric is computed as
+		
+		
+		where L(i, j) is the length (number of frames) of track i
+
+		assigned to cell j that is the most assigned among true cells
+
+		with the track, and L(i) is the total length of track i.
+
+	---
+	
+	In contrast, track purity measures how purely tracks follow targets; in other words, it penal-
+	izes false detection like precision. To compute track purity, we first assign each track j to its best
+	target i that is followed by the track for the longest time (the roles of track and target are changed
+	compared to the case of track effectiveness.). Track purity is then defined as
+	
+	----
+	Track purity, however, does not penalize tracks that are
+
+	deleted earlier or are formed later than actual cell trajectories.
+
+	Thus the second metric, target effectiveness, is required. The
+
+	target effectiveness is defined from the opposite viewpoint as
+
+	follows:
+
+
+	where L(j, i) is the length of trajectory of a true cell, target
+
+	j assigned to track i that is most assigned among tracks with
+
+	the trajectory, and L(j) is the total length of the trajectory of
+
+	the true cell, target j.
+	
+	----
+	
+	
+	Note that track purity can be measured only when the entire cells are manually tracked. Thus,
+	we compute track purity on the fully annotated sequence; target effectiveness are computed on 16
+	sequences among 48 sequences, where three cells and their prodigy cells are manually tracked.
+	For each of four culture conditions, the first four sequences are used for the experiments.
+	
+	
+	
+	
+		+ terminlogy: target
+		+ we need at least 2 tracklets: no dataset 1
 	TODO: test detector on full dataset, but train it on ALL (notjust70\%) of the annotation
 	TODO: train tracker on 70\% of the trajectories, test on rest
 	

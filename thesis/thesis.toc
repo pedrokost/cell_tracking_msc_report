@@ -58,17 +58,17 @@
 \contentsline {subsubsection}{\nonumberline Training and testing on individual datasets}{48}{section*.3}
 \contentsline {subsubsection}{\nonumberline Training on combined datasets}{49}{section*.6}
 \contentsline {subsection}{\numberline {6.1.3}Computations time \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{51}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Cell tracker \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{52}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Performance metrics \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{52}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Tracking accuracy \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{52}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Computation time \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{52}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Limitations and areas of improvement \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{52}{section.6.3}
-\contentsline {section}{\numberline {6.4}Summary \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{53}{section.6.4}
+\contentsline {section}{\numberline {6.2}Cell tracker \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {in progress}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{52}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Performance metrics \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{53}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Tracking accuracy \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{53}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Computation time \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{54}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Limitations and areas of improvement \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{54}{section.6.3}
+\contentsline {section}{\numberline {6.4}Summary \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {new}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{54}{section.6.4}
 \contentsline {chapter}{\numberline {7}Conclusions and future work\unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{54}{chapter.7}
 \contentsline {section}{\numberline {7.1}Conclusion \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{54}{section.7.1}
 \contentsline {section}{\numberline {7.2}Future work \unhbox \voidb@x \setbox \@tempboxa \hbox {\color@begingroup \kern \fboxsep {\textsc {draft I}}\kern \fboxsep \endgraf \endgroup }\XC@frameb@x \relax }{55}{section.7.2}
-\contentsline {chapter}{Appendices}{57}{section*.56}
+\contentsline {chapter}{Appendices}{57}{section*.14}
 \contentsline {chapter}{\numberline {A}User Guide for the Annotation Tool}{58}{Appendix.1.A}
 \contentsline {chapter}{\numberline {B}User Guide for the Interactive Annotation Viewer}{59}{Appendix.1.B}
 \contentsline {chapter}{\numberline {C}Cell detection results}{60}{Appendix.1.C}
-\contentsline {chapter}{Bibliography}{64}{figure.caption.61}
+\contentsline {chapter}{Bibliography}{64}{section*.14}
