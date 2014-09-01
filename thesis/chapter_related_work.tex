@@ -28,7 +28,7 @@ The level set method is contour evolution approach which has good results in seg
 \subsection{Cell detection by model learning \statusfirstdraft}
 The previous methods perform efficiently in cells with sufficiently good contrast. In images where the cell borders are unclear, images are of varying intensity, cell density is high, or cells can be of different shapes, these methods may not perform as well. In such cases machine learning methods can perform better by learning a model of a cell based on a training set of annotated examples.
 
-Arteta \emph{et al.}~\cite{arteta12}\cite{arteta13}, propose an algorithm that uses a highly-efficient MSER region detector \cite{matas02} to find a broad number of candidate regions. These regions are then scored depending on the similarity to the cell type of interest by a machine learning algorithm. 
+Arteta \emph{et al.}~\cite{arteta12, arteta13}, propose an algorithm that uses a highly-efficient MSER region detector \cite{matas02} to find a broad number of candidate regions. These regions are then scored depending on the similarity to the cell type of interest by a machine learning algorithm. 
 
 The authors organized the extremal regions obtained from the MSER detector into trees, so that each tree corresponds to a set of overlapping extremal regions. Each such region is given a value corresponding to the similarity of the region to a cell. The non-overlapping regions which achieve high scores can then be selected using dynamic programming of the trees. The learning is performed using a structured SVM \cite{joachims09} which is able to take into account the non-overlap constraint, and achieves good performance. The learning is performed on weakly annotated images -- a single dot is necessary on each cell.
 
@@ -38,7 +38,7 @@ The idea is to learn to detect overlapping cells together with the number of cel
 
 \subsection{Cell detection by image restoration \statusfirstdraft}
 
-Another approach is to use an image restoration technique followed by thresholding \cite{bise11} \cite{huh13}. Bise \emph{et al.}~\cite{bise11} apply this technique on phase-contrast microscopy images . The technique utilizes the optophysical principle of image formation by phase-contrast microscope to transform the image into an artefact free image by minimizing a regularized quadratic cost function. A simple image thresholding technique can then be used for segmentation.
+Another approach is to use an image restoration technique followed by thresholding \cite{bise11,huh13}. Bise \emph{et al.}~\cite{bise11} apply this technique on phase-contrast microscopy images . The technique utilizes the optophysical principle of image formation by phase-contrast microscope to transform the image into an artefact free image by minimizing a regularized quadratic cost function. A simple image thresholding technique can then be used for segmentation.
 
 \section{Cell tracking \statusfirstdraft}
 \label{sec:tracking}
