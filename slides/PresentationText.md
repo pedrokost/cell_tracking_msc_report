@@ -79,8 +79,6 @@ The level set/active contour approach is to segment cells by minimizing an energ
 
 The model learning approach attempts to learn the signature of a cell by analyzing a broad set of computed appearance features. This method requires learning the model from annotated examples. We have utilized this method in our system for its ability to adapt to different types of cells. We will discuss it in more detail soon.
 
-Finally, some methods consists on the detailed image restoration by observing the image creation process, followed by a basic segmentation step.
-
 NEXT SLIDE -- tracking methods
 
 Once we identify the cells, we are interested in connecting the detections into coherent trajectories. We can also find many different approaches to this problem.
@@ -105,10 +103,9 @@ And third, we select on optimal subset of non-overlapping regions.
 
 Why non-overlapping regions? In short, detecting cells in overlapping regions would require training the model with a much larger set of annotated images. Furthermore, brief overlaps can be treated by the cell tracker method.
 
+The method only requires dot annotation on cells to train the image. A single dot needs to be placed within the cell region.
 
 NEXT SLIDE -- detection results
-
-The method only requires dot annotation on cells to train the image. A single dot needs to be placed within the cell region.
 
 The system is able to detect cell in images of dimensions about 400-by-400 between 0.5 and 1.5 and achieves good recall and precision values.
 
@@ -133,7 +130,7 @@ We observe that for each tracklet and tracklet pair we have four possible scenar
 - a tracklet can be the first part of a long trajectory
 - or it can be the last part of a long trajectory
 
-So we define these possible scenarios as constraints, and compute a likelihood that determine how likely each scenario is.
+So we define these possible scenarios as constraints, and compute a score that determine how likely each scenario is.
 
 NEXT SLIDE -- linking classifier
 

@@ -244,7 +244,8 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		
 		Finally, the measurements confirm the expectation that the performance of the generated trajectories relative to the \textit{detected ground truth annotations} is higher than their performance relative to ground truth annotations.
 		
-		The generated trajectories for each of these datasets are available in \cref{fig:fig_results_tracker_dataset_2, fig:fig_results_tracker_dataset_3, fig:fig_results_tracker_dataset_4, fig:fig_results_tracker_dataset_5} in appendix \ref{app:appendix_trackingresults}. These trajectories were obtained from trackers that were trained on all the annotated trajectories.
+		The generated trajectories for each of these datasets are available in \cref{fig:results_detector_sequences_2, fig:results_detector_sequences_3, fig:results_detector_sequences_4, fig:results_detector_sequences_5} in appendix \ref{app:appendix_trackingresults}. These trajectories were obtained from trackers that were trained on all the annotated trajectories.
+		\todo{Add all generated trajectories to appendix}
 		
 		\subsubsection{Training on a combined dataset \statusnew}
 		
@@ -263,7 +264,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 				   ABCE & \textbf{81.2} & 82.9  &       96.8       & \textbf{87.4} & 87.3  &   100    \\
 				    ABC & \textbf{80.7} & 83.0  &       95.8       & \textbf{88.2} & 88.2  &   100    \\
 				     AB & \textbf{79.5} & 82.1  &       94.9       & \textbf{99.6} & 99.6  &   100    \\
-				    BCE & \textbf{83.7} & 85.1  &       97.6       & \textbf{85.4} & 85.3  &   100
+				    BCE &   \textbf{}   &       &                  &   \textbf{}   &       &
 			\end{tabular} 
 			\caption{TODO.}
 			\label{tab:results_tracker_combined}
