@@ -200,6 +200,8 @@
        		\end{align*}
 			\noindent where $ \lambda_1 $ is empirically set to 2, and $\pi_{FP}$ is a free parameter used to increase or decrease the likelihood that a tracklet is false positive.
        		
+       		
+       		
      	\subsubsection{The linking hypothesis \statusfirstdraft}
      	   	
      	   	The linking hypothesis is computed between pairs of tracklets where the distance (number of frames) between the tail of the first and the head of the second tracklet is less than a threshold. Because of the variable contrast, and poor quality of the imaging technique the measure is computed by taking into account several spatio-temporal and visual features. The different features are outlined in \cref{sec:linkerclassifierfeatures}. The likelihood of linking tracklet $T_l$ with $T_k$ is:
@@ -311,3 +313,42 @@
 	  	- we trim number of hypothesis: how
 	  	- we can perform the method iteratively: reduce memory usage, number of hypothesis.
 	  	- 
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	  	
+	  	\begin{align*}
+	  		P_{FP}(T_k) &= \alpha^{|T_k|} \\
+	  		P_{TP}(T_k) &= 1 - P_{FP}(T_k)
+	  	\end{align*}
+	  	
+	  	\[
+	  		P_{link}(T_l|T_k) = \begin{cases}
+	  			\pi_{link} V(T_l, T_k)  & \text{if } t_{l,1} - t_{k,n} \leq \lambda_2 \\
+	  			0 & \text{otherwise,}
+	  		\end{cases}
+	  	\]
+	  	
+	  	
+	  	\[
+	  		P_{init}(T_k) = \begin{cases}
+	  			\pi_{init} (1 - \max{P_{link}(T_k | T_l)}) & \forall T_l \in \textbf{T}, t_{k, 1} - t_{l, n} \leq \lambda_2\\
+	  			0 & \text{otherwise,}
+	  		\end{cases}
+	  	\]
+	  	
+	  		\[
+	  	P_{term}(T_k) = \begin{cases}
+	  	      	\pi_{term} (1 - \max{P_{link}(T_l | T_k)}) & \forall T_l \in \textbf{T}, t_{l, 1} - t_{k, n} 	\leq \lambda_2\\
+	  	      	0 & \text{otherwise,}
+	  	       	\end{cases}
+	  	\]
