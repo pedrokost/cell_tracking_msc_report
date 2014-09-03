@@ -2,7 +2,7 @@ TODO: after each part, summarize what you just said!!!
 
 Hello everybody!
 
-My name is Pedro Kostelec and in this presentation I am going to present you the work I've been working on in the past 4 months. Throughout the project I have been supervised by professor Ben Glocker, and working in collaboration with Dr. Leo Carlin.
+My name is Pedro Kostelec and in this presentation I am going to present you the work I've been working on in the past 4 months. Throughout the project I have been supervised by professor Ben Glocker, and working in collaboration with Dr. Leo Carlin, whos is a scientist in the National Heart and Lung institute 
 
 Let me start by telling you a fictional story.
 
@@ -36,7 +36,7 @@ Dr. Leo wanted to know how these cells move and why the mouse needs them in the 
 
 NEXT SLIDE -- google
 
-As you can imagine, this became very boring very quickly as the number of images never seemed to lower. So, he turned to Google for help and he found some software too help him do the tracking of cells.
+As you can imagine, this became very boring very quickly as the number of images never seemed to lower. So, he turned to Google for help and he found some software to help him do the tracking of cells.
 
 NEXT SLIDE -- bad results
 
@@ -62,7 +62,7 @@ I knew this was a trap. If I agreed to analyze some of his images, sooner or lat
 
 NEXT SLIDE -- many people looking at rats
 
-So, I started reading a lot about cell tracking, and discovered that large industries would greatly benefit from a good, reliable cell tracking method. The amount of humans obsessed with observing mice is staggering. Some are watching dead mice, some mice that were alive. Some are interested in testing how different drugs affect their growth, others how drugs can speed up the healing of wounds, and then there are some, like our Dr. Leo, who observe rats to satisfy their cursiosity.
+So, I started reading a lot about cell tracking, and discovered that large industries would greatly benefit from a good, reliable cell tracking method. The number of humans obsessed with observing mice is staggering. Some are watching dead mice, some mice that were alive. Some are interested in testing how different drugs affect their growth, others how drugs can speed up the healing of wounds, and then there are some, like our Dr. Leo, who observe rats to satisfy their cursiosity.
 
 NEXT SLIDE -- goals
 
@@ -118,7 +118,7 @@ So now we need to link these cells detections into trajectories. The process is 
 16
 NEXT SLIDE -- robust tracklets
 
-How do we obtain the robust tracklets? We trained a classifier that scores the similarity of each pair of tracklets between consecutive frames. In this classifier we reuse the feature vector computed by the detection module. Then, we select only pairs of cells that symmetrically match. This means that a cell from frame A is most similar to cell from frame B, and the cell from frame B is also most similar to cell A in the previous frame. Additionally, we only select matches if the match score is above a high threshold.
+How do we obtain the robust tracklets? We trained a classifier that scores the similarity of each pair of cells between consecutive frames. In this classifier we reuse the feature vector computed by the detection module. Then, we select only pairs of cells that symmetrically match. This means that a cell from frame A is most similar to cell from frame B, and the cell from frame B is also most similar to cell A in the previous frame. Additionally, we only select matches if the match score is above a high threshold.
 
 NEXT SLIDE -- linking hypothesis
 
@@ -132,10 +132,6 @@ We observe that for each tracklet and tracklet pair we have four possible scenar
 
 So we define these possible scenarios as constraints, and compute a score that determine how likely each scenario is.
 
-NEXT SLIDE -- linking classifier
-
-The likelihood of linking a pair of tracklets is based on another classifier that learns to link tracks that can be several number of frames apart. This classifier is trained based on appearance, spatial and temporal features such as the euclidean distance between the tail of the first tracklet and the head of a following tracklet, the directional difference, the difference in displacement speed, and more...
-
 NEXT SLIDE -- hypothesis likelihood
 
 The initialization and termination likelihoods are based on the linking likelihoods.
@@ -143,6 +139,11 @@ The initialization and termination likelihoods are based on the linking likeliho
 Specifically, the initializzation likihoods are equal to 1-max( likelihoods of linking the tracklet to any of the previous tracklets )  and the termination likelihood to 1 - max( of the likelihoods of linking this tracklet to any of the future tracklets ).
 
 After computing all the likelihoods, we use linear programming to select a subset of hypothesis that maximizes tthe complete log likelihood, subject to the constraint that we cannot select conflicting hypothesis (for example, we cannot say that a tracklet is both false positive and linked to another tracklet).
+
+NEXT SLIDE -- linking classifier
+
+The likelihood of linking a pair of tracklets is based on another classifier that learns to link tracks that can be several number of frames apart. This classifier is trained based on appearance, spatial and temporal features such as the euclidean distance between the tail of the first tracklet and the head of a following tracklet, the directional difference, the difference in displacement speed, and more...
+
 
 So this was a brief overiew of the the cell tracker module. First we generate robust tracklets, and the we link these robust tracklets into trajectories.
 

@@ -4,7 +4,7 @@
 
 (Tell fake story of Leo asking to annotated datasets)
 
-- 4 months ago I randomly met a man called Dr. Leo. He's a scientist in >..< who told me his story:
+- 4 months ago I randomly met a man called Dr. Leo, who told me his story:
 - His obscure hobby was to look at the inner working of mice
 - He had a microscope and he learned everything about how mice work
 - When he got bored of mice, he decided to look deeper into the mice... he started looking
