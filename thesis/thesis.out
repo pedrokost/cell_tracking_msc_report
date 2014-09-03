@@ -1,14 +1,37 @@
-\BOOKMARK [0][-]{chapter.6}{Experimental results draft Ihaaheight-0.5 -widthheightdepthc- widthheightdepthheightpter}{}% 43
-\BOOKMARK [1][-]{section.6.1}{Cell detector draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.6}% 44
-\BOOKMARK [2][-]{subsection.6.1.1}{Performance metrics draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.6.1}% 45
-\BOOKMARK [2][-]{subsection.6.1.2}{Detection accuracy draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.6.1}% 46
-\BOOKMARK [2][-]{subsection.6.1.3}{Computations time draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.6.1}% 47
-\BOOKMARK [1][-]{section.6.2}{Cell tracker in progresseccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.6}% 48
-\BOOKMARK [2][-]{subsection.6.2.1}{Performance metrics draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.6.2}% 49
-\BOOKMARK [2][-]{subsection.6.2.2}{Tracking accuracy draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.6.2}% 50
-\BOOKMARK [2][-]{subsection.6.2.3}{Computation time draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.6.2}% 51
-\BOOKMARK [1][-]{section.6.3}{Limitations and areas of improvement draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.6}% 52
-\BOOKMARK [1][-]{section.6.4}{Summary draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.6}% 53
-\BOOKMARK [0][-]{section*.16}{Appendices}{}% 57
-\BOOKMARK [0][-]{Appendix.1.D}{Cell tracking results}{}% 61
-\BOOKMARK [0][-]{figure.caption.20}{Bibliography}{}% 62
+\BOOKMARK [0][-]{chapter.1}{Introduction draft Ihaaheight-0.5 -widthheightdepthc- widthheightdepthheightpter}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Motivation draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Objectives draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Contributions draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Report structure draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Related work draft Ihaaheight-0.5 -widthheightdepthc- widthheightdepthheightpter}{}% 6
+\BOOKMARK [1][-]{section.2.1}{Cell detection draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.1.1}{Cell segmentation using the Watershed technique draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.2}{Cell segmentation using level sets draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.3}{Cell detection by model learning draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.2.1}% 10
+\BOOKMARK [1][-]{section.2.2}{Cell tracking draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.1}{Tracking by model evolution draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.2}{Tracking by frame-by-frame data association draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.3}{Tracking with a dynamics filter draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.4}{Cell tracking by global data association draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.2.2}% 15
+\BOOKMARK [1][-]{section.2.3}{Conclusion draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.2}% 16
+\BOOKMARK [0][-]{chapter.3}{Detection of cells draft Ihaaheight-0.5 -widthheightdepthc- widthheightdepthheightpter}{}% 17
+\BOOKMARK [1][-]{section.3.1}{Method overview draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{Detection of candidate regions draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Inference under the non-overlap constraint draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.4}{Learning the classifier draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.5}{Feature selection draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.6}{Performance improvements draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Tracking of cells draft Ihaaheight-0.5 -widthheightdepthc- widthheightdepthheightpter}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Method overview draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.2}{Joining cell detections into robust tracklets draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.3}{Global data association draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.4}{Implementation using linear programming draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.5}{Hypotheses likelihood definitions draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.6}{Computing the likelihoods draft Ieccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.7}{Features for the linking classifier outlineeccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.7.1}{Estimating the velocity with Kalman filters newubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.4.7}% 32
+\BOOKMARK [2][-]{subsection.4.7.2}{Gaussian broadening feature draft Iubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.4.7}% 33
+\BOOKMARK [2][-]{subsection.4.7.3}{Best feature selection newubbheight-0.5 -widthheightdepths- widthheightdepthheightsection}{section.4.7}% 34
+\BOOKMARK [1][-]{section.4.8}{Implementation details neweccheight-0.5 -widthheightdepths- widthheightdepthheighttion}{chapter.4}% 35
+\BOOKMARK [0][-]{section*.30}{Appendices}{}% 57
+\BOOKMARK [0][-]{section*.30}{Bibliography}{}% 62
