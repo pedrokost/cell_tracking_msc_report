@@ -333,22 +333,22 @@
 	  	
 	  	\[
 	  		P_{link}(T_l|T_k) = \begin{cases}
-	  			\pi_{link} V(T_l, T_k)  & \text{if } t_{l,1} - t_{k,n} \leq \lambda_2 \\
-	  			0 & \text{otherwise,}
+	  			V(T_l, T_k)  & \text{if } t_{l,1} - t_{k,n} \leq \lambda_2 \\
+	  			0 & \text{otherwise}
 	  		\end{cases}
 	  	\]
 	  	
 	  	
 	  	\[
 	  		P_{init}(T_k) = \begin{cases}
-	  			\pi_{init} (1 - \max{P_{link}(T_k | T_l)}) & \forall T_l \in \textbf{T}, t_{k, 1} - t_{l, n} \leq \lambda_2\\
-	  			0 & \text{otherwise,}
+	  			1 - \max{P_{link}(T_k | T_l)} & \forall T_l \in \textbf{T}, t_{k, 1} - t_{l, n} \leq \lambda_2\\
+	  			0 & \text{otherwise}
 	  		\end{cases}
 	  	\]
 	  	
 	  		\[
 	  	P_{term}(T_k) = \begin{cases}
-	  	      	\pi_{term} (1 - \max{P_{link}(T_l | T_k)}) & \forall T_l \in \textbf{T}, t_{l, 1} - t_{k, n} 	\leq \lambda_2\\
-	  	      	0 & \text{otherwise,}
+	  	      	1 - \max{P_{link}(T_l | T_k)} & \forall T_l \in \textbf{T}, t_{l, 1} - t_{k, n} 	\leq \lambda_2\\
+	  	      	0 & \text{otherwise}
 	  	       	\end{cases}
 	  	\]

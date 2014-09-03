@@ -10,13 +10,11 @@
 \backcite {mukherjee04}{{11}{2.1.2}{subsection.2.1.2}}
 \backcite {tang}{{11}{2.1.2}{subsection.2.1.2}}
 \backcite {xu10}{{11}{2.1.2}{subsection.2.1.2}}
-\backcite {arteta12}{{11}{2.1.3}{subsection.2.1.3}}
-\backcite {arteta13}{{11}{2.1.3}{subsection.2.1.3}}
+\backcite {arteta12, arteta13}{{11}{2.1.3}{subsection.2.1.3}}
 \backcite {matas02}{{11}{2.1.3}{subsection.2.1.3}}
 \backcite {joachims09}{{11}{2.1.3}{subsection.2.1.3}}
 \backcite {arteta13}{{12}{2.1.3}{subsection.2.1.3}}
-\backcite {bise11}{{12}{2.1.4}{subsection.2.1.4}}
-\backcite {huh13}{{12}{2.1.4}{subsection.2.1.4}}
+\backcite {bise11,huh13}{{12}{2.1.4}{subsection.2.1.4}}
 \backcite {bise11}{{12}{2.1.4}{subsection.2.1.4}}
 \backcite {mukherjee04}{{13}{2.2.1}{subsection.2.2.1}}
 \backcite {chen06}{{13}{2.2.2}{subsection.2.2.2}}
@@ -45,16 +43,14 @@
 \backcite {bise11global}{{25}{4.1}{figure.caption.12}}
 \backcite {li08}{{25}{4.1}{figure.caption.12}}
 \backcite {bise11}{{25}{4.1}{figure.caption.12}}
-\backcite {bise11global}{{28}{4.3}{section.4.3}}
-\backcite {zhang08}{{28}{4.3}{section.4.3}}
-\backcite {huang08}{{28}{4.3}{section.4.3}}
+\backcite {bise11global,zhang08,huang08}{{28}{4.3}{section.4.3}}
 \backcite {bise11global}{{31}{4.5}{section.4.5}}
-\backcite {looney11}{{37}{5.1}{section.5.1}}
-\backcite {looney11}{{37}{5.1}{section.5.1}}
-\backcite {arteta12}{{46}{6}{chapter.6}}
-\backcite {arteta12}{{51}{6.1.3}{table.caption.9}}
-\backcite {blackman99}{{53}{6.2.1}{subsection.6.2.1}}
-\backcite {bise11global, huh13, eom07}{{53}{6.2.1}{subsection.6.2.1}}
-\backcite {arteta12}{{57}{7.1}{section.7.1}}
-\backcite {bise11global}{{57}{7.1}{section.7.1}}
-\backcite {li08}{{59}{7.2}{section.7.2}}
+\backcite {looney11}{{38}{5.1}{section.5.1}}
+\backcite {looney11}{{38}{5.1}{section.5.1}}
+\backcite {arteta12}{{47}{6}{chapter.6}}
+\backcite {arteta12}{{52}{6.1.3}{table.caption.6}}
+\backcite {blackman99}{{54}{6.2.1}{subsection.6.2.1}}
+\backcite {bise11global, huh13, eom07}{{54}{6.2.1}{subsection.6.2.1}}
+\backcite {arteta12}{{61}{7.1}{section.7.1}}
+\backcite {bise11global}{{61}{7.1}{section.7.1}}
+\backcite {li08}{{63}{7.2}{section.7.2}}
