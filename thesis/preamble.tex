@@ -30,7 +30,7 @@
 %\usepackage{mathrsfs}
 %\usepackage{amssymb}
 \usepackage{mathtools}
-\usepackage{epstopdf}  % for compiling pdf to png/jpg during development.
+%\usepackage{epstopdf}  % for compiling pdf to png/jpg during development.
 %\usepackage{showframe}
 %\usepackage{wrapfig}
 \usepackage[toc,page]{appendix}
@@ -91,11 +91,11 @@
 
 % Tip from: https://www.sharelatex.com/learn/Inserting_Images
 % Before producing final report, verert the pdf and jpg, and commend out the epstopdf... line
-\epstopdfsetup{outdir=./imageslowres/,update=true}
-\epstopdfDeclareGraphicsRule{.eps}{jpg}{.jpg}{%
-	convert #1 \OutputFile
-}
-\DeclareGraphicsExtensions{.jpg,.png,.eps}
+%\epstopdfsetup{outdir=./imageslowres/,update=true}
+%\epstopdfDeclareGraphicsRule{.eps}{.jpg}{.png}{%
+%	convert #1 \OutputFile
+%}
+\DeclareGraphicsExtensions{.pdf,.eps,.png,.jpg}
 
 \usepackage{microtype}
 
@@ -104,11 +104,6 @@
 \department{Computing}
 \field{Computer Science (Artificial Intelligence)}
 \title{Learning to Automatically Detect and Track Cells in Microscopic Imaging}
-% A data driven approach for automatic cell detection and tracking
-% Towards robust automatic cell detection and tracking
-% Towards an automatic system of cell detection and tracking
-% Cell detection and tracking for automatic Microscopic Image Analysis
-% Towards Automatic Cell tracking in low quality microscopic image sequences
 
 
 \date{September 2014}

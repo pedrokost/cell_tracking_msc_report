@@ -10,20 +10,20 @@
 		
 		\begin{figure}[h]
 			\centering
-			\missingfigure{Tracking terminology}
-			\caption{Tracking terminology}
+			\includegraphics[width=0.8\textwidth]{images/fig_tracklet_terminology}
+			\caption{Illustrated example of three robust tracklets which can be grouped to tracklets and all together form a trajectory.}
 			\label{fig:tracking_overview_terminology}
 		\end{figure}
 		
 		First, we define the terminology used in the subsequent sections. A \term{robust tracklet} is a sequence of cell detections that can be linked with high confidence. These are likely to be detections that were segmented with high accuracy and their feature vectors are very similar. A robust tracklet cannot have gaps (missing detections). Similarly a \term{tracklet} is a sequence of cell detections, but differ from robust tracklets in the manner in which it may contain gaps (missed detections). A sequence of one or more robust tracklets is a tracklet, but the opposite is not necessarily true. Finally, we call a \term{trajectory} a sequence of tracklets that cannot be effectively linked to any other tracklets. A trajectory is a maximally linked tracklet, and corresponds to the actual path performed by a cell in the image sequence. These concepts are illustrated in \cref{fig:tracking_overview_terminology}.
 		
-		Linking cell detections into tracklets is performed in two steps, as seen in \cref{fig:trackingoveriew}. First, cell detections are linked into robust tracklets by a reliable linking model. Second, the tracklets are associated into longer tracklets by closing gaps. A detailed overview of these two steps is provided in the following sections.
+		Linking cell detections into tracklets is performed in two steps, as seen in \cref{fig:tracking_process_overiew}. First, cell detections are linked into robust tracklets by a reliable linking model. Second, the tracklets are associated into longer tracklets by closing gaps. A detailed overview of these two steps is provided in the following sections.
 	
 		\begin{figure}[h]
 			\centering
-			\missingfigure{Tracking process flow diagram}
-			\caption{Some caption}
-			\label{fig:trackingoveriew}
+			\includegraphics[width=\textwidth]{images/fig_tracking_process_overiew}
+			\caption{Overview of the tracking process. First, cell detection are obtained from images. These cell detections are then grouped into robust tracklets. These tracklets are then linked into trajectories.}
+			\label{fig:tracking_process_overiew}
 		\end{figure}
 		
 		The process of linking robust tracklets into trajectories is performed globally, by selecting the optimal subset of tracklets to link in each iteration. This global data association approach has been chosen because it has shown significant improvements in tracking performance compared to other successful methods \cite{bise11global}, such as \cite{li08} which performs tracking using an Interacting Multiple Models (IMM) filter that runs several Kalman filters in parallel for each trajectory.
@@ -36,20 +36,20 @@
 				
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.6\textwidth]{images/cell_tracks}
+			\includegraphics[width=0.5\textwidth]{images/cell_tracks}
 				\caption{Cells detected over 60 consecutive frames are visualized as a time series. The vertical axis corresponds to the frames. Even in this raw detection data, it is possible to see the tracks of some of these cells.}
 			\label{fig:cell_tracks_detection}
 		\end{figure}
 	
 	\section{Joining cell detections into robust tracklets}
 		\label{sec:tracking_robusttracklets}
-		The first phase of linking cell detections into trajectories consists of identifying a set of robust tracklets. An example dataset with the identified robust tracklets is shown in \cref{fig:robusttracklets}
+		The first phase of linking cell detections into trajectories consists of identifying a set of robust tracklets. Robust tracklets for dataset B are shown in \cref{fig:tracking_robust_2}.
 		
 		\begin{figure}[h]
 			\centering
-			\missingfigure{Robust tracklets}
-			\caption{Robust tracklets}
-			\label{fig:robusttracklets}
+			\includegraphics[width=0.5\textwidth]{images/fig_tracking_robust_2}
+			\caption{Robust tracklets generated for dataset B.}
+			\label{fig:tracking_robust_2}
 		\end{figure}
 		
 		We define a cell detection $ d_i = (x_i, y_i, f_i, t_i) $, where $x_i$ and $y_i$ are the position of the cell detections within the frame, $ f_i $ an appearance feature vector obtained from the cell detector module, and $t_i$ the frame index of the detection. The set of all cell detections in the image sequence is $\textbf{D} = \{d_i\}$. 
@@ -133,7 +133,7 @@
 		We also define a matrix $H$ of dimensions $|L| \times 2N$ containing constraints to avoid selecting conflicting hypotheses. Let $i$ represent the index of each new hypothesis and $j$ the index over the columns of $H$. Then, for a robust tracklet $T_k$ and candidate linking tracklet $T_l$ the entries of matrix $H$ are defined as follows for each possible hypothesis:
 		
 		\[
-			C_{ij} = \begin{cases}
+			H_{ij} = \begin{cases}
 			1 & \text{for an initialization hypothesis if } j = N + k \\
 			1 & \text{for a termination hypothesis if } j = k \\
 			1 & \text{for a false positive hypothesis if } j = N + k \text{ or } j = k \\
@@ -152,7 +152,21 @@
 	 
 		For each tracklet an initialization, a termination and a false positive hypothesis is computed. The linking hypothesis is computed for pairs of tracklets where the gap between the tail of the first and head of the next tracklet is shorter than a user specified number of frames.
 	 	        		
-	 	\todo[inline]{Add an example H, L and I for illustration}
+ 		\begin{figure} 
+ 			\begin{subfigure}{.4\textwidth}
+ 			\includegraphics[width=\textwidth]{images/fig_tracking_linprog_tracklets}
+ 			\end{subfigure}%
+ 			\hfill
+ 			\begin{subfigure}{.6\textwidth}
+ 			\includegraphics[width=\textwidth]{fig_tracking_linprog_tablefull}
+ 			\end{subfigure}%
+ 			\caption{Small artificial example of the global data optimization process including hypothesis matrix $H$, the likelihoods vector $L$, and the logical vector of the optimal subset of hypotheses $I^*$.}
+ 			\label{fig:tracking_linprog}
+ 		\end{figure}
+ 		
+ 		\Cref{fig:tracking_linprog} shows a small artificial example of the tracklet linking process. The optimal subset of hypothesis includes initialization hypotheses for tracklets 1, 4 and 7; termination hypothesis for tracklets 2, 6 and 7; false positive hypotheses for 3 and 8, and linking hypothesis for tracklet pairs 1-2, 5-6 and 4-5.
+	 	
+	 	
 	 	        		
 	\section{Hypotheses likelihood definitions}
 		\label{sec:hypothesisdefinition}

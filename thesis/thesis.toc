@@ -28,48 +28,48 @@
 \contentsline {section}{\numberline {4.3}Global data association}{27}{section.4.3}
 \contentsline {section}{\numberline {4.4}Implementation using linear programming}{28}{section.4.4}
 \contentsline {section}{\numberline {4.5}Hypotheses likelihood definitions}{29}{section.4.5}
-\contentsline {section}{\numberline {4.6}Computing the likelihoods}{30}{section.4.6}
-\contentsline {subsubsection}{\nonumberline The true and false positive likelihood}{30}{section*.12}
-\contentsline {subsubsection}{\nonumberline The linking hypothesis}{31}{section*.13}
-\contentsline {subsubsection}{\nonumberline The initialization likelihood}{32}{section*.14}
-\contentsline {subsubsection}{\nonumberline The termination hypothesis}{32}{section*.15}
-\contentsline {subsubsection}{\nonumberline Scaling hypotheses' likelihoods}{33}{section*.16}
-\contentsline {section}{\numberline {4.7}Features for the linking classifier}{33}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Gaussian broadening feature}{34}{subsection.4.7.1}
-\contentsline {section}{\numberline {4.8}Implementation details}{34}{section.4.8}
-\contentsline {chapter}{\numberline {5}Data acquisition and annotation}{36}{chapter.5}
-\contentsline {section}{\numberline {5.1}Data acquisition and example datasets}{36}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Datasets}{37}{subsection.5.1.1}
-\contentsline {subsubsection}{\nonumberline Dataset A}{37}{section*.18}
-\contentsline {subsubsection}{\nonumberline Dataset B}{38}{section*.20}
-\contentsline {subsubsection}{\nonumberline Dataset C}{38}{section*.22}
-\contentsline {subsubsection}{\nonumberline Dataset D}{39}{section*.24}
-\contentsline {subsubsection}{\nonumberline Dataset E}{39}{section*.26}
-\contentsline {subsection}{\numberline {5.1.2}Image analysis challenges}{40}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Manual data annotation}{41}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}The annotation tool}{42}{section.5.2}
-\contentsline {chapter}{\numberline {6}Experimental results}{45}{chapter.6}
-\contentsline {section}{\numberline {6.1}Cell detector}{45}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Performance metrics}{46}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Detection accuracy}{46}{subsection.6.1.2}
-\contentsline {subsubsection}{\nonumberline Training and testing on individual datasets}{47}{section*.33}
-\contentsline {subsubsection}{\nonumberline Training on combined datasets}{48}{section*.35}
-\contentsline {subsection}{\numberline {6.1.3}Computations time}{50}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Cell tracker}{50}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Performance metrics}{52}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Tracking accuracy}{53}{subsection.6.2.2}
-\contentsline {subsubsection}{\nonumberline Training and testing on individual datasets}{53}{section*.39}
-\contentsline {subsubsection}{\nonumberline Training on a combined dataset}{55}{section*.43}
-\contentsline {subsection}{\numberline {6.2.3}Computation time}{56}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Limitations and areas of improvement}{57}{section.6.3}
-\contentsline {section}{\numberline {6.4}Summary}{58}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclusions and future work}{59}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusion}{59}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future work}{60}{section.7.2}
-\contentsline {chapter}{Appendices}{62}{section*.47}
-\contentsline {chapter}{\numberline {A}User Guide for the Annotation Tool}{63}{Appendix.1.A}
-\contentsline {chapter}{\numberline {B}User Guide for the Interactive Annotation Viewer}{64}{Appendix.1.B}
-\contentsline {chapter}{\numberline {C}User Guide for the Cell Detector and Tracker}{65}{Appendix.1.C}
-\contentsline {chapter}{\numberline {D}Cell detection results}{66}{Appendix.1.D}
-\contentsline {chapter}{\numberline {E}Cell tracking results}{70}{Appendix.1.E}
-\contentsline {chapter}{Bibliography}{73}{figure.caption.56}
+\contentsline {section}{\numberline {4.6}Computing the likelihoods}{31}{section.4.6}
+\contentsline {subsubsection}{\nonumberline The true and false positive likelihood}{32}{section*.12}
+\contentsline {subsubsection}{\nonumberline The linking hypothesis}{32}{section*.13}
+\contentsline {subsubsection}{\nonumberline The initialization likelihood}{33}{section*.14}
+\contentsline {subsubsection}{\nonumberline The termination hypothesis}{33}{section*.15}
+\contentsline {subsubsection}{\nonumberline Scaling hypotheses' likelihoods}{34}{section*.16}
+\contentsline {section}{\numberline {4.7}Features for the linking classifier}{34}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Gaussian broadening feature}{35}{subsection.4.7.1}
+\contentsline {section}{\numberline {4.8}Implementation details}{35}{section.4.8}
+\contentsline {chapter}{\numberline {5}Data acquisition and annotation}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Data acquisition and example datasets}{37}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Datasets}{38}{subsection.5.1.1}
+\contentsline {subsubsection}{\nonumberline Dataset A}{38}{section*.18}
+\contentsline {subsubsection}{\nonumberline Dataset B}{39}{section*.20}
+\contentsline {subsubsection}{\nonumberline Dataset C}{39}{section*.22}
+\contentsline {subsubsection}{\nonumberline Dataset D}{40}{section*.24}
+\contentsline {subsubsection}{\nonumberline Dataset E}{40}{section*.26}
+\contentsline {subsection}{\numberline {5.1.2}Image analysis challenges}{41}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Manual data annotation}{42}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}The annotation tool}{43}{section.5.2}
+\contentsline {chapter}{\numberline {6}Experimental results}{46}{chapter.6}
+\contentsline {section}{\numberline {6.1}Cell detector}{46}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Performance metrics}{47}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Detection accuracy}{47}{subsection.6.1.2}
+\contentsline {subsubsection}{\nonumberline Training and testing on individual datasets}{48}{section*.33}
+\contentsline {subsubsection}{\nonumberline Training on combined datasets}{49}{section*.35}
+\contentsline {subsection}{\numberline {6.1.3}Computations time}{51}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Cell tracker}{51}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Performance metrics}{53}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Tracking accuracy}{54}{subsection.6.2.2}
+\contentsline {subsubsection}{\nonumberline Training and testing on individual datasets}{54}{section*.39}
+\contentsline {subsubsection}{\nonumberline Training on a combined dataset}{56}{section*.43}
+\contentsline {subsection}{\numberline {6.2.3}Computation time}{57}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Limitations and areas of improvement}{58}{section.6.3}
+\contentsline {section}{\numberline {6.4}Summary}{59}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclusions and future work}{60}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusion}{60}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future work}{61}{section.7.2}
+\contentsline {chapter}{Appendices}{63}{section*.47}
+\contentsline {chapter}{\numberline {A}User Guide for the Annotation Tool}{64}{Appendix.1.A}
+\contentsline {chapter}{\numberline {B}User Guide for the Interactive Annotation Viewer}{65}{Appendix.1.B}
+\contentsline {chapter}{\numberline {C}User Guide for the Cell Detector and Tracker}{66}{Appendix.1.C}
+\contentsline {chapter}{\numberline {D}Cell detection results}{67}{Appendix.1.D}
+\contentsline {chapter}{\numberline {E}Cell tracking results}{71}{Appendix.1.E}
+\contentsline {chapter}{Bibliography}{74}{figure.caption.56}

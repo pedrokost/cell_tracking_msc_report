@@ -1,0 +1,57 @@
+% TO regenerate preample run:
+% pdftex -ini -jobname="thesis" "&pdflatex preamble.tex\dump"
+
+\documentclass[11pt]{article}
+
+\usepackage[active, tightpage]{preview}
+%Uporabljeni paketi
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.9}
+%\pagenumbering{gobble}
+
+
+\PreviewEnvironment{longtable}
+
+\setlength\PreviewBorder{0pt}%
+\begin{document}
+
+\begin{longtable}[c]{@{}ccccc@{}}
+Description & $L$ & $I^*$ & \multicolumn{2}{c}{$H$}\tabularnewline
+\hline
+\rowcolor{Gray}
+init 1 & 0.80 & 1 & 0 0 0 0 0 0 0 0 & 1 0 0 0 0 0 0 0\tabularnewline
+init 2 & 0.80 & 0 & 0 0 0 0 0 0 0 0 & 0 1 0 0 0 0 0 0\tabularnewline
+\vdots & \vdots & \vdots & \multicolumn{2}{c}{\vdots} \\
+init 8 & 0.70 & 0 & 0 0 0 0 0 0 0 0 & 0 0 0 0 0 0 0 1\tabularnewline
+term 1 & 0.30 & 0 & 1 0 0 0 0 0 0 0 & 0 0 0 0 0 0 0 0\tabularnewline
+\rowcolor{Gray}
+term 2 & 0.90 & 1 & 0 1 0 0 0 0 0 0 & 0 0 0 0 0 0 0 0\tabularnewline
+\vdots & \vdots & \vdots & \multicolumn{2}{c}{\vdots} \\
+term 8 & 0.90 & 0 & 0 0 0 0 0 0 0 1 & 0 0 0 0 0 0 0 0\tabularnewline
+FP 1 & 0.20 & 0 & 1 0 0 0 0 0 0 0 & 1 0 0 0 0 0 0 0\tabularnewline
+FP 2 & 0.10 & 0 & 0 1 0 0 0 0 0 0 & 0 1 0 0 0 0 0 0\tabularnewline
+\vdots & \vdots & \vdots & \multicolumn{2}{c}{\vdots} \\
+\rowcolor{Gray}
+FP 8 & 0.90 & 1 & 0 0 0 0 0 0 0 1 & 0 0 0 0 0 0 0 1\tabularnewline
+1 $\rightarrow$ 2 & 0.80 & 1 & 1 0 0 0 0 0 0 0 & 0 1 0 0 0 0 0
+0\tabularnewline
+5 $\rightarrow$ 6 & 0.85 & 1 & 0 0 0 0 1 0 0 0 & 0 0 0 0 0 1 0
+0\tabularnewline
+5 $\rightarrow$ 3 & 0.90 & 0 & 0 0 0 0 1 0 0 0 & 0 0 1 0 0 0 0
+0\tabularnewline
+\rowcolor{Gray}
+4 $\rightarrow$ 5 & 0.70 & 1 & 0 0 0 1 0 0 0 0 & 0 0 0 0 1 0 0
+0\tabularnewline
+4 $\rightarrow$ 3 & 0.30 & 0 & 0 0 0 1 0 0 0 0 & 0 0 1 0 0 0 0
+0\tabularnewline
+4 $\rightarrow$ 8 & 0.20 & 0 & 0 0 0 1 0 0 0 0 & 0 0 0 0 0 0 0
+1\tabularnewline
+7 $\rightarrow$ 3 & 0.10 & 0 & 0 0 0 0 0 0 1 0 & 0 0 1 0 0 0 0
+0\tabularnewline
+8 $\rightarrow$ 3 & 0.30 & 0 & 0 0 0 0 0 0 0 1 & 0 0 1 0 0 0 0
+0\tabularnewline
+\end{longtable}
+\end{document}
