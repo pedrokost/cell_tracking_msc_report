@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
-The style file: ieeetr.bst
+The style file: siam.bst
 A level-1 auxiliary file: chapter_abstract.aux
 A level-1 auxiliary file: chapter_acknowledgements.aux
 A level-1 auxiliary file: chapter_copyright.aux
@@ -15,57 +15,63 @@ A level-1 auxiliary file: chapter_conclusion.aux
 A level-1 auxiliary file: appendix_annotationtool.aux
 A level-1 auxiliary file: appendix_interactiveviewer.aux
 I couldn't open auxiliary file appendix_detectortracker.aux
----line 43 of file thesis.aux
+---line 48 of file thesis.aux
  : \@input{appendix_detectortracker.aux
  :                                     }
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: appendix_detection_results.aux
+A level-1 auxiliary file: appendix_tracking_results.aux
 Database file #1: thesis.bib
+I was expecting a `,' or a `}'---line 472 of file thesis.bib
+ : 
+ : @article{kalman60,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 A bad cross reference---entry "arteta13"
 refers to entry "conf/cvpr/2013", which doesn't exist
 A bad cross reference---entry "bise11global"
 refers to entry "conf/isbi/2011", which doesn't exist
 Warning--I didn't find a database entry for "conf/isbi/2011"
 Warning--I didn't find a database entry for "conf/cvpr/2013"
-You've used 30 entries,
-            1876 wiz_defined-function locations,
-            687 strings with 10124 characters,
-and the built_in function-call counts, 9447 in all, are:
-= -- 915
-> -- 375
+You've used 32 entries,
+            2030 wiz_defined-function locations,
+            721 strings with 10704 characters,
+and the built_in function-call counts, 13165 in all, are:
+= -- 1236
+> -- 631
 < -- 0
-+ -- 136
-- -- 106
-* -- 682
-:= -- 1283
-add.period$ -- 35
-call.type$ -- 30
-change.case$ -- 27
++ -- 250
+- -- 215
+* -- 1012
+:= -- 1982
+add.period$ -- 36
+call.type$ -- 32
+change.case$ -- 199
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 495
-empty$ -- 894
-format.name$ -- 106
-if$ -- 2344
+cite$ -- 32
+duplicate$ -- 599
+empty$ -- 1000
+format.name$ -- 215
+if$ -- 2893
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 28
-newline$ -- 99
-num.names$ -- 32
-pop$ -- 112
+int.to.str$ -- 32
+missing$ -- 29
+newline$ -- 103
+num.names$ -- 66
+pop$ -- 217
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 170
 quote$ -- 0
-skip$ -- 377
+skip$ -- 514
 stack$ -- 0
-substring$ -- 670
-swap$ -- 222
+substring$ -- 857
+swap$ -- 264
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 124
 warning$ -- 0
-while$ -- 82
-width$ -- 32
-write$ -- 304
-(There were 3 error messages)
+while$ -- 119
+width$ -- 34
+write$ -- 303
+(There were 4 error messages)

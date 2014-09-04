@@ -1,25 +1,21 @@
-\contentsline {todo}{Figure: Examples of MSER detections}{19}{figure.caption.5}
-\contentsline {todo}{Figure: Tracking terminology}{23}{figure.caption.7}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Make sure to update this if no longer iterative}{24}{section*.8}
-\contentsline {todo}{Figure: Tracking process flow diagram}{24}{figure.caption.9}
-\contentsline {todo}{Figure: Robust tracklets}{25}{figure.caption.11}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ To finish this section I need to train a model with more data and decide whether to use NB or ANN. Then I need to describe the selected method.}{26}{section*.12}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Add a diagram to illustrate how the descriptors of annotated cells where found, because it's hard to understand from the description}{27}{section*.13}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Add an example H, L and I for illustration}{29}{section*.14}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Finalize the description of the ANN when I settle on a final shape once I train it using all the data}{31}{section*.17}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Make sure to update this if i decide to build a classifier for each gap length}{32}{section*.18}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Try looking back only the number of frames you are trying to close... no further, since those could be linked later.}{32}{section*.20}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Augment this list as more features are added}{34}{section*.23}
-\contentsline {todo}{\color@box {}{red!40}{\leavevmode {\color {red!40}o}}\ This feature has not yet been implemented}{34}{section*.24}
-\contentsline {todo}{\color@box {}{red!40}{\leavevmode {\color {red!40}o}}\ This feature has not yet been implemented}{34}{section*.26}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Define how the best features have been selected}{34}{section*.27}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Describe which features performed best}{35}{section*.28}
-\contentsline {todo}{\color@box {}{red!40}{\leavevmode {\color {red!40}o}}\ This feature has not yet been implemented}{35}{section*.29}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ This is series30green}{40}{section*.34}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ This is series30red}{41}{section*.37}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ This is series13greencropped}{41}{section*.40}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ This is series14croppedclean}{42}{section*.43}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ This is seriesm170\_13cropped}{43}{section*.46}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Add a comment of how effective (or not) the traker is.}{63}{section*.67}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ I need one concluding paragraph}{63}{section*.68}
-\contentsline {todo}{\color@box {}{blue!40}{\leavevmode {\color {blue!40}o}}\ Rewrite: Make sure to update this section after running the experiments. Explain how good or bad the methods is, which are the strongest and which the weakest points. if bad, try to rationalize why.}{63}{section*.69}
+\contentsline {todo}{Figure: Examples of MSER detections}{19}{figure.caption.3}
+\contentsline {todo}{Figure: Tracking terminology}{23}{figure.caption.5}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Make sure to update this if no longer iterative}{24}{section*.6}
+\contentsline {todo}{Figure: Tracking process flow diagram}{24}{figure.caption.7}
+\contentsline {todo}{Figure: Robust tracklets}{25}{figure.caption.9}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ To finish this section I need to train a model with more data and decide whether to use NB or ANN. Then I need to describe the selected method.}{26}{section*.10}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Add a diagram to illustrate how the descriptors of annotated cells where found, because it's hard to understand from the description}{27}{section*.11}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Add an example H, L and I for illustration}{29}{section*.12}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Finalize the description of the ANN when I settle on a final shape once I train it using all the data}{31}{section*.15}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Make sure to update this if i decide to build a classifier for each gap length}{32}{section*.16}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Define how the best features have been selected}{34}{section*.20}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Describe which features performed best... and figure out where I place the plot of feauture selection and link it here}{34}{section*.21}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ This is series30green}{37}{section*.31}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ This is series30red}{38}{section*.34}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ This is series13greencropped}{38}{section*.37}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ This is series14croppedclean}{39}{section*.40}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ This is seriesm170\_13cropped}{40}{section*.43}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Add a comment of how effective (or not) the traker is.}{60}{section*.3}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ I need one concluding paragraph}{60}{section*.4}
+\contentsline {todo}{\color@box {}{blue!40}{\leavevmode {\color {blue!40}o}}\ Rewrite: Make sure to update this section after running the experiments. Explain how good or bad the methods is, which are the strongest and which the weakest points. if bad, try to rationalize why.}{60}{section*.5}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Remove the Kalman stuff from here}{61}{section*.6}
