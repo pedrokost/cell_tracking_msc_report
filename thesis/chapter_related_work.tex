@@ -1,15 +1,15 @@
-\chapter{Related work \statusfirstdraft}
+\chapter{Related work}
 \label{chap:relatedwork}
 This chapter consists a survey of current methods for cell detection and tracking. It summarizes the different techniques in a structured way, and discusses the advantages and disadvantages of each method. The chapter is divided into three sections. \Cref{sec:detection} describes methods to perform cell detection on images containing cells. \Cref{sec:tracking} presents methods used to track cells in a sequence of images. Finally, in \cref{sec:conclusionmethods} we describe which methods seem most promising for our application of cell tracking. 
 	
 
-\section{Cell detection \statusfirstdraft}
+\section{Cell detection}
 \label{sec:detection}
 \label{sec:relatedworkdetection}
 
 Cell detection consists of identifying individual cells in microscopy images. Due to the different imaging techniques and the types of cells we may wish to detect, several algorithms have been developed, each to handle a specific case. This section is an overview of these techniques.
 
-\subsection{Cell segmentation using the Watershed technique \statusfirstdraft}
+\subsection{Cell segmentation using the Watershed technique}
 
 A basic cell detection method relies on binarizing an image to separate the background from the cells, followed by a segmentation step to extract the cells. Chen, Biddell \emph{et al.}~\cite{chen99} use a flooding approach for segmentation. The entire method can be summarized as follows. First, a spatial adapter filter eliminates some noise in the image. Second, it locates the pixels with minimum intensities in a small sliding window. Third, for each minimum point it proceeds to the progressive flooding of its neighbouring points and a final post-processing step discards false regions.
 
@@ -17,7 +17,7 @@ A similar method by Chen \emph{et al.}~\cite{chen06} consists on using a Watersh
 
 Disadvantages of these methods include the requirement for a similar number of pixels belonging to both the cells and background as well as the high signal to noise ratio.
 
-\subsection{Cell segmentation using level sets \statusfirstdraft}
+\subsection{Cell segmentation using level sets}
 
 Another interesting technique to segment cells is a contour evolution method that makes use of the general appearance of cells to segment them using level sets. Mukherjee \emph{et al.}~\cite{mukherjee04} make the observation that leukocyte shapes are nearly circular and that at least for a significant part of the border of the cells, the intensity profile is different from the cell cytoplasm as well as the background. Using this observation, identification of a leukocyte is formulated as a minimization of an energy function incorporating image gradient and intensity homogeneity within the closed contour encompassing the cell. The benefit of this method is that it can be adjusted to perform well in images with significant clutter and poor contrast by increasing the importance of the homogeneity, or for images with good contrast, where the gradient magnitude term is given more importance. The disadvantage of this method is that cells cannot overlap. The energy function can be minimized with the gradient descent method.
 
@@ -25,7 +25,7 @@ To reduce the solution space for the energy function, only the boundaries of con
 
 The level set method is a contour evolution approach which has good results in segmentation. Tang \emph{et al.}~\cite{tang} have successfully combined level-sets and local grey thresholding \cite{xu10} for segmenting neuron stem cells in images which have been obtained by confocal microscopy.
 
-\subsection{Cell detection by model learning \statusfirstdraft}
+\subsection{Cell detection by model learning}
 The previous methods perform efficiently in cells with sufficiently good contrast. In images where the cell borders are unclear, images are of varying intensity, cell density is high, or cells represent different shapes, these methods may not perform as well. In such cases machine learning methods can perform better by learning a model of a cell based on a training set of annotated examples.
 
 Arteta \emph{et al.}~\cite{arteta12, arteta13}, propose an algorithm that uses a highly-efficient MSER region detector \cite{matas02} to find a broad number of candidate regions. These regions are then scored depending on the similarity to the cell type of interest by a machine learning algorithm. 
@@ -36,7 +36,7 @@ The advantage of this approach is the tolerance to changes in image intensities,
 
 The idea is to learn to detect overlapping cells together with the number of cells in the region. The algorithm starts by generating a set of nested regions. Each region is then scored using a set of classifiers that evaluate the similarity of the region to each of the possible classes, where each class corresponds to the number of cells that the region contains. An inference procedure then selects the non-overlapping subset of regions, and assigns each a class label indicating the number of cells that the model believes lie in the region. This eliminates the non-overlap constraint, but requires a larger training set of annotated images to train the detector.
 
-\section{Cell tracking \statusfirstdraft}
+\section{Cell tracking}
 \label{sec:tracking}
 
 After detecting each cell in each image of the sequence we need to determine which cells in an image correspond to which in the next image. This way we can generate tracks of the cells across the image sequence. We have identified four main approaches to tracking:
@@ -50,23 +50,23 @@ After detecting each cell in each image of the sequence we need to determine whi
 
 The remaining of this chapter briefly describes how these methods have been implemented in different papers.
 
-\subsection{Tracking by model evolution \statusfirstdraft}
+\subsection{Tracking by model evolution}
 
 This approach consists of identifying a cell in the first frame of a sequence by means of active contours or level sets and then propagating the models to the next frame. Model evolution tracking methods handle cell deformation well, but can often get stuck in local minima. This method can be computationally expensive because of the need to evolve the cell models for each frame. It is possible to improve the tracking accuracy at the expense of computation time.
 
 Mukherjee \emph{et al.}~\cite{mukherjee04} model the problem of cell tracking as maximizing a similarity measure between level sets in consecutive frames. The method minimizes the energy associated with leukocyte boundary detection and then matches the boundary with that of the previous frame. To maintain spatial coherence, the authors assume that the displacement of cells between frames is marginal. Such an automatic tracker is able to handle slight rotations or deformations of the leukocytes well.
 
-\subsection{Tracking by frame-by-frame data association \statusfirstdraft}
+\subsection{Tracking by frame-by-frame data association}
 
 When tracking by frame-by-frame data association, cells in consecutive frames are associated according to a similarity measure, which compares features such as the cell intensity or relative spatial location. This method is very efficient, but only effective when cells are accurately detected. It is possible to improve the association by analysing several frames in a sequence.
 
 Chen \emph{et al.}~\cite{chen06} perform the matching process based on the distances between the cells. A match is found if a feature distance is below a threshold. The authors have also developed strategies to overcome the problem of false matches and ambiguous correspondence when nuclei are touching or partially overlapping. In this case information about these nuclei is stored (nuclei size and their relative location -- up, down, left, right --). When they separate, the algorithm can resolve the ambiguities by comparing their current status with the previously stored information.
 
-To reduce the vulnerability of frame-by-frame data association it is possible to analyse several frames of the sequence. This is the approach by Huh \cite{huh13}. For each new frame, a set of hypothesis is computed for each detected blob, corresponding to migration, exit, entrance, clustering and mitosis. After all hypothesis are obtained, a best combination is selected by formulating and solving an integer programming problem. If, after the best association is found, there are remaining cells, these are considered again in the following frames.
+To reduce the vulnerability of frame-by-frame data association it is possible to analyse several frames of the sequence. This is the approach by Huh \cite{huh13}. For each new frame, a set of hypotheses is computed for each detected blob, corresponding to migration, exit, entrance, clustering and mitosis. After all hypotheses are obtained, a best combination is selected by formulating and solving an integer programming problem. If, after the best association is found, there are remaining cells, these are considered again in the following frames.
 
 The similarity function used to perform data association between consecutive frames is of crucial importance. House \emph{et al.}~\cite{house09} propose a novel cost function that encodes the response of cells to conditions of their environment. The tracking problem is formulated as a standard Bayesian filtering problem. The model allows the state of the cells in the images to evolve in time. To solve the complete assignment they have used a probabilistic data association algorithm which produces an optimal solution.
 
-\subsection{Tracking with a dynamics filter \statusfirstdraft}
+\subsection{Tracking with a dynamics filter}
 Dynamics filters are a powerful addition to tracking systems because they predict the motion of a cell, and reduce the search space in which we look for matches. These algorithms not only perform frame-by-frame tracking, but also take temporal information into account, resulting in models that are robust to long-term occlusion and cell detection error.
 
 Xu \emph{et al.}~\cite{xu12} developed an ant stochastic searching behaviour based tracking system to track multiple cells in fluorescent image sequences. The system is similar to particle filters, but the motion behaviour is modelled to be similar to how ants behave when searching for food. When ants move around, they deposit small quantities of chemical pheromone. Once they find food, they retrace the steps deposing larger amounts of pheromone. Other ants can then use this guide to find food faster, but are allowed to deviate from the path and pursue their own paths. The author proposes a system where the food is not static, so that it can be used for cell tracking. Compared to particle filters, this algorithm is more computationally expensive, but achieves better accuracy. The algorithm is able to deal with cells entering or leaving the scene as well as occlusion.
@@ -75,20 +75,20 @@ Kalman filters are another popular method for state prediction. Tang \emph{et al
 
 Cells do not always exhibit just one type of motion and a single Kalman filter cannot take this into account. Li \emph{et al.}~\cite{li07} propose an automated tracking system which runs several Kalman filters in parallel, each corresponding to a different modality: random walk, first-order and second-order linear extrapolations which correspond to Brownian motion, migration with constant speed and migration with constant acceleration. The Kalman filters are run by the interacting multiple models (IMM) filter. The transitions between models is determined by a finite state Markov chain. Their system is composed of five modules: cell detector, cell tracker, dynamics filter, track compiler and track linker. The cell detector separates the background from cell pixels. The cell tracker propagates the cell labelling to the next frame in the sequence. The track compiler compares the results of the cell tracker, cell detector and dynamics filter to create a new track for new or daughter cells, and updates or terminates existing tracks. The track linker connects two or more track segments if they belong to the same cell.
 
-\subsection{Cell tracking by global data association \statusfirstdraft}
+\subsection{Cell tracking by global data association}
 
 The benefit of global data association approaches is that they aggregate the results of all frames and make a global decision rather than propagating the results of each frame to the next. This makes them less dependent on errors from the cell detection module.
 
 Massoudi \emph{et al.}~\cite{massoudi12} propose a tracking method that does not rely on perfect segmentation and can deal with uncertainties by exploiting temporal information and aggregating the results of many frames. The system only requires probabilities or potentials that represent cell positions. Tracking is modelled as a network flow problem and is formulated as a linear program based on the occupancy likelihood of the edges of the network. The system can detect false positives or false negatives and correct itself. The method handles division events and cells entering or exiting the screen at the boundaries.
 
-Zhang \emph{et al.}~\cite{zhang08} also researched tracking of pedestrians using network flows and achieved superior performance to frame-by-frame methods. In their approach, data association is defined as a maximum-a-posteriori (MAP) estimation problem which is solved as a flow network. The flow paths in the network correspond to non-overlapping trajectory hypothesis, and the flow costs to the observation likelihoods and transition probabilities. The global association is found by a minimum cost flow algorithm.
+Zhang \emph{et al.}~\cite{zhang08} also researched tracking of pedestrians using network flows and achieved superior performance to frame-by-frame methods. In their approach, data association is defined as a maximum a posteriori (MAP) estimation problem which is solved as a flow network. The flow paths in the network correspond to non-overlapping trajectory hypotheses, and the flow costs to the observation likelihoods and transition probabilities. The global association is found by a minimum cost flow algorithm.
 
 An equivalent MAP problem is defined by Huang \emph{et al.}~\cite{huang08} and Bise \emph{et al.}~\cite{bise11global}. First, they both generate reliable tracklets by linking cell detection responses in consecutive frames. Second, the short tracklets are associated into longer and longer tracklets. This second, global data association approach is solved by Huang \emph{et al.} iteratively using the Hungarian association algorithm \cite{kuhn55} and by Bise \emph{et al.} as an integer optimization problem. This approach can achieve state-of-the-art performance and surpass the accuracy of previously discussed methods.
 
-\section{Conclusion \statusfirstdraft}
+\section{Conclusion}
 \label{sec:conclusionmethods}
-This chapter presented an overview of methods used for cell detection and tracking. Some of these methods are designed to perform better under specific imaging and cell conditions. The combination of thresholding and the Watershed method for segmentation is likely to perform well in high quality images where the cells are clearly discernible. However, in the case of noisy images with varying contrast, the machine learning approach presented by Arteta \emph{et al.} is likely to perform much better, at the cost of computation time to compute the larger number of features for each candidate cell region. Both these methods have been briefly evaluated on the noisy image sequences that we studied in this research. The first method required a lot of manual adjustments to perform acceptably well. The second method was able to reliably detect cells in the low signal-to-noise images. For this reason, the machine learning method by Arteta \emph{et al.} has been chosen for this application. A more in depth explanation of the method is presented in \cref{chap:cell_detection}.
+This chapter presented an overview of methods used for cell detection and tracking. Some of these methods are designed to perform better under specific imaging and cell conditions. The combination of thresholding and the Watershed method for segmentation is likely to perform well in high quality images where the cells are clearly discernible. However, in the case of noisy images with varying contrasts, the machine learning approach presented by Arteta \emph{et al.} is likely to perform much better, at the cost of computation time to compute the larger number of features for each candidate cell region. Both these methods have been briefly evaluated on the noisy image sequences that we studied in this research. The first method required a lot of manual adjustments to perform acceptably well. The second method was able to reliably detect cells in the low signal-to-noise images. For this reason, the machine learning method by Arteta \emph{et al.} has been chosen for this application. A more in depth explanation of the method is presented in \cref{chap:cell_detection}.
 
-Although the detection method is able to reliably detect most of the cells in the image sequences, the cells sometimes cannot be detected due to several factors. First, the cells can submerge into the depth of the tissue and reappear a few frames later. Second, due to the motion artefacts caused by the moving (lung) tissue when the images are obtained, the images can be out-of-focus for several frames. These and other artefacts make the cell tracking problem much harder. Therefore, we needed a method that would be able to handle false detections and missing observations over a few frames. A global data association method heavily inspired by \cite{bise11global} has been developed and is presented in \cref{chap:tracking}.
+Although the detection method is able to reliably detect most of the cells in the image sequences, the cells sometimes cannot be detected due to several factors. First, the cells can submerge into the depth of the tissue and reappear a few frames later. Second, due to the motion artifacts caused by the moving (lung) tissue when the images are obtained, the images can be out-of-focus for several frames. These and other artifacts make the cell tracking problem much harder. Therefore, we needed a method that would be able to handle false detections and missing observations over a few frames. A global data association method heavily inspired by \cite{bise11global} has been developed and is presented in \cref{chap:tracking}.
 
 There are several reasons why automatic cell tracking systems are not as popular as we would expect. The main reason is probably that the level of accuracy falls short of manual annotation. Furthermore, these systems are often not robust to changes in cell type, cell culture condition and microscopy image quality. It is our hope that the state-of-the-art methods we have chosen and will develop for our tracking application will enable us to track cells in noisy images with a performance comparable to that of a human.

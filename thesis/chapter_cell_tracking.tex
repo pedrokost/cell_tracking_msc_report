@@ -1,9 +1,9 @@
-\chapter{Tracking of cells \statusfirstdraft}
+\chapter{Tracking of cells}
 	\label{chap:tracking}
 	
-	This chapter describes the method for tracking cell detection results to obtain cell trajectories. The chapter is a step-by-step description of the process, starting in \cref{sec:tracking_overview} with a high level overview of the tracking process. The following chapters describe each step in more detail. \Cref{sec:tracking_robusttracklets} explains how cell detection results are joined into robust tracklets. In \cref{sec:globaldataassoc} we formulate a maximum-a-posteriori problem to link these tracklets into robust trajectories, and then in \cref{sec:tracking_linearprogramming} the problem is converted to an integer optimization problem and solved by linear programming. The final three sections describe specific details of the linear programming solution. In \cref{sec:hypothesisdefinition} we define the set of hypothesis (false positive, linking, tracklet initialization and tracklet termination) for each tracklet and in \cref{sec:computinglikelihoods} we describe how the likelihoods of these hypothesis are computed. Finally, \cref{sec:linkerclassifierfeatures} describes the different features that were used to train a classifier for linking trajectories.
+	This chapter describes the method for tracking cell detection results to obtain cell trajectories. The chapter is a step-by-step description of the process, starting in \cref{sec:tracking_overview} with a high level overview of the tracking process. The following chapters describe each step in more detail. \Cref{sec:tracking_robusttracklets} explains how cell detection results are joined into robust tracklets. In \cref{sec:globaldataassoc} we formulate a maximum a posteriori problem to link these tracklets into robust trajectories, and then in \cref{sec:tracking_linearprogramming} the problem is converted to an integer optimization problem and solved by linear programming. The final three sections describe specific details of the linear programming solution. In \cref{sec:hypothesisdefinition} we define the set of hypotheses (false positive, linking, tracklet initialization and tracklet termination) for each tracklet and in \cref{sec:computinglikelihoods} we describe how the likelihoods of these hypotheses are computed. Finally, \cref{sec:linkerclassifierfeatures} describes the different features that were used to train a classifier for linking trajectories.
 	
-	\section{Method overview \statusfirstdraft}
+	\section{Method overview}
 		\label{sec:tracking_overview}
 		
 		The cell detections obtained using the method described in \cref{chap:cell_detection} need to be linked into trajectories. The detections contain a number of false positives and false negatives (missed detections) which make the task of associating them into trajectories difficult.
@@ -17,7 +17,7 @@
 		
 		First, we define the terminology used in the subsequent sections. A \term{robust tracklet} is a sequence of cell detections that can be linked with high confidence. These are likely to be detections that were segmented with high accuracy and their feature vectors are very similar. A robust tracklet cannot have gaps (missing detections). Similarly a \term{tracklet} is a sequence of cell detections, but differ from robust tracklets in the manner in which it may contain gaps (missed detections). A sequence of one or more robust tracklets is a tracklet, but the opposite is not necessarily true. Finally, we call a \term{trajectory} a sequence of tracklets that cannot be effectively linked to any other tracklets. A trajectory is a maximally linked tracklet, and corresponds to the actual path performed by a cell in the image sequence. These concepts are illustrated in \cref{fig:tracking_overview_terminology}.
 		
-		Linking cell detections into tracklets is performed in two steps, as seen in \cref{fig:trackingoveriew}. First, cell detections are linked into robust tracklets by a reliable linking model. Second, the tracklets are iteratively \todo{Make sure to update this if no longer iterative} associated into ever longer tracklets by closing ever larger gaps. A detailed overview of these two steps is provided in the following sections.
+		Linking cell detections into tracklets is performed in two steps, as seen in \cref{fig:trackingoveriew}. First, cell detections are linked into robust tracklets by a reliable linking model. Second, the tracklets are associated into longer tracklets by closing gaps. A detailed overview of these two steps is provided in the following sections.
 	
 		\begin{figure}[h]
 			\centering
@@ -28,9 +28,9 @@
 		
 		The process of linking robust tracklets into trajectories is performed globally, by selecting the optimal subset of tracklets to link in each iteration. This global data association approach has been chosen because it has shown significant improvements in tracking performance compared to other successful methods \cite{bise11global}, such as \cite{li08} which performs tracking using an Interacting Multiple Models (IMM) filter that runs several Kalman filters in parallel for each trajectory.
 		
-		The approach used in this project is similar to \cite{bise11} in the way in which it formulates the maximum-a-posteriori probability (MAP) problem and solves it using linear programming, but the likelihoods of the hypothesis (the likelihood of linking two tracklets, the likelihood of a tracklet being the first tracklet in a trajectory, the likelihood of it being the last tracklet in a trajectory or the likelihood of it being a false positive) were computed using a machine learning approach. This approach makes it possible to associate cells in very noisy and low quality images, where accurate cell detections are not always possible.
+		The approach used in this project is similar to \cite{bise11} in the way in which it formulates the maximum a posteriori probability (MAP) problem and solves it using linear programming, but the likelihoods of the hypotheses (the likelihood of linking two tracklets, the likelihood of a tracklet being the first tracklet in a trajectory, the likelihood of it being the last tracklet in a trajectory or the likelihood of it being a false positive) were computed using a machine learning approach. This approach makes it possible to associate cells in very noisy and low quality images, where accurate cell detections are not always possible.
 		
-		Although the developed system is fully automatic, it gives some control to the user by letting him adjust the hypothesis' likelihoods by means of four intuitive parameters and thus change the way the tracklets are linked. This control eliminates the need to retrain a specific model for each new dataset, as it makes it possible to re-use a trained linking classifier to link robust tracklets in an independent dataset and adjust these parameters in order to obtain an adequate set of cell trajectories.
+		Although the developed system is fully automatic, it gives some control to the user by letting him adjust the hypotheses' likelihoods by means of four intuitive parameters and thus change the way the tracklets are linked. This control eliminates the need to retrain a specific model for each new dataset, as it makes it possible to re-use a trained linking classifier to link robust tracklets in an independent dataset and adjust these parameters in order to obtain an adequate set of cell trajectories.
 		
 		Finally, let's examine the importance of recall and precision values from the cell detection module and how these affect the process of generating cell trajectories. A high precision value indicates a small number of false positive detections. The cell tracker module is able to effectively eliminate these false positives. However if the precision value is low, then these false positives could start forming structures that the cell tracker could confuse for actual cell trajectories. It is therefore important that the cell detection module should not detect a too large number of false positives. A high recall value indicates that most of the manually annotated cells have been detected, which means that the cell detections will be easily linked to form trajectories as seen in \cref{fig:cell_tracks_detection}. The tracker will work best with very high recall values. If the recall value is low, there will be large gaps between individual detections. The cell tracker will them have to link short tracklets that can be further apart, which is likely to increase the number of incorrect links.
 				
@@ -41,7 +41,7 @@
 			\label{fig:cell_tracks_detection}
 		\end{figure}
 	
-	\section{Joining cell detections into robust tracklets \statusfirstdraft}
+	\section{Joining cell detections into robust tracklets}
 		\label{sec:tracking_robusttracklets}
 		The first phase of linking cell detections into trajectories consists of identifying a set of robust tracklets. An example dataset with the identified robust tracklets is shown in \cref{fig:robusttracklets}
 		
@@ -54,7 +54,7 @@
 		
 		We define a cell detection $ d_i = (x_i, y_i, f_i, t_i) $, where $x_i$ and $y_i$ are the position of the cell detections within the frame, $ f_i $ an appearance feature vector obtained from the cell detector module, and $t_i$ the frame index of the detection. The set of all cell detections in the image sequence is $\textbf{D} = \{d_i\}$. 
 		
-		Let $ \textbf{T} = \{ T_k \} $ be a hypothesis set of tracklets, where each tracklet is defined as a list of robust tracklets, such that the frame index of the last detection ($ t_{k_{i_n}} $) in each robust tracklet is lower than the frame index of the first detection of any following tracklet ($  t_{k_{{i+1}_1}} $):	$T_k = \{T_k^{robust} | \forall i\text{, }  t_{k_{i_n}} < t_{k_{{i+1}_1}} \}$. A robust tracklet is defined as $ T_k^{robust} = \{ d_{k_i} | \forall i\text{, } t_{k_{i+1}} = t_{k_i}+1\text{, } d_{k_i} \in \textbf{D} \} $. Assuming that each detection can belong to only one tracklet we define the non-overlap constraint:
+		Let $ \textbf{T} = \{ T_k \} $ be a hypotheses set of tracklets, where each tracklet is defined as a list of robust tracklets, such that the frame index of the last detection ($ t_{k_{i_n}} $) in each robust tracklet is lower than the frame index of the first detection of any following tracklet ($  t_{k_{{i+1}_1}} $):	$T_k = \{T_k^{robust} | \forall i\text{, }  t_{k_{i_n}} < t_{k_{{i+1}_1}} \}$. A robust tracklet is defined as $ T_k^{robust} = \{ d_{k_i} | \forall i\text{, } t_{k_{i+1}} = t_{k_i}+1\text{, } d_{k_i} \in \textbf{D} \} $. Assuming that each detection can belong to only one tracklet we define the non-overlap constraint:
 		
 		\[
 			\forall T_i \text{, } T_j \in \textbf{T} \text{, } i \neq j \text{, }  T_i \cap T_j = \emptyset \text{.}
@@ -76,17 +76,13 @@
 		
 		To increase the robustness of the matches, a threshold $\theta_1$ was chosen, such that only cell detection pairs whose linking probability was higher than that threshold could be linked.
 		
-		The affinity function $V$ is learned using a supervised machine learning algorithm, which learns to solve the binary classification problem of linking (or not linking) a pair of cell descriptors. The model is learned by comparing the appearance feature vectors of the detections as well as their positions, which are obtained from the cell detection module.
-
-		\todo[inline]{To finish this section I need to train a model with more data and decide whether to use NB or ANN. Then I need to describe the selected method.}
+		The affinity function $V$ is learned using a supervised Naive Bayes classifier, which learns to solve the binary classification problem of linking (or not linking) a pair of cell descriptors. The model is learned by comparing the appearance feature vectors of the detections as well as their positions, which are obtained from the cell detection module.
 		
 		The machine learning algorithm was trained with annotated datasets. The annotations contained the position of cells in the images and links to matching cells in consecutive images. To train a linking model, cell appearance feature vectors had to be obtained for the dot-annotated cells. First, the cell detection module was trained to detect cells in a dataset. Second, the detector found a set of cell detections, which were matched to the corresponding real annotations. A detection was matched to an annotated cell if and only if the position difference was below a small threshold (10 pixels). This step was required to obtain the cell descriptors of the dot-annotated cells. Finally, the data to train the classifier was constructed as follows. Positive examples were selected as consecutive (linked) cells within each tracklet. Negative examples were chosen from all possible combinations of cells from different tracklets.
-		
-		\todo{Add a diagram to illustrate how the descriptors of annotated cells where found, because it's hard to understand from the description}
 
 		Based on the pairs of symmetric matches between cell detections, the system is able to generate a set of robust tracklets $\textbf{T}^{robust}$. Cell detections that were not linked to any other cell are also considered robust tracklets, and are included in $\textbf{T}^{robust}$ for possible further linking in future steps of the algorithm.
 		
-	\section{Global data association \statusfirstdraft}
+	\section{Global data association}
 		\label{sec:globaldataassoc}
 		The problem of linking robust tracklets together to form trajectories is formulated as a MAP problem \cite{bise11global,zhang08,huang08}. We first present the formulation, and then in the next section we provide the linear programming implementation.
 		
@@ -128,13 +124,13 @@
   	 	
   	 	The benefit of the global data association approach to cell tracking is that it makes a global decision based on the probabilities defined over all the frames of the image sequence rather than propagating the results from frame to frame. This makes the algorithm more robust to errors in the cell detection module.
   	 	
-	\section{Implementation using linear programming \statusfirstdraft}
+	\section{Implementation using linear programming}
 		\label{sec:tracking_linearprogramming}
 		The MAP problem is converted to an integer optimization problem and solved by linear programming.
 		
-		Let $N$ be the number of input robust tracklets. Let $L$ be a vector containing the likelihoods of all possible hypothesis: initialization, termination, false positive, and linking hypothesis between two robust tracklets. The formulation of these likelihoods is given in \cref{sec:hypothesisdefinition}, and the implementation details in \cref{sec:computinglikelihoods}.
+		Let $N$ be the number of input robust tracklets. Let $L$ be a vector containing the likelihoods of all possible hypotheses: initialization, termination, false positive, and linking hypothesis between two robust tracklets. The formulation of these likelihoods is given in \cref{sec:hypothesisdefinition}, and the implementation details in \cref{sec:computinglikelihoods}.
 		
-		We also define a matrix $H$ of dimensions $|L| \times 2N$ containing constraints to avoid selecting conflicting hypothesis. Let $i$ represent the index of each new hypothesis and $j$ the index over the columns of $H$. Then, for a robust tracklet $T_k$ and candidate linking tracklet $T_l$ the entries of matrix $H$ are defined as follows for each possible hypothesis:
+		We also define a matrix $H$ of dimensions $|L| \times 2N$ containing constraints to avoid selecting conflicting hypotheses. Let $i$ represent the index of each new hypothesis and $j$ the index over the columns of $H$. Then, for a robust tracklet $T_k$ and candidate linking tracklet $T_l$ the entries of matrix $H$ are defined as follows for each possible hypothesis:
 		
 		\[
 			C_{ij} = \begin{cases}
@@ -158,9 +154,9 @@
 	 	        		
 	 	\todo[inline]{Add an example H, L and I for illustration}
 	 	        		
-	\section{Hypotheses likelihood definitions \statusfirstdraft}
+	\section{Hypotheses likelihood definitions}
 		\label{sec:hypothesisdefinition}
-		In this section we define how the different hypothesis are computed. In \cref{sec:computinglikelihoods} we will discuss the implementation details.
+		In this section we define how the different hypotheses are computed. In \cref{sec:computinglikelihoods} we will discuss the implementation details.
 		
 		Due to errors in the cell detection module, all tracklets are candidates for being false positives. The \term{false positive hypothesis} likelihood is computed as:
 		
@@ -189,12 +185,12 @@
 		
 		A true positive tracklet appears in exactly two of the initialization, termination or linking hypotheses. For this reason the likelihood of a tracklet being true positive $\log P_{TP}(T_k)$ is divided into two halves that are included in these hypothesis.
        	
-    \section{Computing the likelihoods \statusfirstdraft}
+    \section{Computing the likelihoods}
        	\label{sec:computinglikelihoods}
        	
        	In this section we describe the implementation details of the likelihoods: $P_{TP}(T_k)$, $P_{FP}(T_k)$, $P_{init}(T_k)$ and $P_{term}(T_k)$. The likelihoods are directly connected to the input observations and are estimated from training data.     			
 
-       	\subsubsection{The true and false positive likelihood\statusfirstdraft}
+       	\subsubsection{The true and false positive likelihood}
        		
        		The true and false positive likelihoods of a tracklet $T_k$ are defined in terms of the miss detection rate of the cell detector module $\alpha$, and the number of the cell observations composing the tracklet which we denote $|T_k|$:
        		
@@ -206,7 +202,7 @@
        		
        		
        		
-     	\subsubsection{The linking hypothesis \statusfirstdraft}
+     	\subsubsection{The linking hypothesis}
      	   	
      	   	The linking hypothesis is computed between pairs of tracklets where the distance (number of frames) between the tail of the first and the head of the second tracklet is less than a threshold. Because of the variable contrast and poor quality of the imaging technique, the measure is computed by taking into account several spatio-temporal and visual features. The different features are outlined in \cref{sec:linkerclassifierfeatures}. The likelihood of linking tracklet $T_l$ with $T_k$ is:
      	   	
@@ -219,17 +215,17 @@
      	   	
      	   	\noindent where $t_{k,n}$ is the frame index of the last detection of tracklet $T_k$, $t_{l_1}$ is the frame index of the first detection of tracklet $T_l$, $\lambda_2$ is a threshold indicating the maximum allowed gap for linking two tracklets, and $V(.)$ a function that returns the probability that the tracklets should be linked.
 
-     	   	The function $V(.)$ is a model incorporating appearance and spatio-temporal features of the candidate linking tracklets. It is trained using an artificial neural network (ANN) with the number of inputs equal to the number of features and a single output that returns a value between 0 and 1. \todo{Finalize the description of the ANN when I settle on a final shape once I train it using all the data}
+     	   	The function $V(.)$ is a model incorporating appearance and spatio-temporal features of the candidate linking tracklets. It is trained using an artificial neural network (ANN) with Bayesian regularization and the number of inputs equal to the number of features and a single output that returns a value between 0 and 1. The number of hidden layers has been set to 2.
      	   	
      	   	The binary ANN is trained using annotated image sequences. To generate positive training examples, the annotated trajectories were split into several parts. Then the combinations of these segments belonging to the same original trajectory were used as positive examples in the training data. Similarly, the combinations of these segments belonging to different original trajectories were used as negative examples. One of the features used in the classifier is the appearance vector, which is obtained for each cell annotation using the cell detection module.
      	   	
-     	   	The data used to train the classifier contains features of pairs of tracklets that can be separated by a different number of frames, from 1 to $\lambda_2$. The consequence of using a binary classifier is that it might return a larger probability of linking two tracklets that are further apart than two tracklets that are closer together. For example, an original trajectory could be detected as three robust tracklets that should be linked sequentially. The classifier might return a larger likelihood of linking the first and third tracklet than the first and second tracklet. The data association module would then likely link the first tracklet to the third, leaving the second one as a new short trajectory. To overcome this problem the process of linking tracklets is performed iteratively, closing ever larger gaps between tracklets. Each iteration takes the tracklets obtained in the previous one and allows for further association. This way the described problem can no longer occur. A positive side effect of performing the process iteratively is a reduced peak memory usage because of the lower number of hypothesis that are evaluated in each step.\todo{Make sure to update this if i decide to build a classifier for each gap length}
+     	   	The data used to train the classifier contains features of pairs of tracklets that can be separated by a different number of frames, from 1 to $\lambda_2$. The consequence of using a binary classifier is that it might return a larger probability of linking two tracklets that are further apart than two tracklets that are closer together. For example, an original trajectory could be detected as three robust tracklets that should be linked sequentially. The classifier might return a larger likelihood of linking the first and third tracklet than the first and second tracklet. The data association module would then likely link the first tracklet to the third, leaving the second one as a new short trajectory. To overcome this problem the process of linking tracklets is performed iteratively, closing ever larger gaps between tracklets. Each iteration takes the tracklets obtained in the previous one and allows for further association. This way the described problem can no longer occur. A positive side effect of performing the process iteratively is a reduced peak memory usage because of the lower number of hypotheses that are evaluated in each step.
 
      	   	The benefits of this machine learning approach for computing the likelihood of linking two tracklets are twofold. First, it works well on noisy datasets because it uses a large number of features to train the model. Secondly, the large number of features makes it less vulnerable to inaccurate cell segmentation.
      	   	
-       	\subsubsection{The initialization likelihood \statusfirstdraft}
+       	\subsubsection{The initialization likelihood}
        		
-       		The initialization likelihood is a measure of a tracklet being the first tracklet of a trajectory. This work is based on image sequences with high noise and contrast variance, where cell detections cannot be reliably detected over the entire trajectories of the cells. Additionally, the cells can sink into or surface from the background at any time. We take into consideration that new trajectories can be initialized anywhere within the field of view. The initialization hypothesis is based on the linking hypothesis. It is equal to the likelihood of tracklet $T_k$ not being linked to the most likely linking tracklet in the $\lambda_2$ frames \textit{before} its first cell detection:
+       		The initialization likelihood is a measure of a tracklet being the first tracklet of a trajectory. This work is based on image sequences with high noise and contrast variance, where cell detections cannot be reliably detected over the entire trajectories of the cells. Additionally, the cells can sink into or surface from the background at any time. We take into consideration that new trajectories can be initialized anywhere within the field of view. The initialization hypothesis is based on the linking hypotheses. It is equal to the likelihood of tracklet $T_k$ not being linked to the most likely linking tracklet in the $\lambda_2$ frames \textit{before} its first cell detection:
        	
        		\[
        			P_{init}(T_k) = \begin{cases}
@@ -238,9 +234,9 @@
        			\end{cases}
        		\]
        		
-       		This assumes that the initialization likelihood is independent of the status of any of the previous tracklets. For example, if all of the previous tracklets are selected by the algorithm to be false positives, then $P_{init}(T_k)$ should be increased. Although this assumption limits the model, it is required to limit the number of hypothesis that need to be computed. The same assumption is made for computing the termination hypothesis.
+       		This assumes that the initialization likelihood is independent of the status of any of the previous tracklets. For example, if all of the previous tracklets are selected by the algorithm to be false positives, then $P_{init}(T_k)$ should be increased. Although this assumption limits the model, it is required to limit the number of hypotheses that need to be computed. The same assumption is made for computing the termination hypotheses.
        		
-       	\subsubsection{The termination hypothesis \statusfirstdraft}
+       	\subsubsection{The termination hypothesis}
        		The termination hypothesis measures the likelihood of a tracklet being the last tracklet of a trajectory. It is defined similarly to the initialization hypothesis; the likelihood of tracklet $T_k$ not being linked to the most likely linking tracklet in the $\lambda_2$ frames \textit{after} its last cell detection:
        		
        		\[
@@ -250,11 +246,11 @@
      		       	\end{cases}
      		\]
 
-		\subsubsection{Scaling hypothesis' likelihoods \statusfirstdraft}
+		\subsubsection{Scaling hypotheses' likelihoods}
 		\label{sec:tracking_scalingparameters}
-		Each of the hypothesis likelihoods can be scaled by an appropriate parameter $\pi_{FP}$, $\pi_{link}$, $\pi_{init}$ or $\pi_{term}$. The adjustment of these parameters allows a direct manipulation of the hypotheses. For example, increasing $\pi_{init}$ or $\pi_{term}$ relative to $\pi_{link}$ makes the system more conservative in linking tracklets. The added benefit of these scaling parameters is that they allow the reuse of the trained classifier for somewhat different datasets, without the need to annotate them and retrain the classifier.
+		Each of the hypotheses' likelihoods can be scaled by an appropriate parameter $\pi_{FP}$, $\pi_{link}$, $\pi_{init}$ or $\pi_{term}$. The adjustment of these parameters allows a direct manipulation of the hypotheses. For example, increasing $\pi_{init}$ or $\pi_{term}$ relative to $\pi_{link}$ makes the system more conservative in linking tracklets. The added benefit of these scaling parameters is that they allow the reuse of the trained classifier for somewhat different datasets, without the need to annotate them and retrain the classifier.
 	
- 	\section{Features for the linking classifier \statusoutline}
+ 	\section{Features for the linking classifier}
  		\label{sec:linkerclassifierfeatures}
  		
  		In this section we present an overview of the visual and spatio-temporal features implemented and tested for the classifier for linking tracklets:
@@ -272,14 +268,9 @@
     		\item[Mean displacement] The difference of mean displacement between cell detections within the tracklets.
     		\item[Displacement variance] Similar to the previous feature, but computes the difference of variances of the displacement between cell detections.
     		\item[Distance from edge] The difference between minimal and maximal distances of the head or tail of the tracklets from the edge of the field of view.
-    	\end{description}
+    	\end{description} 		    	
     	
- 					    	
- 	    	\todo[inline]{Define how the best features have been selected}
- 	    	\todo[inline]{Describe which features performed best... and figure out where I place the plot of feauture selection and link it here}
- 		    	
-    	
-    	\subsection{Gaussian broadening feature \statusfirstdraft}
+    	\subsection{Gaussian broadening feature}
     		\label{sec:gaussianbroadening}
     		This section describes a feature that is based on the observation of the motion of the trajectories. It makes intuitive sense that the probability of linking two tracklets is inversely proportional to the distance (number of frames) between tracklets. Additionally we can observe that a cell will not travel in a perfectly straight line, but might deviate from it. Using these observations, we have devised a feature inspired by Doppler broadening \footnote{\url{http://en.wikipedia.org/wiki/Doppler_broadening}}.
     		
@@ -302,12 +293,12 @@
 				\label{fig:gaussianbroadening}
 			\end{figure}
 
-	  \section{Implementation details \statusfirstdraft}
-
+	  \section{Implementation details}
+		\label{sec:tracking_implementation}
 	  	In this section we describe some of the challenges encountered during the implementation of the method, and how they have been dealt with.
 	  		  	
-	  	In the previous sections we said that linking hypothesis were measured for all tracklet pairs that were less than a certain number of frames apart. We have found that by pruning the unlikely linking hypothesis we were able to increase the speed of the tracking module significantly. We have therefore skipped the computation of linking likelihoods for pairs of tracklets that were more than a configurable amount of pixels apart. The threshold is set sufficiently high so that it doesn't affect the linking of trajectories for quickly moving cells.
+	  	In the previous sections we said that linking hypotheses were measured for all tracklet pairs that were less than a certain number of frames apart. We have found that by pruning the unlikely linking hypotheses we were able to increase the speed of the tracking module significantly. We have therefore skipped the computation of linking likelihoods for pairs of tracklets that were more than a configurable amount of pixels apart. The threshold is set sufficiently high so that it doesn't affect the linking of trajectories for quickly moving cells.
 	  	
-	  	The choice of using a single classifier to compute likelihoods for link hypothesis can cause some incorrect connections when the size of gaps between tracklets is large (e.g. more than 10 frames). To remedy this issue, the tracker can be configured to close gaps iteratively, for example first gaps of 10 frames, then gaps of 20, etc. This not only prevents certain incorrect connections, but also reduces the amount of peak memory used by the tracker since a fewer hypothesis need to be evaluated at once.
+	  	The choice of using a single classifier to compute likelihoods for link hypotheses can cause some incorrect connections when the size of gaps between tracklets is large (e.g. more than 10 frames). To remedy this issue, the tracker can be configured to close gaps iteratively, for example first gaps of 10 frames, then gaps of 20, etc. This not only prevents certain incorrect connections, but also reduces the amount of peak memory used by the tracker since a fewer hypotheses need to be evaluated at once.
 	  	
-	  	Finally, very short robust tracklets of length one can be challenging to connect, as spatio-temporal features cannot be effectively computed for them. During development we have found that the performance of the tracking method can be slightly increased by discarding all the robust tracklets of length one as false positives. For this reason, our method does not use these tracklets to generate trajectories. This has also improved the computational time, as fewer hypothesis need to be evaluation.
+	  	Finally, very short robust tracklets of length one can be challenging to connect, as spatio-temporal features cannot be effectively computed for them. During development we have found that the performance of the tracking method can be slightly increased by discarding all the robust tracklets of length one as false positives. For this reason, our method does not use these tracklets to generate trajectories. This has also improved the computational time, as fewer hypotheses need to be evaluation.

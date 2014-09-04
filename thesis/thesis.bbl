@@ -9,27 +9,27 @@
 
 \bibitem{arteta13}
 {\sc C.~Arteta, V.~S. Lempitsky, J.~A. Noble, and A.~Zisserman}, {\em Learning
-  to detect partially overlapping instances.}, in CVPR, IEEE, 2013,
+  to detect partially overlapping instances}, in CVPR, IEEE, 2013,
   pp.~3230--3237.
 
 \bibitem{bise11}
-{\sc R.~Bise, T.~Kanade, Z.~Yin, and S.~il~Huh}, {\em Automatic cell tracking
+{\sc R.~Bise, T.~Kanade, Z.~Yin, and S.~I. Huh}, {\em Automatic cell tracking
   applied to analysis of cell migration in wound healing assay}, in Engineering
-  in Medicine and Biology Society,EMBC, 2011 Annual International Conference of
-  the IEEE, Aug 2011, pp.~6174--6179.
+  in Medicine and Biology Society, EMBC, 2011 Annual International Conference
+  of the IEEE, Aug 2011, pp.~6174--6179.
 
 \bibitem{bise11global}
 {\sc R.~Bise, Z.~Yin, and T.~Kanade}, {\em Reliable cell tracking by global
-  data association.}, in ISBI, IEEE, 2011, pp.~1004--1010.
+  data association}, in ISBI, IEEE, 2011, pp.~1004--1010.
 
 \bibitem{blackman99}
 {\sc S.~Blackman and R.~Popoli}, {\em Design and Analysis of Modern Tracking
   Systems}, Artech House radar library, Artech House, 1999.
 
 \bibitem{chen06}
-{\sc X.~Chen, X.~Zhou, and S.-C. Wong}, {\em Automated segmentation,
+{\sc X.~Chen, X.~Zhou, and S.~Wong}, {\em Automated segmentation,
   classification, and tracking of cancer cell nuclei in time-lapse microscopy},
-  Biomedical Engineering, IEEE Transactions on, 53 (2006), pp.~762--766.
+  IEEE Transactions on Biomedical Engineering, 53 (2006), pp.~762--766.
 
 \bibitem{chen99}
 {\sc Y.~Chen, K.~Biddell, A.~Sun, P.~Relue, and J.~Johnson}, {\em An automatic
@@ -43,15 +43,15 @@
   health and inflammation}, 2013.
 
 \bibitem{eom07}
-{\sc S.-i.~S. Eom, K.~D.~F. Elmer, B.~Ryoma, and K.~Takeo}, {\em Tracking of
-  hematopoietic stem cells in microscopy images for lineage determination}, J
-  Latex Class Files, 6 (2007), p.~9.
+{\sc S.~Eom, S.~I. Huh, D.~F.~E. Ker, R.~Bise, T.~Kanade, and P.~Campbell},
+  {\em Tracking of hematopoietic stem cells in microscopy images for lineage
+  determination}, 6 (2007), p.~9.
 
 \bibitem{house09}
 {\sc D.~House, M.~Walker, Z.~Wu, J.~Wong, and M.~Betke}, {\em Tracking of cell
   populations to understand their spatio-temporal behavior in response to
-  physical stimuli}, in Computer Vision and Pattern Recognition Workshops,
-  2009. CVPR Workshops 2009. IEEE Computer Society Conference on, June 2009,
+  physical stimuli}, in IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition Workshops, 2009. CVPR Workshops 2009, June 2009,
   pp.~186--193.
 
 \bibitem{huang08}
@@ -68,7 +68,7 @@
 
 \bibitem{joachims09}
 {\sc T.~Joachims, T.~Finley, and C.-N.~J. Yu}, {\em Cutting-plane training of
-  structural svms}, Mach. Learn., 77 (2009), pp.~27--59.
+  structural svms}, Machine Learning, 77 (2009), pp.~27--59.
 
 \bibitem{kalman60}
 {\sc R.~E. Kalman}, {\em A new approach to linear filtering and prediction
@@ -91,12 +91,12 @@
   {\em Cell population tracking and lineage construction with spatiotemporal
   context}, Medical Image Analysis, 12 (2008), pp.~546 -- 566.
 \newblock Special issue on the 10th international conference on medical imaging
-  and computer assisted intervention - \{MICCAI\} 2007.
+  and computer assisted intervention.
 
 \bibitem{looney11}
 {\sc M.~Looney, E.~Thornton, D.~Sen, W.~Lamm, R.~Glenny, and M.~Krummel}, {\em
-  Stabilized imaging of immune surveillance in the mouse lung.}, Nature
-  Methods, 8 (2011-01-01 00:00:00.0), pp.~91--6.
+  Stabilized imaging of immune surveillance in the mouse lung}, Nature Methods,
+  8 (2011), pp.~91--6.
 
 \bibitem{massoudi12}
 {\sc A.~Massoudi, D.~Semenovich, and A.~Sowmya}, {\em Cell tracking and mitosis
@@ -110,15 +110,9 @@
   Machine Vision Conference, BMVA Press, 2002, pp.~36.1--36.10.
 \newblock doi:10.5244/C.16.36.
 
-\bibitem{matas04}
-{\sc J.~Matas, O.~Chum, M.~Urban, and T.~Pajdla}, {\em Robust wide-baseline
-  stereo from maximally stable extremal regions}, Image and Vision Computing,
-  22 (2004), pp.~761 -- 767.
-\newblock British Machine Vision Computing 2002.
-
 \bibitem{mukherjee04}
 {\sc D.~Mukherjee, N.~Ray, and S.~Acton}, {\em Level set analysis for leukocyte
-  detection and tracking}, Image Processing, IEEE Transactions on, 13 (2004),
+  detection and tracking}, IEEE Transactions on Image Processing, 13 (2004),
   pp.~562--572.
 
 \bibitem{pillay10}
@@ -133,7 +127,9 @@
 
 \bibitem{tang}
 {\sc C.~Tang, Y.~Wang, and Y.~Cui}, {\em Tracking of active cells based on
-  kalman filter in time lapse of image sequences of neuron stem cells}.
+  kalman filter in time lapse of image sequences of neuron stem cells}, in The
+  2011 International Conference on Bioinformatics and Computational Biology,
+  BIOCOMP'11, 2011, pp.~301--307.
 
 \bibitem{toft11}
 {\sc P.~S. Tofts, T.~Chevassut, M.~Cutajar, N.~G. Dowell, and A.~M. Peters},
@@ -153,22 +149,22 @@
 
 \bibitem{vincent93}
 {\sc L.~Vincent}, {\em Morphological grayscale reconstruction in image
-  analysis: applications and efficient algorithms}, Image Processing, IEEE
-  Transactions on, 2 (1993), pp.~176--201.
+  analysis: applications and efficient algorithms}, IEEE Transactions on Image
+  Processing, 2 (1993), pp.~176--201.
 
 \bibitem{xu12}
 {\sc B.~Xu, M.~Lu, P.~Zhu, Q.~Chen, and X.~Wang}, {\em Multiple cell tracking
-  using ant estimator}, in Control, Automation and Information Sciences
-  (ICCAIS), 2012 International Conference on, Nov 2012, pp.~13--17.
+  using ant estimator}, in 2012 International Conference on Control, Automation
+  and Information Sciences (ICCAIS), Nov 2012, pp.~13--17.
 
 \bibitem{xu10}
 {\sc D.~Xu and L.~Ma.}, {\em Segmentation of image sequences of neuron stem
-  cells based on level-set algorithm combined with local gray threshold.},
+  cells based on level-set algorithm combined with local gray threshold},
   Master's thesis, Harbin Engineering University, 2010.
 
 \bibitem{zhang08}
 {\sc L.~Zhang, Y.~Li, and R.~Nevatia}, {\em Global data association for
-  multi-object tracking using network flows}, in Computer Vision and Pattern
-  Recognition, 2008. CVPR 2008. IEEE Conference on, June 2008, pp.~1--8.
+  multi-object tracking using network flows}, in IEEE Conference on Computer
+  Vision and Pattern Recognition, June 2008, pp.~1--8.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=thesis 2014.9.3)  4 SEP 2014 12:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=thesis 2014.9.4)  4 SEP 2014 17:49
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -16,36 +16,35 @@ LaTeX Warning: Unused global option(s):
 (./chapter_related_work.aux) (./chapter_cell_detection.aux)
 (./chapter_cell_tracking.aux) (./chapter_data.aux) (./chapter_results.aux)
 (./chapter_conclusion.aux) (./appendix_annotationtool.aux)
-(./appendix_interactiveviewer.aux)
-No file appendix_detectortracker.aux.
+(./appendix_interactiveviewer.aux) (./appendix_detectortracker.aux)
 (./appendix_detection_results.aux) (./appendix_tracking_results.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 9.
 Package nag Info: Command \frontmatter not defined, skipping amendment on input
- line 10.
+ line 9.
 Package nag Info: Command \mainmatter not defined, skipping amendment on input 
-line 10.
+line 9.
 Package nag Info: Command \backmatter not defined, skipping amendment on input 
-line 10.
+line 9.
 Package nag Info: Command \RaggedLeft not defined, skipping amendment on input 
-line 10.
+line 9.
 Package nag Info: Command \RaggedRight not defined, skipping amendment on input
- line 10.
+ line 9.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -103,7 +102,7 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box43
-Package hyperref Info: Link coloring ON on input line 10.
+Package hyperref Info: Link coloring ON on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -113,16 +112,16 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count163
 )
-LaTeX Info: Redefining \ref on input line 10.
-LaTeX Info: Redefining \pageref on input line 10.
-LaTeX Info: Redefining \nameref on input line 10.
+LaTeX Info: Redefining \ref on input line 9.
+LaTeX Info: Redefining \pageref on input line 9.
+LaTeX Info: Redefining \nameref on input line 9.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
  ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 10.
+LaTeX Info: Redefining \microtypecontext on input line 9.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -138,18 +137,68 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 10.
+line 9.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 10.
+line 9.
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>> [1
 
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package tocbasic Info: character protrusion at toc deactivated on input line 29
+\openout2 = `chapter_abstract.aux'.
+
+ (./chapter_abstract.tex [2
+
+
+])
+\openout2 = `chapter_acknowledgements.aux'.
+
+ (./chapter_acknowledgements.tex) [3
+
+
+
+
+
+]
+\openout2 = `chapter_copyright.aux'.
+
+
+(./chapter_copyright.tex
+<creative_commons/cc_by_30.pdf, id=273, 18.74034pt x 18.73953pt>
+File: creative_commons/cc_by_30.pdf Graphic file (type pdf)
+
+<use creative_commons/cc_by_30.pdf>
+Package pdftex.def Info: creative_commons/cc_by_30.pdf used on input line 5.
+(pdftex.def)             Requested size: 26.23627pt x 26.23514pt.
+
+<creative_commons/cc_nc_30.pdf, id=274, 18.74033pt x 18.73993pt>
+File: creative_commons/cc_nc_30.pdf Graphic file (type pdf)
+
+<use creative_commons/cc_nc_30.pdf>
+Package pdftex.def Info: creative_commons/cc_nc_30.pdf used on input line 5.
+(pdftex.def)             Requested size: 26.23625pt x 26.23569pt.
+
+<creative_commons/cc_nd_30.pdf, id=275, 18.74034pt x 18.74033pt>
+File: creative_commons/cc_nd_30.pdf Graphic file (type pdf)
+
+<use creative_commons/cc_nd_30.pdf>
+Package pdftex.def Info: creative_commons/cc_nd_30.pdf used on input line 5.
+(pdftex.def)             Requested size: 26.23627pt x 26.23625pt.
+ [4
+
+
+ <./creative_commons/cc_by_30.pdf> <./creative_commons/cc_nc_30.pdf
+
+pdfTeX warning: pdflatex (file ./creative_commons/cc_nc_30.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+> <./creative_commons/cc_nd_30.pdf
+
+pdfTeX warning: pdflatex (file ./creative_commons/cc_nd_30.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>])
+Package tocbasic Info: character protrusion at toc deactivated on input line 28
 .
  (./thesis.toc [5
-
 
 
 
@@ -164,976 +213,900 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 29
  [7
 
 ]
-\openout2 = `chapter_conclusion.aux'.
-
- (./chapter_conclusion.tex
-Chapter 7.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\color@begingroup' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgraf' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxsep' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dp' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lower' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\wd' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempa' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -731.23584pt
-(hyperref)                removed on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lower' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hrule' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 731.23584pt
-(hyperref)                replaced by space on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vrule' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 731.23584pt
-(hyperref)                replaced by space on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vrule' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -0.2pt
-(hyperref)                removed on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hrule' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\color@begingroup' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgraf' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxsep' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dp' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lower' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vbox' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vbox' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\wd' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempa' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -731.23584pt
-(hyperref)                removed on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lower' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vbox' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hrule' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 731.23584pt
-(hyperref)                replaced by space on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vrule' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 731.23584pt
-(hyperref)                replaced by space on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vrule' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -0.2pt
-(hyperref)                removed on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hrule' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 7.
-
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 18.
-[59
-
-
-
-
-
-
+\openout2 = `chapter_introduction.aux'.
+
+ (./chapter_introduction.tex
+Chapter 1.
+[8
 
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\color@begingroup' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgraf' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxsep' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dp' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lower' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vbox' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vbox' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\wd' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempa' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempboxa' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -731.23584pt
-(hyperref)                removed on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lower' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vbox' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hrule' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 731.23584pt
-(hyperref)                replaced by space on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vrule' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\advance' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempdima' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 731.23584pt
-(hyperref)                replaced by space on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vrule' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\dimen@' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -0.2pt
-(hyperref)                removed on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hrule' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\fboxrule' on input line 26.
-
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 38.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 37.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+ [9]) [10]
+\openout2 = `chapter_related_work.aux'.
 
 
-LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10.95> not available
-(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 38.
+(./chapter_related_work.tex
+Chapter 2.
 
-[60]) [61] [62
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11
 
 
 
-] (./thesis.bbl (./thesis.brf)
+]
+Underfull \vbox (badness 1924) has occurred while \output is active []
+
+ [12]
+[13] [14] [15]) [16]
+\openout2 = `chapter_cell_detection.aux'.
+
+ (./chapter_cell_detection.tex
+Chapter 3.
+[17
+
+
+
+] [18] <images/fig_detector_mser.png, id=508, 559.691pt x 258.566pt>
+File: images/fig_detector_mser.png Graphic file (type png)
+
+<use images/fig_detector_mser.png>
+Package pdftex.def Info: images/fig_detector_mser.png used on input line 46.
+(pdftex.def)             Requested size: 375.57782pt x 173.50659pt.
+
+Underfull \vbox (badness 3780) has occurred while \output is active []
+
+ [19 <./images/fig_detector_mser.png>] [20]
+<images/best_features.jpg, id=536, 703.62875pt x 678.535pt>
+File: images/best_features.jpg Graphic file (type jpg)
+
+<use images/best_features.jpg>
+Package pdftex.def Info: images/best_features.jpg used on input line 99.
+(pdftex.def)             Requested size: 375.57782pt x 362.17917pt.
+
+Underfull \vbox (badness 1681) has occurred while \output is active []
+
+ [21 <./images/best_features.jpg>]) [22]
+\openout2 = `chapter_cell_tracking.aux'.
+
+ (./chapter_cell_tracking.tex
+Chapter 4.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 13.
+[23
+
+
+
+]
+Underfull \vbox (badness 2990) has occurred while \output is active []
+
+ [24]
+<images/cell_tracks.jpg, id=575, 683.55376pt x 678.535pt>
+File: images/cell_tracks.jpg Graphic file (type jpg)
+
+<use images/cell_tracks.jpg>
+Package pdftex.def Info: images/cell_tracks.jpg used on input line 39.
+(pdftex.def)             Requested size: 281.68515pt x 279.61958pt.
+ [25 <./images/cell_tracks.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+Underfull \vbox (badness 1189) has occurred while \output is active []
+
+ [27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+[31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+Underfull \vbox (badness 5622) has occurred while \output is active []
+
+ [33]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 275.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package epstopdf Info: Source file: <images/fig_gaussianbroadening1.eps>
+(epstopdf)                    date: 2014-08-02 11:12:25
+(epstopdf)                    size: 90402 bytes
+(epstopdf)             Output file: <./imageslowres/fig_gaussianbroadening1-eps
+-converted-to.jpg>
+(epstopdf)                    date: 2014-08-02 11:12:25
+(epstopdf)                    size: 29305 bytes
+(epstopdf)             Command: <convert images/fig_gaussianbroadening1.eps ./i
+mageslowres/fig_gaussianbroadening1-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 286.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_gaussianbroadening1-eps-converted-to.jpg, id=641, 451.6875p
+t x 144.54pt>
+File: ./imageslowres/fig_gaussianbroadening1-eps-converted-to.jpg Graphic file 
+(type jpg)
+
+<use ./imageslowres/fig_gaussianbroadening1-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_gaussianbroadening1-eps-converted-t
+o.jpg used on input line 286.
+(pdftex.def)             Requested size: 366.1864pt x 117.18701pt.
+Package epstopdf Info: Source file: <images/fig_gaussianbroadening2.eps>
+(epstopdf)                    date: 2014-08-02 11:12:25
+(epstopdf)                    size: 63615 bytes
+(epstopdf)             Output file: <./imageslowres/fig_gaussianbroadening2-eps
+-converted-to.jpg>
+(epstopdf)                    date: 2014-08-02 11:12:25
+(epstopdf)                    size: 26004 bytes
+(epstopdf)             Command: <convert images/fig_gaussianbroadening2.eps ./i
+mageslowres/fig_gaussianbroadening2-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 290.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_gaussianbroadening2-eps-converted-to.jpg, id=642, 219.82124
+pt x 220.825pt>
+File: ./imageslowres/fig_gaussianbroadening2-eps-converted-to.jpg Graphic file 
+(type jpg)
+
+<use ./imageslowres/fig_gaussianbroadening2-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_gaussianbroadening2-eps-converted-t
+o.jpg used on input line 290.
+(pdftex.def)             Requested size: 93.89265pt x 94.31941pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34]) [35 <./imageslowres/fig_gaussianbroadening1-eps-converted-to.jpg> <./imag
+eslowres/fig_gaussianbroadening2-eps-converted-to.jpg>]
+\openout2 = `chapter_data.aux'.
+
+ (./chapter_data.tex
+Chapter 5.
+[36
+
+
+
+] <images/series30green019.png, id=668, 513.92pt x 513.92pt>
+File: images/series30green019.png Graphic file (type png)
+
+<use images/series30green019.png>
+Package pdftex.def Info: images/series30green019.png used on input line 29.
+(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
+
+<images/series30green020.png, id=669, 513.92pt x 513.92pt>
+File: images/series30green020.png Graphic file (type png)
+
+<use images/series30green020.png>
+Package pdftex.def Info: images/series30green020.png used on input line 33.
+(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
+
+<images/series30green021.png, id=670, 513.92pt x 513.92pt>
+File: images/series30green021.png Graphic file (type png)
+
+<use images/series30green021.png>
+Package pdftex.def Info: images/series30green021.png used on input line 37.
+(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
+ [37 <./images/series30green019.png> <./images/series30green020.png> <./images/
+series30green021.png>]
+<images/series30red024.png, id=680, 513.92pt x 513.92pt>
+File: images/series30red024.png Graphic file (type png)
+
+<use images/series30red024.png>
+Package pdftex.def Info: images/series30red024.png used on input line 48.
+(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
+
+<images/series30red025.png, id=681, 513.92pt x 513.92pt>
+File: images/series30red025.png Graphic file (type png)
+
+<use images/series30red025.png>
+Package pdftex.def Info: images/series30red025.png used on input line 52.
+(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
+File: images/series30red025.png Graphic file (type png)
+ <use images/series30red025.png>
+Package pdftex.def Info: images/series30red025.png used on input line 56.
+(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
+
+<images/series13greencropped008.png, id=683, 251.94125pt x 251.94125pt>
+File: images/series13greencropped008.png Graphic file (type png)
+
+<use images/series13greencropped008.png>
+Package pdftex.def Info: images/series13greencropped008.png used on input line 
+67.
+(pdftex.def)             Requested size: 150.234pt x 150.23558pt.
+
+<images/series13greencropped009.png, id=684, 251.94125pt x 251.94125pt>
+File: images/series13greencropped009.png Graphic file (type png)
+
+<use images/series13greencropped009.png>
+Package pdftex.def Info: images/series13greencropped009.png used on input line 
+71.
+(pdftex.def)             Requested size: 150.234pt x 150.23558pt.
+
+<images/series13greencropped010.png, id=685, 251.94125pt x 251.94125pt>
+File: images/series13greencropped010.png Graphic file (type png)
+
+<use images/series13greencropped010.png>
+Package pdftex.def Info: images/series13greencropped010.png used on input line 
+75.
+(pdftex.def)             Requested size: 150.234pt x 150.23558pt.
+ [38 <./images/series30red024.png> <./images/series30red025.png> <./images/seri
+es13greencropped008.png> <./images/series13greencropped009.png> <./images/serie
+s13greencropped010.png>]
+<images/series14croppedclean024.png, id=696, 199.74625pt x 199.74625pt>
+File: images/series14croppedclean024.png Graphic file (type png)
+
+<use images/series14croppedclean024.png>
+Package pdftex.def Info: images/series14croppedclean024.png used on input line 
+87.
+(pdftex.def)             Requested size: 150.234pt x 150.24211pt.
+
+<images/series14croppedclean025.png, id=697, 199.74625pt x 199.74625pt>
+File: images/series14croppedclean025.png Graphic file (type png)
+
+<use images/series14croppedclean025.png>
+Package pdftex.def Info: images/series14croppedclean025.png used on input line 
+91.
+(pdftex.def)             Requested size: 150.234pt x 150.24211pt.
+
+<images/series14croppedclean027.png, id=698, 199.74625pt x 199.74625pt>
+File: images/series14croppedclean027.png Graphic file (type png)
+
+<use images/series14croppedclean027.png>
+Package pdftex.def Info: images/series14croppedclean027.png used on input line 
+95.
+(pdftex.def)             Requested size: 150.234pt x 150.24211pt.
+
+<images/seriesm170_13cropped016.png, id=700, 278.03876pt x 278.03876pt>
+File: images/seriesm170_13cropped016.png Graphic file (type png)
+
+<use images/seriesm170_13cropped016.png>
+Package pdftex.def Info: images/seriesm170_13cropped016.png used on input line 
+107.
+(pdftex.def)             Requested size: 150.234pt x 150.23627pt.
+
+<images/seriesm170_13cropped017.png, id=701, 278.03876pt x 278.03876pt>
+File: images/seriesm170_13cropped017.png Graphic file (type png)
+
+<use images/seriesm170_13cropped017.png>
+Package pdftex.def Info: images/seriesm170_13cropped017.png used on input line 
+111.
+(pdftex.def)             Requested size: 150.234pt x 150.23627pt.
+
+<images/seriesm170_13cropped018.png, id=702, 278.03876pt x 278.03876pt>
+File: images/seriesm170_13cropped018.png Graphic file (type png)
+
+<use images/seriesm170_13cropped018.png>
+Package pdftex.def Info: images/seriesm170_13cropped018.png used on input line 
+115.
+(pdftex.def)             Requested size: 150.234pt x 150.23627pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[39 <./images/series14croppedclean024.png> <./images/series14croppedclean025.pn
+g> <./images/series14croppedclean027.png>]
+<images/shutterseriesm170_13cropped001.png, id=713, 513.92pt x 513.92pt>
+File: images/shutterseriesm170_13cropped001.png Graphic file (type png)
+
+<use images/shutterseriesm170_13cropped001.png>
+Package pdftex.def Info: images/shutterseriesm170_13cropped001.png used on inpu
+t line 132.
+(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
+
+<images/shutterseriesm170_13cropped002.png, id=714, 513.92pt x 513.92pt>
+File: images/shutterseriesm170_13cropped002.png Graphic file (type png)
+
+<use images/shutterseriesm170_13cropped002.png>
+Package pdftex.def Info: images/shutterseriesm170_13cropped002.png used on inpu
+t line 136.
+(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
+
+<images/shutterseriesm170_13cropped003.png, id=715, 513.92pt x 513.92pt>
+File: images/shutterseriesm170_13cropped003.png Graphic file (type png)
+
+<use images/shutterseriesm170_13cropped003.png>
+Package pdftex.def Info: images/shutterseriesm170_13cropped003.png used on inpu
+t line 140.
+(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
+
+<images/shutterseriesm170_13cropped004.png, id=716, 513.92pt x 513.92pt>
+File: images/shutterseriesm170_13cropped004.png Graphic file (type png)
+
+<use images/shutterseriesm170_13cropped004.png>
+Package pdftex.def Info: images/shutterseriesm170_13cropped004.png used on inpu
+t line 144.
+(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
+
+<images/shutterseriesm170_13cropped005.png, id=717, 513.92pt x 513.92pt>
+File: images/shutterseriesm170_13cropped005.png Graphic file (type png)
+
+<use images/shutterseriesm170_13cropped005.png>
+Package pdftex.def Info: images/shutterseriesm170_13cropped005.png used on inpu
+t line 148.
+(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
+
+<images/shutterseriesm170_13cropped006.png, id=718, 513.92pt x 513.92pt>
+File: images/shutterseriesm170_13cropped006.png Graphic file (type png)
+
+<use images/shutterseriesm170_13cropped006.png>
+Package pdftex.def Info: images/shutterseriesm170_13cropped006.png used on inpu
+t line 152.
+(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/data_challenge_movement.png, id=720, 836.3245pt x 206.371pt>
+File: images/data_challenge_movement.png Graphic file (type png)
+
+<use images/data_challenge_movement.png>
+Package pdftex.def Info: images/data_challenge_movement.png used on input line 
+161.
+(pdftex.def)             Requested size: 469.47049pt x 115.84723pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40 <./images/seriesm170_13cropped016.png> <./images/seriesm170_13cropped017.p
+ng> <./images/seriesm170_13cropped018.png>]
+Underfull \hbox (badness 7504) in paragraph at lines 180--180
+[]\T1/cmr/m/n/10.95 (+20) Average num-ber
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 180--181
+[]\T1/cmr/m/n/10.95 (+20) Standard de-vi-a-tion of
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41 <./images/shutterseriesm170_13cropped001.png> <./images/shutterseriesm170_
+13cropped002.png> <./images/shutterseriesm170_13cropped003.png> <./images/shutt
+erseriesm170_13cropped004.png> <./images/shutterseriesm170_13cropped005.png> <.
+/images/shutterseriesm170_13cropped006.png>]
+Underfull \vbox (badness 3323) has occurred while \output is active []
+
+ [42 <./images/data_challenge_movement.png (PNG copy)>]
+<images/data_annotator_screenshot.png, id=740, 978.65625pt x 500.87125pt>
+File: images/data_annotator_screenshot.png Graphic file (type png)
+
+<use images/data_annotator_screenshot.png>
+Package pdftex.def Info: images/data_annotator_screenshot.png used on input lin
+e 205.
+(pdftex.def)             Requested size: 469.47049pt x 240.2779pt.
+
+<images/data_tracklet_viewer.png, id=741, 438.63875pt x 664.4825pt>
+File: images/data_tracklet_viewer.png Graphic file (type png)
+
+<use images/data_tracklet_viewer.png>
+Package pdftex.def Info: images/data_tracklet_viewer.png used on input line 212
+.
+(pdftex.def)             Requested size: 225.34383pt x 341.37582pt.
+
+Underfull \vbox (badness 7203) has occurred while \output is active []
+
+ [43 <./images/data_annotator_screenshot.png>]) [44 <./images/data_tracklet_vie
+wer.png>]
+\openout2 = `chapter_results.aux'.
+
+
+(./chapter_results.tex
+Chapter 6.
+[45
+
+
+
+] [46]
+Underfull \vbox (badness 3158) has occurred while \output is active []
+
+ [47]
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Package xcolor Warning: Incompatible color definition on input line 90.
+
+
+Package xcolor Warning: Incompatible color definition on input line 90.
+
+
+Package xcolor Warning: Incompatible color definition on input line 90.
+
+
+Package xcolor Warning: Incompatible color definition on input line 90.
+
+
+Package xcolor Warning: Incompatible color definition on input line 90.
+
+
+Package xcolor Warning: Incompatible color definition on input line 90.
+
+
+Package xcolor Warning: Incompatible color definition on input line 90.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 93.
+
+
+Package xcolor Warning: Incompatible color definition on input line 93.
+
+
+Package xcolor Warning: Incompatible color definition on input line 93.
+
+
+Package xcolor Warning: Incompatible color definition on input line 93.
+
+
+Package xcolor Warning: Incompatible color definition on input line 93.
+
+
+Package xcolor Warning: Incompatible color definition on input line 93.
+
+
+Package xcolor Warning: Incompatible color definition on input line 93.
+
+
+Package xcolor Warning: Incompatible color definition on input line 93.
+
+
+Package xcolor Warning: Incompatible color definition on input line 94.
+
+
+Package xcolor Warning: Incompatible color definition on input line 94.
+
+
+Package xcolor Warning: Incompatible color definition on input line 94.
+
+
+Package xcolor Warning: Incompatible color definition on input line 94.
+
+
+Package xcolor Warning: Incompatible color definition on input line 94.
+
+
+Package xcolor Warning: Incompatible color definition on input line 94.
+
+
+Package xcolor Warning: Incompatible color definition on input line 94.
+
+
+Package xcolor Warning: Incompatible color definition on input line 96.
+
+
+Package xcolor Warning: Incompatible color definition on input line 96.
+
+
+Package xcolor Warning: Incompatible color definition on input line 96.
+
+
+Package xcolor Warning: Incompatible color definition on input line 96.
+
+
+Package xcolor Warning: Incompatible color definition on input line 96.
+
+
+Package xcolor Warning: Incompatible color definition on input line 97.
+
+
+Package xcolor Warning: Incompatible color definition on input line 97.
+
+
+Package xcolor Warning: Incompatible color definition on input line 97.
+
+
+Package xcolor Warning: Incompatible color definition on input line 97.
+
+
+Package xcolor Warning: Incompatible color definition on input line 97.
+
+
+Package xcolor Warning: Incompatible color definition on input line 97.
+
+[48]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49]
+[50]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51]
+Overfull \hbox (1.3072pt too wide) detected at line 184
+[] \OT1/cmr/m/n/10.95 = [][]
+ []
+
+
+Underfull \vbox (badness 1248) has occurred while \output is active []
+
+ [52]
+[53]
+Package epstopdf Info: Source file: <images/fig_results_tracking_analysis5.eps>
+
+(epstopdf)                    date: 2014-09-03 16:00:49
+(epstopdf)                    size: 599424 bytes
+(epstopdf)             Output file: <./imageslowres/fig_results_tracking_analys
+is5-eps-converted-to.jpg>
+(epstopdf)                    date: 2014-09-03 16:02:19
+(epstopdf)                    size: 76937 bytes
+(epstopdf)             Command: <convert images/fig_results_tracking_analysis5.
+eps ./imageslowres/fig_results_tracking_analysis5-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 226.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_results_tracking_analysis5-eps-converted-to.jpg, id=840, 65
+1.43375pt x 385.44pt>
+File: ./imageslowres/fig_results_tracking_analysis5-eps-converted-to.jpg Graphi
+c file (type jpg)
+
+<use ./imageslowres/fig_results_tracking_analysis5-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_results_tracking_analysis5-eps-conv
+erted-to.jpg used on input line 226.
+(pdftex.def)             Requested size: 469.47049pt x 277.78125pt.
+Package epstopdf Info: Source file: <images/fig_results_tracking_analysis_4.eps
+>
+(epstopdf)                    date: 2014-09-03 16:13:23
+(epstopdf)                    size: 571498 bytes
+(epstopdf)             Output file: <./imageslowres/fig_results_tracking_analys
+is_4-eps-converted-to.jpg>
+(epstopdf)                    date: 2014-09-03 16:15:54
+(epstopdf)                    size: 41109 bytes
+(epstopdf)             Command: <convert images/fig_results_tracking_analysis_4
+.eps ./imageslowres/fig_results_tracking_analysis_4-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 234.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_results_tracking_analysis_4-eps-converted-to.jpg, id=842, 4
+02.50375pt x 364.36125pt>
+File: ./imageslowres/fig_results_tracking_analysis_4-eps-converted-to.jpg Graph
+ic file (type jpg)
+
+<use ./imageslowres/fig_results_tracking_analysis_4-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_results_tracking_analysis_4-eps-con
+verted-to.jpg used on input line 234.
+(pdftex.def)             Requested size: 281.68515pt x 254.98997pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[54 <./imageslowres/fig_results_tracking_analysis5-eps-converted-to.jpg>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[55 <./imageslowres/fig_results_tracking_analysis_4-eps-converted-to.jpg>]
+Package epstopdf Info: Source file: <images/fig_results_tracking_analysis_2.eps
+>
+(epstopdf)                    date: 2014-09-03 16:58:14
+(epstopdf)                    size: 363899 bytes
+(epstopdf)             Output file: <./imageslowres/fig_results_tracking_analys
+is_2-eps-converted-to.jpg>
+(epstopdf)                    date: 2014-09-03 16:59:07
+(epstopdf)                    size: 46534 bytes
+(epstopdf)             Command: <convert images/fig_results_tracking_analysis_2
+.eps ./imageslowres/fig_results_tracking_analysis_2-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 300.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_results_tracking_analysis_2-eps-converted-to.jpg, id=865, 3
+94.47375pt x 388.45125pt>
+File: ./imageslowres/fig_results_tracking_analysis_2-eps-converted-to.jpg Graph
+ic file (type jpg)
+
+<use ./imageslowres/fig_results_tracking_analysis_2-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_results_tracking_analysis_2-eps-con
+verted-to.jpg used on input line 300.
+(pdftex.def)             Requested size: 328.6279pt x 323.61176pt.
+
+Underfull \vbox (badness 1478) has occurred while \output is active []
+
+ [56]
+[57 <./imageslowres/fig_results_tracking_analysis_2-eps-converted-to.jpg>])
+[58]
+\openout2 = `chapter_conclusion.aux'.
+
+ (./chapter_conclusion.tex
+Chapter 7.
+[59
+
+
+
+] [60]) [61] [62
+
+
+
+]
+\openout2 = `appendix_annotationtool.aux'.
+
+ (./appendix_annotationtool.tex
+Appendix A.
+) [63
+
+
+]
+\openout2 = `appendix_interactiveviewer.aux'.
+
+ (./appendix_interactiveviewer.tex
+Appendix B.
+) [64
+
+
+
+]
+\openout2 = `appendix_detectortracker.aux'.
+
+ (./appendix_detectortracker.tex
+Appendix C.
+) [65
+
+
+
+]
+\openout2 = `appendix_detection_results.aux'.
+
+ (./appendix_detection_results.tex
+Appendix D.
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_1.ep
+s>
+(epstopdf)                    date: 2014-08-28 10:28:54
+(epstopdf)                    size: 39299 bytes
+(epstopdf)             Output file: <./imageslowres/fig_results_detector_sequen
+ces_1-eps-converted-to.jpg>
+(epstopdf)                    date: 2014-08-28 10:31:13
+(epstopdf)                    size: 34070 bytes
+(epstopdf)             Command: <convert images/fig_results_detector_sequences_
+1.eps ./imageslowres/fig_results_detector_sequences_1-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 5.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_results_detector_sequences_1-eps-converted-to.jpg, id=918, 
+536.0025pt x 304.13625pt>
+File: ./imageslowres/fig_results_detector_sequences_1-eps-converted-to.jpg Grap
+hic file (type jpg)
+
+<use ./imageslowres/fig_results_detector_sequences_1-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_results_detector_sequences_1-eps-co
+nverted-to.jpg used on input line 5.
+(pdftex.def)             Requested size: 469.47049pt x 266.38307pt.
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_2.ep
+s>
+(epstopdf)                    date: 2014-08-28 10:29:01
+(epstopdf)                    size: 258360 bytes
+(epstopdf)             Output file: <./imageslowres/fig_results_detector_sequen
+ces_2-eps-converted-to.jpg>
+(epstopdf)                    date: 2014-08-28 10:31:14
+(epstopdf)                    size: 52826 bytes
+(epstopdf)             Command: <convert images/fig_results_detector_sequences_
+2.eps ./imageslowres/fig_results_detector_sequences_2-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 11.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_results_detector_sequences_2-eps-converted-to.jpg, id=919, 
+534.99875pt x 307.1475pt>
+File: ./imageslowres/fig_results_detector_sequences_2-eps-converted-to.jpg Grap
+hic file (type jpg)
+
+<use ./imageslowres/fig_results_detector_sequences_2-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_results_detector_sequences_2-eps-co
+nverted-to.jpg used on input line 11.
+(pdftex.def)             Requested size: 469.47049pt x 269.54076pt.
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_3.ep
+s>
+(epstopdf)                    date: 2014-08-28 10:29:10
+(epstopdf)                    size: 792373 bytes
+(epstopdf)             Output file: <./imageslowres/fig_results_detector_sequen
+ces_3-eps-converted-to.jpg>
+(epstopdf)                    date: 2014-08-28 10:31:14
+(epstopdf)                    size: 63992 bytes
+(epstopdf)             Command: <convert images/fig_results_detector_sequences_
+3.eps ./imageslowres/fig_results_detector_sequences_3-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 17.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_results_detector_sequences_3-eps-converted-to.jpg, id=920, 
+542.025pt x 307.1475pt>
+File: ./imageslowres/fig_results_detector_sequences_3-eps-converted-to.jpg Grap
+hic file (type jpg)
+
+<use ./imageslowres/fig_results_detector_sequences_3-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_results_detector_sequences_3-eps-co
+nverted-to.jpg used on input line 17.
+(pdftex.def)             Requested size: 469.47049pt x 266.0445pt.
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_4.ep
+s>
+(epstopdf)                    date: 2014-08-28 10:29:34
+(epstopdf)                    size: 1603031 bytes
+(epstopdf)             Output file: <./imageslowres/fig_results_detector_sequen
+ces_4-eps-converted-to.jpg>
+(epstopdf)                    date: 2014-08-28 10:31:15
+(epstopdf)                    size: 77277 bytes
+(epstopdf)             Command: <convert images/fig_results_detector_sequences_
+4.eps ./imageslowres/fig_results_detector_sequences_4-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 23.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_results_detector_sequences_4-eps-converted-to.jpg, id=921, 
+544.0325pt x 305.14pt>
+File: ./imageslowres/fig_results_detector_sequences_4-eps-converted-to.jpg Grap
+hic file (type jpg)
+
+<use ./imageslowres/fig_results_detector_sequences_4-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_results_detector_sequences_4-eps-co
+nverted-to.jpg used on input line 23.
+(pdftex.def)             Requested size: 469.47049pt x 263.3325pt.
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_5.ep
+s>
+(epstopdf)                    date: 2014-08-28 10:29:46
+(epstopdf)                    size: 561549 bytes
+(epstopdf)             Output file: <./imageslowres/fig_results_detector_sequen
+ces_5-eps-converted-to.jpg>
+(epstopdf)                    date: 2014-08-28 10:31:15
+(epstopdf)                    size: 62997 bytes
+(epstopdf)             Command: <convert images/fig_results_detector_sequences_
+5.eps ./imageslowres/fig_results_detector_sequences_5-eps-converted-to.jpg>
+(epstopdf)             \includegraphics on input line 28.
+Package epstopdf Info: Output file is already uptodate.
+
+<./imageslowres/fig_results_detector_sequences_5-eps-converted-to.jpg, id=922, 
+541.02126pt x 305.14pt>
+File: ./imageslowres/fig_results_detector_sequences_5-eps-converted-to.jpg Grap
+hic file (type jpg)
+
+<use ./imageslowres/fig_results_detector_sequences_5-eps-converted-to.jpg>
+Package pdftex.def Info: ./imageslowres/fig_results_detector_sequences_5-eps-co
+nverted-to.jpg used on input line 28.
+(pdftex.def)             Requested size: 469.47049pt x 264.79451pt.
+)
+[66
+
+
+
+] [67 <./imageslowres/fig_results_detector_sequences_1-eps-converted-to.jpg> <.
+/imageslowres/fig_results_detector_sequences_2-eps-converted-to.jpg>]
+[68 <./imageslowres/fig_results_detector_sequences_3-eps-converted-to.jpg> <./i
+mageslowres/fig_results_detector_sequences_4-eps-converted-to.jpg>] [69 <./imag
+eslowres/fig_results_detector_sequences_5-eps-converted-to.jpg>]
+\openout2 = `appendix_tracking_results.aux'.
+
+
+(./appendix_tracking_results.tex
+Appendix E.
+<images/fig_results_tracker_dataset_2.png, id=943, 672.111pt x 279.444pt>
+File: images/fig_results_tracker_dataset_2.png Graphic file (type png)
+
+<use images/fig_results_tracker_dataset_2.png>
+Package pdftex.def Info: images/fig_results_tracker_dataset_2.png used on input
+ line 5.
+(pdftex.def)             Requested size: 469.47049pt x 195.19586pt.
+
+<images/fig_results_tracker_dataset_3.png, id=944, 672.914pt x 277.838pt>
+File: images/fig_results_tracker_dataset_3.png Graphic file (type png)
+
+<use images/fig_results_tracker_dataset_3.png>
+Package pdftex.def Info: images/fig_results_tracker_dataset_3.png used on input
+ line 12.
+(pdftex.def)             Requested size: 469.47049pt x 193.83662pt.
+
+<images/fig_results_tracker_dataset_4.png, id=945, 672.914pt x 273.823pt>
+File: images/fig_results_tracker_dataset_4.png Graphic file (type png)
+
+<use images/fig_results_tracker_dataset_4.png>
+Package pdftex.def Info: images/fig_results_tracker_dataset_4.png used on input
+ line 18.
+(pdftex.def)             Requested size: 469.47049pt x 191.03552pt.
+
+<images/fig_results_tracker_dataset_5.png, id=946, 667.293pt x 264.99pt>
+File: images/fig_results_tracker_dataset_5.png Graphic file (type png)
+
+<use images/fig_results_tracker_dataset_5.png>
+Package pdftex.def Info: images/fig_results_tracker_dataset_5.png used on input
+ line 23.
+(pdftex.def)             Requested size: 469.47049pt x 186.43384pt.
+) [70
+
+
+
+] [71 <./images/fig_results_tracker_dataset_2.png> <./images/fig_results_tracke
+r_dataset_3.png> <./images/fig_results_tracker_dataset_4.png>] [72 <./images/fi
+g_results_tracker_dataset_5.png>] (./thesis.bbl (./thesis.brf)
 \tf@brf=\write7
 \openout7 = `thesis.brf'.
 
@@ -1339,11 +1312,7 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72
-
-
-
-
+ [73
 
 
 ]
@@ -1511,7 +1480,7 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 118.
+(nag)                Use \scshape or \textsc instead on input line 117.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\sc'!
@@ -1525,7 +1494,7 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sc' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 118.
+(scrreprt)              by `\normalfont \scshape ' on input line 117.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -1547,7 +1516,7 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 129.
+(nag)                Use \scshape or \textsc instead on input line 127.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\sc'!
@@ -1561,12 +1530,12 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sc' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 129.
+(scrreprt)              by `\normalfont \scshape ' on input line 127.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [73]
+ [74]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 133.
@@ -1587,7 +1556,7 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 137.
+(nag)                Use \scshape or \textsc instead on input line 138.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\sc'!
@@ -1601,11 +1570,11 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sc' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 137.
+(scrreprt)              by `\normalfont \scshape ' on input line 138.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 142.
+(nag)                Use \scshape or \textsc instead on input line 144.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\sc'!
@@ -1619,11 +1588,11 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sc' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 142.
+(scrreprt)              by `\normalfont \scshape ' on input line 144.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 148.
+(nag)                Use \scshape or \textsc instead on input line 149.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\sc'!
@@ -1637,11 +1606,11 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sc' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 148.
+(scrreprt)              by `\normalfont \scshape ' on input line 149.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 153.
+(nag)                Use \scshape or \textsc instead on input line 154.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\sc'!
@@ -1655,21 +1624,11 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sc' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 153.
-
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 153.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
+(scrreprt)              by `\normalfont \scshape ' on input line 154.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 158.
+(nag)                Use \scshape or \textsc instead on input line 159.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\sc'!
@@ -1683,11 +1642,11 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sc' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 158.
+(scrreprt)              by `\normalfont \scshape ' on input line 159.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 163.
+(nag)                Use \scshape or \textsc instead on input line 164.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\sc'!
@@ -1701,11 +1660,11 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sc' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 163.
+(scrreprt)              by `\normalfont \scshape ' on input line 164.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 168.
+(nag)                Use \scshape or \textsc instead on input line 169.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\sc'!
@@ -1719,25 +1678,7 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sc' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 168.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 173.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 173.
+(scrreprt)              by `\normalfont \scshape ' on input line 169.
 
 )
 
@@ -1745,330 +1686,62 @@ Package nag Warning: Package epsfig is deprecated.
 (nag)                Use the graphicx package directly instead.
 
 
-Package nag Warning: 33 complaints in total.
+Package nag Warning: 32 complaints in total.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
-[74]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
+[75]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
  (./thesis.aux (./chapter_abstract.aux) (./chapter_acknowledgements.aux)
 (./chapter_copyright.aux) (./chapter_introduction.aux)
 (./chapter_related_work.aux) (./chapter_cell_detection.aux)
 (./chapter_cell_tracking.aux) (./chapter_data.aux) (./chapter_results.aux)
 (./chapter_conclusion.aux) (./appendix_annotationtool.aux)
-(./appendix_interactiveviewer.aux)
-No file appendix_detectortracker.aux.
+(./appendix_interactiveviewer.aux) (./appendix_detectortracker.aux)
 (./appendix_detection_results.aux) (./appendix_tracking_results.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4EFCDF18F27169FD91094F302A24BCA2;477.
+(rerunfilecheck)             Checksum: E245E88C2DFFA279C46795400F5CCF0F;4190.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 0A4504E2AF839181C5196290455C6621;2723.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
+(rerunfilecheck)             Checksum: 1A6942CC2590546B9F26A0EA47F14446;2724.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
  ) 
 Here is how much of TeX's memory you used:
- 2359 strings out of 473488
- 45815 string characters out of 5801212
- 695675 words of memory out of 5000000
- 26259 multiletter control sequences out of 15000+600000
- 25714 words of font info for 113 fonts, out of 8000000 for 9000
+ 2943 strings out of 473496
+ 60889 string characters out of 5801315
+ 690893 words of memory out of 5000000
+ 26580 multiletter control sequences out of 15000+600000
+ 32439 words of font info for 153 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 50i,17n,82p,964b,594s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{page.36} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{page.15} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.33} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.8} has been referenced but does not exist, rep
-laced by a fixed one
-
-pdfTeX warning (dest): name{page.14} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.11} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.52} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.30} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.27} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.16} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.24} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.13} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.50} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.45} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.22} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.20} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.19} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.18} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.17} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.12} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.10} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.9} has been referenced but does not exist, rep
-laced by a fixed one
-
-pdfTeX warning (dest): name{section*.39} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.43} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.40} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.37} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.34} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.31} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.21} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.20} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.16} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.15} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.12} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.11} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.10} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.9} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.7} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Appendix.1.D} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Appendix.1.C} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Appendix.1.B} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Appendix.1.A} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.6} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.7.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.1} has been referenced but does not exist, 
-replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fo
-nts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></u
-sr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf/fonts
-/type1/public/cm-super/sfxc1095.pfb></usr/share/texmf/fonts/type1/public/cm-sup
-er/sfxc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc2074.pfb>
-Output written on thesis.pdf (11 pages, 297421 bytes).
+ 50i,14n,82p,1374b,758s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+bx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfc
+c1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
+1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1
+095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sftt1095.pfb>
+Output written on thesis.pdf (75 pages, 4646339 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 419 compressed objects within 5 object streams
- 148 named destinations out of 1000 (max. 500000)
- 23625 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 1185 PDF objects out of 1200 (max. 8388607)
+ 1016 compressed objects within 11 object streams
+ 240 named destinations out of 1000 (max. 500000)
+ 30936 words of extra memory for PDF output out of 35830 (max. 10000000)
 

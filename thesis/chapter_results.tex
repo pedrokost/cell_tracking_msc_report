@@ -1,12 +1,12 @@
-\chapter{Experimental results \statusfirstdraft}
+\chapter{Experimental results}
 \label{chap:results}
 
 In this chapter we quantitatively and qualitatively analyse the performance of the automatic cell detector and tracker. Although some evaluation of the performance of the detection method is performed by the original authors in \cite{arteta12} it is useful to see how the method performs on the studied datasets in order to understand how much of the tracking accuracy is lost due to cells missed by the detection module. First, in \cref{sec:results_detector} we evaluate the performance and computation time of the cell detector and in \cref{sec:results_tracker} those of the cell tracker. Finally, in \cref{sec:results_limitations}, we explore the limitations of the methods and in \cref{sec:results_summary} summarize the results.
 
-\section{Cell detector \statusfirstdraft}
+\section{Cell detector}
 	\label{sec:results_detector}
 	
-	In this section we evaluate the performance of the automatic cell detection module. First, we introduce the performance metrics used to evaluate the accuracy of the cell detector. Then we present detection accuracy results. To evaluate the accuracy and generalizability of the detection module we perform two sets of experiments. First, we train the cell detector on a number of frames from each individual dataset, and measure the accuracy on the same dataset. Second, we train the detector on combinations of datasets in order to judge the performance degradation due to the learning on the more types of cells. Because of the varying size of the cells in the datasets, and the varying brightness of the cells, we expect that such a trained detector will perform poorer than when trained and tested on individual datasets, sometimes mistakenly detecting small artefacts in the background as cells. Finally, we compute the average detection time per frame for each dataset.
+	In this section we evaluate the performance of the automatic cell detection module. First, we introduce the performance metrics used to evaluate the accuracy of the cell detector. Then we present detection accuracy results. To evaluate the accuracy and generalizability of the detection module we perform two sets of experiments. First, we train the cell detector on a number of frames from each individual dataset, and measure the accuracy on the same dataset. Second, we train the detector on combinations of datasets in order to judge the performance degradation due to the learning on the more types of cells. Because of the varying size of the cells in the datasets, and the varying brightness of the cells, we expect that such a trained detector will perform poorer than when trained and tested on individual datasets, sometimes mistakenly detecting small artifacts in the background as cells. Finally, we compute the average detection time per frame for each dataset.
 	
 	The aim of this research was to develop an automatic cell detection and tracking pipeline that would require as little manual work as possible. This implies that a balance between accuracy and amount of manual work had to be established. There is also an direct relationship between accuracy and computation time. In order to reduce the amount of manual work we aimed to configure the cell detection module such that it would perform well on all the tested datasets without any manual adjustments of parameters. The consequences of this decision are twofold:
 	
@@ -18,7 +18,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 	
 	We were able to identify features that compute in an acceptable time for all these datasets (see \cref{sec:detector_feature}). However, it should be noted that in the case of testing the detector on very large datasets with thousands of frames, some adjustments of the parameters could result in a significant reduction in computation time and increased accuracy.
 	
-	\subsection{Performance metrics \statusfirstdraft}
+	\subsection{Performance metrics}
 	
 	We measure the performance of the cell detector in terms of precision and recall. The metrics are defined in terms of:
 	
@@ -40,7 +40,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		\text{REC} = \frac{\text{TP}}{\text{TP} + \text{FN}}\ \text{.}
 	\]
 	
-	\subsection{Detection accuracy \statusfirstdraft}
+	\subsection{Detection accuracy}
 			
 		As mentioned previously, we performed two different experiments to measure the performance of the cell detection module. The first experiment consisted of training and testing of the algorithm on the same dataset. The training set was 70\% and the testing set 30\% of the entire dataset. The training and testing datasets were created from images in randomized order from the entire dataset. This allowed us to measure, for each dataset, the maximum precision and recall values we could expect from the algorithm. In the second experiment the training was performed on combined datasets. The goal of this experiment was to observe how well the algorithm is able to generalize, and still return acceptable results.
 		
@@ -104,7 +104,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		
 		Second, we notice that while most recall increase, precision tends to decrease in some datasets. This means that the number of false positives increased. As said beforehand, the cell tracking module can deal effectively with short, isolated false positives. However, if the number of false positives increases too much, the tracking module might detect cell trajectories where there are none (or correspond to background noise). However, given that in most examples the precision values did not fall below 70 we should still expect to achieve good tracking results.
 		
-		The results on Dataset C went against these observations. Its recall values decreased significantly whenever a combined dataset was used to train the detector. This dataset contains many motion artefacts, and high variance of intensities of the cells, some of which smoothly blend into the background. This makes it very difficult to consistently annotate. It is possible that the inconsistencies in annotation make it perform in such a way when combined with other datasets.
+		The results on Dataset C went against these observations. Its recall values decreased significantly whenever a combined dataset was used to train the detector. This dataset contains many motion artifacts, and high variance of intensities of the cells, some of which smoothly blend into the background. This makes it very difficult to consistently annotate. It is possible that the inconsistencies in annotation make it perform in such a way when combined with other datasets.
 		
 		Another interesting observation is that the precision and recall values for dataset A improved significantly compared to training the detector only on dataset A. We have previously presented some possible reasons for its poor performance when trained individually. The increased performance when using a cell detector trained on other datasets (even excluding dataset A itself) can be attributed to two things. First, the detector learns to detect a wider range of types of cells. Second, dataset A contains much fewer annotated cells than the other datasets (about five times less). It is possible that a detector trained on only dataset A overfits the annotations, and cannot generalize to detect cells in other frames. 
 		
@@ -114,7 +114,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		
 		It is worth keeping in mind that all five datasets analysed in this thesis show distinct characteristics (both in cell type and image clarity). In practice, datasets will often be similar and it might be sufficient to annotated a single dataset to train a detector that can be used on other similar samples.
 	
-	\subsection{Computations time \statusfirstdraft}
+	\subsection{Computations time}
 	
 		In order to positionally track cells in image sequence the computation time of extracting the cell position from each frame is just as important as the accurate identification of cells. \Cref{tab:results_detector_speed} displays the average detection times per frame for each dataset. We also measured the average detection time per annotated cell in each dataset and the average ratio between the number of all candidate regions that were detected with the MSER detector and the number of annotated cells in each frame.
 		
@@ -137,9 +137,9 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 
 		The results show that we were able to optimize the cell detector to a point where it's speed is no longer an issue for many use cases. As a reminder, the original paper by Arteta \emph{et. al.} \cite{arteta12} reports detection speeds of 30 seconds per 400-by-400 pixels image on an i7 CPU. Most of the computation time is spend by the MSER detector and the feature computation.
 		
-		The measurements show that the detection speed is dependent primarily on the number of cells in each frame. Datasets B, C, and D contain 5 to 10 times more cells per frame than dataset A. Dataset E also contains 5 times more cells than dataset A, but it's computation time per frame was lower. This could be attributed to the smaller fraction of candidate regions that had to evaluated. In contrast, in dataset A which contains larger cells than the other datasets many more candidate cells were evaluated relative to the number of annotated cells. It is likely that, since the MSER detector was configured equally for all datasets, the MSER detector identified a larger number of small noise artefacts as cell candidates.
+		The measurements show that the detection speed is dependent primarily on the number of cells in each frame. Datasets B, C, and D contain 5 to 10 times more cells per frame than dataset A. Dataset E also contains 5 times more cells than dataset A, but it's computation time per frame was lower. This could be attributed to the smaller fraction of candidate regions that had to evaluated. In contrast, in dataset A which contains larger cells than the other datasets many more candidate cells were evaluated relative to the number of annotated cells. It is likely that, since the MSER detector was configured equally for all datasets, the MSER detector identified a larger number of small noise artifacts as cell candidates.
 		
-\section{Cell tracker \statusfirstdraft}
+\section{Cell tracker}
 	\label{sec:results_tracker}
 	
 	After obtaining the cell detection results we must determine the number of trajectories and which detection results belong to which trajectory. In the analysis of the performance of the tracking system we assume that the detection results are already available. The cell detector had been trained on the annotated images from each dataset, and the cells have been identified on the entire image sequences. Similarly to the experiments run on the cell detection module, we also run two sets of experiments for the cell tracker. First, we measure the performance of the cell tracker after being trained and tested on each dataset individually. In the second experiment we train the cell tracking module on combined datasets and evaluate its performance on previously unseen trajectories.
@@ -173,7 +173,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 
 	All the measurements of the cell tracker performance have been obtained by cross validation. Because the number of annotated trajectories is relatively small, we have used leave-one-out cross validation. This involves repeatedly partitioning the set of annotated trajectories into two subsets, training the tracker on the training subset, and measuring its performance on the testing subset. As the name suggests, in each round we train the tracker on all but one annotated trajectory, using the left-out trajectory for measuring the performance. This is repeated for each annotated trajectory and the results are averaged over all the rounds.
 
-	\subsection{Performance metrics \statusfirstdraft}
+	\subsection{Performance metrics}
 	
 	To quantify the performance of the cell tracking module we use two metrics originating from radar tracking literature \cite{blackman99}, recently used in other works \cite{bise11global, huh13, eom07}: \textit{target effectiveness} and \textit{track purity}.
 	
@@ -191,14 +191,14 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 	
 	This measure will penalize early initiated or late terminated tracks. It is similar to precision in that it penalizes false detections. We measure it by assigning to each track the target that follows it for the longest number of frames. 
 	
-	\subsection{Tracking accuracy \statusfirstdraft}
+	\subsection{Tracking accuracy}
 	
 	
 		As mentioned previously, we performed two different experiments to measure the performance of the cell tracking module. The first experiment consisted of training and testing of the algorithm on the same dataset. The performance evaluation was performed by leave-one-out cross validation where we repeatedly train the model on $n-1$ annotated trajectories and test it on the trajectory that was left out. This first experiment allowed us to measure, for each dataset, how well the tracker could link cells with a specific mode of motion. In the second experiment the training was performed on a combined dataset. The goal of this experiment was to observe how well the algorithm is able to learn from a large number of trajectories exhibiting different modes of motions and apply the learned model to track a previously unseen trajectory.
 		
 		Although a large set of features have been implemented to train the classifier, only two have been used in the following test because they have shown results that were sufficiently good (not necessarily best) and could be computed quickly. The first of the features is the squared euclidean distance between the last cell detection of the first tracklet and the first cell detection of the following tracklet. The second, is the Gaussian broadening distribution explained in \cref{sec:gaussianbroadening}.
 	
-		\subsubsection{Training and testing on individual datasets \statusfirstdraft}
+		\subsubsection{Training and testing on individual datasets}
 		
 		The performance measurements were obtained by leave-one-out cross validation. \Cref{tab:results_tracker_individual} displays the computed target effectiveness and track purity values for each individual dataset.
 		
@@ -219,7 +219,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		
 		Note that table \cref{tab:results_tracker_individual} does not include dataset A because the detection module was unable to detect cells in at least two trajectories. This prevented us from training the robust tracklets linker classifier due to the inability to generate negative training examples (i.e. examples of robust tracklets that should not be linked).
 		
-		The tracker was configured and trained to close gaps of up to 9 frames, with the parameters set to the default values of $\pi_{init}=1$, $\pi_{term}=1$, $\pi_{link}=1$ and $\pi_{FP}=1$. The exception is dataset E, where the tracker was configured to perform two runs, the first one closing gaps up to length 9, and the second one up to 20, and the parameters $\pi_{init}$ and $\pi_{term}$ were set to 3. This extra gap closing was required for this dataset, because the motion artefacts caused that the number of very short robust tracklets (of length 1 and 2) was very high. The robust tracklets and generated trajectories for this dataset can be seen in \cref{fig:results_tracking_analysisE}. Since all robust tracklets of length 1 are simply eliminated, there were a few gaps longer than 9, which could be effectively closed in the second iteration.
+		The tracker was configured and trained to close gaps of up to 9 frames, with the parameters set to the default values of $\pi_{init}=1$, $\pi_{term}=1$, $\pi_{link}=1$ and $\pi_{FP}=1$. The exception is dataset E, where the tracker was configured to perform two runs, the first one closing gaps up to length 9, and the second one up to 20, and the parameters $\pi_{init}$ and $\pi_{term}$ were set to 3. This extra gap closing was required for this dataset, because the motion artifacts caused that the number of very short robust tracklets (of length 1 and 2) was very high. The robust tracklets and generated trajectories for this dataset can be seen in \cref{fig:results_tracking_analysisE}. Since all robust tracklets of length 1 are simply eliminated, there were a few gaps longer than 9, which could be effectively closed in the second iteration.
 		
 		\begin{figure}[h]
 			\centering
@@ -228,7 +228,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 			\label{fig:results_tracking_analysisE}
 		\end{figure}
 
-		All four dataset exceeded target effectiveness of 90. Dataset B achieved track purity of 99.7, dataset C of 87.7, dataset D of 77.2 and dataset E of 92.5. The lower track purity in dataset D can be attributed to two related reasons. First, this dataset contains a significant number of motion artefacts, arguably more than the other datasets. The second and more likely reason for the low target effectiveness is that several frames had been manually deleted from this dataset. In the original dataset more than 30\% of the frames were completely unusable; no cells were clearly discernible. These frames had been simply deleted before any analysis was performed on them. The results is that the original cell trajectories are cut, and these cuts are clearly noticeable in a few places in the image sequence. Cell trajectories where the cut is clearly visible were annotated as 2 distinct trajectories. However, since the tracker wasn't aware of this deletion it linked these individual track segments, resulting in a lower track purity value. This can be clearly seen in \cref{fig:results_tracking_analysisD} which shows the most affected trajectories.
+		All four dataset exceeded target effectiveness of 90. Dataset B achieved track purity of 99.7, dataset C of 87.7, dataset D of 77.2 and dataset E of 92.5. The lower track purity in dataset D can be attributed to two related reasons. First, this dataset contains a significant number of motion artifacts, arguably more than the other datasets. The second and more likely reason for the low target effectiveness is that several frames had been manually deleted from this dataset. In the original dataset more than 30\% of the frames were completely unusable; no cells were clearly discernible. These frames had been simply deleted before any analysis was performed on them. The results is that the original cell trajectories are cut, and these cuts are clearly noticeable in a few places in the image sequence. Cell trajectories where the cut is clearly visible were annotated as 2 distinct trajectories. However, since the tracker wasn't aware of this deletion it linked these individual track segments, resulting in a lower track purity value. This can be clearly seen in \cref{fig:results_tracking_analysisD} which shows the most affected trajectories.
 		
 		\begin{figure}[h]
 			\centering				\includegraphics[width=0.6\textwidth]{images/fig_results_tracking_analysis_4}
@@ -242,7 +242,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		
 		The generated trajectories for each of these datasets are available in \cref{fig:results_tracker_dataset_2,fig:results_tracker_dataset_3,fig:results_tracker_dataset_4,fig:results_tracker_dataset_5} in appendix \ref{app:appendix_trackingresults}. These trajectories were obtained from trackers that were trained on all the annotated trajectories.
 		
-		\subsubsection{Training on a combined dataset \statusfirstdraft}
+		\subsubsection{Training on a combined dataset}
 		
 		The first experiment showed us the ability of the tracker to learn to correctly link trajectories from a single dataset. Often, most cells in the same dataset move in a similar mode of motion (e.g. mostly stagnant, slow translation in one direction, fast translation, frequent direction changes, etc). In this second experiment we will train the tracker on several datasets combined (at each round of the cross validation we only leave a single tracklet out of the training set for testing). We are interested in how well the tracker will be able to learn from this vast range of modes of motions, and whether it will be able to successfully track an independent cell that could exhibit any of these modes of motion. The results are shown in \cref{tab:results_tracker_combined}.
 		
@@ -262,11 +262,11 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 			\label{tab:results_tracker_combined}
 		\end{table}
 
-		A difficulty in setting up this experiments comes from the fact that the training and testing is performed on the longest tracklets of the entire dataset. Therefore, shorter image sequences are likely to be under-represented when training and testing on the dataset composed of all five datasets. Therefore the experiment was also evaluated on different combinations of combined datasets. 
+		A difficulty in setting up this experiments comes from the fact that the training and testing is performed on the longest tracklets of the entire dataset. Therefore, shorter image sequences are likely to be under-represented when training and testing on the dataset composed of all five datasets. Therefore the experiment was also evaluated on different combinations of combined datasets. Furthermore, the lower performance values can also be attributed to the fact that the adjustments of scaling parameters $\pi_{FP}$, $\pi_{link}$, $\pi_{init}$ and $\pi_{term}$ cannot improve the tracking in the case of testing on combined datasets, because each of the individual datasets exhibits different characteristics.
 
-		Let the combined dataset ABCDE be the basis for our analysis. This dataset achieved a target effectiveness of 82.1 and track purity of 81.5. By eliminating dataset D, which had a lower track purity when training individually, we were able to increase the track purity from 81.5 to 87.4. We peak track purity was achieved when training on the combined datasets A and B. Target effectiveness remained mostly constant in all the experiments.
+		Let the combined dataset ABCDE be the basis for our analysis. This dataset achieved a target effectiveness of 82.1 and track purity of 81.5. By eliminating dataset D, which had a lower track purity when training individually, we were able to increase the track purity from 81.5 to 87.4. The peak track purity was achieved when training on the combined datasets A and B. Target effectiveness remained mostly constant in all the experiments.
 		
-	\subsection{Computation time \statusfirstdraft}
+	\subsection{Computation time}
 	
 	When testing the tracker on individual datasets we also measured the time required to link all the robust tracklets into trajectories. The results are shown in \cref{tab:results_tracker_speed}. 
 	
@@ -290,7 +290,7 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 	
 	The slowest part of the cell tracking module is the computation of spatio-temporal features, especially the unoptimized code that computes the Gaussian broadening features (see \cref{sec:gaussianbroadening}).
 	
-\section{Limitations and areas of improvement \statusfirstdraft}
+\section{Limitations and areas of improvement}
 	\label{sec:results_limitations}
 	
 	Testing the tracker on the studied datasets has given good results as seen in \cref{fig:tracking_results_datasetBlongerthan10} which compares the annotated with the generated trajectories in dataset B.
@@ -302,15 +302,17 @@ In this chapter we quantitatively and qualitatively analyse the performance of t
 		\label{fig:tracking_results_datasetBlongerthan10}
 	\end{figure}
 	
-	As we have shown in \cref{fig:results_tracking_analysisE} it is also able to efficiently close very large gaps. The tracker attempts to close gaps up to the maximum length it is trained to do. Since a classifier is used to determine whether two tracklets should be linked, in general equal linking likelihoods could be computed for tracklets that are e.g. 2 frames apart than tracks that are 7 frames apart. It is possible to train the tracker to close very large gaps, e.g. more than 30 frames, but then some wrong connections are likely to occur. For example, if a cell trajectory is composed of three segments (robust tracklets) where the middle one is of length less than 30, the tracker might decide to link the first and third segments of the trajectory, making the middle segment a false positive or a short tracklet, which would be wrong. To work around this problem the closing of gaps can be performed iteratively, e.g. first for gaps of length 10, then 20 and then 30. This solution works fine, but can still introduce some smaller errors. An alternative implementation of the system could use a regression model instead of a classifier such that small caps are given a larger precedence over long gaps. However, this method requires to identify a suitable way to score the hypothesis.
+	As we have shown in \cref{fig:results_tracking_analysisE} it is also able to efficiently close very large gaps. The tracker attempts to close gaps up to the maximum length it is trained to do. Since a classifier is used to determine whether two tracklets should be linked, in general equal linking likelihoods could be computed for tracklets that are e.g. 2 frames apart than tracks that are 7 frames apart. It is possible to train the tracker to close very large gaps, e.g. more than 30 frames, but then some wrong connections are likely to occur. For example, if a cell trajectory is composed of three segments (robust tracklets) where the middle one is of length less than 30, the tracker might decide to link the first and third segments of the trajectory, making the middle segment a false positive or a short tracklet, which would be wrong. To work around this problem the closing of gaps can be performed iteratively, e.g. first for gaps of length 10, then 20 and then 30. This solution works fine, but can still introduce some smaller errors. An alternative implementation of the system could use a regression model instead of a classifier such that small caps are given a larger precedence over long gaps. However, this method requires to identify a suitable way to score the hypotheses.
 	
 	The tracker is able to deal with some limited jiggling of frames. However, as we have seen in \cref{fig:results_tracking_analysisD} excessive jiggling (in this case cause by the manual deletion of several frames) can results in lower performance. This issue could be resolved with a pre-processing step that would stabilize the images based on the background information present in them before inserting them to the cell tracker.
 	
-	Finally, let's point out that the tests performed on the tracker only measured the performance of the longest trajectories. The reason for this is to that careful annotation and review of all the trajectories in the datasets would be too time consuming and would likely include some not-insignificant amount of incorrectly linked cells.
+	Most of the analysed cells move slowly. Although the moving cells were tracked successfully, the tests do not thoroughly test the performance of the tracker on rapidly moving cells, due to the unavailability of such data.
+	
+	Additionally, it should be noted that the tests performed on the tracker only measured the performance of the longest trajectories. The reason for this is to that careful annotation and review of all the trajectories in the datasets would be too time consuming and would likely include some not-insignificant amount of incorrectly linked cells.
 	
 	Finally, the tracker can sometimes link two independent trajectories that are close together incorrectly, as seen \cref{fig:results_tracking_analysisE}. This could be solved by computing more advanced spatio-temporal features or with a post-processing step that would detect these outliers and correct them.
 	
-\section{Summary \statusfirstdraft}
+\section{Summary}
 	\label{sec:results_summary}
 	
 	In this chapter we have demonstrated the performance of the cell detection and tracking modules. Several experiments on individual and combined datasets were performed to measure how well the algorithms are able to generalize to new independent datasets.

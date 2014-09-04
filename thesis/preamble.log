@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.21)  3 SEP 2014 19:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.21)  4 SEP 2014 16:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1090,7 +1090,7 @@ File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 Here is how much of TeX's memory you used:
  21538 strings out of 495028
  380258 string characters out of 6181497
- 680351 words of memory out of 5000000
+ 680357 words of memory out of 5000000
  24377 multiletter control sequences out of 15000+600000
  4709 words of font info for 16 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

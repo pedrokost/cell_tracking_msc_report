@@ -1,19 +1,19 @@
-\chapter{Detection of cells \statusfirstdraft}
+\chapter{Detection of cells}
 	\label{chap:cell_detection}
 	
 	
 	This chapter presents an overview of the cell detector from \cite{arteta12}. The method has been chosen for its ability to learn to detect cells in the low contrast images we aim to analyse with the tracking pipeline.
 	
-	\section{Method overview \statusfirstdraft}
+	\section{Method overview}
 	
 	In order to track cells across frames we need to first be able to identify the cells within the images. As described in \cref{sec:relatedworkdetection}, there is a broad range of automatic methods for cell detection and segmentation.
 	
 	The requirements for detecting cells in our application are:
 		
 	\begin{enumerate}
-	\item Accurate detection in sometimes noisy images. The detector should be able to robustly identify cells in datasets that include noise, motion artefacts (induced by the camera and the moving tissue) and variable lens focus. The detector does not need to detect cells that are out-of-focus, but should reliably detect those which are in focus. Missed detections are dealt with in the tracking module.
+	\item Accurate detection in sometimes noisy images. The detector should be able to robustly identify cells in datasets that include noise, motion artifacts (induced by the camera and the moving tissue) and variable lens focus. The detector does not need to detect cells that are out-of-focus, but should reliably detect those which are in focus. Missed detections are dealt with in the tracking module.
 	
-	\item There is no need for accurate segmentation. We are primarily interested in the accurate positional tracking of cells over time, and analysis of the cells appearance is of secondary interest. For the purpose of tracking, it is sufficient to be able to reliable localize cells, and extract some features that quantify them.
+	\item There is no need for accurate segmentation. We are primarily interested in the accurate positional tracking of cells over time, and analysis of the cells appearance is of secondary interest. For the purpose of tracking, it is sufficient to be able to reliably localize cells, and extract some features that quantify them.
 	
 	\item The algorithm should adapt well to different microscopy modalities. The studied datasets are obtained from various organs within the body of mice that have distinct textures. The detector should be able to detect cells in any of these datasets with minimal  manual adjustments.
 	\end{enumerate}
@@ -22,7 +22,7 @@
 	
 	For the purpose of our application we have chosen the cell detector presented in \cite{arteta12}, because it conforms to all three requirements. The machine learning method is able to handle noisy datasets, and the model can easily be retrained when a new, previously unseen, type of image needs to be analysed. The method does not focus on an accurate segmentation of cells, but on the robust localization. The major drawback of this method was performance. The authors reported run-times of 30 seconds to detect cells on 400-by-400 pixel images on an i7 CPU. This slow performance would make it unusable for tracking large image sequences. However, we were able to optimize the MATLAB code for feature computation so that the detection process took only a fraction of the reported run-time.
 	
-	The detection process runs in three steps. First, robust candidate regions are extracted from an image. The method uses a Maximally Stable Extremal Region (MSER) region detector \cite{matas04} to find a large number of candidate regions. Second, each of these regions is assigned a value which is produced by a classifier; this is a score of similarity between the region and a true cell. Finally, the non-overlapping subset of these candidate regions with high similarity to the annotated cells in the training data are selected via dynamic programming.
+	The detection process runs in three steps. First, robust candidate regions are extracted from an image. The method uses a Maximally Stable Extremal Region (MSER) region detector \cite{matas02} to find a large number of candidate regions. Second, each of these regions is assigned a value which is produced by a classifier; this is a score of similarity between the region and a true cell. Finally, the non-overlapping subset of these candidate regions with high similarity to the annotated cells in the training data are selected via dynamic programming.
 	
 	The detector can be trained on a small number of training images, where each cell is  annotated with a single dot. 
 
@@ -30,12 +30,12 @@
 	
 	The rest of this chapter is divided as follows. In \cref{sec:detector_extremal} we describe how the candidate regions are obtained. \Cref{sec:detector_inference} shows the inference procedures that selects the optimal subsets of candidate regions. In \cref{sec:detector_classifier} we formulate the learning method and in \cref{sec:detector_feature} we describe the choice of features. Finally, in \cref{sec:detector_changes} we briefly outline the main changes that improved the performance of the original algorithm.
 	
-	\section{Detection of candidate regions \statusfirstdraft}
+	\section{Detection of candidate regions}
 	\label{sec:detector_extremal}
 	
-	The first stage of the cell detection process is the extraction of a large number of candidate cell regions. A region is extremal if the image intensity everywhere inside of it is higher than the image intensity at its outer boundary. For a greyscale image \textit{I} it is the set of connected components of the thresholded image $\mathcal{I_{>\text{t}}} = \{\mathcal{I} > \text{t}\}$ for some threshold t. In practice we consider only regions that are maximally stable\termmargin{maximally stable extremal region}, as defined in \cite{matas04}, obtained using an efficient implementation of a maximally stable region detector \cite{vedaldi08vlfeat}.
+	The first stage of the cell detection process is the extraction of a large number of candidate cell regions. A region is extremal if the image intensity everywhere inside of it is higher than the image intensity at its outer boundary. For a greyscale image \textit{I} it is the set of connected components of the thresholded image $\mathcal{I_{>\text{t}}} = \{\mathcal{I} > \text{t}\}$ for some threshold t. In practice we consider only regions that are maximally stable\termmargin{maximally stable extremal region}, as defined in \cite{matas02}, obtained using an efficient implementation of a maximally stable region detector \cite{vedaldi08vlfeat}.
 	
-	Extremal regions are invariant to affine transformations of image intensities. They are stable, which means that their support is virtually unchanged over a range of thresholds, and they can be detected at multiple scales and be enumerated very efficiently. This makes them ideal for detecting candidates regions that correspond to cells in microscopy imaging. \Cref{fig:mserexamplesoncells} shows an example result of running the MSER detector on a sample set of microscopy cell images.
+	Extremal regions are invariant to affine transformations of image intensities. They are stable, which means that their support is virtually unchanged over a range of thresholds, and they can be detected at multiple scales and be enumerated very efficiently. This makes them ideal for detecting candidates regions that correspond to cells in microscopy imaging. \Cref{fig:detector_mser} shows an example result of running the MSER detector on a sample set of microscopy cell images.
 	
 	An important property of extremal regions is \textit{nestedness}, which means that two extremal regions detected on the same image can be either nested or non-overlapping.
 	
@@ -43,12 +43,12 @@
 	
 	\begin{figure}[h]
 		\centering
-		\missingfigure{Examples of MSER detections}
-		\caption{MSER detection examples}
-		\label{fig:mserexamplesoncells}
+		\includegraphics[width=0.8\textwidth]{images/fig_detector_mser}
+		\caption{Example original image on the left, and on the right the same image with ellipses fitted to detected MSERs.}
+		\label{fig:detector_mser}
 	\end{figure}
 	
-	\section{Inference under the non-overlap constraint \statusfirstdraft}
+	\section{Inference under the non-overlap constraint}
 	\label{sec:detector_inference}
 	
 	The inference procedure selects a subset of candidate extremal regions that correspond to cells. Let $V_i$ be a value assigned to each candidate region $R_i$ indicating the appropriateness of the region to correspond to a cell. The inference procedures selects a subset of the non-overlapping candidate regions such that the sum of the values of selected regions is maximized. To make the problem computationally feasible, the regions are organized into trees according to their nestedness property. Each tree represents a set of overlapping extremal regions. The problem can then be formalized as follows. Let $\textbf{y} = \{y_1, y_2, \dots y_N\}$ be a binary variable such that $y_i = 1$ if the region $R_i$ is selected. Let $\mathcal{Y}$ be the set of non-overlapping regions. The maximization problem can be defined as:
@@ -62,7 +62,7 @@
 	Although cells in the studied datasets occasionally overlap, detecting only non-overlapping cells is a good balance between the manual work required to annotate datasets, the training time and achieving accurate detections. The described framework has been expanded by the original authors to allow for the detection of partially overlapping regions \cite{arteta13}. However, that model requires a longer training time, and a larger set of manually annotated images to accurately detect blobs of overlapping cells. Finally, the global data association technique used in the cell tracker module should be able to correctly associate cells if the overlap time is short, such as in trajectories that are crossing and then continuing in opposite directions.
 	
 	
-	\section{Learning the classifier \statusfirstdraft}
+	\section{Learning the classifier}
 	\label{sec:detector_classifier}
 	
 	The value $V_i$ assigned to each region $R_i$ is a classifier score that indicates the similarity of the extremal region to a cell. The classifier is trained using dot-annotated training images $\mathcal{I}^1, \mathcal{I}^2, \mathcal{I}^3, \dots$ as follows. Let $R_1^j, R_2^j,\dots,R_{N^j}^j$ indicate the set of $N^j$ candidate regions extracted from the training image $\mathcal{I}^j$. The value $V_i^j$ of each region is computed as the dot product between a feature vector $\textbf{f}_i^j$ computed for each region and a weight vector $w$: $V_i^j = \textbf{f}_i^j \cdot w$.
@@ -75,7 +75,7 @@
 	
 	\noindent where $n_i^j$ indicates the number of annotated dots in region $R_i^j$ and $U^j(\textbf{y}^j)$ counts the number of annotated dots that do not have a corresponding selected region $R_i^j$. Further details about the convex objective we tried to minimize and how it can be optimized using a cutting-plain algorithm can be found in \cite{arteta12}.
 		
-	\section{Feature selection \statusfirstdraft}
+	\section{Feature selection}
 	\label{sec:detector_feature}
 	
 	The effictiveness of the machine learning method to detect cells depends on the quality of features computed for the regions. Good features have a lot of discriminative power, so that they can effectively distinguish regions corresponding to cells from regions that don't correspond to cells. In order to find the best feature vector, we have evaluated the performance of the classifier with several combinations of these features:
@@ -101,7 +101,7 @@
 	    \label{fig:bestFeatureSelector}
 	\end{figure}
 	
-	\section{Performance improvements \statusfirstdraft}
+	\section{Performance improvements}
 	\label{sec:detector_changes}
 		The main drawback of the algorithm presented by Arteta \cite{arteta12} is the slow feature computation. The original paper reported detection times of 30 seconds for images of dimensions 400-by-400 pixels on an i7 CPU. Because the aim of this project is tracking cells, we expect to be processing hundreds or thousands of frames of microscopy image sequences. It was important to reduce the detection time as much as possible. The major performance improvements where achieved by addressing three things.
 		
