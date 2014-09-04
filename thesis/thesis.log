@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=thesis 2014.9.4)  4 SEP 2014 21:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=thesis 2014.9.4)  4 SEP 2014 23:36
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -20,31 +20,31 @@ LaTeX Warning: Unused global option(s):
 (./appendix_detection_results.aux) (./appendix_tracking_results.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 10.
 Package nag Info: Command \frontmatter not defined, skipping amendment on input
- line 9.
+ line 10.
 Package nag Info: Command \mainmatter not defined, skipping amendment on input 
-line 9.
+line 10.
 Package nag Info: Command \backmatter not defined, skipping amendment on input 
-line 9.
+line 10.
 Package nag Info: Command \RaggedLeft not defined, skipping amendment on input 
-line 9.
+line 10.
 Package nag Info: Command \RaggedRight not defined, skipping amendment on input
- line 9.
+ line 10.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -116,7 +116,7 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box43
-Package hyperref Info: Link coloring ON on input line 9.
+Package hyperref Info: Link coloring ON on input line 10.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -126,16 +126,16 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count163
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+LaTeX Info: Redefining \ref on input line 10.
+LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \nameref on input line 10.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
  ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 9.
+LaTeX Info: Redefining \microtypecontext on input line 10.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -151,68 +151,18 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 9.
+line 10.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 9.
+line 10.
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>> [1
 
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `chapter_abstract.aux'.
-
- (./chapter_abstract.tex [2
-
-
-])
-\openout2 = `chapter_acknowledgements.aux'.
-
- (./chapter_acknowledgements.tex) [3
-
-
-
-
-
-]
-\openout2 = `chapter_copyright.aux'.
-
-
-(./chapter_copyright.tex
-<creative_commons/cc_by_30.pdf, id=273, 18.74034pt x 18.73953pt>
-File: creative_commons/cc_by_30.pdf Graphic file (type pdf)
-
-<use creative_commons/cc_by_30.pdf>
-Package pdftex.def Info: creative_commons/cc_by_30.pdf used on input line 5.
-(pdftex.def)             Requested size: 26.23627pt x 26.23514pt.
-
-<creative_commons/cc_nc_30.pdf, id=274, 18.74033pt x 18.73993pt>
-File: creative_commons/cc_nc_30.pdf Graphic file (type pdf)
-
-<use creative_commons/cc_nc_30.pdf>
-Package pdftex.def Info: creative_commons/cc_nc_30.pdf used on input line 5.
-(pdftex.def)             Requested size: 26.23625pt x 26.23569pt.
-
-<creative_commons/cc_nd_30.pdf, id=275, 18.74034pt x 18.74033pt>
-File: creative_commons/cc_nd_30.pdf Graphic file (type pdf)
-
-<use creative_commons/cc_nd_30.pdf>
-Package pdftex.def Info: creative_commons/cc_nd_30.pdf used on input line 5.
-(pdftex.def)             Requested size: 26.23627pt x 26.23625pt.
- [4
-
-
- <./creative_commons/cc_by_30.pdf> <./creative_commons/cc_nc_30.pdf
-
-pdfTeX warning: pdflatex (file ./creative_commons/cc_nc_30.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
-> <./creative_commons/cc_nd_30.pdf
-
-pdfTeX warning: pdflatex (file ./creative_commons/cc_nd_30.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
->])
-Package tocbasic Info: character protrusion at toc deactivated on input line 28
+Package tocbasic Info: character protrusion at toc deactivated on input line 29
 .
  (./thesis.toc [5
+
 
 
 
@@ -227,15 +177,20 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 28
  [7
 
 ]
-\openout2 = `chapter_introduction.aux'.
+\openout2 = `chapter_results.aux'.
 
- (./chapter_introduction.tex
-Chapter 1.
-[8
+ (./chapter_results.tex
+Chapter 6.
+[46
+
+
+
+
+
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 37.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 26.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -243,461 +198,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [9]) [10]
-\openout2 = `chapter_related_work.aux'.
-
-
-(./chapter_related_work.tex
-Chapter 2.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11
-
-
-
-]
-Underfull \vbox (badness 1924) has occurred while \output is active []
-
- [12]
-[13] [14] [15]) [16]
-\openout2 = `chapter_cell_detection.aux'.
-
- (./chapter_cell_detection.tex
-Chapter 3.
-[17
-
-
-
-] [18] <images/fig_detector_mser.png, id=500, 559.691pt x 258.566pt>
-File: images/fig_detector_mser.png Graphic file (type png)
-
-<use images/fig_detector_mser.png>
-Package pdftex.def Info: images/fig_detector_mser.png used on input line 46.
-(pdftex.def)             Requested size: 375.57782pt x 173.50659pt.
-
-Underfull \vbox (badness 3780) has occurred while \output is active []
-
- [19 <./images/fig_detector_mser.png>] [20]
-<images/best_features.jpg, id=528, 703.62875pt x 678.535pt>
-File: images/best_features.jpg Graphic file (type jpg)
-
-<use images/best_features.jpg>
-Package pdftex.def Info: images/best_features.jpg used on input line 99.
-(pdftex.def)             Requested size: 375.57782pt x 362.17917pt.
-
-Underfull \vbox (badness 1681) has occurred while \output is active []
-
- [21 <./images/best_features.jpg>]) [22]
-\openout2 = `chapter_cell_tracking.aux'.
-
- (./chapter_cell_tracking.tex
-Chapter 4.
-<images/fig_tracklet_terminology.pdf, id=550, 695.59875pt x 271.0125pt>
-File: images/fig_tracklet_terminology.pdf Graphic file (type pdf)
-
-<use images/fig_tracklet_terminology.pdf>
-Package pdftex.def Info: images/fig_tracklet_terminology.pdf used on input line
- 13.
-(pdftex.def)             Requested size: 375.57782pt x 146.32802pt.
- [23
-
-
-
- <./images/fig_tracklet_terminology.pdf>]
-<images/fig_tracking_process_overiew.pdf, id=569, 885.3075pt x 296.10625pt>
-File: images/fig_tracking_process_overiew.pdf Graphic file (type pdf)
-
-<use images/fig_tracking_process_overiew.pdf>
-Package pdftex.def Info: images/fig_tracking_process_overiew.pdf used on input 
-line 24.
-(pdftex.def)             Requested size: 469.47049pt x 157.02592pt.
- [24 <./images/fig_tracking_process_overiew.pdf>] <images/cell_tracks.jpg, id=6
-01, 631.35875pt x 614.295pt>
-File: images/cell_tracks.jpg Graphic file (type jpg)
-
-<use images/cell_tracks.jpg>
-Package pdftex.def Info: images/cell_tracks.jpg used on input line 39.
-(pdftex.def)             Requested size: 234.73524pt x 228.39165pt.
-Package epstopdf Info: Source file: <images/fig_tracking_robust_2.eps>
-(epstopdf)                    date: 2014-09-04 18:51:39
-(epstopdf)                    size: 185133 bytes
-(epstopdf)             Output file: <images/fig_tracking_robust_2-eps-converted
--to.pdf>
-(epstopdf)             Command: <epstopdf --outfile=images/fig_tracking_robust_
-2-eps-converted-to.pdf images/fig_tracking_robust_2.eps>
-(epstopdf)             \includegraphics on input line 50.
-runsystem(epstopdf --outfile=images/fig_tracking_robust_2-eps-converted-to.pdf 
-images/fig_tracking_robust_2.eps)...executed.
-
-Package epstopdf Info: Result file: <images/fig_tracking_robust_2-eps-converted
--to.pdf>
-(epstopdf)                    date: 2014-09-04 21:14:32
-(epstopdf)                    size: 34025 bytes.
-
-<images/fig_tracking_robust_2-eps-converted-to.pdf, id=603, 353.32pt x 356.3312
-5pt>
-File: images/fig_tracking_robust_2-eps-converted-to.pdf Graphic file (type pdf)
-
- <use images/fig_tracking_robust_2-eps-converted-to.pdf>
-Package pdftex.def Info: images/fig_tracking_robust_2-eps-converted-to.pdf used
- on input line 50.
-(pdftex.def)             Requested size: 234.73524pt x 236.7398pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[25 <./images/cell_tracks.jpg>]
-Underfull \vbox (badness 1596) has occurred while \output is active []
-
- [26 <./images/fig_tracking_robust_2-eps-converted-to.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28]
-<images/fig_tracking_linprog_tracklets.pdf, id=638, 229.85875pt x 293.095pt>
-File: images/fig_tracking_linprog_tracklets.pdf Graphic file (type pdf)
-
-<use images/fig_tracking_linprog_tracklets.pdf>
-Package pdftex.def Info: images/fig_tracking_linprog_tracklets.pdf used on inpu
-t line 157.
-(pdftex.def)             Requested size: 187.78532pt x 239.4584pt.
-
-<fig_tracking_linprog_tablefull.pdf, id=639, 355.00029pt x 406.4003pt>
-File: fig_tracking_linprog_tablefull.pdf Graphic file (type pdf)
-
-<use fig_tracking_linprog_tablefull.pdf>
-Package pdftex.def Info: fig_tracking_linprog_tablefull.pdf used on input line 
-161.
-(pdftex.def)             Requested size: 281.68515pt x 322.49757pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
-[30 <./images/fig_tracking_linprog_tracklets.pdf> <./fig_tracking_linprog_table
-full.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31]
-[32]
-Underfull \vbox (badness 6220) has occurred while \output is active []
-
- [33]
-[34]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 289.
-
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package epstopdf Info: Source file: <images/fig_gaussianbroadening1.eps>
-(epstopdf)                    date: 2014-08-02 11:12:25
-(epstopdf)                    size: 90402 bytes
-(epstopdf)             Output file: <images/fig_gaussianbroadening1-eps-convert
-ed-to.pdf>
-(epstopdf)             Command: <epstopdf --outfile=images/fig_gaussianbroadeni
-ng1-eps-converted-to.pdf images/fig_gaussianbroadening1.eps>
-(epstopdf)             \includegraphics on input line 300.
-runsystem(epstopdf --outfile=images/fig_gaussianbroadening1-eps-converted-to.pd
-f images/fig_gaussianbroadening1.eps)...executed.
-
-Package epstopdf Info: Result file: <images/fig_gaussianbroadening1-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2014-09-04 21:14:33
-(epstopdf)                    size: 19030 bytes.
-
-<images/fig_gaussianbroadening1-eps-converted-to.pdf, id=709, 451.6875pt x 144.
-54pt>
-File: images/fig_gaussianbroadening1-eps-converted-to.pdf Graphic file (type pd
-f)
- <use images/fig_gaussianbroadening1-eps-converted-to.pdf>
-Package pdftex.def Info: images/fig_gaussianbroadening1-eps-converted-to.pdf us
-ed on input line 300.
-(pdftex.def)             Requested size: 366.1864pt x 117.18701pt.
-Package epstopdf Info: Source file: <images/fig_gaussianbroadening2.eps>
-(epstopdf)                    date: 2014-08-02 11:12:25
-(epstopdf)                    size: 63615 bytes
-(epstopdf)             Output file: <images/fig_gaussianbroadening2-eps-convert
-ed-to.pdf>
-(epstopdf)             Command: <epstopdf --outfile=images/fig_gaussianbroadeni
-ng2-eps-converted-to.pdf images/fig_gaussianbroadening2.eps>
-(epstopdf)             \includegraphics on input line 304.
-runsystem(epstopdf --outfile=images/fig_gaussianbroadening2-eps-converted-to.pd
-f images/fig_gaussianbroadening2.eps)...executed.
-
-Package epstopdf Info: Result file: <images/fig_gaussianbroadening2-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2014-09-04 21:14:33
-(epstopdf)                    size: 12216 bytes.
-
-<images/fig_gaussianbroadening2-eps-converted-to.pdf, id=710, 219.82124pt x 220
-.825pt>
-File: images/fig_gaussianbroadening2-eps-converted-to.pdf Graphic file (type pd
-f)
- <use images/fig_gaussianbroadening2-eps-converted-to.pdf>
-Package pdftex.def Info: images/fig_gaussianbroadening2-eps-converted-to.pdf us
-ed on input line 304.
-(pdftex.def)             Requested size: 93.89265pt x 94.31941pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[35]) [36 <./images/fig_gaussianbroadening1-eps-converted-to.pdf> <./images/fig
-_gaussianbroadening2-eps-converted-to.pdf>]
-\openout2 = `chapter_data.aux'.
-
- (./chapter_data.tex
-Chapter 5.
-[37
-
-
-
-] <images/series30green019.png, id=745, 513.92pt x 513.92pt>
-File: images/series30green019.png Graphic file (type png)
-
-<use images/series30green019.png>
-Package pdftex.def Info: images/series30green019.png used on input line 29.
-(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
-
-<images/series30green020.png, id=746, 513.92pt x 513.92pt>
-File: images/series30green020.png Graphic file (type png)
-
-<use images/series30green020.png>
-Package pdftex.def Info: images/series30green020.png used on input line 33.
-(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
-
-<images/series30green021.png, id=747, 513.92pt x 513.92pt>
-File: images/series30green021.png Graphic file (type png)
-
-<use images/series30green021.png>
-Package pdftex.def Info: images/series30green021.png used on input line 37.
-(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
- [38 <./images/series30green019.png> <./images/series30green020.png> <./images/
-series30green021.png>]
-<images/series30red024.png, id=756, 513.92pt x 513.92pt>
-File: images/series30red024.png Graphic file (type png)
-
-<use images/series30red024.png>
-Package pdftex.def Info: images/series30red024.png used on input line 48.
-(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
-
-<images/series30red025.png, id=757, 513.92pt x 513.92pt>
-File: images/series30red025.png Graphic file (type png)
-
-<use images/series30red025.png>
-Package pdftex.def Info: images/series30red025.png used on input line 52.
-(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
-File: images/series30red025.png Graphic file (type png)
- <use images/series30red025.png>
-Package pdftex.def Info: images/series30red025.png used on input line 56.
-(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
-
-<images/series13greencropped008.png, id=759, 251.94125pt x 251.94125pt>
-File: images/series13greencropped008.png Graphic file (type png)
-
-<use images/series13greencropped008.png>
-Package pdftex.def Info: images/series13greencropped008.png used on input line 
-67.
-(pdftex.def)             Requested size: 150.234pt x 150.23558pt.
-
-<images/series13greencropped009.png, id=760, 251.94125pt x 251.94125pt>
-File: images/series13greencropped009.png Graphic file (type png)
-
-<use images/series13greencropped009.png>
-Package pdftex.def Info: images/series13greencropped009.png used on input line 
-71.
-(pdftex.def)             Requested size: 150.234pt x 150.23558pt.
-
-<images/series13greencropped010.png, id=761, 251.94125pt x 251.94125pt>
-File: images/series13greencropped010.png Graphic file (type png)
-
-<use images/series13greencropped010.png>
-Package pdftex.def Info: images/series13greencropped010.png used on input line 
-75.
-(pdftex.def)             Requested size: 150.234pt x 150.23558pt.
- [39 <./images/series30red024.png> <./images/series30red025.png> <./images/seri
-es13greencropped008.png> <./images/series13greencropped009.png> <./images/serie
-s13greencropped010.png>]
-<images/series14croppedclean024.png, id=772, 199.74625pt x 199.74625pt>
-File: images/series14croppedclean024.png Graphic file (type png)
-
-<use images/series14croppedclean024.png>
-Package pdftex.def Info: images/series14croppedclean024.png used on input line 
-87.
-(pdftex.def)             Requested size: 150.234pt x 150.24211pt.
-
-<images/series14croppedclean025.png, id=773, 199.74625pt x 199.74625pt>
-File: images/series14croppedclean025.png Graphic file (type png)
-
-<use images/series14croppedclean025.png>
-Package pdftex.def Info: images/series14croppedclean025.png used on input line 
-91.
-(pdftex.def)             Requested size: 150.234pt x 150.24211pt.
-
-<images/series14croppedclean027.png, id=774, 199.74625pt x 199.74625pt>
-File: images/series14croppedclean027.png Graphic file (type png)
-
-<use images/series14croppedclean027.png>
-Package pdftex.def Info: images/series14croppedclean027.png used on input line 
-95.
-(pdftex.def)             Requested size: 150.234pt x 150.24211pt.
-
-<images/seriesm170_13cropped016.png, id=776, 278.03876pt x 278.03876pt>
-File: images/seriesm170_13cropped016.png Graphic file (type png)
-
-<use images/seriesm170_13cropped016.png>
-Package pdftex.def Info: images/seriesm170_13cropped016.png used on input line 
-107.
-(pdftex.def)             Requested size: 150.234pt x 150.23627pt.
-
-<images/seriesm170_13cropped017.png, id=777, 278.03876pt x 278.03876pt>
-File: images/seriesm170_13cropped017.png Graphic file (type png)
-
-<use images/seriesm170_13cropped017.png>
-Package pdftex.def Info: images/seriesm170_13cropped017.png used on input line 
-111.
-(pdftex.def)             Requested size: 150.234pt x 150.23627pt.
-
-<images/seriesm170_13cropped018.png, id=778, 278.03876pt x 278.03876pt>
-File: images/seriesm170_13cropped018.png Graphic file (type png)
-
-<use images/seriesm170_13cropped018.png>
-Package pdftex.def Info: images/seriesm170_13cropped018.png used on input line 
-115.
-(pdftex.def)             Requested size: 150.234pt x 150.23627pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[40 <./images/series14croppedclean024.png> <./images/series14croppedclean025.pn
-g> <./images/series14croppedclean027.png>]
-<images/shutterseriesm170_13cropped001.png, id=789, 513.92pt x 513.92pt>
-File: images/shutterseriesm170_13cropped001.png Graphic file (type png)
-
-<use images/shutterseriesm170_13cropped001.png>
-Package pdftex.def Info: images/shutterseriesm170_13cropped001.png used on inpu
-t line 132.
-(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
-
-<images/shutterseriesm170_13cropped002.png, id=790, 513.92pt x 513.92pt>
-File: images/shutterseriesm170_13cropped002.png Graphic file (type png)
-
-<use images/shutterseriesm170_13cropped002.png>
-Package pdftex.def Info: images/shutterseriesm170_13cropped002.png used on inpu
-t line 136.
-(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
-
-<images/shutterseriesm170_13cropped003.png, id=791, 513.92pt x 513.92pt>
-File: images/shutterseriesm170_13cropped003.png Graphic file (type png)
-
-<use images/shutterseriesm170_13cropped003.png>
-Package pdftex.def Info: images/shutterseriesm170_13cropped003.png used on inpu
-t line 140.
-(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
-
-<images/shutterseriesm170_13cropped004.png, id=792, 513.92pt x 513.92pt>
-File: images/shutterseriesm170_13cropped004.png Graphic file (type png)
-
-<use images/shutterseriesm170_13cropped004.png>
-Package pdftex.def Info: images/shutterseriesm170_13cropped004.png used on inpu
-t line 144.
-(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
-
-<images/shutterseriesm170_13cropped005.png, id=793, 513.92pt x 513.92pt>
-File: images/shutterseriesm170_13cropped005.png Graphic file (type png)
-
-<use images/shutterseriesm170_13cropped005.png>
-Package pdftex.def Info: images/shutterseriesm170_13cropped005.png used on inpu
-t line 148.
-(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
-
-<images/shutterseriesm170_13cropped006.png, id=794, 513.92pt x 513.92pt>
-File: images/shutterseriesm170_13cropped006.png Graphic file (type png)
-
-<use images/shutterseriesm170_13cropped006.png>
-Package pdftex.def Info: images/shutterseriesm170_13cropped006.png used on inpu
-t line 152.
-(pdftex.def)             Requested size: 150.234pt x 150.23277pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/data_challenge_movement.png, id=796, 836.3245pt x 206.371pt>
-File: images/data_challenge_movement.png Graphic file (type png)
-
-<use images/data_challenge_movement.png>
-Package pdftex.def Info: images/data_challenge_movement.png used on input line 
-161.
-(pdftex.def)             Requested size: 469.47049pt x 115.84723pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41 <./images/seriesm170_13cropped016.png> <./images/seriesm170_13cropped017.p
-ng> <./images/seriesm170_13cropped018.png>]
-Underfull \hbox (badness 7504) in paragraph at lines 180--180
-[]\T1/cmr/m/n/10.95 (+20) Average num-ber
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 180--181
-[]\T1/cmr/m/n/10.95 (+20) Standard de-vi-a-tion of
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42 <./images/shutterseriesm170_13cropped001.png> <./images/shutterseriesm170_
-13cropped002.png> <./images/shutterseriesm170_13cropped003.png> <./images/shutt
-erseriesm170_13cropped004.png> <./images/shutterseriesm170_13cropped005.png> <.
-/images/shutterseriesm170_13cropped006.png>]
-Underfull \vbox (badness 3323) has occurred while \output is active []
-
- [43 <./images/data_challenge_movement.png (PNG copy)>]
-<images/data_annotator_screenshot.png, id=816, 978.65625pt x 500.87125pt>
-File: images/data_annotator_screenshot.png Graphic file (type png)
-
-<use images/data_annotator_screenshot.png>
-Package pdftex.def Info: images/data_annotator_screenshot.png used on input lin
-e 205.
-(pdftex.def)             Requested size: 469.47049pt x 240.2779pt.
-
-<images/data_tracklet_viewer.png, id=817, 438.63875pt x 664.4825pt>
-File: images/data_tracklet_viewer.png Graphic file (type png)
-
-<use images/data_tracklet_viewer.png>
-Package pdftex.def Info: images/data_tracklet_viewer.png used on input line 212
-.
-(pdftex.def)             Requested size: 225.34383pt x 341.37582pt.
-
-Underfull \vbox (badness 7203) has occurred while \output is active []
-
- [44 <./images/data_annotator_screenshot.png>]) [45 <./images/data_tracklet_vie
-wer.png>]
-\openout2 = `chapter_results.aux'.
-
-
-(./chapter_results.tex
-Chapter 6.
-[46
-
-
-
-] [47]
-Underfull \vbox (badness 3158) has occurred while \output is active []
-
- [48]
+ [47] [48]
 
 Package xcolor Warning: Incompatible color definition on input line 88.
 
@@ -888,29 +389,21 @@ Overfull \hbox (1.3072pt too wide) detected at line 184
 [] \OT1/cmr/m/n/10.95 = [][]
  []
 
-
-Underfull \vbox (badness 1248) has occurred while \output is active []
-
- [53]
-[54]
+[53] [54]
 Package epstopdf Info: Source file: <images/fig_results_tracking_analysis5.eps>
 
 (epstopdf)                    date: 2014-09-03 16:00:49
 (epstopdf)                    size: 599424 bytes
 (epstopdf)             Output file: <images/fig_results_tracking_analysis5-eps-
 converted-to.pdf>
+(epstopdf)                    date: 2014-09-04 21:14:43
+(epstopdf)                    size: 100913 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/fig_results_tracking
 _analysis5-eps-converted-to.pdf images/fig_results_tracking_analysis5.eps>
 (epstopdf)             \includegraphics on input line 226.
-runsystem(epstopdf --outfile=images/fig_results_tracking_analysis5-eps-converte
-d-to.pdf images/fig_results_tracking_analysis5.eps)...executed.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <images/fig_results_tracking_analysis5-eps-
-converted-to.pdf>
-(epstopdf)                    date: 2014-09-04 21:14:43
-(epstopdf)                    size: 100913 bytes.
-
-<images/fig_results_tracking_analysis5-eps-converted-to.pdf, id=916, 651.43375p
+<images/fig_results_tracking_analysis5-eps-converted-to.pdf, id=291, 651.43375p
 t x 385.44pt>
 File: images/fig_results_tracking_analysis5-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -924,18 +417,14 @@ Package epstopdf Info: Source file: <images/fig_results_tracking_analysis_4.eps
 (epstopdf)                    size: 571498 bytes
 (epstopdf)             Output file: <images/fig_results_tracking_analysis_4-eps
 -converted-to.pdf>
+(epstopdf)                    date: 2014-09-04 21:14:45
+(epstopdf)                    size: 83993 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/fig_results_tracking
 _analysis_4-eps-converted-to.pdf images/fig_results_tracking_analysis_4.eps>
 (epstopdf)             \includegraphics on input line 234.
-runsystem(epstopdf --outfile=images/fig_results_tracking_analysis_4-eps-convert
-ed-to.pdf images/fig_results_tracking_analysis_4.eps)...executed.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <images/fig_results_tracking_analysis_4-eps
--converted-to.pdf>
-(epstopdf)                    date: 2014-09-04 21:14:45
-(epstopdf)                    size: 83993 bytes.
-
-<images/fig_results_tracking_analysis_4-eps-converted-to.pdf, id=918, 402.50375
+<images/fig_results_tracking_analysis_4-eps-converted-to.pdf, id=293, 402.50375
 pt x 364.36125pt>
 File: images/fig_results_tracking_analysis_4-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -959,18 +448,14 @@ Package epstopdf Info: Source file: <images/fig_results_tracking_analysis_2.eps
 (epstopdf)                    size: 363899 bytes
 (epstopdf)             Output file: <images/fig_results_tracking_analysis_2-eps
 -converted-to.pdf>
+(epstopdf)                    date: 2014-09-04 21:14:47
+(epstopdf)                    size: 58797 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/fig_results_tracking
 _analysis_2-eps-converted-to.pdf images/fig_results_tracking_analysis_2.eps>
 (epstopdf)             \includegraphics on input line 300.
-runsystem(epstopdf --outfile=images/fig_results_tracking_analysis_2-eps-convert
-ed-to.pdf images/fig_results_tracking_analysis_2.eps)...executed.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <images/fig_results_tracking_analysis_2-eps
--converted-to.pdf>
-(epstopdf)                    date: 2014-09-04 21:14:47
-(epstopdf)                    size: 58797 bytes.
-
-<images/fig_results_tracking_analysis_2-eps-converted-to.pdf, id=950, 394.47375
+<images/fig_results_tracking_analysis_2-eps-converted-to.pdf, id=325, 394.47375
 pt x 388.45125pt>
 File: images/fig_results_tracking_analysis_2-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -979,237 +464,14 @@ File: images/fig_results_tracking_analysis_2-eps-converted-to.pdf Graphic file
 Package pdftex.def Info: images/fig_results_tracking_analysis_2-eps-converted-t
 o.pdf used on input line 300.
 (pdftex.def)             Requested size: 328.6279pt x 323.61176pt.
+ [57] [58 <./images/fig_results_tracking_analysis_2-eps-converted-to.pdf>]) [59
+] [63
 
-Underfull \vbox (badness 1478) has occurred while \output is active []
-
- [57]
-[58 <./images/fig_results_tracking_analysis_2-eps-converted-to.pdf>]) [59]
-\openout2 = `chapter_conclusion.aux'.
-
-
-(./chapter_conclusion.tex
-Chapter 7.
-[60
-
-
-
-] [61]) [62] [63
 
 
 
 ]
-\openout2 = `appendix_annotationtool.aux'.
-
- (./appendix_annotationtool.tex
-Appendix A.
-) [64
-
-
-]
-\openout2 = `appendix_interactiveviewer.aux'.
-
- (./appendix_interactiveviewer.tex
-Appendix B.
-) [65
-
-
-
-]
-\openout2 = `appendix_detectortracker.aux'.
-
- (./appendix_detectortracker.tex
-Appendix C.
-) [66
-
-
-
-]
-\openout2 = `appendix_detection_results.aux'.
-
- (./appendix_detection_results.tex
-Appendix D.
-Package epstopdf Info: Source file: <images/fig_results_detector_sequences_1.ep
-s>
-(epstopdf)                    date: 2014-08-28 10:28:54
-(epstopdf)                    size: 39299 bytes
-(epstopdf)             Output file: <images/fig_results_detector_sequences_1-ep
-s-converted-to.pdf>
-(epstopdf)             Command: <epstopdf --outfile=images/fig_results_detector
-_sequences_1-eps-converted-to.pdf images/fig_results_detector_sequences_1.eps>
-(epstopdf)             \includegraphics on input line 5.
-runsystem(epstopdf --outfile=images/fig_results_detector_sequences_1-eps-conver
-ted-to.pdf images/fig_results_detector_sequences_1.eps)...executed.
-
-Package epstopdf Info: Result file: <images/fig_results_detector_sequences_1-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2014-09-04 21:14:49
-(epstopdf)                    size: 8936 bytes.
-
-<images/fig_results_detector_sequences_1-eps-converted-to.pdf, id=1009, 536.002
-5pt x 304.13625pt>
-File: images/fig_results_detector_sequences_1-eps-converted-to.pdf Graphic file
- (type pdf)
-
-<use images/fig_results_detector_sequences_1-eps-converted-to.pdf>
-Package pdftex.def Info: images/fig_results_detector_sequences_1-eps-converted-
-to.pdf used on input line 5.
-(pdftex.def)             Requested size: 469.47049pt x 266.38307pt.
-Package epstopdf Info: Source file: <images/fig_results_detector_sequences_2.ep
-s>
-(epstopdf)                    date: 2014-08-28 10:29:01
-(epstopdf)                    size: 258360 bytes
-(epstopdf)             Output file: <images/fig_results_detector_sequences_2-ep
-s-converted-to.pdf>
-(epstopdf)             Command: <epstopdf --outfile=images/fig_results_detector
-_sequences_2-eps-converted-to.pdf images/fig_results_detector_sequences_2.eps>
-(epstopdf)             \includegraphics on input line 11.
-runsystem(epstopdf --outfile=images/fig_results_detector_sequences_2-eps-conver
-ted-to.pdf images/fig_results_detector_sequences_2.eps)...executed.
-
-Package epstopdf Info: Result file: <images/fig_results_detector_sequences_2-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2014-09-04 21:14:51
-(epstopdf)                    size: 60792 bytes.
-
-<images/fig_results_detector_sequences_2-eps-converted-to.pdf, id=1010, 534.998
-75pt x 307.1475pt>
-File: images/fig_results_detector_sequences_2-eps-converted-to.pdf Graphic file
- (type pdf)
-
-<use images/fig_results_detector_sequences_2-eps-converted-to.pdf>
-Package pdftex.def Info: images/fig_results_detector_sequences_2-eps-converted-
-to.pdf used on input line 11.
-(pdftex.def)             Requested size: 469.47049pt x 269.54076pt.
-Package epstopdf Info: Source file: <images/fig_results_detector_sequences_3.ep
-s>
-(epstopdf)                    date: 2014-08-28 10:29:10
-(epstopdf)                    size: 792373 bytes
-(epstopdf)             Output file: <images/fig_results_detector_sequences_3-ep
-s-converted-to.pdf>
-(epstopdf)             Command: <epstopdf --outfile=images/fig_results_detector
-_sequences_3-eps-converted-to.pdf images/fig_results_detector_sequences_3.eps>
-(epstopdf)             \includegraphics on input line 17.
-runsystem(epstopdf --outfile=images/fig_results_detector_sequences_3-eps-conver
-ted-to.pdf images/fig_results_detector_sequences_3.eps)...executed.
-
-Package epstopdf Info: Result file: <images/fig_results_detector_sequences_3-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2014-09-04 21:14:54
-(epstopdf)                    size: 156251 bytes.
-
-<images/fig_results_detector_sequences_3-eps-converted-to.pdf, id=1011, 542.025
-pt x 307.1475pt>
-File: images/fig_results_detector_sequences_3-eps-converted-to.pdf Graphic file
- (type pdf)
-
-<use images/fig_results_detector_sequences_3-eps-converted-to.pdf>
-Package pdftex.def Info: images/fig_results_detector_sequences_3-eps-converted-
-to.pdf used on input line 17.
-(pdftex.def)             Requested size: 469.47049pt x 266.0445pt.
-Package epstopdf Info: Source file: <images/fig_results_detector_sequences_4.ep
-s>
-(epstopdf)                    date: 2014-08-28 10:29:34
-(epstopdf)                    size: 1603031 bytes
-(epstopdf)             Output file: <images/fig_results_detector_sequences_4-ep
-s-converted-to.pdf>
-(epstopdf)             Command: <epstopdf --outfile=images/fig_results_detector
-_sequences_4-eps-converted-to.pdf images/fig_results_detector_sequences_4.eps>
-(epstopdf)             \includegraphics on input line 23.
-runsystem(epstopdf --outfile=images/fig_results_detector_sequences_4-eps-conver
-ted-to.pdf images/fig_results_detector_sequences_4.eps)...executed.
-
-Package epstopdf Info: Result file: <images/fig_results_detector_sequences_4-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2014-09-04 21:15:02
-(epstopdf)                    size: 337305 bytes.
-
-<images/fig_results_detector_sequences_4-eps-converted-to.pdf, id=1012, 544.032
-5pt x 305.14pt>
-File: images/fig_results_detector_sequences_4-eps-converted-to.pdf Graphic file
- (type pdf)
-
-<use images/fig_results_detector_sequences_4-eps-converted-to.pdf>
-Package pdftex.def Info: images/fig_results_detector_sequences_4-eps-converted-
-to.pdf used on input line 23.
-(pdftex.def)             Requested size: 469.47049pt x 263.3325pt.
-Package epstopdf Info: Source file: <images/fig_results_detector_sequences_5.ep
-s>
-(epstopdf)                    date: 2014-08-28 10:29:46
-(epstopdf)                    size: 561549 bytes
-(epstopdf)             Output file: <images/fig_results_detector_sequences_5-ep
-s-converted-to.pdf>
-(epstopdf)             Command: <epstopdf --outfile=images/fig_results_detector
-_sequences_5-eps-converted-to.pdf images/fig_results_detector_sequences_5.eps>
-(epstopdf)             \includegraphics on input line 28.
-runsystem(epstopdf --outfile=images/fig_results_detector_sequences_5-eps-conver
-ted-to.pdf images/fig_results_detector_sequences_5.eps)...executed.
-
-Package epstopdf Info: Result file: <images/fig_results_detector_sequences_5-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2014-09-04 21:15:06
-(epstopdf)                    size: 116824 bytes.
-
-<images/fig_results_detector_sequences_5-eps-converted-to.pdf, id=1013, 541.021
-26pt x 305.14pt>
-File: images/fig_results_detector_sequences_5-eps-converted-to.pdf Graphic file
- (type pdf)
-
-<use images/fig_results_detector_sequences_5-eps-converted-to.pdf>
-Package pdftex.def Info: images/fig_results_detector_sequences_5-eps-converted-
-to.pdf used on input line 28.
-(pdftex.def)             Requested size: 469.47049pt x 264.79451pt.
-) [67
-
-
-
-]
-[68 <./images/fig_results_detector_sequences_1-eps-converted-to.pdf> <./images/
-fig_results_detector_sequences_2-eps-converted-to.pdf>] [69 <./images/fig_resul
-ts_detector_sequences_3-eps-converted-to.pdf> <./images/fig_results_detector_se
-quences_4-eps-converted-to.pdf>] [70 <./images/fig_results_detector_sequences_5
--eps-converted-to.pdf>]
-\openout2 = `appendix_tracking_results.aux'.
-
- (./appendix_tracking_results.tex
-Appendix E.
-<images/fig_results_tracker_dataset_2.png, id=1059, 672.111pt x 279.444pt>
-File: images/fig_results_tracker_dataset_2.png Graphic file (type png)
-
-<use images/fig_results_tracker_dataset_2.png>
-Package pdftex.def Info: images/fig_results_tracker_dataset_2.png used on input
- line 5.
-(pdftex.def)             Requested size: 469.47049pt x 195.19586pt.
-
-<images/fig_results_tracker_dataset_3.png, id=1060, 672.914pt x 277.838pt>
-File: images/fig_results_tracker_dataset_3.png Graphic file (type png)
-
-<use images/fig_results_tracker_dataset_3.png>
-Package pdftex.def Info: images/fig_results_tracker_dataset_3.png used on input
- line 12.
-(pdftex.def)             Requested size: 469.47049pt x 193.83662pt.
-
-<images/fig_results_tracker_dataset_4.png, id=1061, 672.914pt x 273.823pt>
-File: images/fig_results_tracker_dataset_4.png Graphic file (type png)
-
-<use images/fig_results_tracker_dataset_4.png>
-Package pdftex.def Info: images/fig_results_tracker_dataset_4.png used on input
- line 18.
-(pdftex.def)             Requested size: 469.47049pt x 191.03552pt.
-
-<images/fig_results_tracker_dataset_5.png, id=1062, 667.293pt x 264.99pt>
-File: images/fig_results_tracker_dataset_5.png Graphic file (type png)
-
-<use images/fig_results_tracker_dataset_5.png>
-Package pdftex.def Info: images/fig_results_tracker_dataset_5.png used on input
- line 23.
-(pdftex.def)             Requested size: 469.47049pt x 186.43384pt.
-) [71
-
-
-
-] [72 <./images/fig_results_tracker_dataset_2.png> <./images/fig_results_tracke
-r_dataset_3.png> <./images/fig_results_tracker_dataset_4.png>] [73 <./images/fi
-g_results_tracker_dataset_5.png>] (./thesis.bbl (./thesis.brf)
+(./thesis.bbl (./thesis.brf)
 \tf@brf=\write7
 \openout7 = `thesis.brf'.
 
@@ -1416,6 +678,10 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [74
+
+
+
+
 
 
 ]
@@ -1711,6 +977,16 @@ Class scrreprt Warning: Usage of deprecated font command `\sc'!
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
 (scrreprt)              by `\normalfont \scshape ' on input line 149.
 
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 149.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 154.
@@ -1791,9 +1067,9 @@ Package nag Warning: Package epsfig is deprecated.
 
 Package nag Warning: 32 complaints in total.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
 [76]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
  (./thesis.aux (./chapter_abstract.aux) (./chapter_acknowledgements.aux)
 (./chapter_copyright.aux) (./chapter_introduction.aux)
 (./chapter_related_work.aux) (./chapter_cell_detection.aux)
@@ -1801,50 +1077,263 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
 (./chapter_conclusion.aux) (./appendix_annotationtool.aux)
 (./appendix_interactiveviewer.aux) (./appendix_detectortracker.aux)
 (./appendix_detection_results.aux) (./appendix_tracking_results.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E245E88C2DFFA279C46795400F5CCF0F;4190.
+(rerunfilecheck)             Checksum: A151AC47FBC7E79B1559E309488A5D6E;840.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 8D3374E587AA00A385354F3FA4F8D62F;2724.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
+(rerunfilecheck)             Checksum: F79EE5E736AEB830494DE0F55C0CA424;2723.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
  ) 
 Here is how much of TeX's memory you used:
- 3029 strings out of 473632
- 62591 string characters out of 5804018
- 689873 words of memory out of 5000000
- 26532 multiletter control sequences out of 15000+600000
- 31560 words of font info for 150 fonts, out of 8000000 for 9000
+ 2538 strings out of 473632
+ 49191 string characters out of 5804018
+ 689515 words of memory out of 5000000
+ 26240 multiletter control sequences out of 15000+600000
+ 26573 words of font info for 127 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 40i,14n,77p,1374b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sftt1095.pfb>
-Output written on thesis.pdf (76 pages, 5355275 bytes).
+ 40i,12n,77p,1401b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{page.37} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{page.62} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.15} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.34} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.8} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{page.14} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.11} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.31} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.27} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.16} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.24} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.13} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.60} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.22} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.20} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.19} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.18} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.17} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.12} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.10} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.9} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.56} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.53} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.16} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.52} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.48} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.18} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Appendix.1.E} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Appendix.1.D} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Appendix.1.C} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Appendix.1.B} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Appendix.1.A} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.7} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.1.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.1.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.8} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.7.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.1} has been referenced but does not exist, 
+replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+rm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
+t1095.pfb>
+Output written on thesis.pdf (22 pages, 576593 bytes).
 PDF statistics:
- 1297 PDF objects out of 1440 (max. 8388607)
- 1097 compressed objects within 11 object streams
- 241 named destinations out of 1000 (max. 500000)
- 28913 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 567 PDF objects out of 1000 (max. 8388607)
+ 509 compressed objects within 6 object streams
+ 162 named destinations out of 1000 (max. 500000)
+ 22680 words of extra memory for PDF output out of 24883 (max. 10000000)
 
