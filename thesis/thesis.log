@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=thesis 2014.9.4)  4 SEP 2014 23:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=thesis 2014.9.5)  5 SEP 2014 01:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -16,8 +16,8 @@ LaTeX Warning: Unused global option(s):
 (./chapter_related_work.aux) (./chapter_cell_detection.aux)
 (./chapter_cell_tracking.aux) (./chapter_data.aux) (./chapter_results.aux)
 (./chapter_conclusion.aux) (./appendix_annotationtool.aux)
-(./appendix_interactiveviewer.aux) (./appendix_detectortracker.aux)
-(./appendix_detection_results.aux) (./appendix_tracking_results.aux))
+(./appendix_detectortracker.aux) (./appendix_detection_results.aux)
+(./appendix_tracking_results.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -82,17 +82,17 @@ Package nag Info: Command \RaggedRight not defined, skipping amendment on input
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count157
-\scratchdimen=\dimen190
-\scratchbox=\box42
-\nofMPsegments=\count158
-\nofMParguments=\count159
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count160
-\MPscratchDim=\dimen191
-\MPnumerator=\count161
-\makeMPintoPDFobject=\count162
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count165
+\scratchdimen=\dimen194
+\scratchbox=\box44
+\nofMPsegments=\count166
+\nofMParguments=\count167
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count168
+\MPscratchDim=\dimen195
+\MPnumerator=\count169
+\makeMPintoPDFobject=\count170
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -109,13 +109,14 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box43
+\AtBeginShipoutBox=\box45
 Package hyperref Info: Link coloring ON on input line 10.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -124,7 +125,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count163
+\c@section@level=\count171
 )
 LaTeX Info: Redefining \ref on input line 10.
 LaTeX Info: Redefining \pageref on input line 10.
@@ -135,6 +136,7 @@ LaTeX Info: Redefining \nameref on input line 10.
 \openout4 = `thesis.out'.
 
  ABD: EveryShipout initializing macros
+\c@lstlisting=\count172
 LaTeX Info: Redefining \microtypecontext on input line 10.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
@@ -170,18 +172,9 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 29
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [6] (./thesis.tdo)
-\tf@tdo=\write6
-\openout6 = `thesis.tdo'.
+ [6] [63
 
- [7
 
-]
-\openout2 = `chapter_results.aux'.
-
- (./chapter_results.tex
-Chapter 6.
-[46
 
 
 
@@ -190,795 +183,26 @@ Chapter 6.
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 26.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `cmss' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [47] [48]
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 90.
-
-
-Package xcolor Warning: Incompatible color definition on input line 90.
-
-
-Package xcolor Warning: Incompatible color definition on input line 90.
-
-
-Package xcolor Warning: Incompatible color definition on input line 90.
-
-
-Package xcolor Warning: Incompatible color definition on input line 90.
-
-
-Package xcolor Warning: Incompatible color definition on input line 90.
-
-
-Package xcolor Warning: Incompatible color definition on input line 90.
-
-
-Package xcolor Warning: Incompatible color definition on input line 91.
-
-
-Package xcolor Warning: Incompatible color definition on input line 91.
-
-
-Package xcolor Warning: Incompatible color definition on input line 91.
-
-
-Package xcolor Warning: Incompatible color definition on input line 91.
-
-
-Package xcolor Warning: Incompatible color definition on input line 91.
-
-
-Package xcolor Warning: Incompatible color definition on input line 91.
-
-
-Package xcolor Warning: Incompatible color definition on input line 91.
-
-
-Package xcolor Warning: Incompatible color definition on input line 91.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 93.
-
-
-Package xcolor Warning: Incompatible color definition on input line 93.
-
-
-Package xcolor Warning: Incompatible color definition on input line 93.
-
-
-Package xcolor Warning: Incompatible color definition on input line 93.
-
-
-Package xcolor Warning: Incompatible color definition on input line 93.
-
-
-Package xcolor Warning: Incompatible color definition on input line 93.
-
-
-Package xcolor Warning: Incompatible color definition on input line 93.
-
-
-Package xcolor Warning: Incompatible color definition on input line 93.
-
-
-Package xcolor Warning: Incompatible color definition on input line 94.
-
-
-Package xcolor Warning: Incompatible color definition on input line 94.
-
-
-Package xcolor Warning: Incompatible color definition on input line 94.
-
-
-Package xcolor Warning: Incompatible color definition on input line 94.
-
-
-Package xcolor Warning: Incompatible color definition on input line 94.
-
-
-Package xcolor Warning: Incompatible color definition on input line 94.
-
-
-Package xcolor Warning: Incompatible color definition on input line 94.
-
-
-Package xcolor Warning: Incompatible color definition on input line 96.
-
-
-Package xcolor Warning: Incompatible color definition on input line 96.
-
-
-Package xcolor Warning: Incompatible color definition on input line 96.
-
-
-Package xcolor Warning: Incompatible color definition on input line 96.
-
-
-Package xcolor Warning: Incompatible color definition on input line 96.
-
-
-Package xcolor Warning: Incompatible color definition on input line 97.
-
-
-Package xcolor Warning: Incompatible color definition on input line 97.
-
-
-Package xcolor Warning: Incompatible color definition on input line 97.
-
-
-Package xcolor Warning: Incompatible color definition on input line 97.
-
-
-Package xcolor Warning: Incompatible color definition on input line 97.
-
-
-Package xcolor Warning: Incompatible color definition on input line 97.
-
-[49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50]
-[51]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [52]
-Overfull \hbox (1.3072pt too wide) detected at line 184
-[] \OT1/cmr/m/n/10.95 = [][]
- []
-
-[53] [54]
-Package epstopdf Info: Source file: <images/fig_results_tracking_analysis5.eps>
-
-(epstopdf)                    date: 2014-09-03 16:00:49
-(epstopdf)                    size: 599424 bytes
-(epstopdf)             Output file: <images/fig_results_tracking_analysis5-eps-
-converted-to.pdf>
-(epstopdf)                    date: 2014-09-04 21:14:43
-(epstopdf)                    size: 100913 bytes
-(epstopdf)             Command: <epstopdf --outfile=images/fig_results_tracking
-_analysis5-eps-converted-to.pdf images/fig_results_tracking_analysis5.eps>
-(epstopdf)             \includegraphics on input line 226.
-Package epstopdf Info: Output file is already uptodate.
-
-<images/fig_results_tracking_analysis5-eps-converted-to.pdf, id=291, 651.43375p
-t x 385.44pt>
-File: images/fig_results_tracking_analysis5-eps-converted-to.pdf Graphic file (
-type pdf)
- <use images/fig_results_tracking_analysis5-eps-converted-to.pdf>
-Package pdftex.def Info: images/fig_results_tracking_analysis5-eps-converted-to
-.pdf used on input line 226.
-(pdftex.def)             Requested size: 469.47049pt x 277.78125pt.
-Package epstopdf Info: Source file: <images/fig_results_tracking_analysis_4.eps
->
-(epstopdf)                    date: 2014-09-03 16:13:23
-(epstopdf)                    size: 571498 bytes
-(epstopdf)             Output file: <images/fig_results_tracking_analysis_4-eps
--converted-to.pdf>
-(epstopdf)                    date: 2014-09-04 21:14:45
-(epstopdf)                    size: 83993 bytes
-(epstopdf)             Command: <epstopdf --outfile=images/fig_results_tracking
-_analysis_4-eps-converted-to.pdf images/fig_results_tracking_analysis_4.eps>
-(epstopdf)             \includegraphics on input line 234.
-Package epstopdf Info: Output file is already uptodate.
-
-<images/fig_results_tracking_analysis_4-eps-converted-to.pdf, id=293, 402.50375
-pt x 364.36125pt>
-File: images/fig_results_tracking_analysis_4-eps-converted-to.pdf Graphic file 
-(type pdf)
-
-<use images/fig_results_tracking_analysis_4-eps-converted-to.pdf>
-Package pdftex.def Info: images/fig_results_tracking_analysis_4-eps-converted-t
-o.pdf used on input line 234.
-(pdftex.def)             Requested size: 281.68515pt x 254.98997pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[55 <./images/fig_results_tracking_analysis5-eps-converted-to.pdf>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[56 <./images/fig_results_tracking_analysis_4-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <images/fig_results_tracking_analysis_2.eps
->
-(epstopdf)                    date: 2014-09-03 16:58:14
-(epstopdf)                    size: 363899 bytes
-(epstopdf)             Output file: <images/fig_results_tracking_analysis_2-eps
--converted-to.pdf>
-(epstopdf)                    date: 2014-09-04 21:14:47
-(epstopdf)                    size: 58797 bytes
-(epstopdf)             Command: <epstopdf --outfile=images/fig_results_tracking
-_analysis_2-eps-converted-to.pdf images/fig_results_tracking_analysis_2.eps>
-(epstopdf)             \includegraphics on input line 300.
-Package epstopdf Info: Output file is already uptodate.
-
-<images/fig_results_tracking_analysis_2-eps-converted-to.pdf, id=325, 394.47375
-pt x 388.45125pt>
-File: images/fig_results_tracking_analysis_2-eps-converted-to.pdf Graphic file 
-(type pdf)
-
-<use images/fig_results_tracking_analysis_2-eps-converted-to.pdf>
-Package pdftex.def Info: images/fig_results_tracking_analysis_2-eps-converted-t
-o.pdf used on input line 300.
-(pdftex.def)             Requested size: 328.6279pt x 323.61176pt.
- [57] [58 <./images/fig_results_tracking_analysis_2-eps-converted-to.pdf>]) [59
-] [63
-
-
-
-
-]
-(./thesis.bbl (./thesis.brf)
-\tf@brf=\write7
-\openout7 = `thesis.brf'.
-
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 9.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 9.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 14.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 14.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 20.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 20.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 24.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 24.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 28.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 28.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 33.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 33.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 40.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 40.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 44.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 44.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 49.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 49.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 56.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 56.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 62.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 62.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [74
-
-
-
-
-
-
-]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 68.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 68.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 72.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 72.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 77.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 77.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 81.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 81.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 88.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 88.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 95.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 95.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 100.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 100.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 106.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 106.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 112.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 112.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 117.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 117.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 123.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 123.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 127.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 127.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [75]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 133.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 133.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 138.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 138.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 144.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 144.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 149.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 149.
-
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 149.
-
+\openout2 = `appendix_annotationtool.aux'.
+
+ (./appendix_annotationtool.tex
+Appendix A.
+
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              Implementation of \float@addtolist became
+(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrreprt)              has been replaced by more several more flexible
+(scrreprt)              features of package `tocbasic`.
+(scrreprt)              Since Version 3.12 support for deprecated
+(scrreprt)              \float@addtolist interface has been
+(scrreprt)              restricted to only some of the KOMA-Script
+(scrreprt)              features and been removed from others.
+(scrreprt)              Loading of package `scrhack' may help to
+(scrreprt)              avoid this warning, if you are using a
+(scrreprt)              a package that still implements the
+(scrreprt)              deprecated \float@addtolist interface .
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 5.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -986,127 +210,299 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+) [64
 
 
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 154.
+]
+\openout2 = `appendix_detectortracker.aux'.
 
 
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 154.
+(./appendix_detectortracker.tex
+Appendix B.
+
+Underfull \vbox (badness 5374) has occurred while \output is active []
+
+ [65
 
 
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 159.
 
+]
+Underfull \vbox (badness 1112) has occurred while \output is active []
 
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 159.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 71.
 
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 164.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 164.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 169.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\sc'!
-(scrreprt)              You should note, that in 1994 font command `\sc' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\sc' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrreprt)              by `\normalfont \scshape ' on input line 169.
-
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [66]) [67]
+\openout2 = `appendix_detection_results.aux'.
+
+
+(./appendix_detection_results.tex
+Appendix C.
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_1.ep
+s>
+(epstopdf)                    date: 2014-08-28 10:28:54
+(epstopdf)                    size: 39299 bytes
+(epstopdf)             Output file: <images/fig_results_detector_sequences_1-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2014-09-04 21:14:49
+(epstopdf)                    size: 8936 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/fig_results_detector
+_sequences_1-eps-converted-to.pdf images/fig_results_detector_sequences_1.eps>
+(epstopdf)             \includegraphics on input line 7.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/fig_results_detector_sequences_1-eps-converted-to.pdf, id=259, 536.0025
+pt x 304.13625pt>
+File: images/fig_results_detector_sequences_1-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use images/fig_results_detector_sequences_1-eps-converted-to.pdf>
+Package pdftex.def Info: images/fig_results_detector_sequences_1-eps-converted-
+to.pdf used on input line 7.
+(pdftex.def)             Requested size: 469.47049pt x 266.38307pt.
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_2.ep
+s>
+(epstopdf)                    date: 2014-08-28 10:29:01
+(epstopdf)                    size: 258360 bytes
+(epstopdf)             Output file: <images/fig_results_detector_sequences_2-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2014-09-04 21:14:51
+(epstopdf)                    size: 60792 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/fig_results_detector
+_sequences_2-eps-converted-to.pdf images/fig_results_detector_sequences_2.eps>
+(epstopdf)             \includegraphics on input line 13.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/fig_results_detector_sequences_2-eps-converted-to.pdf, id=260, 534.9987
+5pt x 307.1475pt>
+File: images/fig_results_detector_sequences_2-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use images/fig_results_detector_sequences_2-eps-converted-to.pdf>
+Package pdftex.def Info: images/fig_results_detector_sequences_2-eps-converted-
+to.pdf used on input line 13.
+(pdftex.def)             Requested size: 469.47049pt x 269.54076pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_3.ep
+s>
+(epstopdf)                    date: 2014-08-28 10:29:10
+(epstopdf)                    size: 792373 bytes
+(epstopdf)             Output file: <images/fig_results_detector_sequences_3-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2014-09-04 21:14:54
+(epstopdf)                    size: 156251 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/fig_results_detector
+_sequences_3-eps-converted-to.pdf images/fig_results_detector_sequences_3.eps>
+(epstopdf)             \includegraphics on input line 19.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/fig_results_detector_sequences_3-eps-converted-to.pdf, id=261, 542.025p
+t x 307.1475pt>
+File: images/fig_results_detector_sequences_3-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use images/fig_results_detector_sequences_3-eps-converted-to.pdf>
+Package pdftex.def Info: images/fig_results_detector_sequences_3-eps-converted-
+to.pdf used on input line 19.
+(pdftex.def)             Requested size: 469.47049pt x 266.0445pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_4.ep
+s>
+(epstopdf)                    date: 2014-08-28 10:29:34
+(epstopdf)                    size: 1603031 bytes
+(epstopdf)             Output file: <images/fig_results_detector_sequences_4-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2014-09-04 21:15:02
+(epstopdf)                    size: 337305 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/fig_results_detector
+_sequences_4-eps-converted-to.pdf images/fig_results_detector_sequences_4.eps>
+(epstopdf)             \includegraphics on input line 25.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/fig_results_detector_sequences_4-eps-converted-to.pdf, id=262, 544.0325
+pt x 305.14pt>
+File: images/fig_results_detector_sequences_4-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use images/fig_results_detector_sequences_4-eps-converted-to.pdf>
+Package pdftex.def Info: images/fig_results_detector_sequences_4-eps-converted-
+to.pdf used on input line 25.
+(pdftex.def)             Requested size: 469.47049pt x 263.3325pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <images/fig_results_detector_sequences_5.ep
+s>
+(epstopdf)                    date: 2014-08-28 10:29:46
+(epstopdf)                    size: 561549 bytes
+(epstopdf)             Output file: <images/fig_results_detector_sequences_5-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2014-09-04 21:15:06
+(epstopdf)                    size: 116824 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/fig_results_detector
+_sequences_5-eps-converted-to.pdf images/fig_results_detector_sequences_5.eps>
+(epstopdf)             \includegraphics on input line 31.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/fig_results_detector_sequences_5-eps-converted-to.pdf, id=263, 541.0212
+6pt x 305.14pt>
+File: images/fig_results_detector_sequences_5-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use images/fig_results_detector_sequences_5-eps-converted-to.pdf>
+Package pdftex.def Info: images/fig_results_detector_sequences_5-eps-converted-
+to.pdf used on input line 31.
+(pdftex.def)             Requested size: 469.47049pt x 264.79451pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [68
+
+
+
+ <./images/fig_results_detector_sequences_1-eps-converted-to.pdf>]
+[69 <./images/fig_results_detector_sequences_2-eps-converted-to.pdf> <./images/
+fig_results_detector_sequences_3-eps-converted-to.pdf>] [70 <./images/fig_resul
+ts_detector_sequences_4-eps-converted-to.pdf> <./images/fig_results_detector_se
+quences_5-eps-converted-to.pdf>]
+\openout2 = `appendix_tracking_results.aux'.
+
+ (./appendix_tracking_results.tex
+Appendix D.
+<images/fig_results_tracker_dataset_2.png, id=306, 672.111pt x 279.444pt>
+File: images/fig_results_tracker_dataset_2.png Graphic file (type png)
+
+<use images/fig_results_tracker_dataset_2.png>
+Package pdftex.def Info: images/fig_results_tracker_dataset_2.png used on input
+ line 7.
+(pdftex.def)             Requested size: 469.47049pt x 195.19586pt.
+
+<images/fig_results_tracker_dataset_3.png, id=308, 672.914pt x 277.838pt>
+File: images/fig_results_tracker_dataset_3.png Graphic file (type png)
+
+<use images/fig_results_tracker_dataset_3.png>
+Package pdftex.def Info: images/fig_results_tracker_dataset_3.png used on input
+ line 14.
+(pdftex.def)             Requested size: 469.47049pt x 193.83662pt.
+
+<images/fig_results_tracker_dataset_4.png, id=309, 672.914pt x 273.823pt>
+File: images/fig_results_tracker_dataset_4.png Graphic file (type png)
+
+<use images/fig_results_tracker_dataset_4.png>
+Package pdftex.def Info: images/fig_results_tracker_dataset_4.png used on input
+ line 20.
+(pdftex.def)             Requested size: 469.47049pt x 191.03552pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/fig_results_tracker_dataset_5.png, id=310, 667.293pt x 264.99pt>
+File: images/fig_results_tracker_dataset_5.png Graphic file (type png)
+
+<use images/fig_results_tracker_dataset_5.png>
+Package pdftex.def Info: images/fig_results_tracker_dataset_5.png used on input
+ line 25.
+(pdftex.def)             Requested size: 469.47049pt x 186.43384pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [71
+
+
+
+ <./images/fig_results_tracker_dataset_2.png> <./images/fig_results_tracker_dat
+aset_3.png>] [72 <./images/fig_results_tracker_dataset_4.png> <./images/fig_res
+ults_tracker_dataset_5.png>] (./thesis.bbl (./thesis.brf)
+\tf@brf=\write6
+\openout6 = `thesis.brf'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [73
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [74])
 
 Package nag Warning: Package epsfig is deprecated.
 (nag)                Use the graphicx package directly instead.
 
 
-Package nag Warning: 32 complaints in total.
+Package nag Warning: 1 complaints in total.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
-[76]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
+[75]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
  (./thesis.aux (./chapter_abstract.aux) (./chapter_acknowledgements.aux)
 (./chapter_copyright.aux) (./chapter_introduction.aux)
 (./chapter_related_work.aux) (./chapter_cell_detection.aux)
 (./chapter_cell_tracking.aux) (./chapter_data.aux) (./chapter_results.aux)
 (./chapter_conclusion.aux) (./appendix_annotationtool.aux)
-(./appendix_interactiveviewer.aux) (./appendix_detectortracker.aux)
-(./appendix_detection_results.aux) (./appendix_tracking_results.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
+(./appendix_detectortracker.aux) (./appendix_detection_results.aux)
+(./appendix_tracking_results.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A151AC47FBC7E79B1559E309488A5D6E;840.
+(rerunfilecheck)             Checksum: 47EDCDE2E14AF831D4ABC543385779F1;578.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: F79EE5E736AEB830494DE0F55C0CA424;2723.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
  ) 
 Here is how much of TeX's memory you used:
- 2538 strings out of 473632
- 49191 string characters out of 5804018
- 689515 words of memory out of 5000000
- 26240 multiletter control sequences out of 15000+600000
- 26573 words of font info for 127 fonts, out of 8000000 for 9000
+ 3530 strings out of 472411
+ 60685 string characters out of 5785809
+ 764816 words of memory out of 5000000
+ 28466 multiletter control sequences out of 15000+600000
+ 25025 words of font info for 100 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 40i,12n,77p,1401b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,12n,77p,964b,2116s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{page.37} has been referenced but does not exist, 
 replaced by a fixed one
 
+pdfTeX warning (dest): name{page.34} has been referenced but does not exist, re
+placed by a fixed one
+
 pdfTeX warning (dest): name{page.62} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.31} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.24} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.16} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.27} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.53} has been referenced but does not exist, re
 placed by a fixed one
 
 pdfTeX warning (dest): name{page.15} has been referenced but does not exist, re
 placed by a fixed one
 
-pdfTeX warning (dest): name{page.34} has been referenced but does not exist, re
+pdfTeX warning (dest): name{page.13} has been referenced but does not exist, re
 placed by a fixed one
-
-pdfTeX warning (dest): name{page.8} has been referenced but does not exist, rep
-laced by a fixed one
 
 pdfTeX warning (dest): name{page.14} has been referenced but does not exist, re
 placed by a fixed one
@@ -1114,22 +510,13 @@ placed by a fixed one
 pdfTeX warning (dest): name{page.11} has been referenced but does not exist, re
 placed by a fixed one
 
-pdfTeX warning (dest): name{page.31} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.27} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.16} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.24} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{page.13} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{page.60} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.51} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.46} has been referenced but does not exist, re
 placed by a fixed one
 
 pdfTeX warning (dest): name{page.22} has been referenced but does not exist, re
@@ -1156,38 +543,8 @@ placed by a fixed one
 pdfTeX warning (dest): name{page.9} has been referenced but does not exist, rep
 laced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.56} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.53} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.16} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.52} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.48} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.18} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Appendix.1.E} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Appendix.1.D} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Appendix.1.C} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Appendix.1.B} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Appendix.1.A} has been referenced but does not exis
-t, replaced by a fixed one
+pdfTeX warning (dest): name{page.8} has been referenced but does not exist, rep
+laced by a fixed one
 
 pdfTeX warning (dest): name{section.7.2} has been referenced but does not exist
 , replaced by a fixed one
@@ -1196,6 +553,39 @@ pdfTeX warning (dest): name{section.7.1} has been referenced but does not exist
 , replaced by a fixed one
 
 pdfTeX warning (dest): name{chapter.7} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.2.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.1.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.1.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.6} has been referenced but does not exist, 
 replaced by a fixed one
 
 pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
@@ -1318,22 +708,21 @@ replaced by a fixed one
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-fbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-rm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
-t1095.pfb>
-Output written on thesis.pdf (22 pages, 576593 bytes).
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on thesis.pdf (16 pages, 1387786 bytes).
 PDF statistics:
- 567 PDF objects out of 1000 (max. 8388607)
- 509 compressed objects within 6 object streams
- 162 named destinations out of 1000 (max. 500000)
- 22680 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 554 PDF objects out of 1000 (max. 8388607)
+ 491 compressed objects within 5 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 26766 words of extra memory for PDF output out of 29859 (max. 10000000)
 

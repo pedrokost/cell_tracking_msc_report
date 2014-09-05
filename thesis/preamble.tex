@@ -35,6 +35,7 @@
 %\usepackage{wrapfig}
 \usepackage[toc,page]{appendix}
 \usepackage{parskip}  % No indent of paragraphs
+\usepackage{listings}
 % \usepackage{dcolumn}  % align columns in table on decimal point
 
 % \newcolumntype{d}[1]{D{.}{\cdot}{#1} }  % for dcolumn
@@ -60,6 +61,27 @@
 \newcommand{\addref}[1]{\todo[color=red!40]{Cite: #1.}}
 \newcommand{\rewrite}[1]{\todo[color=blue!40]{Rewrite: #1}}
 \newcommand{\notyetimplemented}[1]{\todo[color=red!40]{This feature has not yet been implemented}}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+  language=Matlab,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4
+}
 
 % \newcommand\status[1]{\fbox{\textsc{#1}}}
 % \newcommand{\statusnew}{\status{new}}

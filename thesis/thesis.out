@@ -1,13 +1,8 @@
-\BOOKMARK [0][-]{chapter.6}{Experimental results}{}% 40
-\BOOKMARK [1][-]{section.6.1}{Cell detector}{chapter.6}% 41
-\BOOKMARK [2][-]{subsection.6.1.1}{Performance metrics}{section.6.1}% 42
-\BOOKMARK [2][-]{subsection.6.1.2}{Detection accuracy}{section.6.1}% 43
-\BOOKMARK [2][-]{subsection.6.1.3}{Computations time}{section.6.1}% 44
-\BOOKMARK [1][-]{section.6.2}{Cell tracker}{chapter.6}% 45
-\BOOKMARK [2][-]{subsection.6.2.1}{Performance metrics}{section.6.2}% 46
-\BOOKMARK [2][-]{subsection.6.2.2}{Tracking accuracy}{section.6.2}% 47
-\BOOKMARK [2][-]{subsection.6.2.3}{Computation time}{section.6.2}% 48
-\BOOKMARK [1][-]{section.6.3}{Limitations and areas of improvement}{chapter.6}% 49
-\BOOKMARK [1][-]{section.6.4}{Summary}{chapter.6}% 50
-\BOOKMARK [0][-]{section*.17}{Appendices}{}% 54
-\BOOKMARK [0][-]{section*.17}{Bibliography}{}% 60
+\BOOKMARK [0][-]{section*.2}{Appendices}{}% 54
+\BOOKMARK [0][-]{Appendix.1.A}{Installation instructions for the image annotations tools}{}% 55
+\BOOKMARK [0][-]{Appendix.1.B}{Installation instructions and usage example for the cell detector and tracker}{}% 56
+\BOOKMARK [1][-]{section.1.B.1}{Installation instructions}{Appendix.1.B}% 57
+\BOOKMARK [1][-]{section.1.B.2}{Usage example}{Appendix.1.B}% 58
+\BOOKMARK [0][-]{Appendix.1.C}{Cell detection results}{}% 59
+\BOOKMARK [0][-]{Appendix.1.D}{Cell tracking results}{}% 60
+\BOOKMARK [0][-]{figure.caption.11}{Bibliography}{}% 61
