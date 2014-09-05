@@ -17,7 +17,7 @@ A level-1 auxiliary file: appendix_detectortracker.aux
 A level-1 auxiliary file: appendix_detection_results.aux
 A level-1 auxiliary file: appendix_tracking_results.aux
 Database file #1: thesis.bib
-I was expecting a `,' or a `}'---line 461 of file thesis.bib
+I was expecting a `,' or a `}'---line 472 of file thesis.bib
  : 
  : @article{kalman60,
 (Error may have been on previous line)
@@ -31,43 +31,43 @@ Warning--I didn't find a database entry for "conf/cvpr/2013"
 Warning--empty journal in eom07
 You've used 31 entries,
             1876 wiz_defined-function locations,
-            694 strings with 10278 characters,
-and the built_in function-call counts, 9702 in all, are:
-= -- 940
-> -- 379
+            695 strings with 10305 characters,
+and the built_in function-call counts, 9913 in all, are:
+= -- 968
+> -- 383
 < -- 0
-+ -- 138
-- -- 107
-* -- 698
-:= -- 1316
++ -- 139
+- -- 108
+* -- 717
+:= -- 1342
 add.period$ -- 36
 call.type$ -- 31
 change.case$ -- 28
 chr.to.int$ -- 0
 cite$ -- 32
-duplicate$ -- 512
-empty$ -- 925
-format.name$ -- 107
-if$ -- 2408
+duplicate$ -- 525
+empty$ -- 937
+format.name$ -- 108
+if$ -- 2460
 int.to.chr$ -- 0
 int.to.str$ -- 31
-missing$ -- 29
+missing$ -- 30
 newline$ -- 101
 num.names$ -- 33
-pop$ -- 121
+pop$ -- 115
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 384
+skip$ -- 395
 stack$ -- 0
-substring$ -- 686
-swap$ -- 226
+substring$ -- 718
+swap$ -- 235
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 86
+while$ -- 89
 width$ -- 33
-write$ -- 313
+write$ -- 317
 (There were 3 error messages)

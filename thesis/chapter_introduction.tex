@@ -25,11 +25,11 @@
 		
 		The identification of cells should take into account the nature of the imaging technique and the quality of the studied images. Simple methods such as thresholding would be too unreliable; more advanced methods need to be investigated.
 		
-		Tracking of cells should also take into account the nature of input data. Basic frame-by-frame tracking of cells is likely to have poor results because the cells frequently disappear into the depths of tissue or lose focus. Methods that take into account the temporal behaviour of cells are likely to result in more robust tracking.
+		Tracking of cells should also take into account the nature of input data. Basic frame-by-frame tracking of cells is likely to have poor results because the cells frequently disappear into the depths of tissue or lose focus. Methods that take into account the temporal behaviour of cells will probably produce better results.
 		
 	\section{Contributions}
 		
-		The work in this project led to a development of a robust pipeline for automatic cell tracking. The pipeline combines a cell detection algorithm from \cite{arteta12} and, to the best knowledge of the author, a novel tracking method that is directly based on the observed data. 
+		The work in this project led to the development of a pipeline of algorithms for automatic cell tracking. The pipeline combines a cell detection algorithm from \cite{arteta12} and, to the best knowledge of the author, a novel tracking method that is directly based on the observed data. 
 		
 		The cell tracking module uses a global data association approach to reliably generate cell detection trajectories based on a global decision. This research has improved previous methods allowing them to rely on a large set of features obtained from observed data. A machine learning approach is used to compute likelihoods for linking cell detections into increasingly longer trajectories. Because the likelihoods are obtained directly from training examples, the method is able to produce good results even from noisy datasets, where several frames in a sequence can become out-of-focus, and in which cells can disappear and reappear over time, etc.
 		
