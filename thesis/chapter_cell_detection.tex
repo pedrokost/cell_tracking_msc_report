@@ -78,17 +78,16 @@
 	\section{Feature selection}
 	\label{sec:detector_feature}
 	
-	The effictiveness of the machine learning method to detect cells depends on the quality of features computed for the regions. Good features have a lot of discriminative power, so that they can effectively distinguish regions corresponding to cells from regions that don't correspond to cells. In order to find the best feature vector, we have evaluated the performance of the classifier with several combinations of these features:
+	The effectiveness of the machine learning method to detect cells depends on the quality of features computed for the regions. Good features have a lot of discriminative power, so that they can effectively distinguish regions corresponding to cells from regions that don't correspond to cells. In order to find the best feature vector, we have evaluated the performance of the classifier with several combinations of the features used in the original method \cite{arteta12}:
 	
-	\begin{enumerate}
-	    \item The area $A$ of the region represented by a 10-dimensional binary vector with the entry $\lceil \log A \rceil $ set to 1.
-		\item 10-dimensional histogram of intensities within the region.
-	    \item The position of the region in the image in terms of x-y coordinates of the region centroid.
-	    \item Two 6-dimensional histograms of differences in intensities between the region border and a dilation of it for two different dilation radii.
-	    \item A shape descriptor represented by a 60-dimensional histogram of the distribution of the boundary of the region on a size-normalized polar coordinate system.
-	    \item The orientation of the descriptor after attempting to normalize its orientation.
-	    \item The proportion of edge-pixels in the region.
-	\end{enumerate}
+	\begin{description}
+		\item[Area] The area of the candidate region.
+		\item[Intensity histogram]: A histogram of the intensities within the region.
+		\item[Region position]: The position of the region centroid in x-y coordinates
+		\item[Shape descriptor]: A shape descriptor of the boundary of the region.
+		\item[Region edges]: The proportion of edge-pixels in the regions.
+		\item[Invariant intensity feature]: A histogram of differences of intensities between the region border and dilations of it.
+	\end{description}
 	
 	Each of these features has different discriminative power, and takes some time to compute. The application of the cell detector requires that images are processed within a time limit. For this reason, we have trained and tested the algorithm with all the possible combinations of these features and identified a feature set that computes in an acceptable amount of time with a high recall and precision.
 	
@@ -103,7 +102,7 @@
 	
 	\section{Performance improvements}
 	\label{sec:detector_changes}
-		The main drawback of the algorithm presented by Arteta \cite{arteta12} is the slow feature computation. The original paper reported detection times of 30 seconds for images of dimensions 400-by-400 pixels on an i7 CPU. Because the aim of this project is tracking cells, we expect to be processing hundreds or thousands of frames of microscopy image sequences. It was important to reduce the detection time as much as possible. The major performance improvements where achieved by addressing three things.
+		The main drawback of the algorithm presented by Arteta \emph{et. al.}~\cite{arteta12} is the slow feature computation. The original paper reported detection times of 30 seconds for images of dimensions 400-by-400 pixels on an i7 CPU. Because the aim of this project is tracking cells, we expect to be processing hundreds or thousands of frames of microscopy image sequences. It was important to reduce the detection time as much as possible. The major performance improvements where achieved by addressing three things.
 		
 		The algorithms computes the features for the classifier on every candidate region. The original method was configured such that thousands of MSERs were computed for each frame. While this provides more robust learning and detection, it was slowing the algorithm down excessively. First, we fine-tuned the MSER detector to detect less regions, but still return a large number of features such that the detection rate wasn't penalized.
 		
